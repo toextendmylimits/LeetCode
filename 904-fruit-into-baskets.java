@@ -5,7 +5,7 @@ class Solution {
         return findMaxSubArrayLengthWithKDistinctElements(fruits, BASKETS_COUNT);
     }
     
-    private int findMaxSubArrayLengthWithKDistinctElements(int[] nums, int maxDistinctElementCount) {
+    private int findMaxSubArrayLengthWithKDistinctElements(int[] nums, int maxDistinctElementsCount) {
         int maxSubArrayLength = Integer.MIN_VALUE;
         Map<Integer, Integer> frequencyMap = new HashMap<>();
         
@@ -14,7 +14,7 @@ class Solution {
             int windowEndValue = nums[windowEnd];    
             frequencyMap.put(windowEndValue, frequencyMap.getOrDefault(windowEndValue, 0) + 1);
             
-            while(frequencyMap.size() > maxDistinctElementCount) {
+            while(frequencyMap.size() > maxDistinctElementsCount) {
                 int windowStartValue = nums[windowStart];
                 frequencyMap.put(windowStartValue, frequencyMap.getOrDefault(windowStartValue,                      0) - 1);
                 if(frequencyMap.get(windowStartValue) == 0) {
