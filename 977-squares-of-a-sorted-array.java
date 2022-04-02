@@ -3,8 +3,8 @@ class Solution {
         int[] result = new int[nums.length];
         int left = 0;
         int right = nums.length - 1;
-        int position = nums.length - 1;
-        while(left <= right) {
+        
+        for(int position = nums.length - 1; position >= 0; position--) {
             int largerAbsoluteValue = 0;
             int absoluteLeftValue = Math.abs(nums[left]);
             int absoluteRightValue = Math.abs(nums[right]);
@@ -18,7 +18,6 @@ class Solution {
             }
             
             result[position] = largerAbsoluteValue * largerAbsoluteValue;
-            position--;
         }
         
         return result;
