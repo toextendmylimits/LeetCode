@@ -15,11 +15,12 @@ class Solution {
         
         while(current.next != null && current.next.next != null) {
             ListNode firstNext = current.next;
+            ListNode secondNext = current.next.next;
             ListNode thirdNext = current.next.next.next;
             
-            current.next = current.next.next;
-            current.next.next = firstNext;
-            current.next.next.next = thirdNext;
+            current.next = secondNext;
+            secondNext.next = firstNext;
+            firstNext.next = thirdNext;
             
             current = current.next.next;           
         }
