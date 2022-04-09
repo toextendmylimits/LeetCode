@@ -18,10 +18,10 @@ class Solution {
         if(nums == null || nums.length == 0) { return 0;}
         if(nums.length < 2) { return nums[0]; }
         
-        int moneyFromPrevious1 = Math.max(nums[0], nums[1]);
-        int moneyFromPrevious2 = nums[0];   
+        int moneyFromPrevious1 = 0;
+        int moneyFromPrevious2 = 0;   
         
-        for(int house = 2; house < nums.length; house++) {
+        for(int house = 0; house < nums.length; house++) {
             int money = Math.max(moneyFromPrevious1, moneyFromPrevious2 + nums[house]);
             moneyFromPrevious2 = moneyFromPrevious1;
             moneyFromPrevious1 = money;           
