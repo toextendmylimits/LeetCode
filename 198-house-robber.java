@@ -21,9 +21,8 @@ class Solution {
         int moneyFromPrevious1 = Math.max(nums[0], nums[1]);
         int moneyFromPrevious2 = nums[0];   
         
-        int money = 0;
         for(int house = 2; house < nums.length; house++) {
-            money = Math.max(moneyFromPrevious1, moneyFromPrevious2 + nums[house]);
+            int money = Math.max(moneyFromPrevious1, moneyFromPrevious2 + nums[house]);
             moneyFromPrevious2 = moneyFromPrevious1;
             moneyFromPrevious1 = money;           
         }
