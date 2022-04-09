@@ -23,11 +23,11 @@ class Solution {
         int[] result = new int[2]; // first element for not robbing root, second element for robbing root
         if(root == null) { return result; }
         
-        int[] left = robTree(root.left);
-        int[] right = robTree(root.right);
+        int[] resultRobbingLeft = robTree(root.left);
+        int[] resultRobbingRight = robTree(root.right);
         
-        int moneyRobbingRoot = root.val + left[0] + right[0];
-        int moneyNotRobbingRoot = Math.max(left[0], left[1]) + Math.max(right[0], right[1]);
+        int moneyRobbingRoot = root.val + resultRobbingLeft[0] + resultRobbingRight[0];
+        int moneyNotRobbingRoot = Math.max(resultRobbingLeft[0], resultRobbingLeft[1]) + Math.max(resultRobbingRight[0], resultRobbingRight[1]);
         result[0] = moneyNotRobbingRoot;
         result[1] = moneyRobbingRoot;
         
