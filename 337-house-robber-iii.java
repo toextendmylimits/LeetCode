@@ -20,7 +20,7 @@ class Solution {
     }
     
     public int[] robTree(TreeNode root) {
-        int[] result = new int[2]; // 0 for not robbing root, 1 for robbing root
+        int[] result = new int[2]; // first element for not robbing root, second element for robbing root
         if(root == null) { return result; }
         
         int[] left = robTree(root.left);
