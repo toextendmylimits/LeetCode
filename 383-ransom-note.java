@@ -6,12 +6,12 @@ class Solution {
         int[] letterFrequency = new int[LOWER_CASE_LETTERS_COUNT];
         for(int i = 0; i < magazine.length(); i++) {
             char c = magazine.charAt(i);
-            letterFrequency[getLowerLetterIndex(c)]++; 
+            letterFrequency[getLowercaseLetterIndex(c)]++; 
         }
         
         for(int i = 0; i < ransomNote.length(); i++) {
             char noteChar = ransomNote.charAt(i);
-            int index = getLowerLetterIndex(noteChar);
+            int index = getLowercaseLetterIndex(noteChar);
             if(letterFrequency[index] == 0) {
                 return false;
             }
@@ -23,7 +23,7 @@ class Solution {
         return true;
     }
     
-    private int getLowerLetterIndex(char c) {
+    private int getLowercaseLetterIndex(char c) {
         return c - SMALLEST_LOWER_CASE_LETTER;
     }
 }
