@@ -14,7 +14,7 @@ class Solution {
         
         letterLogs.sort(getLetterLogComparator());
         
-        return concatListsToArray(letterLogs, digitLogs);
+        return concatLetterDigitListsToArray(letterLogs, digitLogs);
     }
     
     private Comparator<String> getLetterLogComparator() {
@@ -35,7 +35,7 @@ class Solution {
         };
     }
     
-    private String[] concatListsToArray(List<String> letterLogs, List<String> digitLogs) {
+    private String[] concatLetterDigitListsToArray(List<String> letterLogs, List<String> digitLogs) {
         String[] result = new String[letterLogs.size() + digitLogs.size()];
         int i = 0;
         for(; i < letterLogs.size(); i++) {
