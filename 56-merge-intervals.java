@@ -10,9 +10,9 @@ class Solution {
         
         for(int i = 1; i < intervals.length; i++) {
             int[] interval = intervals[i];
-            int[] previousMergedInterval = result.get(result.size() - 1);
-            if(interval[0] <= previousMergedInterval[1]) {
-                previousMergedInterval[1] = Math.max(previousMergedInterval[1], interval[1]);
+            int[] lastMergedInterval = result.get(result.size() - 1);
+            if(interval[0] <= lastMergedInterval[1]) {
+                lastMergedInterval[1] = Math.max(lastMergedInterval[1], interval[1]);
             }
             else {
                 result.add(interval);
