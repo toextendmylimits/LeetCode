@@ -1,1 +1,2 @@
 https://leetcode.com/problems/container-with-most-water/
+42 https://leetcode.com/problems/trapping-rain-water/
