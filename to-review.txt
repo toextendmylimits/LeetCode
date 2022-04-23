@@ -3,3 +3,4 @@ https://leetcode.com/problems/container-with-most-water/
 15 https://leetcode.com/problems/3sum/ Third approach "No Sort" I did't understood it
 16 https://leetcode.com/problems/3sum-closest/
 259 https://leetcode.com/problems/3sum-smaller/
+20 https://leetcode.com/problems/valid-parentheses/
