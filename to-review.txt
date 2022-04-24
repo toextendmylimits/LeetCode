@@ -13,3 +13,5 @@ https://leetcode.com/problems/container-with-most-water/
 
 362 https://leetcode.com/problems/design-hit-counter/ Look at this later
 
+721 https://leetcode.com/problems/accounts-merge/ Too hard. Union find/graph
+
