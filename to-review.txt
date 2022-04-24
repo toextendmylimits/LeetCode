@@ -11,3 +11,5 @@ https://leetcode.com/problems/container-with-most-water/
 
 4 https://leetcode.com/problems/median-of-two-sorted-arrays/ Please reference to https://github.com/mission-peace/interview/blob/master/src/com/interview/binarysearch/MedianOfTwoSortedArrayOfDifferentLength.java
 
+362 https://leetcode.com/problems/design-hit-counter/ Look at this later
+
