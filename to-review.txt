@@ -24,4 +24,5 @@ https://leetcode.com/problems/container-with-most-water/
 1539 https://leetcode.com/problems/kth-missing-positive-number/ Don't understand
 278 https://leetcode.com/problems/first-bad-version/
 35 https://leetcode.com/problems/search-insert-position/
+724 https://leetcode.com/problems/find-pivot-index/
 
