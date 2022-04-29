@@ -8,10 +8,17 @@ class Solution {
         PriorityQueue<Integer> queue = new PriorityQueue<>((a, b) -> frequencyMap.getOrDefault(a, 0) - frequencyMap.getOrDefault(b, 0));
         
         for(int n : frequencyMap.keySet()) {
-            queue.offer(n);
+            if(queue.size() < k) {
+                queue.offer(n);
+            }
+            else if(frequencyMap.get(queue.peek()) < frequencyMap.get(n)) {
+                queue.poll();
+                queue.offer(n);
+            }
+            /*queue.offer(n);
             if(queue.size() > k) {
                 queue.poll();
-            }
+            }*/
         }
         
         int[] result = new int[k];
