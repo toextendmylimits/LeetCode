@@ -39,3 +39,4 @@ https://leetcode.com/problems/container-with-most-water/
 347 https://leetcode.com/problems/top-k-frequent-elements/
 451 https://leetcode.com/problems/sort-characters-by-frequency/
 629 https://leetcode.com/problems/top-k-frequent-words/
+973 https://leetcode.com/problems/k-closest-points-to-origin/ Shold learn quick sort later
