@@ -42,3 +42,4 @@ https://leetcode.com/problems/container-with-most-water/
 973 https://leetcode.com/problems/k-closest-points-to-origin/ Shold learn quick sort later
 658 https://leetcode.com/problems/find-k-closest-elements/ Didn't solve it
 71 https://leetcode.com/problems/simplify-path/
+65 https://leetcode.com/problems/valid-number/ Should learn state machine
