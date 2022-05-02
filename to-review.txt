@@ -46,3 +46,4 @@ https://leetcode.com/problems/container-with-most-water/
 394 https://leetcode.com/problems/decode-string/ Very difficult!
 162 https://leetcode.com/problems/find-peak-element/
 138 https://leetcode.com/problems/copy-list-with-random-pointer/ Reference https://leetcode.wang/leetcode-138-Copy-List-with-Random-Pointer.html
+543 https://leetcode.com/problems/diameter-of-binary-tree/ Should look at iterative approach later
