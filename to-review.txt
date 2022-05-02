@@ -43,4 +43,5 @@ https://leetcode.com/problems/container-with-most-water/
 658 https://leetcode.com/problems/find-k-closest-elements/ Didn't solve it
 71 https://leetcode.com/problems/simplify-path/
 65 https://leetcode.com/problems/valid-number/ Should learn state machine
-394 https://leetcode.com/problems/decode-string/
+394 https://leetcode.com/problems/decode-string/ Very difficult!
+
