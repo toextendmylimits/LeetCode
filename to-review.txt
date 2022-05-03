@@ -47,3 +47,4 @@ https://leetcode.com/problems/container-with-most-water/
 162 https://leetcode.com/problems/find-peak-element/
 138 https://leetcode.com/problems/copy-list-with-random-pointer/ Reference https://leetcode.wang/leetcode-138-Copy-List-with-Random-Pointer.html
 543 https://leetcode.com/problems/diameter-of-binary-tree/ Should look at iterative approach later
+528 https://leetcode.com/problems/random-pick-with-weight/ Should learn bucket sort later to deal with follow-up questions
