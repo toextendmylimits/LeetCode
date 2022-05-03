@@ -50,3 +50,4 @@ https://leetcode.com/problems/container-with-most-water/
 528 https://leetcode.com/problems/random-pick-with-weight/ Should learn bucket sort later to deal with follow-up questions
 295 https://leetcode.com/problems/find-median-from-data-stream/ To difficult
 6 https://leetcode.com/problems/zigzag-conversion/
+7 https://leetcode.com/problems/reverse-integer/
