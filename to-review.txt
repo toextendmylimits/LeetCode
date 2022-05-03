@@ -51,3 +51,4 @@ https://leetcode.com/problems/container-with-most-water/
 295 https://leetcode.com/problems/find-median-from-data-stream/ To difficult
 6 https://leetcode.com/problems/zigzag-conversion/
 7 https://leetcode.com/problems/reverse-integer/
+8 https://leetcode.com/problems/string-to-integer-atoi/
