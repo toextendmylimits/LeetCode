@@ -16,7 +16,7 @@ class Solution {
             reverse(nums, 0, nums.length - 1);  
         }
         else {
-            // Find a number than is larger than k, and is closer than others
+            // Find first digit that is larger than k
             for(; l > k; l--) {
                 if(nums[l] > nums[k]) {
                     break;
