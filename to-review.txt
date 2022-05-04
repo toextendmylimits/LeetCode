@@ -59,3 +59,4 @@ https://leetcode.com/problems/container-with-most-water/
 31 https://leetcode.com/problems/next-permutation/
 36 https://leetcode.com/problems/valid-sudoku/
 278 https://leetcode.com/problems/find-the-duplicate-number/ Should learn cycle detecting later
+1249 https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
