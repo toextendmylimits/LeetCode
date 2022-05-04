@@ -60,3 +60,5 @@ https://leetcode.com/problems/container-with-most-water/
 36 https://leetcode.com/problems/valid-sudoku/
 278 https://leetcode.com/problems/find-the-duplicate-number/ Should learn cycle detecting later
 1249 https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/
+79 https://leetcode.com/problems/word-search/ Should learn backtracking again
+212 https://leetcode.com/problems/word-search-ii/
