@@ -7,37 +7,38 @@ class Solution {
         
         int r = 0;
         int c = 0;
-        int resultIndex = 0;
-        while(resultIndex < rows * columns) {
-            result[resultIndex++] = mat[r][c];
+        for(int i = 0; i < rows * columns; i++) {
+            result[i] = mat[r][c];
             
+            // Even sum
             if((r + c) % 2 == 0) {
+                // Go top right
                 if(r - 1 >= 0 && c + 1 < columns) {
                     r--;
                     c++;
                 }
-                else if(r - 1 < 0 && c + 1 < columns) {
+                else if(r - 1 < 0 && c + 1 < columns) { // Go right
                     c++;
                 }
-                else if(r + 1 < rows && c + 1 >= columns) {
+                else if(r + 1 < rows && c + 1 >= columns) { // Go down
                     r++;
                 }
             }
             else {
+                // Go bottom left
                 if(r + 1 < rows && c - 1 >= 0) {
                     r++;
                     c--;
                 }
-                else if(r + 1 < rows && c - 1 < 0) {
+                else if(r + 1 < rows && c - 1 < 0) { // Go down
                     r++;
                 }
-                else if(r + 1 >= rows && c + 1 < columns) {
+                else if(r + 1 >= rows && c + 1 < columns) { // Go right
                     c++;
                 }
             }
         }
-    
-        
+          
         return result;
     }
     
