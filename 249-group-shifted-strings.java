@@ -4,7 +4,7 @@ class Solution {
         for(String s : strings) {
             if(s.length() == 0) { continue; }
             
-            String key = shiftToStringStartWithA(s);
+            String key = getHashKey(s);
             if(!map.containsKey(key)) {
                 map.put(key, new ArrayList<>());
             }
@@ -14,7 +14,8 @@ class Solution {
         return new ArrayList<>(map.values());
     }
     
-    private String shiftToStringStartWithA(String s) {
+    private String getHashKey(String s) {
+        // Shift first letter to 'a', and then shift the maining letters same times
         StringBuilder result = new StringBuilder();
         
         int offset = s.charAt(0) - 'a';
