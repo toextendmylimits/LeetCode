@@ -69,3 +69,4 @@ https://leetcode.com/problems/container-with-most-water/
 392 https://leetcode.com/problems/is-subsequence/
 1539 https://leetcode.com/problems/kth-missing-positive-number/
 139 https://leetcode.com/problems/word-break/ Should learn dynamic programming
+339 https://leetcode.com/problems/nested-list-weight-sum/
