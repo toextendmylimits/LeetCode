@@ -3,3 +3,4 @@
 206 https://leetcode.com/problems/reverse-linked-list/
 876 https://leetcode.com/problems/middle-of-the-linked-list/
 142 https://leetcode.com/problems/linked-list-cycle-ii/
+160 https://leetcode.com/problems/intersection-of-two-linked-lists/
