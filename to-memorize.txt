@@ -4,3 +4,6 @@
 876 https://leetcode.com/problems/middle-of-the-linked-list/
 142 https://leetcode.com/problems/linked-list-cycle-ii/
 160 https://leetcode.com/problems/intersection-of-two-linked-lists/
+203 https://leetcode.com/problems/remove-linked-list-elements/
+
+328 https://leetcode.com/problems/odd-even-linked-list/
