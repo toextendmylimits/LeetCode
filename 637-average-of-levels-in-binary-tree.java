@@ -6,7 +6,7 @@ class Solution {
         Queue<TreeNode> queue = new LinkedList<>();
         queue.offer(root);
         while(!queue.isEmpty()) {
-            double sum = 0;
+            long sum = 0;
             int size = queue.size();
             for(int i = 0; i < size; i++) {
                 TreeNode temp = queue.poll();
@@ -16,7 +16,7 @@ class Solution {
                 if(temp.right != null) { queue.offer(temp.right); }
             }
             
-            result.add(sum / size);
+            result.add(sum * 1.0 / size);
         }
         
         return result;
