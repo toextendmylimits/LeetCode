@@ -22,3 +22,4 @@
 437 https://leetcode.com/problems/path-sum-iii/
 129 https://leetcode.com/problems/sum-root-to-leaf-numbers/
 250 https://leetcode.com/problems/count-univalue-subtrees/
+116 https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
