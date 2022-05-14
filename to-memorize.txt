@@ -24,3 +24,4 @@
 250 https://leetcode.com/problems/count-univalue-subtrees/
 116 https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
 117 https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/117 
+235 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
