@@ -26,3 +26,4 @@
 117 https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/117 
 235 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
 1676 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/
+1650 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
