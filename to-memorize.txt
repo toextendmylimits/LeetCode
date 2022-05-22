@@ -28,3 +28,4 @@
 1676 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv/
 1650 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii/
 76 https://leetcode.com/problems/minimum-window-substring/
+98 https://leetcode.com/problems/validate-binary-search-tree/
