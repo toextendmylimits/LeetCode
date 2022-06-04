@@ -61,6 +61,21 @@ class Solution {
      
     public boolean isPalindrome(ListNode head) {
         // Find middle
+        ListNode middle = getMiddle(head);
+        
+        // Reverse second half
+        ListNode tail = reverse(middle);
+
+        // Compare seconcd half with first half
+        boolean isPalindrome = isEqual(tail, head);
+        
+        // Resotre second half
+        reverse(tail);
+        
+        return isPalindrome;
+    }
+    
+    private ListNode getMiddle(ListNode head) {
         ListNode fast = head;
         ListNode slow = head;
         while(fast != null && fast.next != null) {
@@ -68,27 +83,18 @@ class Solution {
             slow = slow.next;
         }
         
-        // Now slow is middle
-        // Reverse second half
-        ListNode tail = reverse(slow);
-
-        // Compare seconcd half with first half
-        ListNode pTail = tail;
-        ListNode pHead = head;
-        boolean isPalindrome = true;
-        while(pTail != null) {
-           if(pTail.val != pHead.val) {
-               isPalindrome = false;
-               break;
-           }
-            pTail = pTail.next;
-            pHead = pHead.next;
+        return slow;
+    }
+    
+    private boolean isEqual(ListNode shorterHalf, ListNode longerHalf) {
+        while(shorterHalf != null) {
+            if(shorterHalf.val != longerHalf.val) {
+                return false;
+            }
+            shorterHalf = shorterHalf.next;
+            longerHalf = longerHalf.next;
         }
-        
-        // Resotre second half
-        reverse(tail);
-        
-        return isPalindrome;
+        return true;
     }
     
     private ListNode reverse(ListNode head) {
@@ -102,5 +108,5 @@ class Solution {
         }
         
         return prev;
-    }     
+    }
 }
