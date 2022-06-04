@@ -41,3 +41,4 @@
 189 https://leetcode.com/problems/rotate-array/ Check later
 14 https://leetcode.com/problems/longest-common-prefix/
 237 https://leetcode.com/problems/delete-node-in-a-linked-list/
+141 https://leetcode.com/problems/linked-list-cycle/
