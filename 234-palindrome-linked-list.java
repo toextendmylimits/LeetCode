@@ -58,4 +58,49 @@ class Solution {
         
         return prev;
     }
+     
+    public boolean isPalindrome(ListNode head) {
+        // Find middle
+        ListNode fast = head;
+        ListNode slow = head;
+        while(fast != null && fast.next != null) {
+            fast = fast.next.next;
+            slow = slow.next;
+        }
+        
+        // Now slow is middle
+        // Reverse second half
+        ListNode tail = reverse(slow);
+
+        // Compare seconcd half with first half
+        ListNode pTail = tail;
+        ListNode pHead = head;
+        boolean isPalindrome = true;
+        while(pTail != null) {
+           if(pTail.val != pHead.val) {
+               isPalindrome = false;
+               break;
+           }
+            pTail = pTail.next;
+            pHead = pHead.next;
+        }
+        
+        // Resotre second half
+        reverse(tail);
+        
+        return isPalindrome;
+    }
+    
+    private ListNode reverse(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+        while(curr != null) {
+            ListNode next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        
+        return prev;
+    }     
 }
