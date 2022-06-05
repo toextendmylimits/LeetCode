@@ -43,3 +43,4 @@
 237 https://leetcode.com/problems/delete-node-in-a-linked-list/
 141 https://leetcode.com/problems/linked-list-cycle/
 234 https://leetcode.com/problems/palindrome-linked-list/
+204 https://leetcode.com/problems/count-primes/
