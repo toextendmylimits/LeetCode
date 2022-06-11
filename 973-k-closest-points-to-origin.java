@@ -1,29 +1,28 @@
 class Solution {
     public int[][] kClosest(int[][] points, int k) {
-        PriorityQueue<int[]> queue = new PriorityQueue<>((a,b) -> {
-            return (b[0] * b[0] + b[1] * b[1]) - (a[0] * a[0] + a[1] * a[1]);
-        });
+        // Create a max heap, i.e. the top is the furthest point
+        PriorityQueue<int[]> queue = new PriorityQueue<>((a, b) -> getSquareOfDistance(b) - getSquareOfDistance(a));
         
+        // Add point to heap, and remove top element if size > k
         for(int[] p : points) {
             queue.offer(p);
             if(queue.size() > k) {
                 queue.poll();
             }
         }
-        
-        int[][] result = new int[k][2];        
-        int index = 0;
-        while(index < k) {
-            result[index] = queue.poll();
-            index++;
+
+        // Remove k elements from heap, and add to result array
+        int[][] result = new int[k][];
+        for(int i = k - 1; i >= 0; i--) {
+            result[i] = queue.poll();
         }
-        
+         
         return result;
     }
-
-    /*public int[][] kClosest(int[][] points, int k) {
-        Arrays.sort(points, Comparator.comparing(p -> p[0] * p[0] + p[1] * p[1]));
-        
-        return Arrays.copyOfRange(points, 0, k);
-    }*/
+    
+    private int getSquareOfDistance(int[] point) {
+        int x = point[0];
+        int y = point[1];
+        return x * x + y * y;
+    }
 }
