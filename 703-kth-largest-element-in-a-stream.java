@@ -1,27 +1,26 @@
 class KthLargest {
-    private final PriorityQueue<Integer> priorityQueue;
-    private final int queueSize;
+    private PriorityQueue<Integer> queue = new PriorityQueue<>();
+    private int capacity;
     
     public KthLargest(int k, int[] nums) {
-        queueSize = k;
-        priorityQueue = new PriorityQueue<Integer>();
-        Arrays.stream(nums)
-            .forEach(n -> add(n));
+        this.capacity = k;
+          for(int n : nums) {
+              queue.offer(n);
+              if(queue.size() > k) {
+                  queue.poll();
+              }
+          }  
     }
     
     public int add(int val) {
-        if(priorityQueue.size() < queueSize) {
-            priorityQueue.offer(val);
-        }
-        else if(priorityQueue.peek() < val) {
-            priorityQueue.poll();
-            priorityQueue.offer(val);
+        queue.offer(val);
+        if(queue.size() > capacity) {
+            queue.poll();
         }
         
-        return priorityQueue.peek();
+        return queue.peek();
     }
 }
-
 /**
  * Your KthLargest object will be instantiated and called as such:
  * KthLargest obj = new KthLargest(k, nums);
