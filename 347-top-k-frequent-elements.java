@@ -1,56 +1,52 @@
 class Solution {
-    public int[] topKFrequent(int[] nums, int k) {
-        Map<Integer, Integer> frequencyMap = new HashMap<>();
+   /*public int[] topKFrequent(int[] nums, int k) {
+        if(k == nums.length) {
+            return nums;
+        }  
+        
+        Map<Integer, Integer> freqMap = new HashMap<>();
         for(int n : nums) {
-            frequencyMap.put(n, frequencyMap.getOrDefault(n, 0) + 1);
+            freqMap.put(n, freqMap.getOrDefault(n, 0) + 1);
         }
         
-        PriorityQueue<Integer> queue = new PriorityQueue<>((a, b) -> frequencyMap.getOrDefault(a, 0) - frequencyMap.getOrDefault(b, 0));
-        
-        for(int n : frequencyMap.keySet()) {
-            if(queue.size() < k) {
-                queue.offer(n);
-            }
-            else if(frequencyMap.get(queue.peek()) < frequencyMap.get(n)) {
-                queue.poll();
-                queue.offer(n);
-            }
-            /*queue.offer(n);
+        PriorityQueue<Map.Entry<Integer, Integer>> queue = new PriorityQueue<>((a, b) -> a.getValue() - b.getValue());
+        for(Map.Entry<Integer, Integer> entry : freqMap.entrySet()) {
+            queue.offer(entry);
             if(queue.size() > k) {
                 queue.poll();
-            }*/
+            }
         }
         
         int[] result = new int[k];
-        for(int j = k - 1; j >= 0; j--) {
-            result[j] = queue.poll();
+        for(int i = k - 1; i >= 0; i--) {
+            result[i] = queue.poll().getKey();
         }
         
         return result;
-    }    
-    /*public int[] topKFrequent(int[] nums, int k) {
-        Map<Integer, Integer> frequencyMap = new HashMap<>();
+    } */
+    public int[] topKFrequent(int[] nums, int k) {
+        if(k == nums.length) {
+            return nums;
+        }  
+        
+        Map<Integer, Integer> freqMap = new HashMap<>();
         for(int n : nums) {
-            frequencyMap.put(n, frequencyMap.getOrDefault(n, 0) + 1);
+            freqMap.put(n, freqMap.getOrDefault(n, 0) + 1);
         }
         
-        int[] uniqueValues = new int[frequencyMap.size()];
-        int i = 0;
-        for(int n : frequencyMap.keySet()) {
-            uniqueValues[i++] = n;
+        PriorityQueue<Integer> queue = new PriorityQueue<>((a, b) -> freqMap.get(a) - freqMap.get(b));
+        for(int n : freqMap.keySet()) {
+            queue.offer(n);
+            if(queue.size() > k) {
+                queue.poll();
+            }
         }
-        
-        uniqueValues = Arrays.stream(uniqueValues)
-            .boxed()
-            .sorted((a, b) -> frequencyMap.getOrDefault(b, 0) - frequencyMap.getOrDefault(a, 0))
-            .mapToInt(Integer::intValue)
-            .toArray();
         
         int[] result = new int[k];
-        for(int j = 0; j < k; j++) {
-            result[j] = uniqueValues[j];
+        for(int i = k - 1; i >= 0; i--) {
+            result[i] = queue.poll();
         }
         
         return result;
-    }*/
+    }     
 }
