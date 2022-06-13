@@ -1,19 +1,25 @@
 class Solution {
     public int threeSumSmaller(int[] nums, int target) {
-        int count = 0;
-        
         Arrays.sort(nums);
+        int count = 0;
         for(int i = 0; i < nums.length - 2; i++) {
-            int low = i + 1;
-            int high = nums.length - 1;
-            while(low < high) {
-                if(nums[i] + nums[low] + nums[high] < target) {
-                    count += high - low;
-                    low++;
-                }
-                else{
-                    high--;
-                }
+            count += twoSumSmaller(nums, i + 1, target - nums[i]);
+        }
+        return count;
+    }
+    
+    private int twoSumSmaller(int[] nums, int startIndex, int target) {
+        int count = 0;
+        int left = startIndex;
+        int right = nums.length - 1;
+        while(left < right) {
+            int sum = nums[left] + nums[right];
+            if(sum < target) {
+                count += right - left;
+                left++;
+            }
+            else {
+                right--;
             }
         }
         
