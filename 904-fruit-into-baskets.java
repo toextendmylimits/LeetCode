@@ -1,31 +1,46 @@
 class Solution {
-    private static final int BASKETS_COUNT = 2;
-    
     public int totalFruit(int[] fruits) {
-        return findMaxSubArrayLengthWithKDistinctElements(fruits, BASKETS_COUNT);
+        return getMaxLenOfSubarrayWithMaxKDistinctValues(fruits, 2);
     }
     
-    private int findMaxSubArrayLengthWithKDistinctElements(int[] nums, int maxDistinctElementsCount) {
-        int maxSubArrayLength = Integer.MIN_VALUE;
-        Map<Integer, Integer> frequencyMap = new HashMap<>();
-        
-        int windowStart = 0;
-        for(int windowEnd = 0; windowEnd < nums.length; windowEnd++) {
-            int windowEndValue = nums[windowEnd];    
-            frequencyMap.put(windowEndValue, frequencyMap.getOrDefault(windowEndValue, 0) + 1);
-            
-            while(frequencyMap.size() > maxDistinctElementsCount) {
-                int windowStartValue = nums[windowStart];
-                frequencyMap.put(windowStartValue, frequencyMap.getOrDefault(windowStartValue,                      0) - 1);
-                if(frequencyMap.get(windowStartValue) == 0) {
-                    frequencyMap.remove(windowStartValue);
-                }
-                windowStart++;
+    /*public int getMaxLenOfSubarrayWithMaxKDistinctValues(int[] nums, int k) {
+        Map<Integer, Integer> numIndexMap = new HashMap<>();
+        // Sliding window
+        int maxLen = 0;
+        int start = 0;
+        for(int end = 0; end < nums.length; end++) {
+            int valueAtEnd = nums[end];
+            numIndexMap.put(valueAtEnd, end);
+            if(numIndexMap.size() > k) {
+                int indexToDelete = Collections.min(numIndexMap.values());
+                numIndexMap.remove(nums[indexToDelete]);
+                start = indexToDelete + 1;
             }
-            
-            maxSubArrayLength = Math.max(maxSubArrayLength, windowEnd - windowStart + 1);
+            maxLen = Math.max(maxLen, end - start + 1);
         }
         
-        return maxSubArrayLength;
-    }
+        return maxLen;
+    }*/
+    public int getMaxLenOfSubarrayWithMaxKDistinctValues(int[] nums, int k) {
+        Map<Integer, Integer> freqMap = new HashMap<>();
+        // Sliding window
+        int maxLen = 0;
+        int start = 0;
+        for(int end = 0; end < nums.length; end++) {
+            int valueAtEnd = nums[end];
+            freqMap.put(valueAtEnd, freqMap.getOrDefault(valueAtEnd, 0) + 1);
+            while(freqMap.size() > k) {
+                int valueAtStart = nums[start];
+                freqMap.put(valueAtStart, freqMap.get(valueAtStart) - 1);
+                if(freqMap.get(valueAtStart) == 0) {
+                    freqMap.remove(valueAtStart);
+                }
+                start++;
+                
+            }
+            maxLen = Math.max(maxLen, end - start + 1);
+        }
+        
+        return maxLen;
+    }    
 }
