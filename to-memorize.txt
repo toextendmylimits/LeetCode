@@ -66,3 +66,4 @@
 833 https://leetcode.com/problems/find-and-replace-in-string/
 159 https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters/
 904 https://leetcode.com/problems/fruit-into-baskets/
+849 https://leetcode.com/problems/maximize-distance-to-closest-person/
