@@ -40,5 +40,27 @@ class Solution {
         
         return true;
     }    
-
+    public boolean isAnagram(String s, String t) {
+        if(s == null || t == null) { return false; }
+        if(s.length() != t.length()) { return false; }
+        
+        Map<Character, Integer> charFreqMap = new HashMap<>();
+        for(char c : s.toCharArray()) {
+            charFreqMap.put(c, charFreqMap.getOrDefault(c, 0) + 1);
+        }
+        
+        for(char c : t.toCharArray()) {
+            if(charFreqMap.containsKey(c)) {
+                if(charFreqMap.get(c) == 0) {
+                    return false;
+                }
+                charFreqMap.put(c, charFreqMap.get(c) - 1);
+            }
+            else {
+                return false;
+            }
+        }
+        
+        return true;
+    }
 }
