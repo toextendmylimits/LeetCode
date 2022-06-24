@@ -71,3 +71,4 @@
 253 https://leetcode.com/problems/meeting-rooms-ii/
 844 https://leetcode.com/problems/backspace-string-compare/
 852 https://leetcode.com/problems/peak-index-in-a-mountain-array/
+242 https://leetcode.com/problems/valid-anagram/
