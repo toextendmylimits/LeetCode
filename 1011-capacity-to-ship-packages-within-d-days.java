@@ -1,21 +1,21 @@
 class Solution {
     public int shipWithinDays(int[] weights, int days) {
-        int minCapacity = 0;
-        int maxCapacity = 0;
+        int left = 0;
+        int right = 0;
         for(int weight : weights) {
-            minCapacity = Math.max(minCapacity, weight);
-            maxCapacity += weight;
+            left = Math.max(left, weight);
+            right += weight;
         }
         
-        int result = maxCapacity;
-        while(minCapacity <= maxCapacity) {
-            int midCapacity = minCapacity + (maxCapacity - minCapacity) / 2;
-            if(isCapacityEnough(midCapacity, weights, days)) {
-                result = midCapacity;
-                maxCapacity = midCapacity - 1;
+        int result = right;
+        while(left <= right) {
+            int mid = left + (right - left) / 2;
+            if(isCapacityEnough(mid, weights, days)) {
+                result = mid;
+                right = mid - 1;
             }
             else {
-                minCapacity = midCapacity + 1;
+                left = mid + 1;
             }
         }
         
