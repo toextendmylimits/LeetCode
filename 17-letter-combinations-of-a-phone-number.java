@@ -14,24 +14,21 @@ class Solution {
             return result;
         }
         
-        backtrack(digits, new ArrayList<Character>(), result);
+        backtrack(digits, new StringBuilder(), result);
         return result;
     }
     
-    private void backtrack(String digits, List<Character> path, List<String> result) {
-        if(path.size() == digits.length()) {
-            String combination = path.stream()
-                .map(c->c.toString())
-                .collect(Collectors.joining(""));
-            result.add(combination);
+    private void backtrack(String digits, StringBuilder path, List<String> result) {
+        if(path.length() == digits.length()) {
+            result.add(path.toString());
             return;
         }
         
-        char nextDigit = digits.charAt(path.size());
+        char nextDigit = digits.charAt(path.length());
         for(char letter : phoneLetters.get(nextDigit).toCharArray()) {
-            path.add(letter);
+            path.append(letter);
             backtrack(digits, path, result);
-            path.remove(path.size() - 1);
+            path.deleteCharAt(path.length() - 1);
         }
     }
 }
