@@ -77,3 +77,4 @@
 1011 https://leetcode.com/problems/capacity-to-ship-packages-within-d-days/
 110 https://leetcode.com/problems/balanced-binary-tree/
 236 https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
+701 https://leetcode.com/problems/insert-into-a-binary-search-tree/
