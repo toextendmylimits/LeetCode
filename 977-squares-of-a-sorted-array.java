@@ -1,25 +1,21 @@
 class Solution {
     public int[] sortedSquares(int[] nums) {
-        int[] result = new int[nums.length];
         int left = 0;
         int right = nums.length - 1;
-        
-        for(int position = nums.length - 1; position >= 0; position--) {
-            int largerAbsoluteValue = 0;
-            int absoluteLeftValue = Math.abs(nums[left]);
-            int absoluteRightValue = Math.abs(nums[right]);
-            if(absoluteLeftValue > absoluteRightValue) {
-                largerAbsoluteValue = absoluteLeftValue;
+        int[] squares = new int[nums.length];
+        for(int i = squares.length - 1; i >= 0; i--) {
+            int leftSquare = nums[left] * nums[left];
+            int rightSquare = nums[right] * nums[right];
+            if(leftSquare > rightSquare) {
+                squares[i] = leftSquare;
                 left++;
             }
             else {
-                largerAbsoluteValue = absoluteRightValue;
+                squares[i] = rightSquare;
                 right--;
             }
-            
-            result[position] = largerAbsoluteValue * largerAbsoluteValue;
         }
         
-        return result;
+        return squares;
     }
 }
