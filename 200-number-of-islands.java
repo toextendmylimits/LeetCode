@@ -111,3 +111,47 @@ class Solution {
         }
     }
 }
+
+// BFS use visited array
+class Solution {
+    int[][] directions = new int[][] { { -1, 0 }, { 0, 1 }, { 1, 0 }, { 0, -1 } }; // Direction: top -> right -> bottom -> left
+    public int numIslands(char[][] grid) {
+        int rows = grid.length;
+        int cols = grid[0].length;
+        boolean[][] visited = new boolean[rows][cols];
+        int count = 0;
+        for(int r = 0; r < rows; r++) {
+            for(int c = 0; c < cols; c++) {
+                if(grid[r][c] == '0' || visited[r][c]) {
+                    continue;
+                }
+                count++;
+                bfs(grid, rows, cols, r, c, visited);
+            }
+        }
+        
+        return count;
+    }
+    
+    private void bfs(char[][] grid, int rows, int cols, int r, int c, boolean[][] visited) {
+        Queue<int[]> queue = new ArrayDeque<>();
+        queue.add(new int[] { r, c });
+        visited[r][c] = true;
+        while(!queue.isEmpty()) {
+            int[] coordinate = queue.poll();;
+            for(int[] direction : directions) {
+                int nextRow = coordinate[0] + direction[0];
+                int nextCol = coordinate[1] + direction[1];
+                
+                if(nextRow < 0 || nextRow >= rows || nextCol < 0 || nextCol >= cols || grid[nextRow][nextCol] == '0' || visited[nextRow][nextCol]) {
+                    continue;
+                }
+                queue.add(new int[] { nextRow, nextCol });
+                visited[nextRow][nextCol] = true;                                                                                                                                                                                                                       
+            } 
+        }
+        
+        
+
+    }
+}
