@@ -76,3 +76,38 @@ class Solution {
         dfs(grid, i, j + 1);
     }
 }
+
+// DFS use visited array
+class Solution {
+    int[][] directions = new int[][] { { -1, 0 }, { 0, 1 }, { 1, 0 }, { 0, -1 } }; // Direction: top -> right -> bottom -> left
+    public int numIslands(char[][] grid) {
+        int rows = grid.length;
+        int cols = grid[0].length;
+        boolean[][] visited = new boolean[rows][cols];
+        int count = 0;
+        for(int r = 0; r < rows; r++) {
+            for(int c = 0; c < cols; c++) {
+                if(grid[r][c] == '0' || visited[r][c]) {
+                    continue;
+                }
+                count++;
+                dfs(grid, rows, cols, r, c, visited);
+            }
+        }
+        
+        return count;
+    }
+    
+    private void dfs(char[][] grid, int rows, int cols, int r, int c, boolean[][] visited) {
+        if(r < 0 || r >= rows || c < 0 || c >= cols || grid[r][c] == '0' || visited[r][c]) {
+            return;
+        }
+        
+        visited[r][c] = true;
+        for(int[] direction : directions) {
+            int nextRow = r + direction[0];
+            int nextCol = c + direction[1];
+            dfs(grid, rows, cols, nextRow, nextCol, visited);
+        }
+    }
+}
