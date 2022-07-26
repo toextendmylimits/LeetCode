@@ -49,3 +49,13 @@ class Solution {
         return result;
     }
 }
+
+Time complexity: O(M^2*N)
+M is number of characters in string
+N is word list
+Explaniation:
+GetNeighbours: loop O(M) times, each time construct a String of m characters takes O(M) so toether O(M^2)
+Queue could loop O(N) times so together O(M^2*N)
+
+Space complexity: O(M*N)
+Queue has O(N) length, each queue element is of M characteers O(M) so together O(MN)
