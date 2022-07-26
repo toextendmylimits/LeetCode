@@ -31,15 +31,13 @@ class Solution {
     private List<String> getNeighbours(String word, Set<String> wordListSet) {
         List<String> result = new ArrayList<>();
         for(int i = 0; i < word.length(); i++) {
-            char lowerA = 'a';
-            int diffToLowerA = word.charAt(i) - lowerA;
-            for(int j = 0; j < 26; j++) {
-                if(j == diffToLowerA) {
+            for(int j = 'a'; j <= 'z'; j++) {
+                if((int) word.charAt(i) == j) {
                     continue;
                 }
                 
-                char newChar = (char)(j + ((int) lowerA));
-                String nextWord = word.substring(0, i) + String.valueOf(newChar) + word.substring(i + 1);
+                char newChar = (char) j;
+                String nextWord = word.substring(0, i) + newChar + word.substring(i + 1);
                 if(wordListSet.contains(nextWord)) {
                     result.add(nextWord);
                 }
