@@ -1,25 +1,35 @@
 class Solution {
-    private static final int HAPPY_NUMBER_TERMINAL_VALUE = 1;
-    
     public boolean isHappy(int n) {
-        Set<Integer> numbersSeen = new HashSet<>();
-        
-        while(n != HAPPY_NUMBER_TERMINAL_VALUE && !numbersSeen.contains(n)) {
-            numbersSeen.add(n);
-            n = getNextNumber(n);
+        int slow = n;
+        int fast = getNext(n);
+
+        while(fast != 1 && slow != fast) {
+            slow = getNext(slow);
+            fast = getNext(getNext(fast));
         }
         
-        return n == HAPPY_NUMBER_TERMINAL_VALUE;
+        return fast == 1;        
     }
     
-    private int getNextNumber(int n) {
+    /*public boolean isHappy(int n) {
+        Set<Integer> seen = new HashSet<>();
+
+        while(n != 1 && !seen.contains(n)) {
+            seen.add(n);
+            n = getNext(n);
+        }
+        
+        return n == 1;        
+    }*/
+    
+    private int getNext(int n) {
         int sum = 0;
         while(n > 0) {
             int temp = n % 10;
             sum += temp * temp;
             n /= 10;
         }
-        
+
         return sum;
     }
 }
