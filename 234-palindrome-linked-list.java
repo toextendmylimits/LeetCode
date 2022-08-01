@@ -28,18 +28,29 @@ class Solution {
     public boolean isPalindrome(ListNode head) {
         if(head == null) {
             return true;
-        }
-               
-        ListNode endOfFirstHalf = geEndOfFirstHalf(head);
-        ListNode startOfSecondHalf = endOfFirstHalf.next;
-            
-        boolean isPalindrome = arePalindromeHalfs(head, reverse(startOfSecondHalf));       
-        endOfFirstHalf.next = reverse(startOfSecondHalf);
+        } 
         
+        ListNode endOfFirstHalf = getEndOfFirstHalf(head);
+        ListNode startOfSecondHalf = reverse(endOfFirstHalf.next);
+        boolean isPalindrome = arePalindromeHalfs(head, startOfSecondHalf);
+        endOfFirstHalf.next = reverse(startOfSecondHalf);
         return isPalindrome;
-    }  
+    } 
     
-    private ListNode geEndOfFirstHalf(ListNode head) {
+    private ListNode reverse(ListNode head) {
+        ListNode prev = null;
+        ListNode curr = head;
+        while(curr != null) {
+            ListNode oldNext = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = oldNext;
+        }
+        
+        return prev;
+    }
+    
+    private ListNode getEndOfFirstHalf(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
         while(fast.next != null && fast.next.next != null) {
@@ -52,6 +63,10 @@ class Solution {
     
     private boolean arePalindromeHalfs(ListNode firstHalf, ListNode secondHalf) {
         while(secondHalf != null) {
+            if(firstHalf == null) {
+                return false;
+            }
+            
             if(firstHalf.val != secondHalf.val) {
                 return false;
             }
@@ -61,17 +76,5 @@ class Solution {
         
         return true;
     }
-    
-    public ListNode reverse(ListNode head) {
-        ListNode prev = null;
-        ListNode curr = head;
-        while(curr != null) {
-            ListNode oldNext = curr.next;
-            curr.next = prev;
-            prev = curr;
-            curr = oldNext;
-        }
-        
-        return prev;
-    }
+
 }
