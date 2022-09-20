@@ -8,3 +8,4 @@
 8. 48 Rotate Image https://leetcode.com/problems/rotate-image/
 9. 378 First unique character in a string https://leetcode.com/problems/first-unique-character-in-a-string/
 10. 242 Valid anagram https://leetcode.com/problems/valid-anagram/
+11. 125 Valid Palindrome https://leetcode.com/problems/valid-palindrome/
