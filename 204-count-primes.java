@@ -1,4 +1,5 @@
 class Solution {
+    // Time complexity: O(nlog(logn))
     public int countPrimes(int n) {
         int count = 0;
         boolean[] notPrime = new boolean[n];
@@ -14,6 +15,7 @@ class Solution {
         return count;
     }
     
+    // Time: O(n sqrt(n))
     /*public int countPrimes(int n) {
         int count = 0;
         for(int i = 2; i < n; i++) {
