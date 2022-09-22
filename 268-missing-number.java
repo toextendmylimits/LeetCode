@@ -1,26 +1,37 @@
 class Solution {
     /*public int missingNumber(int[] nums) {
-        Set<Integer> set = new HashSet<>();
+       int result = nums.length;
         
-        for(int num : nums) {
-            set.add(num);
-        }
-        
-        for(int i = 0; i <= nums.length; i++) {
-           if(!set.contains(i)) {
-               return i;
-           }
-        }
-        
-        return -1;
-    }*/
-    
-    public int missingNumber(int[] nums) {
-        int missing = nums.length;
         for(int i = 0; i < nums.length; i++) {
-            missing ^= i ^ nums[i];
+            result ^= i ^ nums[i];
         }
         
-        return missing;
+        return result;
+    }*/
+    public int missingNumber(int[] nums) {
+       int i = 0;
+        while(i < nums.length) {
+            int correctPosition = nums[i];
+            if(correctPosition < nums.length && nums[i] != nums[correctPosition]) {
+                swap(nums, i, correctPosition);
+            }
+            else {
+                i++;
+            }
+        }
+        
+        for(i = 0; i < nums.length; i++) {
+            if(nums[i] != i) {
+                return i;
+            }
+        }
+        
+        return nums.length;
     }    
+    
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
 }
