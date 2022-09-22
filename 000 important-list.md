@@ -17,3 +17,4 @@
 17. 101 Symmetric tree https://leetcode.com/problems/symmetric-tree/
 18. 108 Converted sorted array to binary tree https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 19. 88 Merge sorted array https://leetcode.com/problems/merge-sorted-array/
+20. 204 Count primes https://leetcode.com/problems/count-primes/
