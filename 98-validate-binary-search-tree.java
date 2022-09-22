@@ -17,7 +17,7 @@ class Solution {
     public boolean isValidBST(TreeNode root) {
         return validate(root, null, null);
     }  
-    
+    // Recursively check whether all nodes are in valid range
     private boolean validate(TreeNode root, Integer low, Integer high) {
         if(root == null) { return true; }
         if((low != null && root.val <= low) || (high != null && root.val >= high)) { return false; }
