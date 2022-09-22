@@ -15,3 +15,4 @@
 15. 7 Reverse Integer https://leetcode.com/problems/reverse-integer/
 16. 98 Validate binary search tree https://leetcode.com/problems/validate-binary-search-tree/
 17. 101 Symmetric tree https://leetcode.com/problems/symmetric-tree/
+18. 108 Converted sorted array to binary tree https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
