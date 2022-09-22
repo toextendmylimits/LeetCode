@@ -1,4 +1,5 @@
 class Solution {
+    // Scan each character of the string
     // For open bracket, push into stack
     // For close bracket, if stack is empty, or popped element is not matched open bracket, return false
     // In the end, it's valid if stack is empty
