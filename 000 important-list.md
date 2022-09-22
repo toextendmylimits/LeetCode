@@ -21,3 +21,4 @@
 21. 326 Power of three https://leetcode.com/problems/power-of-three/
 22. 13 Roman to integer https://leetcode.com/problems/roman-to-integer/
 23. 268 Missing number https://leetcode.com/problems/missing-number/
+24. 20 Valid parentheses https://leetcode.com/problems/valid-parentheses/
