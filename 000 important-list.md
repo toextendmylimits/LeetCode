@@ -22,3 +22,4 @@
 22. 13 Roman to integer https://leetcode.com/problems/roman-to-integer/
 23. 268 Missing number https://leetcode.com/problems/missing-number/
 24. 20 Valid parentheses https://leetcode.com/problems/valid-parentheses/
+25. 118 Pascal's triangle https://leetcode.com/problems/pascals-triangle/
