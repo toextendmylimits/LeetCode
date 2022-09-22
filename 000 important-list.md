@@ -20,3 +20,4 @@
 20. 204 Count primes https://leetcode.com/problems/count-primes/
 21. 326 Power of three https://leetcode.com/problems/power-of-three/
 22. 13 Roman to integer https://leetcode.com/problems/roman-to-integer/
+23. 268 Missing number https://leetcode.com/problems/missing-number/
