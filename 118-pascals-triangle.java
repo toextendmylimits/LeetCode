@@ -1,25 +1,21 @@
 class Solution {
     private static final int LEFT_RIGHT_EDGE = 1;
-  
     public List<List<Integer>> generate(int numRows) {
         List<List<Integer>> triangle = new ArrayList<>();
         triangle.add(Arrays.asList(LEFT_RIGHT_EDGE));
-        
-        for(int rowIndex = 1; rowIndex < numRows; rowIndex++) {
-            List<Integer> row = new ArrayList<>();
-            List<Integer> previousRow = triangle.get(rowIndex - 1);
+        for(int i = 1; i < numRows; i++) {
+            List<Integer> level = new ArrayList<>();
             
-            // First column is 1
-            row.add(LEFT_RIGHT_EDGE);
-            
-            for(int columnIndex = 1; columnIndex <= rowIndex - 1; columnIndex++) {
-                row.add(previousRow.get(columnIndex) + previousRow.get(columnIndex - 1));
+            // First
+            level.add(LEFT_RIGHT_EDGE);
+            for(int j = 1; j < i; j++) {
+                List<Integer> prevLevel = triangle.get(i - 1);
+                level.add(prevLevel.get(j - 1) + prevLevel.get(j));
             }
             
-            // Last column is 1
-            row.add(LEFT_RIGHT_EDGE);
-            
-            triangle.add(row);
+            // Last
+            level.add(LEFT_RIGHT_EDGE);
+            triangle.add(level);
         }
         
         return triangle;
