@@ -23,3 +23,4 @@
 23. 268 Missing number https://leetcode.com/problems/missing-number/
 24. 20 Valid parentheses https://leetcode.com/problems/valid-parentheses/
 25. 118 Pascal's triangle https://leetcode.com/problems/pascals-triangle/
+26. 191 Number of 1 bits https://leetcode.com/problems/number-of-1-bits/
