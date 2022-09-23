@@ -26,3 +26,4 @@
 26. 191 Number of 1 bits https://leetcode.com/problems/number-of-1-bits/
 27. 237 Delete node in a linked list https://leetcode.com/problems/delete-node-in-a-linked-list/
 28. 19 Remove nth node from end of list https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+29. 206 Reverse linked list https://leetcode.com/problems/reverse-linked-list/
