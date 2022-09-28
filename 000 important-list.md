@@ -33,4 +33,5 @@
 33. 70 Climbing stairs https://leetcode.com/problems/climbing-stairs/
 34. 53 Max sub array https://leetcode.com/problems/maximum-subarray/
 35. 155 Min stack https://leetcode.com/problems/min-stack/
+36. 384 Shuffle an array https://leetcode.com/problems/shuffle-an-array/
 
