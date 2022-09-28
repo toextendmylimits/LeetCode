@@ -32,6 +32,6 @@
 32. 141 Linked list cycle https://leetcode.com/problems/linked-list-cycle/
 33. 70 Climbing stairs https://leetcode.com/problems/climbing-stairs/
 34. 53 Max sub array https://leetcode.com/problems/maximum-subarray/
-35. 155 Min stack https://leetcode.com/problems/min-stack/
-36. 384 Shuffle an array https://leetcode.com/problems/shuffle-an-array/
+35. 155 Min stack https://leetcode.com/problems/min-stack/ Use equals to compare two Integer
+36. 384 Shuffle an array https://leetcode.com/problems/shuffle-an-array/ Math.random() * (start - end)
 
