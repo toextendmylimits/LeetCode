@@ -32,3 +32,5 @@
 32. 141 Linked list cycle https://leetcode.com/problems/linked-list-cycle/
 33. 70 Climbing stairs https://leetcode.com/problems/climbing-stairs/
 34. 53 Max sub array https://leetcode.com/problems/maximum-subarray/
+35. 155 Min stack https://leetcode.com/problems/min-stack/
+
