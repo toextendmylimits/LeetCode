@@ -41,3 +41,4 @@
 41. 300 Longest increasing subsequence https://leetcode.com/problems/longest-increasing-subsequence/
 42. 75 Sort colors https://leetcode.com/problems/sort-colors/
 43. 162 Find peak element https://leetcode.com/problems/find-peak-element/
+44. 34 Find First and Last Position of Element in Sorted Array https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
