@@ -40,3 +40,4 @@
 40. 322 Coin change https://leetcode.com/problems/coin-change/
 41. 300 Longest increasing subsequence https://leetcode.com/problems/longest-increasing-subsequence/
 42. 75 Sort colors https://leetcode.com/problems/sort-colors/
+43. 162 Find peak element https://leetcode.com/problems/find-peak-element/
