@@ -43,3 +43,4 @@
 43. 162 Find peak element https://leetcode.com/problems/find-peak-element/
 44. 34 Find First and Last Position of Element in Sorted Array https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 45. 56 Merge Intervals https://leetcode.com/problems/merge-intervals/
+46. 33 Search in Rotated Sorted Array https://leetcode.com/problems/search-in-rotated-sorted-array/
