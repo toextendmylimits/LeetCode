@@ -48,3 +48,4 @@
 48. 297. Serialize and Deserialize Binary Tree https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 49. 348. Design Tic-Tac-Toe https://leetcode.com/problems/design-tic-tac-toe/
 50. 69. Sqrt(x) https://leetcode.com/problems/sqrtx/
+51. 50. Pow(x, n) https://leetcode.com/problems/powx-n/
