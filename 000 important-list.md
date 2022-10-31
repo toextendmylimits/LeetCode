@@ -49,3 +49,4 @@
 49. 348. Design Tic-Tac-Toe https://leetcode.com/problems/design-tic-tac-toe/
 50. 69. Sqrt(x) https://leetcode.com/problems/sqrtx/
 51. 50. Pow(x, n) https://leetcode.com/problems/powx-n/
+52. 171. Excel Sheet Column Number https://leetcode.com/problems/excel-sheet-column-number/
