@@ -1,3 +1,32 @@
+class Solution {
+    public double myPow(double x, int n) {
+        // Avoid stack overflow
+        if(n == Integer.MIN_VALUE) {
+            return 1.0 / (myPow(x, Integer.MAX_VALUE) * x);
+        }
+        
+        if(n < 0) {
+            return 1.0 / myPow(x, -n);
+        }
+        
+        if(n == 0) {
+            return 1;
+        }
+        
+        double result = 1.0;
+        for(int i = n; i > 0; i /= 2) {
+            if(i % 2 == 1) {
+                result *= x;
+            }
+            
+            x *= x;
+        }
+        
+        return result;
+    }
+}
+
+
 // Solution 1 recurision, solution 2 iteration
 class Solution {
     public double myPow(double x, int n) {
