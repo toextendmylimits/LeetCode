@@ -50,4 +50,4 @@
 50. 69. Sqrt(x) https://leetcode.com/problems/sqrtx/
 51. 50. Pow(x, n) https://leetcode.com/problems/powx-n/
 52. 171. Excel Sheet Column Number https://leetcode.com/problems/excel-sheet-column-number/
-53. 169. Majority Element https://leetcode.com/problems/majority-element/
+53. 169 Majority Element https://leetcode.com/problems/majority-element/
