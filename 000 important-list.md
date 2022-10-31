@@ -44,10 +44,10 @@
 44. 34 Find First and Last Position of Element in Sorted Array https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
 45. 56 Merge Intervals https://leetcode.com/problems/merge-intervals/
 46. 33 Search in Rotated Sorted Array https://leetcode.com/problems/search-in-rotated-sorted-array/
-47. 380. Insert Delete GetRandom O(1) https://leetcode.com/problems/insert-delete-getrandom-o1/
-48. 297. Serialize and Deserialize Binary Tree https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
-49. 348. Design Tic-Tac-Toe https://leetcode.com/problems/design-tic-tac-toe/
-50. 69. Sqrt(x) https://leetcode.com/problems/sqrtx/
-51. 50. Pow(x, n) https://leetcode.com/problems/powx-n/
-52. 171. Excel Sheet Column Number https://leetcode.com/problems/excel-sheet-column-number/
+47. 380 Insert Delete GetRandom O(1) https://leetcode.com/problems/insert-delete-getrandom-o1/
+48. 297 Serialize and Deserialize Binary Tree https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
+49. 348 Design Tic-Tac-Toe https://leetcode.com/problems/design-tic-tac-toe/
+50. 69 Sqrt(x) https://leetcode.com/problems/sqrtx/
+51. 50 Pow(x, n) https://leetcode.com/problems/powx-n/
+52. 171 Excel Sheet Column Number https://leetcode.com/problems/excel-sheet-column-number/
 53. 169 Majority Element https://leetcode.com/problems/majority-element/
