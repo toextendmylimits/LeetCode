@@ -2,6 +2,8 @@ Hash
 
 https://leetcode.com/problems/valid-anagram
 
+https://leetcode.com/problems/intersection-of-two-arrays
+
 Binary Search
 
 https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
