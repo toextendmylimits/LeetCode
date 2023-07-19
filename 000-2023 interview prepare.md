@@ -1,3 +1,7 @@
+Hash
+
+https://leetcode.com/problems/valid-anagram
+
 Binary Search
 
 https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
@@ -17,5 +21,7 @@ Backtracking
 https://leetcode.com/problems/letter-combinations-of-a-phone-number
 
 https://leetcode.com/problems/restore-ip-addresses/ (Use 3 for loop instead)
+
+
 
 
