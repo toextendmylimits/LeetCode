@@ -6,6 +6,8 @@ https://leetcode.com/problems/intersection-of-two-arrays
 
 https://leetcode.com/problems/intersection-of-two-arrays-ii
 
+https://leetcode.com/problems/happy-number
+
 Binary Search
 
 https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
