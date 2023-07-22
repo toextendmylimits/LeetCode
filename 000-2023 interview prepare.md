@@ -56,3 +56,7 @@ https://leetcode.com/problems/flood-fill
 
 https://leetcode.com/problems/walls-and-gates
 
+Merge Intervals
+
+https://leetcode.com/problems/merge-intervals/
+
