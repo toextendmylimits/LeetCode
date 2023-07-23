@@ -12,4 +12,4 @@ https://leetcode.com/problems/meeting-rooms-ii
 (Sort by ending time, pick the task that finishes earliest)
 
 [Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons) 
-Sort by ending position, find next non-overlap range, increase count, and update ending position
+Sort by ending position, choose the needle at smalled ending position, then scan array, find next non-overlap range, increase count, and update ending position
