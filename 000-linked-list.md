@@ -5,7 +5,7 @@
    if not fast:
       return head.next
 
-  while fast.next:
+   while fast.next:
       fast = fast.next
       slow = slow.next
    ```
