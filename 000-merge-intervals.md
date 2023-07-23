@@ -15,4 +15,4 @@ https://leetcode.com/problems/meeting-rooms-ii
 Sort by ending position, choose the needle at smalled ending position, then scan array, find next non-overlap range, increase count, and update ending position
 
 [Car Pooling](https://leetcode.com/problems/car-pooling)
-Line Sweeping
+Line Sweeping, track the change of passengers at each stop
