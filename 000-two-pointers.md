@@ -5,7 +5,7 @@
    Compare the valid two sum with existing one:
    ```
    if total < k:
-                result = max(result, total)
+      result = max(result, total)
    ```
 3. [3 sum](https://leetcode.com/problems/3sum)
    duplicate triplets are not allowed, so it's important to avoid reduction for the first element, and the two pointers for second and third elements
