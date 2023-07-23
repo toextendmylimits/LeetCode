@@ -67,5 +67,5 @@ https://leetcode.com/problems/meeting-rooms
 
 https://leetcode.com/problems/meeting-rooms-ii
 
-[Non overlapping intervals](https://leetcode.com/problems/non-overlapping-interval) (Sort by ending time, pick the task that finishes earliest)
+[Non overlapping intervals](https://leetcode.com/problems/non-overlapping-intervals) (Sort by ending time, pick the task that finishes earliest)
 
