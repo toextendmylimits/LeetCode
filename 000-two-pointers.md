@@ -76,4 +76,6 @@
    ```
 9. [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)   
    If char at left not equal right, check after removing either char, whether the remaining string is palindrome
+1. [Move Zeroes](https://leetcode.com/problems/move-zeroes)  
+   Two steps, first move all nonzeros to the front, then fill the rest with zeros
    
