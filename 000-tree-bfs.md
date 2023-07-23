@@ -9,3 +9,5 @@
 1. [103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)  
    Have a flag for zig zag order, and use queue to save each level's result, as inserting at front is O(1) compared to O(n) for list
    Alternative more intutive approach is to reverse each level's result
+1. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)  
+   Check whether depth means number of nodes or edges on longest path, then initialize depth to be 0 or -1
