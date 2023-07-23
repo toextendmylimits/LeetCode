@@ -45,4 +45,33 @@
 
        blue -= 1
    ```
+8. [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)
+   Use built-in function
+   ```
+   return " ".join(reversed(s.split()))
+   ```
+   Rewrite the functions join, reversed, and split
+   ```
+    def join(self, words):
+     result = ""
+     for i, word in enumerate(words):
+         result += (" " if i > 0 else "") + word
+     return result
+
+        
+    def split(self, s):
+        words = []
+        currWord = ""
+        for c in s:
+            if c != " ":
+                currWord += c
+            elif currWord:
+                words.append(currWord)
+                currWord = ""
+        
+        if currWord:
+            words.append(currWord)
+
+        return words
+   ```
    
