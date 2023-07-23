@@ -8,7 +8,7 @@ https://leetcode.com/problems/4sum
 
 https://leetcode.com/problems/4sum-ii
 
-Hash
+# Hash
 
 https://leetcode.com/problems/valid-anagram
 
@@ -18,7 +18,7 @@ https://leetcode.com/problems/intersection-of-two-arrays-ii
 
 https://leetcode.com/problems/happy-number
 
-Binary Search
+# Binary Search
 
 https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
 
@@ -28,17 +28,17 @@ https://leetcode.com/problems/search-in-rotated-sorted-array
 
 https://leetcode.com/problems/find-k-closest-elements (To Look Later)
 
-Tree DFS
+# Tree DFS
 
 https://leetcode.com/problems/balanced-binary-tree
 
-Backtracking
+# Backtracking
 
 https://leetcode.com/problems/letter-combinations-of-a-phone-number
 
 https://leetcode.com/problems/restore-ip-addresses/ (Use 3 for loop instead)
 
-Heap
+# Heap
 
 https://leetcode.com/problems/kth-largest-element-in-an-array
 
@@ -46,7 +46,7 @@ https://leetcode.com/problems/top-k-frequent-elements
 
 https://leetcode.com/problems/k-closest-points-to-origin
 
-Graph
+# Graph
 
 https://leetcode.com/problems/kth-largest-element-in-a-stream
 
@@ -56,7 +56,7 @@ https://leetcode.com/problems/flood-fill
 
 https://leetcode.com/problems/walls-and-gates
 
-Merge Intervals
+# Merge Intervals
 
 https://leetcode.com/problems/merge-intervals/
 
