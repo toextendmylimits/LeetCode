@@ -59,7 +59,7 @@ https://leetcode.com/problems/walls-and-gates
 
 # Merge Intervals
 
-https://leetcode.com/problems/merge-intervals/
+[Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 
 https://leetcode.com/problems/insert-interval/
 
