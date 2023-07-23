@@ -59,16 +59,7 @@ https://leetcode.com/problems/walls-and-gates
 
 # Merge Intervals
 
-[Details](https://github.com/toextendmylimits/LeetCode/blob/main/000-merge-intervals.md)
+[SubSection](https://github.com/toextendmylimits/LeetCode/blob/main/000-merge-intervals.md)
 
-[Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 
-https://leetcode.com/problems/insert-interval/
-
-https://leetcode.com/problems/meeting-rooms
-
-https://leetcode.com/problems/meeting-rooms-ii
-
-[Non overlapping intervals](https://leetcode.com/problems/non-overlapping-intervals) 
-(Sort by ending time, pick the task that finishes earliest)
 
