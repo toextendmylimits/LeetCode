@@ -74,4 +74,6 @@
 
         return words
    ```
+9. [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii) 
+   If char at left not equal right, check after removing either char, whether the remaining string is palindrome
    
