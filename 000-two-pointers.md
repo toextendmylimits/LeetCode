@@ -17,4 +17,16 @@
      count += right - left
      left += 1
    ```
+6. [3 Sum Closet](https://leetcode.com/problems/3sum-closes)  
+   keep the minimum difference of two sum to target
+   ```
+    currDiff = total - target
+    if abs(currDiff) < abs(minDiff):
+        minDiff = currDiff
+
+    if total < target:
+        left += 1
+    else:
+        right -= 1
+   ```
    
