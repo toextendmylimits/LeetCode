@@ -1,2 +1,2 @@
-Two Pointers
-[Valid Plalindrome] (https://leetcode.com/problems/valid-palindrome)
+# Two Pointers
+[Valid Plalindrome](https://leetcode.com/problems/valid-palindrome)
