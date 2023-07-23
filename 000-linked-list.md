@@ -12,4 +12,13 @@
       fast = fast.next
       slow = slow.next
    ```
+   When using dummy head, the two pointers should be **(n + 1) steps** apart, and the **right pointer should be null**
+   ```
+   for i in range(n + 1):
+       fast = fast.next
+      
+    while fast:
+        fast = fast.next
+        slow = slow.next
+   ```
    
