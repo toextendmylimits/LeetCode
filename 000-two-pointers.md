@@ -29,4 +29,20 @@
     else:
         right -= 1
    ```
+7. [Sort Colors](https://leetcode.com/problems/sort-colors)  
+   3 pointers, left and mid both increase by 1 if mid value is 0, right decrease by 1 if mid value is 2
+   ```
+      if nums[white] == 0:
+       if nums[red] != 0:
+           nums[white], nums[red] = nums[red], nums[white]
+       white += 1
+       red += 1
+   elif nums[white] == 1:
+       white += 1
+   else:
+       if nums[blue] != 2:
+           nums[white], nums[blue] = nums[blue], nums[white]
+
+       blue -= 1
+   ```
    
