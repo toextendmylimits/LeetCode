@@ -50,7 +50,7 @@
    ```
    return " ".join(reversed(s.split()))
    ```
-   Rewrite the functions join, reversed, and split
+   Rewrite the functions join, reversed(easy), and split
    ```
     def join(self, words):
      result = ""
