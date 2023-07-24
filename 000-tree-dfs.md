@@ -1,6 +1,7 @@
 # Tree DFS
 ## Easy
 1. [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)  
+   When one child is null, then min depth should be from the other child
    ```
      if not root:
          return 0
