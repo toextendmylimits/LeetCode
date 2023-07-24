@@ -4,7 +4,7 @@
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
    dfs in preorder, return node if it's null or leaf, otherwise return rightTrail if it is not null, else return leftTrail
    ```
-  def dfs(node):
+   def dfs(node):
       if not node or (not node.left and not node.right):
           return node
 
