@@ -98,3 +98,21 @@
 
         return 1 + max(leftHeight, rightHeight) 
     ```
+1. [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)  
+   the longest path could be the sum of a node's left longest path and right longest path, so need to traverse all node, and compare the sum with global variable diameter
+   ```python
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        diameter = 0
+        def getLongestPath(node):
+            if not node:
+                return 0
+
+            nonlocal diameter
+            leftPath = getLongestPath(node.left)
+            rightPath = getLongestPath(node.right)
+            diameter = max(diameter, leftPath + rightPath)
+            return max(leftPath, rightPath) + 1
+
+        getLongestPath(root)
+        return diameter
+   ```
