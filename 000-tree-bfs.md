@@ -15,5 +15,5 @@
 1. [559. Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree)
 ## Medium
 1. [16. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)  
-    1. approach 1
+    1. approach 1 - Do a normal level order traversal, and create prev pointer for each level, connect next and update prev 
 
