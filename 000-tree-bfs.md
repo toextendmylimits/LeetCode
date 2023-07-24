@@ -32,7 +32,7 @@
          if xDepth != -1 and yDepth != -1:
              return xDepth == yDepth and xParent != yParent
    ```
-   1. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)
+1. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)
       Put pairs of nodes left and right to queue
       ```
       if not node1 and not node2:
