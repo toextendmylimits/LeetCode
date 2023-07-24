@@ -1,7 +1,7 @@
 # Tree DFS
 ## Easy
 1. [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)  
-   When one child is null, then min depth should be from the other child
+   When one child is null, then min depth should be from the other child  
    This can also be done in BFS
    ```
      if not root:
@@ -15,11 +15,23 @@
      return 1 + min(self.minDepth(root.left), self.minDepth(root.right))
    ```
 2. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)  
+   Can also be done in DFS  
    ```
    if not root:
       return 0
-
+   ```
    return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
+3. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)  
+   ```
+   def isMirror(self, node1, node2):
+        if not node1 and not node2:
+            return True
+        elif not node1 or not node2:
+            return False
+        elif node1.val != node2.val:
+            return False
+        
+        return self.isMirror(node1.left, node2.right) and self.isMirror(node1.right,node2.left)
    ```
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
