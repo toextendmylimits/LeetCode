@@ -48,6 +48,19 @@
 
         return root
    ```
+1. [112. Path Sum](https://leetcode.com/problems/path-sum)  
+   Base condition is return false if null, return true if targetSum equal value of a ***leaf node***
+   ```python
+    def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
+        if not root:
+            return False
+        
+        if not root.left and not root.right and targetSum == root.val:
+            return True
+
+        nextTargetSum = targetSum - root.val
+        return self.hasPathSum(root.left, nextTargetSum) or self.hasPathSum(root.right, nextTargetSum) 
+   ```
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
    dfs in preorder, return node if it's null or leaf, otherwise return rightTrail if it is not null, else return leftTrail
