@@ -32,4 +32,20 @@
          if xDepth != -1 and yDepth != -1:
              return xDepth == yDepth and xParent != yParent
    ```
+   1. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)
+      Put pairs of nodes left and right to queue
+      ```
+      if not node1 and not node2:
+          continue
+      elif not node1 or not node2:
+          return False
+      elif node1.val != node2.val:
+          return False
+
+      queue.append(node1.left)
+      queue.append(node2.right)
+      queue.append(node1.right)
+      queue.append(node2.left)
+      ```
+      
 
