@@ -15,5 +15,21 @@
 1. [559. Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree)
 ## Medium
 1. [16. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)  
-    1. approach 1 - Do a normal level order traversal, and create prev pointer for each level, connect next and update prev 
+    1. approach 1 - Do a normal level order traversal, and create prev pointer for each level, connect next and update prev
+1. [993. Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree)  
+   save depth and parent of a child
+   ```
+    for child in [node.left, node.right]:
+      if child:
+         queue.append(child)
+         if child.val == x:
+             xParent = node
+             xDepth = depth + 1
+         if child.val == y:
+             yParent = node
+             yDepth = depth + 1
+   
+         if xDepth != -1 and yDepth != -1:
+             return xDepth == yDepth and xParent != yParent
+   ```
 
