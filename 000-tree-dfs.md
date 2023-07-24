@@ -4,6 +4,7 @@
    When one child is null, then min depth should be from the other child  
    ***This can also be done in BFS***
    <details>
+      Code
    ```python
      if not root:
          return 0
