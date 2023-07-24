@@ -14,7 +14,7 @@
 
      return 1 + min(self.minDepth(root.left), self.minDepth(root.right))
    ```
-2. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)  
+2. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)    
    **Can also be done in BFS  **
    ```
    if not root:
@@ -22,7 +22,7 @@
 
    return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
    ```
-3. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)  
+3. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)    
    **Can also be done in BFS  **
    ```
    def isMirror(self, node1, node2):
