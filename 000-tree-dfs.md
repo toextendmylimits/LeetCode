@@ -17,3 +17,23 @@
           node.left = None
       return rightTrail if rightTrail else leftTrail
    ``` 
+ 2. [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)   
+    Use -1 as a unbalanced tree's height, if either left or not is not balanced, or depth difference is greater than 1, tree is not balanced
+    ```
+    def getHeight(self, node):
+        if not node:
+            return 0
+
+        leftHeight = self.getHeight(node.left)
+        if leftHeight == -1:
+            return -1
+
+        rightHeight = self.getHeight(node.right)
+        if rightHeight == -1:
+            return -1
+
+        if abs(leftHeight - rightHeight) > 1:
+            return -1
+
+        return 1 + max(leftHeight, rightHeight) 
+    ```
