@@ -103,16 +103,16 @@
    ```python
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         diameter = 0
-        def getLongestPath(node):
+        def getDepth(node):
             if not node:
                 return 0
 
             nonlocal diameter
-            leftPath = getLongestPath(node.left)
-            rightPath = getLongestPath(node.right)
-            diameter = max(diameter, leftPath + rightPath)
-            return max(leftPath, rightPath) + 1
+            leftDepth = getDepth(node.left)
+            rightDepth = getDepth(node.right)
+            diameter = max(diameter, leftDepth + rightDepth)
+            return max(leftDepth, rightDepth) + 1
 
-        getLongestPath(root)
+        getDepth(root)
         return diameter
    ```
