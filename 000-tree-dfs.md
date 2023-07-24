@@ -116,3 +116,14 @@
         getDepth(root)
         return diameter
    ```
+1. [1522. Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree)  
+   Need to keep two largest depth of children
+   ```python
+   for child in node.children:
+       childDepth = getDepth(child)
+       if childDepth > maxDepth:
+           secondMaxDepth = maxDepth
+           maxDepth = childDepth
+       elif childDepth > secondMaxDepth:
+           secondMaxDepth = childDepth
+   ```
