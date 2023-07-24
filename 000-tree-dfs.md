@@ -16,10 +16,10 @@
    ```
 2. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)  
    ```
-     if not root:
+   if not root:
       return 0
 
-     return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
+   return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
    ```
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
