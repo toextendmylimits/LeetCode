@@ -4,7 +4,7 @@
    When one child is null, then min depth should be from the other child  
    ***This can also be done in BFS***
    <details>
-      Code
+     
    ```python
      if not root:
          return 0
@@ -16,6 +16,7 @@
 
      return 1 + min(self.minDepth(root.left), self.minDepth(root.right))
    ```
+   
    </details>
 3. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)    
    ***Can also be done in BFS***
