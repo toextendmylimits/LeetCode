@@ -35,6 +35,19 @@
         
         return self.isMirror(node1.left, node2.right) and self.isMirror(node1.right,node2.left)
    ```
+1. [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)  
+   ```python
+   def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root:
+            return None
+
+        invertLeft = self.invertTree(root.left)
+        invertRight = self.invertTree(root.right)
+        root.left = invertRight
+        root.right = invertLeft
+
+        return root
+   ```
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
    dfs in preorder, return node if it's null or leaf, otherwise return rightTrail if it is not null, else return leftTrail
