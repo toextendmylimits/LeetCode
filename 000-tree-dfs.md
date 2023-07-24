@@ -158,3 +158,13 @@
             
             return left if left else right   
    ```
+1. [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)  
+   If both are greater than root, then search right subtree, or both are smaller than root then search left subtree, otherwise return root
+   ```python
+   if p.val > node.val and q.val > node.val:
+       return getLCA(node.right, p, q)
+   elif p.val < node.val and q.val < node.val:
+       return getLCA(node.left, p, q)
+   else:
+       return node   
+   ```
