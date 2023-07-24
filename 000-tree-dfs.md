@@ -1,5 +1,17 @@
 # Tree DFS
 ## Easy
+1. [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)  
+   ```
+     if not root:
+         return 0
+
+     if not root.left:
+         return 1 + self.minDepth(root.right)
+     elif not root.right:
+         return 1 + self.minDepth(root.left)
+
+     return 1 + min(self.minDepth(root.left), self.minDepth(root.right))
+   ```
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
    dfs in preorder, return node if it's null or leaf, otherwise return rightTrail if it is not null, else return leftTrail
