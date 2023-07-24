@@ -146,6 +146,8 @@
    ```
 1. [1644. Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii)  
    P and q are not guaranteed to exist, so always need to explore both left and right tree, and mark whether p or q has been found
+   <Details>
+
    ```python
             left = getLCA(node.left, p, q)
             right = getLCA(node.right, p, q)
@@ -162,6 +164,8 @@
             
             return left if left else right   
    ```
+
+   </Details>
 1. [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)  
    If both are greater than root, then search right subtree, or both are smaller than root then search left subtree, otherwise return root
    ```python
