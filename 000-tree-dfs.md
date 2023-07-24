@@ -3,7 +3,7 @@
 1. [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)  
    When one child is null, then min depth should be from the other child  
    ***This can also be done in BFS***
-   ```
+   ```python
      if not root:
          return 0
 
