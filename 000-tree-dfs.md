@@ -127,3 +127,16 @@
        elif childDepth > secondMaxDepth:
            secondMaxDepth = childDepth
    ```
+1. [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)  
+   A key restraint is p and q must exist
+   ```python
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        if not root or p == root or q == root:
+            return root
+        
+        leftResult = self.lowestCommonAncestor(root.left, p, q)
+        rightResult = self.lowestCommonAncestor(root.right, p, q)
+        if leftResult and rightResult:
+            return root
+        return leftResult if leftResult else rightResult
+   ```
