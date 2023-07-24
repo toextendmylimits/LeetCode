@@ -16,7 +16,7 @@
    ```
 2. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)    
    ***Can also be done in BFS***
-   ```
+   ```python
    if not root:
       return 0
 
@@ -24,7 +24,7 @@
    ```
 3. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)    
    ***Can also be done in BFS***
-   ```
+   ```python
    def isMirror(self, node1, node2):
         if not node1 and not node2:
             return True
@@ -38,7 +38,7 @@
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
    dfs in preorder, return node if it's null or leaf, otherwise return rightTrail if it is not null, else return leftTrail
-   ```
+   ```python
    def dfs(node):
       if not node or (not node.left and not node.right):
           return node
@@ -54,7 +54,7 @@
    ``` 
  2. [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)   
     Use -1 as a unbalanced tree's height, if either left or not is not balanced, or depth difference is greater than 1, tree is not balanced
-    ```
+    ```python
     def getHeight(self, node):
         if not node:
             return 0
