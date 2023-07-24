@@ -168,3 +168,9 @@
    else:
        return node   
    ```
+1. [1676. Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv)  
+   Similar to 236, except there are multiple nodes, convert it to a set for easy check
+   ```python
+   if not root or root in nodes:
+       return root
+   ```
