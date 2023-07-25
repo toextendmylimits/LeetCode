@@ -1,5 +1,5 @@
 # Slidng window
-1. [643. Maximum Average Subarray I]([https://leetcode.com/problems/subarray-product-less-than-k](https://leetcode.com/problems/maximum-average-subarray-i)  
+1. [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i)  
     <details>
 
       ```python
