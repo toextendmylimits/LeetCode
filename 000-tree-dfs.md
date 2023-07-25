@@ -106,6 +106,16 @@
         return isValid(root, 0)
    ```
    </details>
+1. [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)
+   <details>
+
+   ```python
+        if root is None:
+            return 0
+
+        return 1 + self.countNodes(root.left) + self.countNodes(root.right)
+   ```
+   </details>
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
    dfs in preorder, return node if it's null or leaf, otherwise return rightTrail if it is not null, else return leftTrail
