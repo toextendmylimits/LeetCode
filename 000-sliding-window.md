@@ -1,5 +1,6 @@
 # Slidng window
 1. [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)  
+    Very important all the numbers are positive one otherwise sliding window may not apply
     <details>
 
       ```python
