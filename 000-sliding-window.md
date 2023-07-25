@@ -80,6 +80,7 @@
       ```
     </details>
 1. [904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets)  
+    Find out the longest length of subarrays with at most 2 different numbers
     <details>
 
       ```python
