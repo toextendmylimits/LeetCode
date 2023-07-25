@@ -1,7 +1,7 @@
 # Tree DFS
 ## Easy
 1. [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)  
-   Choose the mid value to be root, and use left half to construct left subtree, and right half to construct right subtree
+   Choose the mid value to be root, and use left half to construct left subtree, and right half to construct right subtree  
    The base condition is ***if left is greater than right, return None*** because there there is no subtree can be built
 1. [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)  
    When one child is null, then min depth should be from the other child  
