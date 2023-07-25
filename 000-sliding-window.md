@@ -21,7 +21,7 @@
 1. [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)  
    Note that the Sliding window approach is only valid because numbers are positive.
    Once find a valid window, increase the count by right - left + 1
-     <details>
+<details>
          
         ```python
            def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
@@ -42,4 +42,4 @@
     
             return count
         ```
-     </details>
+</details>
