@@ -43,3 +43,22 @@
             return count
       ```
     </details>
+1. [643. Maximum Average Subarray I]([https://leetcode.com/problems/subarray-product-less-than-k](https://leetcode.com/problems/maximum-average-subarray-i)  
+   Note that the Sliding window approach is only valid because numbers are positive.
+   Once find a valid window, increase the count by right - left + 1  
+    <details>
+
+      ```python
+        def findMaxAverage(self, nums: List[int], k: int) -> float:
+            maxSum = 0
+            for i in range(k):
+                maxSum += nums[i]
+            currSum = maxSum
+    
+            for right in range(k, len(nums)):
+                currSum += nums[right] - nums[right - k]
+                maxSum = max(maxSum, currSum)
+            
+            return maxSum / k
+      ```
+    </details>    
