@@ -3,7 +3,7 @@
 1. [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)  
    When one child is null, then min depth should be from the other child  
    ***This can also be done in BFS***
-   <details> Code
+   <details> 
      
    ```python
      if not root:
@@ -28,6 +28,8 @@
    ```
 4. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)    
    ***Can also be done in BFS***
+   <Details>
+      
    ```python
    def isMirror(self, node1, node2):
         if not node1 and not node2:
@@ -39,6 +41,7 @@
         
         return self.isMirror(node1.left, node2.right) and self.isMirror(node1.right,node2.left)
    ```
+   </Details>
 1. [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)  
    ```python
    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
