@@ -99,4 +99,5 @@
 1. [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)
 1. [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)  
 1. [61. Rotate List](https://leetcode.com/problems/rotate-list)
+1. [707. Design Linked List](https://leetcode.com/problems/design-linked-list)  
    
