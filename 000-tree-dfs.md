@@ -87,6 +87,25 @@
             return isValid(root.left, lower, root.val) and isValid(root.right, root.val, upper)
       ```
    </details>
+1. [1430. Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree)  
+   <details>
+
+   ```python
+        def isValid(node, sequenceIndex):
+            if node is None:
+                return False
+
+            nonlocal arr
+            if sequenceIndex >= len(arr) or node.val != arr[sequenceIndex]:
+                return False
+            elif sequenceIndex == len(arr) - 1 and node.left is None and node.right is None:
+                return True
+            
+            return isValid(node.left, sequenceIndex + 1) or isValid(node.right, sequenceIndex + 1)
+        
+        return isValid(root, 0)
+   ```
+   </details>
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
    dfs in preorder, return node if it's null or leaf, otherwise return rightTrail if it is not null, else return leftTrail
