@@ -11,6 +11,25 @@
                 path.pop()
     ```
    </details>
+1. [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii)  
+   Return if path length equal to count of numbers, increase start point in each recursion
+   <details>
+
+   ```python
+            if targetSum < 0:
+                return
+
+            if len(path) == k:
+                if targetSum == 0:
+                    result.append(path[:])
+                return
+
+            for i in range(start, 10):
+                path.append(i)
+                backtrack(i + 1, targetSum - i, path, result )
+                path.pop()
+   ```
+   </details>
 1. [113. Path Sum II](https://leetcode.com/problems/path-sum-ii)  
   Need to use backtrack as result is all the paths.
   Time complexity is O(N^2) as O(N) for traversing nodes and O(N) for copying path
