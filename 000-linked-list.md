@@ -27,7 +27,7 @@
 1. [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
     Use fast slow pointers
 1. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)  
-    Have a pointer for previous node, and current node, in each iteration, save old next, then change curr element's next to previous one, then update previous and current
+    Have a pointer for previous node, and current node, in each iteration, save old next, then change curr element's next to previous one, then update previous and current  
     Need to memorize this code
     <details>
 
