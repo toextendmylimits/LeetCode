@@ -44,6 +44,7 @@
    </details>
 1. [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)  
    <details>
+      
    ```python
    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root:
