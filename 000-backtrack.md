@@ -11,7 +11,7 @@
                 path.pop()
     ```
    </details>
-[113. Path Sum II](https://leetcode.com/problems/path-sum-ii)  
+1. [113. Path Sum II](https://leetcode.com/problems/path-sum-ii)  
   Need to use backtrack as result is all the paths.
   Time complexity is O(N^2) as O(N) for traversing nodes and O(N) for copying path
     <details>
