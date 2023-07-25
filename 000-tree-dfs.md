@@ -18,7 +18,7 @@
    ```
    
    </details>
-3. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)    
+1. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)    
    ***Can also be done in BFS***
    ```python
    if not root:
@@ -26,9 +26,9 @@
 
    return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
    ```
-4. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)    
+1. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)    
    ***Can also be done in BFS***
-   <Details>
+   <details>
       
    ```python
    def isMirror(self, node1, node2):
@@ -41,7 +41,7 @@
         
         return self.isMirror(node1.left, node2.right) and self.isMirror(node1.right,node2.left)
    ```
-   </Details>
+   </details>
 1. [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)  
    ```python
    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
