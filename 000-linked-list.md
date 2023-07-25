@@ -43,4 +43,20 @@
         return prev
         ```
     </details>
+1. [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)  
+    If A and B are of same length, just compare each node
+    If A and B are of different length, A + B = A_diff + share + B_diff + share, B + A = B_diff + share + A_diff + share
+    <details>
+
+    ```python
+    def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+        currA = headA
+        currB = headB
+        while currA or currB:
+            if currA == currB:
+                return currA
+            currA = currA.next if currA else headB
+            currB = currB.next if currB else headA
+    ```
+    </details>
    
