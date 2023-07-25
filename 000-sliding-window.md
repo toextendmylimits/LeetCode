@@ -1,6 +1,6 @@
 # Slidng window
 1. [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)  
-  <details>
+    <details>
 
   ```python
     def minSubArrayLen(self, target: int, nums: List[int]) -> int:
@@ -17,4 +17,4 @@
                 start += 1
         return 0 if result == len(nums) + 1 else result
   ```
-  </details>
+    </details>
