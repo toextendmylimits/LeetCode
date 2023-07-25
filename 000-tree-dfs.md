@@ -74,6 +74,7 @@
 1. [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)  
    When checking whether limit is null, remember to use if upper is not None instead if upper as otherwise 0 would be treat invalid
    <details>
+      
       ```python
             if not root:
                 return True
