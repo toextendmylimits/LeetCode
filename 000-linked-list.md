@@ -26,6 +26,7 @@
    ```
     </details>
 1. [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)  
+    When the list have even number of nodes, return the second middle node
     <details>
 
     ```python
