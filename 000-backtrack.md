@@ -2,7 +2,7 @@
 # Backtrack
 1. [113. Path Sum II](https://leetcode.com/problems/path-sum-ii)
   Need to use backtrack as result is all the paths
-  <details>
+    <details>
 
         def dfs(node, targetSum, path, result):
             if not node:
@@ -21,7 +21,7 @@
         result = []
         dfs(root, targetSum, [], result)
         return result   
-  </details>
+    </details>
   
 1. [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)  
    Need to use backtrack as result is total sum of all root-to-leaf paths.
