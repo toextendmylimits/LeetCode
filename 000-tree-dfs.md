@@ -109,6 +109,8 @@
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
    dfs in preorder, return node if it's null or leaf, otherwise return rightTrail if it is not null, else return leftTrail
+   <details>
+
    ```python
    def dfs(node):
       if not node or (not node.left and not node.right):
@@ -122,7 +124,8 @@
           node.right = node.left 
           node.left = None
       return rightTrail if rightTrail else leftTrail
-   ``` 
+   ```
+   </details>
  2. [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)   
     Use -1 as a unbalanced tree's height, if either left or not is not balanced, or depth difference is greater than 1, tree is not balanced
     ```python
