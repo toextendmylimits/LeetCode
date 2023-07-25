@@ -1,4 +1,5 @@
 # Linked List
+## Easy
 1. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)  
     Without using dummy head, the two pointers should be **n step**s apart, and should check whether the **removed node is head**, also the right pointer should be **the last element**
    <details>
@@ -59,4 +60,7 @@
             currB = currB.next if currB else headA
     ```
     </details>
+
+## Medium
+1. [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)
    
