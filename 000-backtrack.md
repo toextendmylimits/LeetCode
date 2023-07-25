@@ -22,6 +22,7 @@
         dfs(root, targetSum, [], result)
         return result   
   </details>
+  
 1. [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)  
    Need to use backtrack as result is total sum of all root-to-leaf paths.
    <details>
