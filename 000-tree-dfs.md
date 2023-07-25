@@ -237,3 +237,37 @@
    if not root or root in nodes:
        return root
    ```
+## Hard
+1. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
+   Preorder traversal. Need to memorize the coe
+   <details>
+
+   ```python
+    def serialize(self, root):
+        result = []
+        def dfs(root):
+            if not root:
+                result.append("X")
+                return
+            result.append(str(root.val))
+            dfs(root.left)
+            dfs(root.right)
+        
+        dfs(root)
+        return " ".join(result)
+        
+
+    def deserialize(self, data):
+        def dfs(nodes):
+            val = next(nodes)
+            if val == "X":
+                return
+            
+            root = TreeNode(val)
+            root.left = dfs(nodes)
+            root.right = dfs(nodes)
+            return root
+        return dfs(iter(data.split(" ")))
+   ```
+   </details>
+
