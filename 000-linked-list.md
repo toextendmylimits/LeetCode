@@ -41,7 +41,7 @@
     </details>
 1. [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
     Use fast slow pointers
-1. [142. Linked List Cycle II)(https://leetcode.com/problems/linked-list-cycle-ii)  
+1. [142. Linked List Cycle II](https://leetcode.com/problems/linked-list-cycle-ii)  
     Inutitive to use set. However, very difficult to achieve O(1) space complexity
     <details>
 
