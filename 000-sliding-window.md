@@ -22,6 +22,27 @@
             return maxLen
       ```
     </details>
+1. [340. Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)  
+    <details>
+
+      ```python
+        def lengthOfLongestSubstringKDistinct(self, s: str, k: int) -> int:
+            counter = Counter()
+            maxLen = 0
+            left = 0
+            for right in range(len(s)):
+                counter[s[right]] += 1
+                while len(counter) > k:
+                    leftChar = s[left]
+                    counter[leftChar] -= 1
+                    if counter[leftChar] == 0:
+                        del counter[leftChar]
+                    left += 1
+    
+                maxLen = max(maxLen, right - left + 1)
+            return maxLen
+      ```
+    </details>
 1. [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i)  
     <details>
 
