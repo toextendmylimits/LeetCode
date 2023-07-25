@@ -43,6 +43,7 @@
    ```
    </details>
 1. [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)  
+   <details>
    ```python
    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root:
@@ -55,6 +56,7 @@
 
         return root
    ```
+   </details>
 1. [112. Path Sum](https://leetcode.com/problems/path-sum)  
    Base condition is return false if null, return true if targetSum equal value of a ***leaf node***
    ```python
