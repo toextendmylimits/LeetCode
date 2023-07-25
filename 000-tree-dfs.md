@@ -62,17 +62,19 @@
    ```
    </details>
 1. [112. Path Sum](https://leetcode.com/problems/path-sum)  
+   The most intutive approach is to use recursion. At each step, decrease the sum by the node's value. If the node is a leaf, and sum is zero, then return True, otherwise exploring its childen 
    Base condition is return false if null, return true if targetSum equal value of a ***leaf node***
    ```python
     def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
+    def hasPathSum(self, root: Optional[TreeNode], targetSum: int) -> bool:
         if not root:
             return False
-        
-        if not root.left and not root.right and targetSum == root.val:
-            return True
 
-        nextTargetSum = targetSum - root.val
-        return self.hasPathSum(root.left, nextTargetSum) or self.hasPathSum(root.right, nextTargetSum) 
+        targetSum -= root.val
+        if not root.left and not root.right:
+            return targetSum == 0
+
+        return self.hasPathSum(root.left, targetSum) or self.hasPathSum(root.right, targetSum)
    ```
 1. [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)  
    When checking whether limit is null, remember to use if upper is not None instead if upper as otherwise 0 would be treat invalid
