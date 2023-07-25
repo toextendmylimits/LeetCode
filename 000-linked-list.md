@@ -92,9 +92,11 @@
     ```
     </details>
 
-## Medium
+## Difficult and to visit later if have time
 1. [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)
 1. [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)  
     Difficult to achieve O(1) space complexity
 1. [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)
+1. [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)  
+1. [61. Rotate List](https://leetcode.com/problems/rotate-list)
    
