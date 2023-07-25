@@ -46,3 +46,27 @@
         return total
     ```
    </details>
+1. [257. Binary Tree Paths](https://leetcode.com/problems/binary-tree-paths)  
+  Need to use backtrack as result is all the paths.
+  Time complexity is O(N^2) as O(N) for traversing nodes and O(N) for copying path
+  <details>
+
+  ```python
+        def backtrack(node, path, result):
+            if node is None:
+                return
+
+            path.append(str(node.val))
+            if node.left is None and node.right is None:
+                result.append("->".join(path))
+            
+            backtrack(node.left, path, result)
+            backtrack(node.right, path, result)
+
+            path.pop()
+
+        result = []
+        backtrack(root, [], result)
+        return result
+  ```
+  </details>
