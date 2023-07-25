@@ -25,6 +25,19 @@
             slow = slow.next
    ```
     </details>
+1. [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)  
+    <details>
+
+    ```python
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:     
+        fast = head
+        slow = head
+        while fast and fast.next:
+            fast = fast.next.next
+            slow = slow.next
+        return slow
+    ```
+    </details>
 1. [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
     Use fast slow pointers
 1. [206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list)  
