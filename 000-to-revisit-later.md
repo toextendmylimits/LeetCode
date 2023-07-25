@@ -9,3 +9,4 @@
 1. [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)
 1. [437. Path Sum III](https://leetcode.com/problems/path-sum-iii)  
 1. [687. Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path)  
+1. [2096. Step-By-Step Directions From a Binary Tree Node to Another](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another)  
