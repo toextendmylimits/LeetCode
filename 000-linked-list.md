@@ -24,4 +24,6 @@
             slow = slow.next
    ```
     </details>
+1. [141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle)
+    Use fast slow pointers
    
