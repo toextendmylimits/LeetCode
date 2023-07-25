@@ -71,6 +71,21 @@
         nextTargetSum = targetSum - root.val
         return self.hasPathSum(root.left, nextTargetSum) or self.hasPathSum(root.right, nextTargetSum) 
    ```
+1. [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)  
+   When checking whether limit is null, remember to use if upper is not None instead if upper as otherwise 0 would be treat invalid
+   <details>
+      ```python
+            if not root:
+                return True
+
+            if lower is not None and root.val <= lower:
+                return False
+            if upper is not None and root.val >= upper:
+                return False
+            
+            return isValid(root.left, lower, root.val) and isValid(root.right, root.val, upper)
+      ```
+   </details>
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
    dfs in preorder, return node if it's null or leaf, otherwise return rightTrail if it is not null, else return leftTrail
