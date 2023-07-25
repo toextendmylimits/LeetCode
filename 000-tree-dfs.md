@@ -163,25 +163,25 @@
    
 1. [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)   
    the longest path could be the sum of a node's left longest path and right longest path, so need to traverse all node, and compare the sum with global variable diameter
-    <details>
+   <details>
        
       ```python
- def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
-     diameter = 0
-     def getDepth(node):
-         if not node:
-             return 0
-
-         nonlocal diameter
-         leftDepth = getDepth(node.left)
-         rightDepth = getDepth(node.right)
-         diameter = max(diameter, leftDepth + rightDepth)
-         return max(leftDepth, rightDepth) + 1
-
-     getDepth(root)
-     return diameter
+      def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        diameter = 0
+        def getDepth(node):
+            if not node:
+                return 0
+      
+            nonlocal diameter
+            leftDepth = getDepth(node.left)
+            rightDepth = getDepth(node.right)
+            diameter = max(diameter, leftDepth + rightDepth)
+            return max(leftDepth, rightDepth) + 1
+      
+        getDepth(root)
+        return diameter
       ```
-    </details>
+   </details>
     
 1. [1522. Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree)  
    Need to keep two largest depth of children
