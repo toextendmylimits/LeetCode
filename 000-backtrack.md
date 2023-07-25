@@ -12,7 +12,7 @@
     ```
    </details>
 1. [216. Combination Sum III](https://leetcode.com/problems/combination-sum-iii)  
-   Return if path length equal to count of numbers, increase start point in each recursion
+   Return if path length equal to count of numbers, increase start point in each recursion, and prune if remaining sum is less than 0
    <details>
 
    ```python
