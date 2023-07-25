@@ -79,3 +79,27 @@
         return maxLen
       ```
     </details>
+1. [904. Fruit Into Baskets](https://leetcode.com/problems/fruit-into-baskets)  
+    <details>
+
+      ```python
+        def totalFruit(self, fruits: List[int]) -> int:
+            counter = Counter()
+            left = 0
+            maxPicked = 0
+            for right in range(len(fruits)):
+                counter[fruits[right]] += 1
+    
+                while len(counter) > 2:
+                    leftFruit = fruits[left]
+                    counter[leftFruit] -= 1
+                    if counter[leftFruit] == 0:
+                        del counter[leftFruit]
+    
+                    left += 1
+    
+                maxPicked = max(maxPicked, right - left + 1)
+    
+            return maxPicked
+      ```
+    </details>
