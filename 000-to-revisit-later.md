@@ -4,3 +4,6 @@
    Try to use next pointer to traverse so queue is not needed hence space complexity is improved to O(1)
 1. [117. Populating Next Right Pointers in Each Node II](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)  
 1. [987. Vertical Order Traversal of a Binary Tree](https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree)  
+
+## Tree DFS
+1. [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)
