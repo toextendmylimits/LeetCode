@@ -104,3 +104,33 @@
             return maxPicked
       ```
     </details>
+
+## Difficult
+1. [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)  
+    This problem will be a very typical sliding window, if it asks the number of subarrays with at most K distinct elements.
+    Just need one more step to reach the folloing equation: exactly(K) = atMost(K) - atMost(K-1)
+    <details>
+
+      ```python
+        def getCountOfAtMostKDistinct(self, nums, k):
+            result = 0
+            counter = Counter()
+            left = 0
+            for right in range(len(nums)):
+                counter[nums[right]] += 1
+    
+                while len(counter) > k:
+                    leftNum = nums[left]
+                    counter[leftNum] -= 1
+                    if counter[leftNum] == 0:
+                        del counter[leftNum]
+    
+                    left += 1
+                
+                result += right - left + 1   
+    
+            return result   
+        def subarraysWithKDistinct(self, nums: List[int], k: int) -> int:
+            return self.getCountOfAtMostKDistinct(nums, k) - self.getCountOfAtMostKDistinct(nums, k - 1)
+      ```
+    </details>
