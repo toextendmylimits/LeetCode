@@ -60,4 +60,22 @@
             return count
       ```
     </details>
- 
+ 1. [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)
+    <details>
+
+      ```python
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        freq = Counter()
+        maxLen = 0
+        left = 0
+        for right in range(len(s)):
+            freq[s[right]] += 1
+            while freq[s[right]] > 1:
+                freq[s[left]] -= 1
+                left += 1
+
+            maxLen = max(maxLen, right - left + 1)
+
+        return maxLen
+      ```
+    </details>
