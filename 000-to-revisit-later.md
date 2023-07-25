@@ -10,3 +10,4 @@
 1. [437. Path Sum III](https://leetcode.com/problems/path-sum-iii)  
 1. [687. Longest Univalue Path](https://leetcode.com/problems/longest-univalue-path)  
 1. [2096. Step-By-Step Directions From a Binary Tree Node to Another](https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another)  
+1. [331. Verify Preorder Serialization of a Binary Tree](https://leetcode.com/problems/verify-preorder-serialization-of-a-binary-tree)
