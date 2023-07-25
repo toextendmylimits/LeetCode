@@ -257,7 +257,7 @@
    ```
 ## Hard
 1. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)  
-   Preorder traversal. Need to memorize the coe
+   ***Preorder traversal. Need to memorize the code***
    <details>
 
    ```python
