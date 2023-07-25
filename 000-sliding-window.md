@@ -1,4 +1,27 @@
 # Slidng window
+1. [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)  
+    <details>
+
+      ```python
+        def lengthOfLongestSubstringTwoDistinct(self, s: str) -> int:
+            counter = Counter()
+            maxLen = 0
+            left = 0
+            for right in range(len(s)):
+                counter[s[right]] += 1
+                while len(counter) > 2:
+                    counter[s[left]] -= 1
+                    if counter[s[left]] == 0:
+                        del counter[s[left]]
+                    left += 1
+                
+                currLen = right - left + 1
+                if currLen > maxLen:
+                    maxLen = currLen
+    
+            return maxLen
+      ```
+    </details>
 1. [643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i)  
     <details>
 
