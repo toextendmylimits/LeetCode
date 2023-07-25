@@ -2,7 +2,7 @@
 # Backtrack
 1. [77. Combinations](https://leetcode.com/problems/combinations)
    Key is to increase the start point in each recursion
-  <details>
+     <details>
     
     ```python
             for i in range(start, n + 1):
@@ -10,7 +10,7 @@
                 backtrack(i + 1, path, result)
                 path.pop()
     ```
-  </details>
+   </details>
 [113. Path Sum II](https://leetcode.com/problems/path-sum-ii)  
   Need to use backtrack as result is all the paths.
   Time complexity is O(N^2) as O(N) for traversing nodes and O(N) for copying path
