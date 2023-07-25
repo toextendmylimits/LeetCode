@@ -139,6 +139,8 @@
    </details>
  2. [110. Balanced Binary Tree](https://leetcode.com/problems/balanced-binary-tree)   
     Use -1 as a unbalanced tree's height, if either left or not is not balanced, or depth difference is greater than 1, tree is not balanced
+    <details>
+
     ```python
     def getHeight(self, node):
         if not node:
@@ -157,8 +159,11 @@
 
         return 1 + max(leftHeight, rightHeight) 
     ```
+   </details>
 1. [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)  
    the longest path could be the sum of a node's left longest path and right longest path, so need to traverse all node, and compare the sum with global variable diameter
+   <details>
+      
    ```python
     def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
         diameter = 0
@@ -175,8 +180,11 @@
         getDepth(root)
         return diameter
    ```
+   </details>
 1. [1522. Diameter of N-Ary Tree](https://leetcode.com/problems/diameter-of-n-ary-tree)  
    Need to keep two largest depth of children
+   <details>
+
    ```python
    for child in node.children:
        childDepth = getDepth(child)
@@ -186,8 +194,12 @@
        elif childDepth > secondMaxDepth:
            secondMaxDepth = childDepth
    ```
+   </details>
 1. [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)  
    A key restraint is p and q must exist
+   <details>
+      
+   
    ```python
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         if not root or p == root or q == root:
@@ -199,6 +211,7 @@
             return root
         return leftResult if leftResult else rightResult
    ```
+   </details>
 1. [1644. Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii)  
    P and q are not guaranteed to exist, so always need to explore both left and right tree, and mark whether p or q has been found
    <details>
@@ -223,6 +236,8 @@
    </details>
 1. [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)  
    If both are greater than root, then search right subtree, or both are smaller than root then search left subtree, otherwise return root
+   <details>
+   
    ```python
    if p.val > node.val and q.val > node.val:
        return getLCA(node.right, p, q)
@@ -231,6 +246,7 @@
    else:
        return node   
    ```
+   </details>
 1. [1676. Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv)  
    Similar to 236, except there are multiple nodes, convert it to a set for easy check
    ```python
@@ -238,7 +254,7 @@
        return root
    ```
 ## Hard
-1. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)
+1. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)  
    Preorder traversal. Need to memorize the coe
    <details>
 
