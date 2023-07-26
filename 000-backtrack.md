@@ -324,4 +324,35 @@
         return result
     ```
     </details>
+1. [17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)  
+   No need to maintain start position in each iteration which is common for combination problem, as the the length of path is essentially the start point  
+   Time complexity is O(4^N * N) as O(4^N ) for all possible combinations and O(N) for copying each combination  
+   Space complexity is O(N)
+   Also notice edge case when the digits array has no element, return [] instead of [""]  
+    <details>
 
+    ```python
+    def letterCombinations(self, digits: str) -> List[str]:
+        if not digits:
+            return []
+
+        digitLetterMap = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
+        result = []
+        def backtrack(path):
+            nonlocal digits, digitLetterMap, result
+
+            if len(path) == len(digits):
+                result.append("".join(path))
+                return
+
+            digit = int(digits[len(path)])
+            letters = digitLetterMap[digit]
+            for letter in letters:
+                path.append(letter)
+                backtrack(path)
+                path.pop()
+
+        backtrack([])
+        return result
+    ```
+    </details>
