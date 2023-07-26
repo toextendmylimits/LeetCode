@@ -296,8 +296,8 @@
 
 1. [1022. Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers)  
 1. [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)  
-  Need to use backtrack as result is all the paths.
-  Time complexity is O(N^2) as O(N) for traversing nodes and O(N) for copying path
+   Need to maintain the count of left parenthesis and right parenthesis
+  Time complexity is O(2^2N * N) as O(2^2N) for all possible combinations and O(N) for copying each combination
     <details>
 
     ```python
