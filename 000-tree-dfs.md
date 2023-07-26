@@ -176,7 +176,7 @@
    
 1. [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)   
    1. If the path go through a node, then it equals the sum of left subtree's height and right subtree's height
-   1. So we traverse all nodes, and find its height, update diameter if needed
+   1. So we traverse the tree, for each node, find its height, update diameter if needed
    <details>
        
       ```python
