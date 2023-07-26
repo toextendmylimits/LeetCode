@@ -103,19 +103,17 @@
    <details>
 
    ```python
-        def isValid(node, sequenceIndex):
-            if node is None:
+    def isValidSequence(self, root: Optional[TreeNode], arr: List[int]) -> bool:
+        def isValid(node, arr, depth):
+            if not node or depth >= len(arr) or node.val != arr[depth]:
                 return False
 
-            nonlocal arr
-            if sequenceIndex >= len(arr) or node.val != arr[sequenceIndex]:
-                return False
-            elif sequenceIndex == len(arr) - 1 and node.left is None and node.right is None:
-                return True
+            if not node.left and not node.right:
+                return depth == len(arr) - 1
             
-            return isValid(node.left, sequenceIndex + 1) or isValid(node.right, sequenceIndex + 1)
-        
-        return isValid(root, 0)
+            depth += 1
+            return isValid(node.left, arr, depth) or isValid(node.right, arr, depth)
+        return isValid(root, arr, 0)
    ```
    </details>
 1. [222. Count Complete Tree Nodes](https://leetcode.com/problems/count-complete-tree-nodes)
