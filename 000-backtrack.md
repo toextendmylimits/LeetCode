@@ -173,7 +173,7 @@
       ``` 
     </details> 
 1. [78. Subsets](https://leetcode.com/problems/subsets)  
-  Notice the numbers ***DOES NOTcontains duplicates*** 
+  Notice the numbers ***DOES NOT contain duplicates***   
   Time complexity is O(2^N*N) as O(2^N) as there are O(2^N) subsets and O(N) for copying path
     <details>
 
