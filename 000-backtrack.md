@@ -356,3 +356,34 @@
         return result
     ```
     </details>
+1. [784. Letter Case Permutation](https://leetcode.com/problems/letter-case-permutation)  
+   No need to maintain start position in each iteration which is common for combination problem, as the the length of path is essentially the start point  
+   Time complexity is O(2^N * N) as O(2^N ) for all possible combinations and O(N) for copying each combination  
+   Space complexity is O(N)  
+   Also notice edge case when the digits array has no element, return [] instead of [""]  
+    <details>
+
+    ```python
+    def letterCasePermutation(self, s: str) -> List[str]:
+        result = []
+        def backtrack(path):
+            nonlocal s, result
+
+            if len(path) == len(s):
+                result.append("".join(path))
+                return
+
+            letter = s[len(path)]
+            if  letter.isalpha():
+                for ch in [letter.lower(), letter.upper()]:
+                    path.append(ch)
+                    backtrack(path)
+                    path.pop()
+            else:
+                path.append(letter)
+                backtrack(path)
+                path.pop()               
+        backtrack([])
+        return result
+    ```
+    </details>
