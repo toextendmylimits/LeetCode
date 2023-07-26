@@ -30,6 +30,32 @@
                 path.pop()
    ```
    </details>
+1. [39. Combination Sum](https://leetcode.com/problems/combination-sum)  
+   We can incrementally build the combination, and once we find the current combination is not valid, we backtrack and try another option.
+     <details>
+    
+    ```python
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        result = []
+        def backtrack(startIndex, remain, path):
+            nonlocal candidates, result
+            if remain == 0:
+                result.append(path[:])
+                return
+            
+            if remain < 0:
+                return
+
+            for i in range(startIndex, len(candidates)):
+                path.append(candidates[i])
+                backtrack(i, remain - candidates[i], path)
+                path.pop()
+
+        backtrack(0, target, [])
+        return result
+            
+    ```
+   </details>   
 1. [113. Path Sum II](https://leetcode.com/problems/path-sum-ii)  
   Need to use backtrack as result is all the paths.
   Time complexity is O(N^2) as O(N) for traversing nodes and O(N) for copying path
