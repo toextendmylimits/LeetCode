@@ -139,11 +139,7 @@
       ``` 
     </details>   
 1. [47. Permutations II](https://leetcode.com/problems/permutations-ii/)  
-  Notice the numbers contains duplicates, so it's important to avoid duplication by:
-   ```python
-    if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]:
-                          continue
-   ```
+  Notice the numbers contains duplicates, so it's important to avoid duplication
   Time complexity is O(N!*N) as O(N!) as there are O(N!) permuation and O(N) for copying path
     <details>
 
