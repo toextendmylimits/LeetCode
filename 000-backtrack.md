@@ -139,7 +139,7 @@
       ``` 
     </details>   
 1. [47. Permutations II](https://leetcode.com/problems/permutations-ii/)  
-  Notice the numbers contains duplicates, so it's important to avoid duplication
+  Notice the numbers ***contains duplicates***, so it's important to avoid duplication  
   Time complexity is O(N!*N) as O(N!) as there are O(N!) permuation and O(N) for copying path
     <details>
 
