@@ -266,12 +266,19 @@
    <details>
    
    ```python
-   if p.val > node.val and q.val > node.val:
-       return getLCA(node.right, p, q)
-   elif p.val < node.val and q.val < node.val:
-       return getLCA(node.left, p, q)
-   else:
-       return node   
+        def getLCA(node, p, q):
+            if not node:
+                return None
+
+            if node == p or node == q:
+                return node
+
+            if p.val > node.val and q.val > node.val:
+                return getLCA(node.right, p, q)
+            elif p.val < node.val and q.val < node.val:
+                return getLCA(node.left, p, q)
+            else:
+                return node 
    ```
    </details>
 1. [1676. Lowest Common Ancestor of a Binary Tree IV](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv)  
