@@ -34,6 +34,15 @@
    Notice he same number may be chosen from candidates an **unlimited number of times**. This is important as it means the start point for next recursion call is i instead of i + 1 as in classcial combination problem where no duplication is allowed  
   
    We can incrementally build the combination, and once we find the current combination is not valid, we backtrack and try another option.
+      
+   ***Complexity:***
+   Let N be the number of candidates, T be the target value, and M be the minimal value among the candidates.
+   
+   Time Complexity: O(N^(T/M+1) as there are at most O(N^(T/M)) combinations, and copy the combination could take O(N)
+   Space Complexity: O(N^(T/M))
+   1. The number of recursive calls can pile up to O(N^(T/M)), where we keep on adding the smallest element to the combination.
+   As a result, the space overhead of the recursion is O(N^(T/M))
+   1. We keep a combination of numbers during the execution, which requires at most O(N^(T/M)) space as well.   
      <details>
     
     ```python
