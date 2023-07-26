@@ -68,6 +68,47 @@
             
     ```
    </details>   
+1. [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii)  
+   Notice the candidates are **NOT distinct**, but the same candidate can only be chosen once. This is important as it means the start point for next recursion call is i + 1
+   Also the candidates need to be sorted to help avoid duplicating combinations
+  
+   We can incrementally build the combination, and once we find the current combination is not valid, we backtrack and try another option.
+      
+   ***Complexity:***
+   Let N be the number of candidates, T be the target value, and M be the minimal value among the candidates.
+   
+   Time Complexity: O(2^N*N) as there are at most O(2^N)) combinations, and copy the combination could take O(N)  
+   Space Complexity: O(N)  
+   1. The number of recursive calls can pile up to O(N), where we keep on adding the smallest element to the combination.
+   As a result, the space overhead of the recursion is O(N) 
+   1. We keep a combination of numbers during the execution, which requires at most O(N)  space as well.   
+     <details>
+    
+    ```python
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+        candidates.sort()
+
+        result = []
+        def backtrack(startIndex, remain, path):
+            nonlocal candidates, result
+            if remain == 0:
+                result.append(path[:])
+                return
+
+            if remain < 0:
+                return
+
+            for i in range(startIndex, len(candidates)):
+                if i > startIndex and candidates[i] == candidates[i - 1]:
+                    continue
+                path.append(candidates[i])
+                backtrack(i + 1, remain - candidates[i], path)
+                path.pop()
+        backtrack(0, target, [])
+        return result
+            
+    ```
+   </details> 
 1. [113. Path Sum II](https://leetcode.com/problems/path-sum-ii)  
   Need to use backtrack as result is all the paths.
   Time complexity is O(N^2) as O(N) for traversing nodes and O(N) for copying path
