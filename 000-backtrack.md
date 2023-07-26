@@ -38,8 +38,8 @@
    ***Complexity:***
    Let N be the number of candidates, T be the target value, and M be the minimal value among the candidates.
    
-   Time Complexity: O(N^(T/M+1) as there are at most O(N^(T/M)) combinations, and copy the combination could take O(N)
-   Space Complexity: O(N^(T/M))
+   Time Complexity: O(N^(T/M+1) as there are at most O(N^(T/M)) combinations, and copy the combination could take O(N)  
+   Space Complexity: O(N^(T/M))  
    1. The number of recursive calls can pile up to O(N^(T/M)), where we keep on adding the smallest element to the combination.
    As a result, the space overhead of the recursion is O(N^(T/M))
    1. We keep a combination of numbers during the execution, which requires at most O(N^(T/M)) space as well.   
