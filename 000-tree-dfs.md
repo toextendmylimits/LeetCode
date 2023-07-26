@@ -129,7 +129,10 @@
    </details>
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
-   dfs in preorder, return node if it's null or leaf, otherwise return rightTrail if it is not null, else return leftTrail
+   dfs in postorder 
+   1. return node if it's null or leaf   
+   1. then if letTrail is not null, connect leftTrail with right subtree, and connect node with left subtree,
+   1. In the end return rightTrail if it is not null, else return leftTrail
    <details>
 
    ```python
