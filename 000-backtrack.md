@@ -109,6 +109,34 @@
             
     ```
    </details> 
+1. [46. Permutations](https://leetcode.com/problems/permutations)  
+  Need to use an array to keep track of whether a number has been visited
+  Time complexity is O(N!*N) as O(N!) as there are O(N!) permuation and O(N) for copying path
+    <details>
+
+      ```python
+       def permute(self, nums: List[int]) -> List[List[int]]:
+           used = [False] * len(nums)
+           result = []
+           def backtrack(path):
+               nonlocal nums, used, result
+               if len(path) == len(nums):
+                   result.append(path[:])
+                   return
+   
+               for i in range(len(nums)):
+                   if used[i]:
+                       continue
+                   
+                   used[i] = True
+                   path.append(nums[i])
+                   backtrack(path)
+                   path.pop()
+                   used[i] = False
+           backtrack([])
+           return result
+      ``` 
+    </details>   
 1. [113. Path Sum II](https://leetcode.com/problems/path-sum-ii)  
   Need to use backtrack as result is all the paths.
   Time complexity is O(N^2) as O(N) for traversing nodes and O(N) for copying path
