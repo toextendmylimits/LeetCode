@@ -62,7 +62,8 @@
    ```
    </details>
 1. [112. Path Sum](https://leetcode.com/problems/path-sum)  
-   The most intutive approach is to use recursion. At each step, decrease the sum by the node's value. If the node is a leaf, and sum is zero, then return True; If node is not a leaf, exploring its childen recursively
+   The most intutive approach is to   
+   use recursion. At each step, decrease the sum by the node's value. If the node is a leaf, and sum is zero, then return True; If node is not a leaf, exploring its childen recursively
    ***Also if not is None, return False***
    <details>
       
