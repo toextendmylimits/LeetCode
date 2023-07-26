@@ -295,4 +295,33 @@
     </details>
 
 1. [1022. Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers)  
+1. [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)  
+  Need to use backtrack as result is all the paths.
+  Time complexity is O(N^2) as O(N) for traversing nodes and O(N) for copying path
+    <details>
+
+    ```python
+    def generateParenthesis(self, n: int) -> List[str]:
+        result = []
+        def backtrack(open, close, path):
+            nonlocal result, n
+
+            if open + close == 2 * n:
+                result.append("".join(path))
+                return
+
+            if open < n:
+                path.append("(")
+                backtrack(open + 1, close, path)
+                path.pop()
+
+            if close < open:
+                path.append(")")
+                backtrack(open, close + 1, path)
+                path.pop()
+
+        backtrack(0, 0, [])
+        return result
+    ```
+    </details>
 
