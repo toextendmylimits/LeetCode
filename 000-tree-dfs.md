@@ -80,6 +80,7 @@
       ```
    </details>
 1. [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree)  
+   Recursively traverse the tree, and for each node, check whether its value is in a valid range 
    When checking whether limit is null, remember to use if upper is not None instead if upper as otherwise 0 would be treat invalid
    <details>
       
