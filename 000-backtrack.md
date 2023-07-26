@@ -31,6 +31,7 @@
    ```
    </details>
 1. [39. Combination Sum](https://leetcode.com/problems/combination-sum)  
+   Notice he same number may be chosen from candidates an **unlimited number of times**.
    We can incrementally build the combination, and once we find the current combination is not valid, we backtrack and try another option.
      <details>
     
