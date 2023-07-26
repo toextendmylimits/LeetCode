@@ -96,7 +96,10 @@
             return isValid(root.left, lower, root.val) and isValid(root.right, root.val, upper)
       ```
    </details>
-1. [1430. Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree)  
+1. [1430. Check If a String Is a Valid Sequence from Root to Leaves Path in a Binary Tree](https://leetcode.com/problems/check-if-a-string-is-a-valid-sequence-from-root-to-leaves-path-in-a-binary-tree) 
+   1. If reached the end of the current subtree or the input arr, or current node value does NOT match the value of arr, then current sequence is NOT valid
+   1. if current node is a leave, check if the end of arr reached, if yes it is a valid sequence, return true, otherwise false;
+   1. Other cases, increase the depth by 1 and recurse to the children; if both end up with false, the result is false, otherwise true. 
    <details>
 
    ```python
