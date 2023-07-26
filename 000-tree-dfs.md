@@ -212,9 +212,13 @@
    ```
    </details>
 1. [236. Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree)  
-   A key restraint is p and q must exist
-   <details>
-      
+   ***A key restraint is p and q must exist***
+    User recruision, at each step
+   1. If node is Null, then neither p or q can be in that tree, return null
+   1. Or if the current (sub)tree contains both p and q, then the node their LCA. 
+   1. Or both subtree contains p or q, then the node is their LCA
+   1. Or only one of them is in that subtree, then traverse that subtree. 
+   <details>      
    
    ```python
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
