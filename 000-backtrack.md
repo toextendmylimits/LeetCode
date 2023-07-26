@@ -109,6 +109,7 @@
             
     ```
    </details> 
+
 1. [46. Permutations](https://leetcode.com/problems/permutations)  
   Need to use an array to keep track of whether a number has been visited
   Time complexity is O(N!*N) as O(N!) as there are O(N!) permuation and O(N) for copying path
