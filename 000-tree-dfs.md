@@ -218,7 +218,7 @@
    1. If node is Null, then neither p or q can be in that tree, return null
    1. Or if the current (sub)tree contains both p and q, then the node their LCA. 
    1. Or both subtree contains p or q, then the node is their LCA
-   1. Or only one of them is in that subtree, then traverse that subtree. 
+   1. Or only one of them is in that subtree, return LCA from that subtree. 
    <details>      
    
    ```python
