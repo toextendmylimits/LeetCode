@@ -257,6 +257,12 @@
    </details>
 1. [235. Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree)  
    If both are greater than root, then search right subtree, or both are smaller than root then search left subtree, otherwise return root
+   Start traversing the tree from the root node.
+   1. If root is null, then no common LCA, return null
+   1. If either p or q is root, return root is LCA
+   1. If both the nodes p and q are in the right subtree, then continue the search with right subtree
+   1. If both the nodes p and q are in the left subtree, then continue the search with left subtree
+   1. If both step 2 and step 3 are not true, this means we have found the node which is common to node p's and q's subtrees.and hence we return this common node as the LCA.
    <details>
    
    ```python
