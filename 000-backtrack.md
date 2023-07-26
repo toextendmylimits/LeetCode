@@ -195,6 +195,34 @@
 
       ``` 
     </details> 
+1. [90. Subsets II](https://leetcode.com/problems/subsets-ii)  
+  Notice the numbers ***contain duplicates***, so need to sort the numbers first  
+  Time complexity is O(2^N*N) as O(2^N) as there are O(2^N) subsets and O(N) for copying path
+    <details>
+
+      ```python
+       def subsetsWithDup(self, nums: List[int]) -> List[List[int]]:
+           nums.sort()
+           result = []
+   
+           def backtrack(startIndex, path):
+               nonlocal nums, result
+   
+               result.append(path[:])
+   
+               for i in range(startIndex, len(nums)):
+                   if i > startIndex and nums[i] == nums[i - 1]:
+                       continue
+   
+                   path.append(nums[i])
+                   backtrack(i + 1, path)
+                   path.pop()
+   
+           backtrack(0, [])
+           return result
+
+      ``` 
+    </details> 
 1. [113. Path Sum II](https://leetcode.com/problems/path-sum-ii)  
   Need to use backtrack as result is all the paths.
   Time complexity is O(N^2) as O(N) for traversing nodes and O(N) for copying path
