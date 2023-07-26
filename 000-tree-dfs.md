@@ -175,7 +175,8 @@
    </details>
    
 1. [543. Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree)   
-   the longest path could be the sum of a node's left longest path and right longest path, so need to traverse all node, and compare the sum with global variable diameter
+   1. If the path go through a node, then it equals the sum of left subtree's height and right subtree's height
+   1. So we traverse all nodes, and find its height, update diameter if needed
    <details>
        
       ```python
