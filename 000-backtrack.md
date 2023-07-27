@@ -390,7 +390,7 @@
     
 1. [491. Non-decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequence)  
    ***Can't sort the array as otherwise there will be many more wrong sequences***  
-   ***Also the set to aovid duplication is created inside of the recursive backtrack function***
+   ***Also the set to avoid duplication is created inside of the recursive backtrack function***  
    Time complexity is O(2^N * N) as O(2^N ) for all possible combinations and O(N) for copying each combination
    Space complexity is O(N)  
     <details>
