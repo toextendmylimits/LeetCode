@@ -387,6 +387,7 @@
         return result
     ```
     </details>
+    
 1. [491. Non-decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequence)  
    ***Can't sort the array as otherwise there will be many more wrong sequences***  
    ***Also the set to aovid duplication is created inside of the recursive backtrack function***
@@ -394,25 +395,25 @@
    Space complexity is O(N)  
     <details>
 
-    ```python
-    def findSubsequences(self, nums: List[int]) -> List[List[int]]:
-        result = []
-        def backtrack(startIndex, path):
-            nonlocal nums, result
-
-            if len(path) >= 2:
-                result.append(path[:])
-
-            used = set()
-            for i in range(startIndex, len(nums)):
-                if (path and nums[i] < path[-1]) or nums[i] in used:
-                    continue
-  
-                used.add(nums[i])
-                path.append(nums[i])
-                backtrack(i + 1, path)
-                path.pop()
-        backtrack(0, [])
-        return result
-    ```
+       ```python
+       def findSubsequences(self, nums: List[int]) -> List[List[int]]:
+           result = []
+           def backtrack(startIndex, path):
+               nonlocal nums, result
+   
+               if len(path) >= 2:
+                   result.append(path[:])
+   
+               used = set()
+               for i in range(startIndex, len(nums)):
+                   if (path and nums[i] < path[-1]) or nums[i] in used:
+                       continue
+     
+                   used.add(nums[i])
+                   path.append(nums[i])
+                   backtrack(i + 1, path)
+                   path.pop()
+           backtrack(0, [])
+           return result
+       ```
     </details>
