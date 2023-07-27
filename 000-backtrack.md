@@ -107,35 +107,6 @@
             
     ```
    </details> 
-
-1. [46. Permutations](https://leetcode.com/problems/permutations)  
-  Need to use an array to keep track of whether a number has been visited
-  Time complexity is O(N!*N) as O(N!) as there are O(N!) permuation and O(N) for copying path
-    <details>
-
-      ```python
-       def permute(self, nums: List[int]) -> List[List[int]]:
-           used = [False] * len(nums)
-           result = []
-           def backtrack(path):
-               nonlocal nums, used, result
-               if len(path) == len(nums):
-                   result.append(path[:])
-                   return
-   
-               for i in range(len(nums)):
-                   if used[i]:
-                       continue
-                   
-                   used[i] = True
-                   path.append(nums[i])
-                   backtrack(path)
-                   path.pop()
-                   used[i] = False
-           backtrack([])
-           return result
-      ``` 
-    </details>  
 1. [78. Subsets](https://leetcode.com/problems/subsets)  
   Notice the numbers ***DOES NOT contain duplicates***   
   Time complexity is O(2^N*N) as O(2^N) as there are O(2^N) subsets and O(N) for copying path
@@ -187,6 +158,35 @@
 
       ``` 
     </details>  
+1. [46. Permutations](https://leetcode.com/problems/permutations)  
+  Need to use an array to keep track of whether a number has been visited
+  Time complexity is O(N!*N) as O(N!) as there are O(N!) permuation and O(N) for copying path
+    <details>
+
+      ```python
+       def permute(self, nums: List[int]) -> List[List[int]]:
+           used = [False] * len(nums)
+           result = []
+           def backtrack(path):
+               nonlocal nums, used, result
+               if len(path) == len(nums):
+                   result.append(path[:])
+                   return
+   
+               for i in range(len(nums)):
+                   if used[i]:
+                       continue
+                   
+                   used[i] = True
+                   path.append(nums[i])
+                   backtrack(path)
+                   path.pop()
+                   used[i] = False
+           backtrack([])
+           return result
+      ``` 
+    </details>  
+
 1. [47. Permutations II](https://leetcode.com/problems/permutations-ii/)  
   Notice the numbers ***contains duplicates***, so it's important to avoid duplication  
   Time complexity is O(N!*N) as O(N!) as there are O(N!) permuation and O(N) for copying path
