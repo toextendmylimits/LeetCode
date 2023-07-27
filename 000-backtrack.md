@@ -391,7 +391,7 @@ Space complexity: O(H) for stack call while H is height of tree. In worst case, 
     ```
     </details>
     
-1. [491. Non-decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequence)  
+1. [491. Non-decreasing Subsequences](https://leetcode.com/problems/non-decreasing-subsequences)  
    ***Can't sort the array as otherwise there will be many more wrong sequences***  
    ***Also the set to avoid duplication is created inside of the recursive backtrack function***  
    Time complexity is O(2^N * N) as O(2^N ) for all possible combinations and O(N) for copying each combination
@@ -416,6 +416,35 @@ Space complexity: O(H) for stack call while H is height of tree. In worst case, 
                    path.append(nums[i])
                    backtrack(i + 1, path)
                    path.pop()
+           backtrack(0, [])
+           return result
+       ```
+    </details>
+1. [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)  
+   Each step, partition the substrings from start position to all possible end positions
+   Time complexity is O(2^N * N) as O(2^N ) for all possible substrings(Each letter can be in the list of substrings or not), and O(N) for copying each combination
+   Space complexity is O(N)  
+    <details>
+
+       ```python
+       def partition(self, s: str) -> List[List[str]]:
+           def isPalindrome(s):
+               return s == s[::-1]
+   
+           result = []
+           def backtrack(start, path):
+               nonlocal s, result
+   
+               if start == len(s):
+                   result.append(path[:])   
+                   return
+   
+               for end in range(start + 1, len(s) + 1):
+                     prefix = s[start : end]
+                     if isPalindrome(prefix):
+                         path.append(prefix)
+                         backtrack(end, path)
+                         path.pop()
            backtrack(0, [])
            return result
        ```
