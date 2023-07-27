@@ -331,7 +331,7 @@ Space complexity: O(H) for stack call while H is height of tree. In worst case, 
    No need to maintain start position in each iteration which is common for combination problem, as the the length of path is essentially the start point  
    Time complexity is O(4^N * N) as O(4^N ) for all possible combinations and O(N) for copying each combination  
    Space complexity is O(N)  
-   Also notice edge case when the digits array has no element, return [] instead of [""]  
+   ***Also notice edge case when the digits array has no element, return [] instead of [""]***  
     <details>
 
     ```python
