@@ -74,9 +74,7 @@
   
    We can incrementally build the combination, and once we find the current combination is not valid, we backtrack and try another option.
       
-   ***Complexity:***
-   Let N be the number of candidates, T be the target value, and M be the minimal value among the candidates.
-   
+   ***Complexity:***     
    Time Complexity: O(2^N*N) as there are at most O(2^N)) combinations, and copy the combination could take O(N)  
    Space Complexity: O(N)  
    1. The number of recursive calls can pile up to O(N), where we keep on adding the smallest element to the combination.
