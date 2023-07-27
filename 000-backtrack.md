@@ -137,41 +137,7 @@
            backtrack([])
            return result
       ``` 
-    </details>   
-1. [47. Permutations II](https://leetcode.com/problems/permutations-ii/)  
-  Notice the numbers ***contains duplicates***, so it's important to avoid duplication  
-  Time complexity is O(N!*N) as O(N!) as there are O(N!) permuation and O(N) for copying path
-    <details>
-
-      ```python
-       def permuteUnique(self, nums: List[int]) -> List[List[int]]:
-           nums.sort()
-           used = [False] *(len(nums))
-           result = []
-   
-           def backtrack(path):
-               nonlocal nums, used, result
-   
-               if len(path) == len(nums):
-                   result.append(path[:])
-                   return
-   
-               for i in range(len(nums)):
-                   if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]:
-                       continue
-   
-                   if used[i]:
-                       continue
-   
-                   used[i] = True
-                   path.append(nums[i])
-                   backtrack(path)
-                   used[i] = False
-                   path.pop()
-           backtrack([])
-           return result
-      ``` 
-    </details> 
+    </details>  
 1. [78. Subsets](https://leetcode.com/problems/subsets)  
   Notice the numbers ***DOES NOT contain duplicates***   
   Time complexity is O(2^N*N) as O(2^N) as there are O(2^N) subsets and O(N) for copying path
@@ -221,6 +187,40 @@
            backtrack(0, [])
            return result
 
+      ``` 
+    </details>  
+1. [47. Permutations II](https://leetcode.com/problems/permutations-ii/)  
+  Notice the numbers ***contains duplicates***, so it's important to avoid duplication  
+  Time complexity is O(N!*N) as O(N!) as there are O(N!) permuation and O(N) for copying path
+    <details>
+
+      ```python
+       def permuteUnique(self, nums: List[int]) -> List[List[int]]:
+           nums.sort()
+           used = [False] *(len(nums))
+           result = []
+   
+           def backtrack(path):
+               nonlocal nums, used, result
+   
+               if len(path) == len(nums):
+                   result.append(path[:])
+                   return
+   
+               for i in range(len(nums)):
+                   if i > 0 and nums[i] == nums[i - 1] and not used[i - 1]:
+                       continue
+   
+                   if used[i]:
+                       continue
+   
+                   used[i] = True
+                   path.append(nums[i])
+                   backtrack(path)
+                   used[i] = False
+                   path.pop()
+           backtrack([])
+           return result
       ``` 
     </details> 
 1. [113. Path Sum II](https://leetcode.com/problems/path-sum-ii)  
