@@ -293,6 +293,9 @@
     </details>
 
 1. [1022. Sum of Root To Leaf Binary Numbers](https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers)  
+Time complexity: O(N) since one has to visit each node.  
+Space complexity: O(H) for stack call while H is height of tree. In worst case, it's O(N)  
+where HHH is a tree height.
 1. [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)  
    Need to maintain the count of left parenthesis and right parenthesis
   Time complexity is O(2^2N * N) as O(2^2N) for all possible combinations and O(N) for copying each combination
