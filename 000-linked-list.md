@@ -1,5 +1,34 @@
 # Linked List
 ## Easy
+1. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)  
+    1. First we set up a dummy head that allows us retrieve the head of the merged list later. And We also maintain a prev pointer connect merged list with the other lists
+    1. Then, we do the following until l1 or l2 is null:
+        1. if the value at l1 is less than or equal to the value at l2, then we connect l1 to the previous node and increment l1.
+        1.  Otherwise, we connect l2 to the previous node and increment l2. 
+        1. Then, regardless of which list we connected, we increment prev of merged list.
+    1. Findally we connect the merged list with the list that is not null
+ 
+   <details>
+
+       ```
+        def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+            preHead = ListNode()
+            prev = preHead
+            while list1 and list2:
+                if list1.val < list2.val:
+                    prev.next = list1
+                    list1 = list1.next
+                else:
+                    prev.next = list2
+                    list2 = list2.next
+    
+                prev = prev.next
+    
+            prev.next = list1 or list2
+    
+            return preHead.next
+   ```
+    </details>
 1. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)  
     Without using dummy head, the two pointers should be **n step**s apart, and should check whether the **removed node is head**, also the right pointer should be **the last element**
    <details>
