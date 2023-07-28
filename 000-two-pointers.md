@@ -42,7 +42,7 @@
    </details>
 1. [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-i)  
    ***Importantly we are only allowed to buy and sell at same day, and trade multiple times***       
-   So idea is to build profit incrementally, on a day, if price is greather than previous day, then buy at previous day and sell on that day
+   So idea is to build profit incrementally, on any day, if price is greather than previous day, then buy at previous day and sell on that day, and accumulate the profit
    <details>
 
    ```python
