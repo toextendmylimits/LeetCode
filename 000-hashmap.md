@@ -18,3 +18,26 @@
           return True
     ```
    </details>
+1. [409. Longest Palindrome](https://leetcode.com/problems/longest-palindrome)  
+   1. If a charcter appears even number of times, always put all this character
+   1. If there are characters appear odd number of times, then one character could be in the middle,
+   1. And then for all the other characters, they can only appear n -1 times
+   <details>
+      
+    ```python
+    def longestPalindrome(self, s: str) -> int:
+        counter = Counter(s)
+        maxLen = 0
+        hasOddCount = False
+        for count in counter.values():
+            if count % 2 == 0:
+                maxLen += count
+            else:
+                hasOddCount = True
+                maxLen += count - 1
+        if hasOddCount:
+            maxLen += 1
+        return maxLen
+    ```
+   </details>
+
