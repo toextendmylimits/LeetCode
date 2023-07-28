@@ -15,3 +15,19 @@
           return [x[1] for x in maxHeap]
       ```
     </details>
+
+1.  [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)
+    <details>
+      ```pyton
+        def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+            counter = Counter(nums)
+            minHeap = []
+            for num, freq in counter.items():
+                heappush(minHeap, (freq, num))
+                if len(minHeap) > k:
+                    heappop(minHeap)
+    
+            return [x[1] for x in minHeap]
+      ```
+    </details>
+
