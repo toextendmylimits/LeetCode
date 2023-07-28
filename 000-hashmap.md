@@ -60,3 +60,11 @@
         return True
     ```
    </details>
+1. [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)     
+   <details>
+      
+    ```python
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(nums) != len(set(nums))
+    ```
+   </details>
