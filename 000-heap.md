@@ -43,3 +43,18 @@
             return minHeap[0]     
       ```
     </details>
+1.  [1167. Minimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks)  
+   Time complexity is O(NlogN), space complexity O(N) as heap size is O(N), so push/pop O(N) times
+    <details>
+      ```pyton
+        heapify(sticks)
+
+        totalCost = 0
+        while len(sticks) > 1:
+            top2Sum = heappop(sticks) + heappop(sticks)
+            totalCost += top2Sum
+            heappush(sticks, top2Sum)
+
+        return totalCost  
+      ```
+    </details>
