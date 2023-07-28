@@ -43,6 +43,26 @@
             return minHeap[0]     
       ```
     </details>
+1.  [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream)  
+   Time complexity O(N logK), space complexity O(K) where K is the size of the heap
+    <details>
+      ```pyton
+        def __init__(self, k: int, nums: List[int]):
+            self.heap = []
+            self.heapSize = k
+            for n in nums:
+                heappush(self.heap, n)
+                if len(self.heap) > self.heapSize:
+                    heappop(self.heap)
+    
+        def add(self, val: int) -> int:
+            heappush(self.heap, val)
+            if len(self.heap) > self.heapSize:
+                heappop(self.heap)
+    
+            return self.heap[0]  
+      ```
+    </details>
 1.  [1167. Minimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks)  
    Time complexity is O(NlogN), space complexity O(N) as heap size is O(N), so push/pop O(N) times
     <details>
