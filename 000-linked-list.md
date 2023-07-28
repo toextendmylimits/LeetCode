@@ -4,8 +4,8 @@
     1. First we set up a dummy head that allows us retrieve the head of the merged list later. And We also maintain a prev pointer connect merged list with the other lists
     1. Then, we do the following until l1 or l2 is null:
         1. if the value at l1 is less than or equal to the value at l2, then we connect l1 to the previous node and increment l1.
-        1.  Otherwise, we connect l2 to the previous node and increment l2. 
-        1. Then, regardless of which list we connected, we increment prev of merged list.
+        1. Otherwise, we connect l2 to the previous node and increment l2. 
+        1. Then, regardless of which list we connecte we increment prev of merged list.
     1. Findally we connect the merged list with the list that is not null
  
    <details>
