@@ -30,4 +30,16 @@
             return [x[1] for x in minHeap]
       ```
     </details>
-
+1.  [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)
+    <details>
+      ```pyton
+        def findKthLargest(self, nums: List[int], k: int) -> int:
+            minHeap = []
+            for num in nums:
+                heappush(minHeap, num)
+                if len(minHeap) > k:
+                    heappop(minHeap)
+    
+            return minHeap[0]     
+      ```
+    </details>
