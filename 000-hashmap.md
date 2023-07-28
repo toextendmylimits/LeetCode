@@ -42,3 +42,21 @@
     ```
    </details>
 
+1. [383. Ransom Note](https://leetcode.com/problems/ransom-note)     
+   Let me be length of magazine, then time complexity is O(m) and space complexity is O(1). Remember to return False immediately if length of ransom note is larger than length of magazine
+   <details>
+      
+    ```python
+    def canConstruct(self, ransomNote: str, magazine: str) -> bool:
+        if len(ransomNote) > len(magazine):
+            return False
+            
+        counterNote = Counter(ransomNote)
+        counterMagazine = Counter(magazine)
+        for letter, count in counterNote.items():
+            if counterMagazine[letter] < count:
+                return False
+
+        return True
+    ```
+   </details>
