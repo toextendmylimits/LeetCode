@@ -1,5 +1,5 @@
 # Dynamic programming
-1.  [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)
+1.  [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)  
     Let curr represent distinct ways to reach current step, prev1 represent distinct ways to reach to previous step, and prev2 represent distinct ways to reach to previous 2 steps, then
     curr = prev1 + prev2 as from previous step, user can jump one step and reach current step, and from previous 2 step, user can jump two steps and reach current step
     <details>
