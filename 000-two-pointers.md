@@ -40,6 +40,22 @@
         return result
    ```
    </details>
+1. [122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-i)  
+   ***Importantly we are only allowed to buy and sell at same day, and trade multiple times***       
+   So idea is to build profit incrementally, on a day, if price is greather than previous day, then buy at previous day and sell on that day
+   <details>
+
+   ```python
+    def maxProfit(self, prices: List[int]) -> int:
+        result = 0
+        for i in range(1, len(prices)):
+            potentialProfit = prices[i] - prices[i - 1]
+            if potentialProfit > 0:
+                result += potentialProfit
+
+        return result
+   ```
+   </details>
 1. [2 Sum less than k](https://leetcode.com/problems/two-sum-less-than-k)  
    Compare the valid two sum with existing one:
    ```
