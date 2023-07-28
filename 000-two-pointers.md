@@ -23,6 +23,23 @@
         return True
    ```
    </details>
+1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
+   Importantly we are only allowed to buy and sell once, i.e. not trading multiple times.   
+   So idea is to buy low and sell high. Keep the low price and max profit. If a price is lower than current low price, update low price; otherwise, there could be profit, if that profit    is greater than current max profit, update current max profit
+   <details>
+
+   ```python
+        result = 0
+        lowPrice = prices[0]
+        for i in range(1, len(prices)):
+            if prices[i] < lowPrice:
+                lowPrice = prices[i]
+            else:
+                result = max(result, prices[i] - lowPrice)
+
+        return result
+   ```
+   </details>
 1. [2 Sum less than k](https://leetcode.com/problems/two-sum-less-than-k)  
    Compare the valid two sum with existing one:
    ```
