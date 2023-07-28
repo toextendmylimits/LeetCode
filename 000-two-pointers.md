@@ -133,4 +133,32 @@
    If char at left not equal right, check after removing either char, whether the remaining string is palindrome
 1. [Move Zeroes](https://leetcode.com/problems/move-zeroes)  
    Two steps, first move all nonzeros to the front, then fill the rest with zeros
+1. [67. Add Binary](https://leetcode.com/problems/add-binary)    
+   Just add bit by bit, and in the end, if carry is 1, append 1       
+   <details>
+      
+      ```python
+       def addBinary(self, a: str, b: str) -> str:
+           carry = 0
+           result = deque()
+           i = len(a) - 1
+           j = len(b) - 1
+           while i >= 0 or j >= 0:
+               digit1 = int(a[i]) if i >= 0 else 0
+               digit2 = int(b[j]) if j >= 0 else 0
+   
+               currSum = digit1 + digit2 + carry
+               
+               result.appendleft(currSum % 2)
+               carry = currSum // 2
+   
+               i -= 1
+               j -= 1
+   
+           if carry == 1:
+               result.appendleft(1)
+   
+           return "".join([str(i) for i in result])
+      ```
+   </details>
    
