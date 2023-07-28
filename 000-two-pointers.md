@@ -1,6 +1,28 @@
 # Two Pointers
-1. [Valid Plalindrome](https://leetcode.com/problems/valid-palindrome)
-   Use isalnum to check whether a character is numerica or alphabetic
+1. [Valid Plalindrome](https://leetcode.com/problems/valid-palindrome)  
+   Use isalnum to check whether a character is numerica or alphabetic  
+   <details>
+
+   ```python
+    def isPalindrome(self, s: str) -> bool:
+        left = 0
+        right = len(s) - 1
+        while left < right:
+            while left < right and not s[left].isalnum():
+                left += 1
+
+            while left < right and not s[right].isalnum():
+                right -= 1
+
+            if s[left].upper() == s[right].upper():
+                left += 1
+                right -= 1
+            else:
+                return False
+
+        return True
+   ```
+   </details>
 1. [2 Sum less than k](https://leetcode.com/problems/two-sum-less-than-k)  
    Compare the valid two sum with existing one:
    ```
