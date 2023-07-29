@@ -1,6 +1,7 @@
 # Line Sweep
 1. [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)  
-    Find the number of employees working at any time, and if the number is 0, then it's the starting time of a free time interval  
+    
+    Find the number of employees working along the timeline, and if at any time, the number is 0, then it's the starting time of a free time interval  
     Time complexity O(N logN), space complexity O(N)
     <details>
         ```python
