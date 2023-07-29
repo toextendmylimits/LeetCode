@@ -48,6 +48,32 @@
         return merged 
       ```
     </details>
+1. [986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections)  
+    The idea is compare the front element of the two lists, and then discard the element with smaller end point
+    Use two pointers, one for each list  
+    1. If element of first List and element of second list overlap, add the overlap to result
+    1. If element of first list's end point is smaller than second list's point, move first list's pointer to the next; Otherwise, move second list's pointer to next
+
+    Time complexity O(N), space complexity O(1)
+    <details>
+
+      ```python
+        def intervalIntersection(self, firstList: List[List[int]], secondList: List[List[int]]) -> List[List[int]]:
+            result = []
+            i = 0
+            j = 0
+            while i < len(firstList) and j < len(secondList):
+                first = firstList[i]
+                second = secondList[j]
+                if first[0] <= second[1] and second[0] <= first[1]:
+                    result.append([max(first[0], second[0]), min(first[1], second[1])])   
+                if first[1] < second[1]:
+                    i += 1
+                else:
+                    j += 1
+            return result
+      ```
+    </details>
 https://leetcode.com/problems/meeting-rooms
 
 https://leetcode.com/problems/meeting-rooms-ii
