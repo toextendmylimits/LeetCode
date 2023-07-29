@@ -47,3 +47,24 @@
             return result   
         ```
     </details>
+1. [1094. Car Pooling](https://leetcode.com/problems/car-pooling)  
+    Use hash map, key is time, and value is the change of passengers
+    Sort the items of the map by time. At any time, if there are more passengers than the bus's capacity, then return False
+    <details>
+        
+        ```python
+        def carPooling(self, trips: List[List[int]], capacity: int) -> bool:
+            timePassengerDeltaMap = Counter()
+            for trip in trips:
+                timePassengerDeltaMap[trip[1]] += trip[0]
+                timePassengerDeltaMap[trip[2]] -= trip[0]
+    
+            currPassengers = 0
+            for time, passengerDelta in sorted(timePassengerDeltaMap.items()):
+                currPassengers += passengerDelta
+                if currPassengers > capacity:
+                    return False
+    
+            return True
+        ```
+    </details>
