@@ -125,20 +125,20 @@ https://leetcode.com/problems/meeting-rooms
     <details>
         
         ```python
-        def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
-            if not intervals:
-                return 0
-    
-            intervals.sort(key=lambda x : x[1])
-            countOfNonOverlap = 1
-            lastEnd = intervals[0][1]
-            for i in range(1, len(intervals)):
-                currStart, currEnd = intervals[i]
-                if currStart >= lastEnd:
-                    countOfNonOverlap += 1
-                    lastEnd = currEnd
-    
-            return len(intervals) - countOfNonOverlap
+            def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
+                if not intervals:
+                    return 0
+        
+                intervals.sort(key=lambda x : x[1])
+                countOfNonOverlap = 1
+                lastEnd = intervals[0][1]
+                for i in range(1, len(intervals)):
+                    currStart, currEnd = intervals[i]
+                    if currStart >= lastEnd:
+                        countOfNonOverlap += 1
+                        lastEnd = currEnd
+        
+                return len(intervals) - countOfNonOverlap
         ```
     </details>
 https://leetcode.com/problems/meeting-rooms
