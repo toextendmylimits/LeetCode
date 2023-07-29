@@ -1,7 +1,7 @@
 # Line Sweep
 1. [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)  
     
-    Find the number of employees working along the timeline, and if at any time, the number is 0, then it's the starting time of a free time interval  
+    Find the number of employees working along the timeline, and if at any time, the number is 0, then it's the starting time of a free time interval, and the ending time for this free time interval is the next time that the number is not 0  
     Time complexity O(N logN), space complexity O(N)
     <details>
         
