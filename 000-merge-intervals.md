@@ -1,6 +1,23 @@
 # Merge Intervals
 
-[Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+1.  [Merge Intervals](https://leetcode.com/problems/merge-intervals/)  
+    Time complexity O(N logN), space complexity O(log N) or O(N) depends on the sorting algorithm
+    <details>
+
+      ```python
+      def merge(self, intervals: List[List[int]]) -> List[List[int]]:
+          intervals.sort()
+          merged = []
+          for interval in intervals:
+              # No overlap
+              if not merged or interval[0] > merged[-1][1]:
+                  merged.append(interval)
+              else:
+                  merged[-1][1] = max(merged[-1][1], interval[1])
+          
+          return merged      
+      ```
+    </details>
 
 https://leetcode.com/problems/insert-interval/
 
