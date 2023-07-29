@@ -102,7 +102,20 @@
             return result  
         ```
     </details>
-
+1. [252. Meeting Rooms](https://leetcode.com/problems/meeting-rooms)  
+    Check whether there is any overlap of two adjacent meetings after sorting them by start time
+    <details>
+        
+        ```python
+        def canAttendMeetings(self, intervals: List[List[int]]) -> bool:
+            intervals.sort()
+            for i in range(1, len(intervals)):
+                if intervals[i][0] < intervals[i - 1][1]:
+                    return False
+                    
+            return True
+        ```
+    </details>
 https://leetcode.com/problems/meeting-rooms
 
 https://leetcode.com/problems/meeting-rooms-ii
