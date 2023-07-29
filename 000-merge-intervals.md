@@ -117,7 +117,31 @@
         ```
     </details>
 https://leetcode.com/problems/meeting-rooms
-
+1. [435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)  
+    Find the maximum number of non-overlapping intervals
+    1. Select the interval, x, with the earliest finishing time so there is more time left for remaining intervals
+    1. Remove x, and all intervals intersecting x, from the set of candidate intervals.
+    1. Repeat until the set of candidate intervals is empty.
+    <details>
+        
+        ```python
+        def eraseOverlapIntervals(self, intervals: List[List[int]]) -> int:
+            if not intervals:
+                return 0
+    
+            intervals.sort(key=lambda x : x[1])
+            countOfNonOverlap = 1
+            lastEnd = intervals[0][1]
+            for i in range(1, len(intervals)):
+                currStart, currEnd = intervals[i]
+                if currStart >= lastEnd:
+                    countOfNonOverlap += 1
+                    lastEnd = currEnd
+    
+            return len(intervals) - countOfNonOverlap
+        ```
+    </details>
+https://leetcode.com/problems/meeting-rooms
 https://leetcode.com/problems/meeting-rooms-ii
 
 [Non overlapping intervals](https://leetcode.com/problems/non-overlapping-intervals) 
