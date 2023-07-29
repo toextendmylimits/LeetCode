@@ -75,6 +75,34 @@
             return result
       ```
     </details>
+1. [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)  
+    Sort all intervals by start time, then check whether ther is non-overlapping time interval
+    Time complexity O(N logN), space complexity O(N)
+    <details>
+        
+        ```python
+        def employeeFreeTime(self, schedule: '[[Interval]]') -> '[Interval]':
+            if not schedule:
+                return []
+            
+            intervals = []
+            result = []
+            for employee in schedule:
+                for interval in employee:
+                    intervals.append((interval.start, interval.end))
+    
+            intervals.sort()
+            lastEnd = intervals[0][1]
+            for i in range(1, len(intervals)):
+                currStart, currEnd = intervals[i]
+                if currStart > lastEnd:
+                    result.append(Interval(lastEnd, currStart))
+                lastEnd = max(lastEnd, currEnd)
+    
+            return result  
+        ```
+    </details>
+
 https://leetcode.com/problems/meeting-rooms
 
 https://leetcode.com/problems/meeting-rooms-ii
