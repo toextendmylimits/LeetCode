@@ -19,7 +19,33 @@
           return not stack
       ```
     </details>
-
+1. [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)  
+   If token is operator, pop two elements froms tack, and calculate result, then push result back to stack. If it's not operator, just push to stack. 
+    <details>
+      
+      ```python
+       def evalRPN(self, tokens: List[str]) -> int:
+           stack = []
+           operators = "+-*/"
+           for token in tokens:
+               if token not in operators:
+                   stack.append(int(token))
+               else:
+                   right = int(stack.pop())
+                   left = int(stack.pop())
+                   result = None
+                   if token == "+":
+                       result = left + right
+                   elif token == "-":
+                       result = left - right
+                   elif token == "*":
+                       result = left * right
+                   else:
+                       result = int(left / right)
+                   stack.append(result)
+           return stack.pop()
+      ```
+    </details>
 ## TO re-visit later
 1. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)  
 
