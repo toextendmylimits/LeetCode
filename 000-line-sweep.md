@@ -4,6 +4,7 @@
     Find the number of employees working along the timeline, and if at any time, the number is 0, then it's the starting time of a free time interval  
     Time complexity O(N logN), space complexity O(N)
     <details>
+        
         ```python
        def employeeFreeTime(self, schedule: '[[Interval]]') -> '[Interval]':
           counter = Counter()
