@@ -26,3 +26,24 @@
               return result     
         ```
     </details>
+1. [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)  
+    Use hash map, key is time, and value is the change of meeting rooms  
+    Sort the items of the map by time. At any time, find the meeting rooms required, and update the result if this is larger than the result  
+    <details>
+        
+        ```python
+        def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+            timeRoomDeltaMap = Counter()
+            for interval in intervals:
+                timeRoomDeltaMap[interval[0]] += 1
+                timeRoomDeltaMap[interval[1]] -= 1
+            
+            result = 0
+            currRooms = 0
+            for time, roomDelta in sorted(timeRoomDeltaMap.items()):
+                currRooms += roomDelta
+                result = max(result, currRooms)
+    
+            return result   
+        ```
+    </details>
