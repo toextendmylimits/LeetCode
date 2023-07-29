@@ -116,7 +116,7 @@
             return True
         ```
     </details>
-https://leetcode.com/problems/meeting-rooms
+
 1. [435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)  
     Find the maximum number of non-overlapping intervals
     1. Select the interval, x, with the earliest finishing time so there is more time left for remaining intervals
