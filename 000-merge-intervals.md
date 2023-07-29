@@ -141,6 +141,25 @@ https://leetcode.com/problems/meeting-rooms
                 return len(intervals) - countOfNonOverlap
         ```
     </details>
+
+1. [452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons)    
+    Sort by ending position, choose the needle at smallest ending position so there is chance to burst more ballons, then find the next non-overlapping interval, udpate the count and ending position
+    <details>
+        
+        ```python
+        def findMinArrowShots(self, points: List[List[int]]) -> int:
+            count = 1
+            points.sort(key=lambda x : x[1])
+            currMinEnd = points[0][1]
+    
+            for i in range(1, len(points)):
+                if currMinEnd < points[i][0]:           
+                    count += 1
+                    currMinEnd = points[i][1]
+    
+            return count
+        ```
+    </details>
 https://leetcode.com/problems/meeting-rooms
 https://leetcode.com/problems/meeting-rooms-ii
 
