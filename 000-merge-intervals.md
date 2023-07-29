@@ -49,6 +49,7 @@
       ```
     </details>
 1. [986. Interval List Intersections](https://leetcode.com/problems/interval-list-intersections)  
+    ***Importantly the elements in each list are disjointed***  
     The idea is compare the front element of the two lists, and then discard the element with smaller end point
     Use two pointers, one for each list  
     1. If element of first List and element of second list overlap, add the overlap to result
