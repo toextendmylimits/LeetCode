@@ -2,3 +2,4 @@
 1. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)
 2. [733. Flood Fill](https://leetcode.com/problems/flood-fill)
+3. [67. Add Binary](https://leetcode.com/problems/add-binary/)
