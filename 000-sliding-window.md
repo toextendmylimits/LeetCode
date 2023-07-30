@@ -182,25 +182,31 @@
     </details>
 
 1. [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)  
-    Decrese count of right char, and if greater than or equal to 0, increase matched. When matched equal to lenth of t, increse count of left char, and if greater than 0, decrease matched
+    1. Have two hash maps, one for the original t, the other for sliding window
+    2. For a character, if it is in the original t, and its frequency is the same, then find a match
+    3. If the number of matches equal to the size of the orignal hash map, then move left pointer, decrease its freqency, and if its freqency is less than the original frequency, decrease the match
+
     <details>
 
       ```python
-        def minWindow(self, s: str, t: str) -> str:
+    def minWindow(self, s: str, t: str) -> str:
             if len(s) < len(t):
                 return ""
+    
+            origCounter = Counter(t)
             substrStart = -1
             minLen = len(s) + 1
-            counter = Counter(t)
-            matched = 0
+            currCounter = Counter()
+            match = 0
             left = 0
             for right in range(len(s)):
                 rightChar = s[right]
-                counter[rightChar] -= 1
-                if counter[rightChar] >= 0:
-                    matched += 1
-    
-                while len(t) == matched:
+                if rightChar in origCounter:
+                    currCounter[rightChar] += 1
+                    if currCounter[rightChar] == origCounter[rightChar]:
+                        match += 1
+                
+                while match == len(origCounter):
                     leftChar = s[left]
                     currLen = right - left + 1
                     if currLen < minLen:
@@ -208,11 +214,11 @@
                         substrStart = left
                     
                     left += 1
-                    counter[leftChar] += 1                  
-                    if counter[leftChar] > 0:
-                        matched -= 1
+                    if leftChar in origCounter:
+                        currCounter[leftChar] -= 1
+                        if currCounter[leftChar] < origCounter[leftChar]:
+                            match -= 1
     
-            
-            return s[substrStart : substrStart + minLen] if substrStart > -1 else ""
+            return "" if substrStart == -1 else s[substrStart : substrStart + minLen]
       ```
     </details>
