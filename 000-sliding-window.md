@@ -222,3 +222,40 @@
             return "" if substrStart == -1 else s[substrStart : substrStart + minLen]
       ```
     </details>
+1. [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)  
+    1. Have two hash maps, one for the original t, the other for sliding window
+    2. For a character, if it is in the original t, and its frequency is the same, then find a match
+    3. If the number of matches equal to the size of the orignal hash map, add left to result if right - left + 1 = len(p), then move left pointer, decrease its freqency, and if its freqency is less than the original frequency, decrease the match
+
+    <details>
+
+      ```python
+        def findAnagrams(self, s: str, p: str) -> List[int]:
+            if len(s) < len(p):
+                return []
+            
+            result = []
+            origCounter = Counter(p)
+            currCounter = Counter()
+            match = 0
+            left = 0
+            for right in range(len(s)):
+                rightChar = s[right]
+                if rightChar in origCounter:
+                    currCounter[rightChar] += 1
+                    if currCounter[rightChar] == origCounter[rightChar]:
+                        match += 1
+                
+                while match == len(origCounter):
+                    if right - left + 1 == len(p):
+                        result.append(left)
+    
+                    leftChar = s[left]
+                    left += 1
+                    if leftChar in origCounter:
+                        currCounter[leftChar] -= 1
+                        if currCounter[leftChar] < origCounter[leftChar]:
+                            match -= 1
+            return result
+      ```
+    </details>
