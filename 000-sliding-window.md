@@ -180,3 +180,41 @@
             return self.getCountOfAtMostKDistinct(nums, k) - self.getCountOfAtMostKDistinct(nums, k - 1)
       ```
     </details>
+
+1. [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)  
+    If right char is in hash map, decrese its count, and if greater than or equal to 0, increased matched. When matched equal to lenth of t, if left char is in hash map, increse matched, and if greater than 0, decreased matched
+    <details>
+
+      ```python
+        def minWindow(self, s: str, t: str) -> str:
+            if len(s) < len(t):
+                return ""
+            substrStart = -1
+            minLen = len(s) + 1
+            counter = Counter(t)
+            matched = 0
+            left = 0
+            for right in range(len(s)):
+                rightChar = s[right]
+                if rightChar in counter:
+                    counter[rightChar] -= 1
+                    if counter[rightChar] >= 0:
+                        matched += 1
+    
+                while len(t) == matched:
+                    leftChar = s[left]
+                    currLen = right - left + 1
+                    if currLen < minLen:
+                        minLen = currLen
+                        substrStart = left
+                    
+                    left += 1
+                    if leftChar in counter:  
+                        counter[leftChar] += 1                  
+                        if counter[leftChar] > 0:
+                            matched -= 1
+    
+            
+            return s[substrStart : substrStart + minLen] if substrStart > -1 else ""
+      ```
+    </details>
