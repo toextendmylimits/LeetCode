@@ -5,3 +5,4 @@
 3. [67. Add Binary](https://leetcode.com/problems/add-binary/)
 1. [15. 3Sum](https://leetcode.com/problems/3sum)
 1. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)
+1. [155. Min Stack](https://leetcode.com/problems/min-stack)  
