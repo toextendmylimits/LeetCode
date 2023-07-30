@@ -196,10 +196,9 @@
             left = 0
             for right in range(len(s)):
                 rightChar = s[right]
-                if rightChar in counter:
-                    counter[rightChar] -= 1
-                    if counter[rightChar] >= 0:
-                        matched += 1
+                counter[rightChar] -= 1
+                if counter[rightChar] >= 0:
+                    matched += 1
     
                 while len(t) == matched:
                     leftChar = s[left]
@@ -209,10 +208,9 @@
                         substrStart = left
                     
                     left += 1
-                    if leftChar in counter:  
-                        counter[leftChar] += 1                  
-                        if counter[leftChar] > 0:
-                            matched -= 1
+                    counter[leftChar] += 1                  
+                    if counter[leftChar] > 0:
+                        matched -= 1
     
             
             return s[substrStart : substrStart + minLen] if substrStart > -1 else ""
