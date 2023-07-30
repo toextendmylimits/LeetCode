@@ -46,6 +46,31 @@
            return stack.pop()
       ```
     </details>
+1. [155. Min Stack](https://leetcode.com/problems/min-stack)  
+   Keep two stacks, one stack to keep all values, the other to keep minimum values
+    <details>
+      
+      ```python
+       def __init__(self):
+           self.stack = []
+           self.minStack = []
+   
+       def push(self, val: int) -> None:
+           self.stack.append(val)
+           if not self.minStack or val <= self.minStack[-1]:
+               self.minStack.append(val)
+           
+       def pop(self) -> None:
+           if self.stack.pop() <= self.minStack[-1]:
+               self.minStack.pop()
+   
+       def top(self) -> int:
+           return self.stack[-1]
+   
+       def getMin(self) -> int:
+           return self.minStack[-1]
+      ```
+    </details>
 ## TO re-visit later
 1. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)  
 1. [155. Min Stack](https://leetcode.com/problems/min-stack)  
