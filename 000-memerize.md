@@ -7,4 +7,5 @@
 1. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)
 1. [155. Min Stack](https://leetcode.com/problems/min-stack)  
 1. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree) 
-1. [Sort Colors](https://leetcode.com/problems/sort-colors)   
+1. [Sort Colors](https://leetcode.com/problems/sort-colors)
+1. [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)  
