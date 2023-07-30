@@ -182,7 +182,7 @@
     </details>
 
 1. [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)  
-    If right char is in hash map, decrese its count, and if greater than or equal to 0, increased matched. When matched equal to lenth of t, if left char is in hash map, increse matched, and if greater than 0, decreased matched
+    Decrese count of right char, and if greater than or equal to 0, increase matched. When matched equal to lenth of t, increse count of left char, and if greater than 0, decrease matched
     <details>
 
       ```python
