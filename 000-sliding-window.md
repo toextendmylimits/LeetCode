@@ -61,6 +61,7 @@
       ```
     </details>   
 1. [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)  
+    Beware to return 0 if there is no such sub array
     <details>
 
       ```python
