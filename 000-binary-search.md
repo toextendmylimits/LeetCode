@@ -17,7 +17,7 @@
         return -1
     ```
    </details>
-1. [704. Binary Search](https://leetcode.com/problems/binary-search)  
+1. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)  
    If seperate the arary by mid, then at least one half is sorted, so binary search can be used if target is in the sorted half.
    <details>
       
