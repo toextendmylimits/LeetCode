@@ -22,7 +22,32 @@
           return image   
       ```
     </details>
-  
+1.  [200. Number of Islands](https://leetcode.com/problems/number-of-islands)  
+    Time complexity and space complexity is O(R * C) where R is number of rows and C is number of columns
+    <details
+
+      ```python
+        def numIslands(self, grid: List[List[str]]) -> int:
+            def dfs(row, col):
+                nonlocal grid
+                if row < 0 or row >= len(grid) or col < 0 or col >= len(grid[0]) or grid[row][col] != "1":
+                    return
+    
+                grid[row][col] = "0" # mark as visited
+                for offset in [(-1, 0), (0, 1), (1, 0), (0, -1)]:
+                    rowOffset, colOffset = offset
+                    dfs(row + rowOffset, col + colOffset)
+    
+            count = 0
+            for r in range(len(grid)):
+                for c in range(len(grid[0])):
+                    if grid[r][c] == "1":
+                        count += 1
+                        dfs(r, c)
+    
+            return count  
+      ```
+    </details>  
 1.  [695. Max Area of Island](https://leetcode.com/problems/max-area-of-island)    
     The dfs method should return the area  
     Time complexiy and space complexity is O(R * C) where R is number of rows, and C is number of columns
