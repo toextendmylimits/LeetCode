@@ -148,3 +148,34 @@
         return result
       ```
     </details>
+1.  [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)      
+    Need to maintain a set for tracking visited nodes
+    Time complexiy and space complexity is O(R * C) where R is number of rows, and C is number of columns
+    <details
+
+      ```python
+        def getArea(self, grid, row, col):
+        def updateMatrix(self, mat: List[List[int]]) -> List[List[int]]:
+            visited = set()
+            queue = deque()
+            for r in range(len(mat)):
+                for c in range(len(mat[0])):
+                    if mat[r][c] == 0:
+                        queue.append((r, c))
+                        visited.add((r, c))
+    
+            directions = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+            while queue:
+                currRow, currCol = queue.popleft()
+                for rowOffset, colOffset in directions:
+                    nextRow = currRow + rowOffset
+                    nextCol = currCol + colOffset
+                    if nextRow < 0 or nextRow >= len(mat) or nextCol < 0 or nextCol >= len(mat[0]) or (nextRow, nextCol) in visited:
+                        continue
+                    
+                    visited.add((nextRow, nextCol))
+                    mat[nextRow][nextCol] = mat[currRow][currCol] + 1
+                    queue.append((nextRow, nextCol))
+            return mat
+      ```
+    </details>
