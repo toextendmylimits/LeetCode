@@ -287,8 +287,51 @@
    if not root or root in nodes:
        return root
    ```
+1. [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)  
+   Find the root value from preorder, and then find its position in inorder, then find inorder and preorder of left and right subtree  
+   Time complexity O(N), space complexity O(H)
+   <details>
+      
+      ```python
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+        if not preorder:
+            return None
+        
+        root = TreeNode(preorder[0])
+        separatorIdx = inorder.index(root.val)
+        inorderLeft = inorder[:separatorIdx]
+        inorderRight = inorder[separatorIdx + 1 : ]
+        preorderLeft = preorder[1 : 1 + len(inorderLeft)]
+        preorderRight = preorder[1 + len(inorderLeft) : ]
+        root.left = self.buildTree(preorderLeft, inorderLeft)
+        root.right = self.buildTree(preorderRight, inorderRight)
+        return root
+      ```      
+   </details>
+1. [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv)  
+   Find the root value from postorder, and then find its position in inorder, then find inorder and postorder of left and right subtree  
+   Time complexity O(N), space complexity O(H)
+   <details>
+      
+      ```python
+          def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
+           if not inorder:
+               return None
+   
+           root = TreeNode(postorder[-1])
+           separatorIdx = inorder.index(root.val)
+           inorderLeft = inorder[: separatorIdx]
+           inorderRight = inorder[separatorIdx + 1 :]
+           postorderLeft = postorder[:len(inorderLeft)]
+           postorderRight = postorder[len(inorderLeft) : len(postorder) - 1]
+           root.left = self.buildTree(inorderLeft, postorderLeft)
+           root.right = self.buildTree(inorderRight, postorderRight)
+           return root
+      ```      
+   </details>
+
 ## Hard
-1. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)  
+1. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal)  
    ***Preorder traversal. Need to memorize the code***
    <details>
 
