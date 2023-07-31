@@ -71,3 +71,46 @@
       
       ```
     </details>
+1. [127. Word Ladder](https://leetcode.com/problems/word-ladder)  
+    ***Beware to check whether the initial state is in dead locks, and if so, return immediately.***  
+    ***Time complexity*** O(N*(M^2)) where N is the number of words, M is the length of words. There are N words, and for each word, we need to spend O(M^2) time traversing all letters and constructing adjacent words.  
+    ***Space complexity*** is O(N*(M^2) for the queue to store all M transformations for each of the N words in the
+    <details>
+
+      ```python
+        def getNextWords(self, word, wordSet):
+            letterSize = 26
+            result = []
+            for i in range(len(word)):
+                for j in range(letterSize):
+                    letter = chr(j + ord("a"))
+                    if letter != word[i]:
+                        nextWord = word[:i] + letter + word[i + 1:]
+                        if nextWord in wordSet:
+                            result.append(nextWord)
+            return result
+    
+        def ladderLength(self, beginWord: str, endWord: str, wordList: List[str]) -> int:
+            wordSet = set(wordList)
+            queue = deque([beginWord])
+            visited = set([beginWord])
+            count = 0
+            while queue:
+                levelSize = len(queue)
+                count += 1
+                for _ in range(levelSize):
+                    currWord = queue.popleft()
+                    if currWord == endWord:
+                        return count
+    
+                    for nextWord in self.getNextWords(currWord, wordSet):
+                        if nextWord in visited:
+                            continue
+    
+                        visited.add(nextWord)
+                        queue.append(nextWord)
+    
+            return 0
+      
+      ```
+    </details>
