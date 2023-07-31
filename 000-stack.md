@@ -75,8 +75,8 @@
    Maintain two stacks, main stack has the earliest element on top, auxiliary stack is empty 
    When a new element is pushed to the queue,
    1. If main stack is empty, simply push that element into stack
-   1. Otherwise if main stack is not empty, move all the elments to auxiliary stack, and push the element to main stack, then move the elements from auxiliary stack to main stack
-   ***For push, time complexity is O(N), and space complexity is also O(N)***
+   1. Otherwise if main stack is not empty, move all the elments to auxiliary stack, and push the element to main stack, then move the elements from auxiliary stack to main stack  
+   ***For push operation, time complexity is O(N), and space complexity is also O(N)***
     <details>
       
       ```python
