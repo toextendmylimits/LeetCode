@@ -20,9 +20,26 @@
     
 # To revisit
 1.  [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)  
-
+    Time complexity O(N^2), space complexity O(N^2)
     <details>
+        
       ```python
-
+        def longestPalindrome(self, s: str) -> str:
+            # dp[start][end] represent whether a substring from start to end(inclusive) is palindrome
+            dp = [[False] * len(s) for _ in s]
+            for start in range(len(s)):
+                dp[start][start] = True
+            result = s[0]
+            minLen = 1
+            for start in range(len(s) - 1, -1, -1):
+                for end in range(start + 1, len(s)):
+                    if s[start] == s[end]:
+                        if end - start == 1 or dp[start + 1][end - 1]:
+                            dp[start][end] = True
+                            currLen = end - start + 1
+                            if currLen > minLen:
+                                minLen = currLen
+                                result = s[start : end + 1]
+            return result
       ```
     </details>
