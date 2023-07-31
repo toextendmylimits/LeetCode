@@ -287,7 +287,7 @@
     </details>
 1.  [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)      
     Need to maintain a set for tracking visited nodes
-    Initially only put 0 cells to queue as root
+    ***Initially only put 0 cells to queue as root***
     Time complexiy and space complexity is O(R * C) where R is number of rows, and C is number of columns
     <details>
 
