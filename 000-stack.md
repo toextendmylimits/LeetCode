@@ -71,6 +71,40 @@
            return self.minStack[-1]
       ```
     </details>
+1. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)  
+   Maintain two stacks, main stack has the earliest element on top, auxiliary stack is empty 
+   When a new element is pushed to the queue,
+   1. If main stack is empty, simply push that element into stack
+   1. Otherwise if main stack is not empty, move all the elments to auxiliary stack, and push the element to main stack, then move the elements from auxiliary stack to main stack
+   ***For push, time complexity is O(N), and space complexity is also O(N)***
+    <details>
+      
+      ```python
+       def __init__(self):
+           self.mainStack = []
+           self.auxStack = []
+           
+   
+       def push(self, x: int) -> None:
+           if not self.mainStack:
+               self.mainStack.append(x)
+           else:
+               while self.mainStack:
+                   self.auxStack.append(self.mainStack.pop())
+               self.mainStack.append(x)
+               while self.auxStack:
+                   self.mainStack.append(self.auxStack.pop())
+       def pop(self) -> int:
+           return self.mainStack.pop()
+   
+       def peek(self) -> int:
+           return self.mainStack[-1]
+           
+   
+       def empty(self) -> bool:
+           return not self.mainStack
+      ```
+    </details>
 ## TO re-visit later
 1. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)  
 1. [155. Min Stack](https://leetcode.com/problems/min-stack)  
