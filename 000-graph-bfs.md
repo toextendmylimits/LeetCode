@@ -114,3 +114,37 @@
       
       ```
     </details>
+1.  [695. Max Area of Island](https://leetcode.com/problems/max-area-of-island)    
+    Beware to change the cell value to 0 to mart it as visited when pushing root to queue, and also when pushing child elements to queue
+    Time complexiy and space complexity is O(R * C) where R is number of rows, and C is number of columns
+    <details
+
+      ```python
+    def getArea(self, grid, row, col):
+        queue = deque([(row, col)])
+        area = 0
+        grid[row][col] = 0
+        directions = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+        while queue:
+            currRow, currCol = queue.popleft()
+            area += 1
+            
+            for rowOffset, colOffset in directions:
+                nextRow = currRow + rowOffset
+                nextCol = currCol + colOffset
+                if nextRow < 0 or nextRow >= len(grid) or nextCol < 0 or nextCol >= len(grid[0]) or grid[nextRow][nextCol] == 0:
+                    continue
+                grid[nextRow][nextCol] = 0
+                queue.append((nextRow, nextCol))
+        return area
+
+    def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+        result = 0
+        for r in range(len(grid)):
+            for c in range(len(grid[0])):
+                if grid[r][c] == 1:
+                    result = max(result, self.getArea(grid, r, c))
+
+        return result
+      ```
+    </details>
