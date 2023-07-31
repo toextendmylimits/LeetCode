@@ -27,3 +27,48 @@
       
       ```
     </details>
+
+1. [752. Open the Lock](https://leetcode.com/problems/open-the-lock)  
+    ***Beware to check whether the initial state is in dead locks, and if so, return immediately.***
+    Time complexity O(10^N*(N^2) + D) where N is the number of digits, D is the nubmer of deadlocks. There are 10^N lock combinations, and for each combination, we need to spend O(N^2) time traversing all digits and constructing the lock.  
+space complexity is O(10^N + D) for the queue and deadset 
+    <details>
+
+      ```python
+        def getNeighbours(self, s):
+            result = []
+            for i in range(len(s)):
+                digit = int(s[i])
+                for move in [-1, 1]:
+                    nextDigit = (digit + move) % 10
+                    result.append(s[:i] + str(nextDigit) + s[i + 1:])
+            return result  
+    
+        def openLock(self, deadends: List[str], target: str) -> int:
+            deadSet = set(deadends)     
+            initialState = "0000"
+            if initialState in deadSet:
+                return -1
+                
+            visited = set([initialState])
+            queue = deque([initialState])
+            turns = 0
+            while queue:
+                levelSize = len(queue)
+                for _ in range(levelSize):
+                    node = queue.popleft()
+                    if node == target:
+                        return turns
+                    
+                    for neighbour in self.getNeighbours(node):
+                        if neighbour in visited or neighbour in deadSet:
+                            continue
+    
+                        visited.add(neighbour)
+                        queue.append(neighbour)
+                turns += 1
+    
+            return -1
+      
+      ```
+    </details>
