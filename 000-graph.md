@@ -254,7 +254,7 @@
 1.  [695. Max Area of Island](https://leetcode.com/problems/max-area-of-island)    
     Beware to change the cell value to 0 to mart it as visited when pushing root to queue, and also when pushing child elements to queue
     Time complexiy and space complexity is O(R * C) where R is number of rows, and C is number of columns
-    <details
+    <details>
 
       ```python
     def getArea(self, grid, row, col):
@@ -288,7 +288,7 @@
 1.  [542. 01 Matrix](https://leetcode.com/problems/01-matrix/)      
     Need to maintain a set for tracking visited nodes
     Time complexiy and space complexity is O(R * C) where R is number of rows, and C is number of columns
-    <details
+    <details>
 
       ```python
         def getArea(self, grid, row, col):
@@ -314,5 +314,44 @@
                     mat[nextRow][nextCol] = mat[currRow][currCol] + 1
                     queue.append((nextRow, nextCol))
             return mat
+      ```
+    </details>
+
+1.  [994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges)      
+    Beware edge case when there is no fresh fruits, return 0 immediately, and also iniatially set elapsed minutes to -1  
+    Time complexiy and space complexity is O(R * C) where R is number of rows, and C is number of columns  
+    <details>
+
+      ```python
+        def orangesRotting(self, grid: List[List[int]]) -> int:
+            queue = deque()
+            fresh = 0
+            for r in range(len(grid)):
+                for c in range(len(grid[0])):
+                    if grid[r][c] == 1:
+                        fresh += 1
+                    elif grid[r][c] == 2:
+                        queue.append((r, c))
+            if fresh == 0:
+                return 0
+    
+            minutes = -1
+            directions = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+            while queue:
+                levelSize = len(queue)
+                minutes += 1
+                for _ in range(levelSize):
+                    row, col = queue.popleft()
+    
+                    for rowOffset, colOffset in directions:
+                        nextRow = row + rowOffset
+                        nextCol = col + colOffset
+    
+                        if 0 <= nextRow < len(grid) and 0 <= nextCol < len(grid[0]) and grid[nextRow][nextCol] == 1:
+                            grid[nextRow][nextCol] = 2
+                            fresh -= 1
+                            queue.append((nextRow, nextCol))
+                     
+            return minutes if fresh == 0 else -1
       ```
     </details>
