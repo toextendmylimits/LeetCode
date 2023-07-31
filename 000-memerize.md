@@ -10,3 +10,4 @@
 1. [Sort Colors](https://leetcode.com/problems/sort-colors)
 1. [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)
 1. [169. Majority Element](https://leetcode.com/problems/majority-element)
+1.  [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)  
