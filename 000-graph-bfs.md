@@ -30,8 +30,8 @@
 
 1. [752. Open the Lock](https://leetcode.com/problems/open-the-lock)  
     ***Beware to check whether the initial state is in dead locks, and if so, return immediately.***  
-    Time complexity O(10^N*(N^2) + D) where N is the number of digits, D is the nubmer of deadlocks. There are 10^N lock combinations, and for each combination, we need to spend O(N^2) time traversing all digits and constructing the lock.  
-Space complexity is O(10^N + D) for the queue and deadset 
+    ***Time complexity*** O(10^N*(N^2) + D) where N is the number of digits, D is the nubmer of deadlocks. There are 10^N lock combinations, and for each combination, we need to spend O(N^2) time traversing all digits and constructing the lock.  
+    ***Space complexity*** is O(10^N + D) for the queue and deadset 
     <details>
 
       ```python
