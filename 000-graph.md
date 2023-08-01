@@ -105,7 +105,7 @@
 ## Backtracking
 1. [79. Word Search](https://leetcode.com/problems/word-search)  
     For each of the cells, check whether there is a sequence starting from that cell using backtracking.   
-    ***Beware to remove the visited node from set from backtracking***
+    ***Beware to remove the visited node from set from backtracking***  
     ***Time Complexity***: O(N * 3 ^ L ) where N is the number of cells in the board and L is the length of the word to be matched. For the backtracking function, initially we could have at most 4 directions to explore, but further the choices are reduced into 3 (since we won't go back to where we come from).  
     ***Space Complexity***: O(L) for the visited set and recruision call stack
     <details>
