@@ -2,7 +2,7 @@
 ## DFS
 1.  [733. Flood Fill](https://leetcode.com/problems/flood-fill)  
     Beware the edge case when original color is same with replacement color, as it leads to infinite recursive stack call, so should return image immediately if original color is same as replacement color
-    <details
+    <details>
 
       ```python
       def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
@@ -25,7 +25,7 @@
     </details>
 1.  [200. Number of Islands](https://leetcode.com/problems/number-of-islands)  
     Time complexity and space complexity is O(R * C) where R is number of rows and C is number of columns
-    <details
+    <details>
 
       ```python
         def numIslands(self, grid: List[List[str]]) -> int:
@@ -52,7 +52,7 @@
 1.  [695. Max Area of Island](https://leetcode.com/problems/max-area-of-island)    
     The dfs method should return the area  
     Time complexiy and space complexity is O(R * C) where R is number of rows, and C is number of columns
-    <details
+    <details>
 
       ```python
         def getArea(self, grid, row, col):
@@ -81,22 +81,25 @@
     Need hash map to map new node to cloned node, so when a node is cloned already, next time we can just reference its cloned value
     ***Time complexiy*** is Time Complexity: O(V+E), where V is a number of nodes (vertices) and E is a number of edges.  
     ***Space complexity*** is O(V). This space is occupied by the  hash map and in addition to that, space would also be occupied by the recursion stack O(H) where H is the height of the graph.
-    <details
+    <details>
 
       ```python
         def cloneGraph(self, node: 'Node') -> 'Node':
             oldToNewMap = {}
             def clone(node):
+                if not node:
+                    return None
+                    
                 if node in oldToNewMap:
                     return oldToNewMap[node]
-    
+                
                 copy = Node(node.val)
                 oldToNewMap[node] = copy
                 for nei in node.neighbors:
                     copy.neighbors.append(clone(nei))
-                return copy
                 
-            return clone(node) if node else None
+                return copy
+            return clone(node)
       ```
     </details>
 ## Backtracking
