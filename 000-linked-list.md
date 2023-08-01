@@ -120,7 +120,27 @@
             currB = currB.next if currB else headA
     ```
     </details>
+1. [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)  
+    Create a dummy node to allow retrieving head later, and initialize pointer prev with dummy node  
+    If prev and prev.next is not null, repeat following steps:  
+    1. if value of prev.next equals to val, connect prev to prev.next.next  
+    1. otherwise advance prev  
+    <details>
 
+    ```python
+        def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
+            dummy = ListNode()
+            dummy.next = head
+            prev = dummy
+            while prev and prev.next:
+                if prev.next.val == val:
+                    prev.next = prev.next.next
+                else:
+                    prev = prev.next
+    
+            return dummy.next
+    ```
+    </details>
 ## Difficult and to visit later if have time
 1. [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)
 1. [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)  
