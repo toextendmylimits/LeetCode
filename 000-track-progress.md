@@ -26,5 +26,7 @@
 |[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)     |  String | 
 |[28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string)   | String |
 |[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi) | String | Beware edge case when number overflow, always check against pow(2, 31) - 1, remember, the last digit of pow(2, 31) - 1 is 7, while last digit of pow(2, 31) is 8
-1[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | String |
+|[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | String |
+|[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Array |
+
 
