@@ -209,9 +209,9 @@
       ```
     </details>
 1. [127. Word Ladder](https://leetcode.com/problems/word-ladder)  
-    Use chr to get the letter from its unicode
+    Use chr to get the letter from its unicode  
     ***Time complexity*** O(N*(M^2)) where N is the number of words, M is the length of words. There are N words, and for each word, we need to spend O(M^2) time traversing all letters and constructing adjacent words.  
-    ***Space complexity*** is O(N*(M^2) for the queue to store all M transformations for each of the N words in the
+    ***Space complexity*** is O(N*M) for the queue to store all N words
     <details>
 
       ```python
