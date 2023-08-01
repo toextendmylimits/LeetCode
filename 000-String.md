@@ -4,23 +4,23 @@
     1. Scan the first word, and for each character, check whether it exists in all the remaining words
     1. Scan the words, if the charcter doesn't exist in a word, then the prefix is found, return it, otherwise continue
     1. In the end, all characters of first word must exist in the remaining words, so just return the first word   
-    <details>
-        
-        ```python
-            def longestCommonPrefix(self, strs: List[str]) -> str:
-                if not strs:
-                    return ""
-                    
-                result = []
-                firstStr = strs[0]
-                for i in range(len(firstStr)):
-                    for j in range(1, len(strs)):
-                        if i >= len(strs[j]) or strs[j][i] != firstStr[i]:
-                            return firstStr[:i]
-                    
-                return firstStr
-        ```
-    </details>
+        <details>
+            
+            ```python
+                def longestCommonPrefix(self, strs: List[str]) -> str:
+                    if not strs:
+                        return ""
+                        
+                    result = []
+                    firstStr = strs[0]
+                    for i in range(len(firstStr)):
+                        for j in range(1, len(strs)):
+                            if i >= len(strs[j]) or strs[j][i] != firstStr[i]:
+                                return firstStr[:i]
+                        
+                    return firstStr
+            ```
+        </details>
 1. [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)  
     <details>
 
