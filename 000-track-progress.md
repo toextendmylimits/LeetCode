@@ -16,5 +16,5 @@
 |[210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii)  |    Graph |  
 |[269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary)  |  Graph |
 |[203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)  |  Linked List |
-|114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  |  Tree DFS | 
+|[114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  |  Tree DFS | 
 
