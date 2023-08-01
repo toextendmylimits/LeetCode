@@ -104,38 +104,36 @@
     </details>
 ## Backtracking
 1. [79. Word Search](https://leetcode.com/problems/word-search)  
-    For each of the cells, check whether there is a sequence starting from that cell using backtracking.  
+    For each of the cells, check whether there is a sequence starting from that cell using backtracking.   
+    ***Beware to remove the visited node from set from backtracking***
     ***Time Complexity***: O(N * 3 ^ L ) where N is the number of cells in the board and L is the length of the word to be matched. For the backtracking function, initially we could have at most 4 directions to explore, but further the choices are reduced into 3 (since we won't go back to where we come from).  
     ***Space Complexity***: O(L) for the visited set and recruision call stack
     <details>
         
         ```python
-        def exist(self, board: List[List[str]], word: str) -> bool:
-            visited = set()
+    def exist(self, board: List[List[str]], word: str) -> bool:
+        visited = set()
+        def isValid(row, col, letterIndex):
+            if letterIndex == len(word):
+                return True
+
+            if row < 0 or row >= len(board) or col < 0 or col >= len(board[0]) or (row, col) in visited or board[row][col] != word[letterIndex]:
+                return False
+
+            visited.add((row, col))
             directions = [(-1, 0), (0, 1), (1, 0), (0, -1)]
-    
-            def isValid(row, col, charIndex):
-                nonlocal board, word, visited, directions
-    
-                if charIndex == len(word):
+            for rowOffset, colOffset in directions:
+                if isValid(row + rowOffset, col + colOffset, letterIndex + 1):
                     return True
-    
-                if row < 0 or row >= len(board) or col < 0 or col >= len(board[0]) or (row, col) in visited or board[row][col] != word[charIndex]:
-                    return False
-    
-                visited.add((row, col))
-                path.append(board[row][col])
-                for rowOffset, colOffset in directions:
-                    if isValid(row + rowOffset, col + colOffset, charIndex + 1):
-                        return True
-                visited.remove((row, col))
-                path.pop()
-    
-            for r in range(len(board)):
-                for c in range(len(board[0])):
-                    if isValid(r, c, 0):
-                        return True
+            visited.remove((row, col))
             return False
+
+        for r in range(len(board)):
+            for c in range(len(board[0])):
+                if isValid(r, c, 0):
+                    return True
+        
+        return False
         ```
     </details>
 ## BFS
