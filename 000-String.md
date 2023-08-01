@@ -21,6 +21,30 @@
                     return firstStr
             ```
         </details>
+
+1. [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string)  
+    A very intuitive approach is to traverse each possible substring of same length as needle in the haystack, and check if it equals to needle.
+    1. Declare i represent index of needle, and j represent index of haystack, 
+    1. Iterate i from 0 to len(haystack) - len(needle), in each interation
+    1. Iterate j from 0 to len(needle) - 1, 
+    1. In each iteration, check whether needle[j] == haystack[i + j] 
+    1. If not equal, break out of the loop for iteration j
+    1. If equal, check whether j equal to len(needle) - 1, if so the needle has been found, return i
+    1. Return -1 in the end
+    <details>
+
+      ```python
+        def strStr(self, haystack: str, needle: str) -> int:
+            for i in range(len(haystack) - len(needle) + 1):
+               for j in range(len(needle)):
+                    if haystack[i + j] != needle[j]:
+                       break
+                    
+                    if j == len(needle) - 1:
+                        return i
+            return -1     
+      ```
+    </details>
 1. [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)  
     <details>
 
