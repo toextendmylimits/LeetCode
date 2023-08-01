@@ -20,3 +20,7 @@
 |[237. Delete Node in a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list) | Linked List | Update node value and then connect node with its next's next
 |[7. Reverse Integer](https://leetcode.com/problems/reverse-integer) | Strings | Beware python modulo operation with negative number for python -2 % 5 == 3 (NOT -2)
 
+## 02/08/2023
+|Question | Category | Comment
+|----------|---------|---------
+|[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)     |  String | 
