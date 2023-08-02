@@ -23,6 +23,22 @@
         return True
    ```
    </details>
+
+1. [26. Remove Duplicates from Sorted Array]([https://leetcode.com/problems/valid-palindrome](https://leetcode.com/problems/remove-duplicates-from-sorted-array/))  
+   One pointer point to unique number, and is initialized to 1. The other pointer point to elements of the array, starting from second element. If an element is not equal to the unique number, then advance the pointer fo unique number. In the end, return index of unique number  
+   <details>
+
+   ```python
+    def removeDuplicates(self, nums: List[int]) -> int:
+        uniqueNumIdx = 1
+        for i in range(1, len(nums)):
+            if nums[i] != nums[i - 1]:
+                nums[uniqueNumIdx] = nums[i]
+                uniqueNumIdx += 1
+        
+        return uniqueNumIdx
+   ```
+   </details>
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
    ***Importantly we are only allowed to buy and sell once, i.e. not trading multiple times.***     
    So idea is to buy low and sell high. Keep the low price and max profit. If a price is lower than current low price, update low price; otherwise, there could be profit, if that profit    is greater than current max profit, update current max profit
