@@ -24,7 +24,7 @@
    ```
    </details>
 
-1. [26. Remove Duplicates from Sorted Array]([https://leetcode.com/problems/valid-palindrome](https://leetcode.com/problems/remove-duplicates-from-sorted-array/))  
+1. [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/valid-palindrome](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)  
    One pointer point to unique number, and is initialized to 1. The other pointer point to elements of the array, starting from second element. If an element is not equal to the unique number, then advance the pointer fo unique number. In the end, return index of unique number  
    <details>
 
