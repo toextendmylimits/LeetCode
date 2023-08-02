@@ -26,8 +26,9 @@
     </details>
 
 1. [350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)  
-    Approach 1 is use hash map to save number and its frequency for a smaller array, and then scan another array, if its frequency is greater than 0, append to result, and then decrease frequency  
-    Approach is to sort both arrays, and then use two pointers, when num not equal, advance pointer for lower number, and when equal, append element to result, and advance both pointer  
+   *** Approach 1 is use hash map*** to save number and its frequency for a smaller array, and then scan another array, if its frequency is greater than 0, append to result, and then decrease frequency
+     
+    ***Approach 2 is to sort both arrays, and then use two pointers***, when num not equal, advance pointer for lower number, and when equal, append element to result, and advance both pointer  
     Time complexity is O(NlogN + MlogM), space complexity is O(logN + logM) to O(N+M) depends on the sorting algorithm    
     <details>
 
