@@ -41,7 +41,7 @@
    </details>
 
 1. [189. Rotate Array](https://leetcode.com/problems/rotate-array)  
-   A very inutitive approach is to create a new array, and let its (i + k) % len element equal to ith element of the original array
+   A very inutitive approach is to create a new array, and let its (i + k) % len element equal to ith element of the original array  
    A better approach to to reverse arrays from 1 to len - 1, then from 0 to k -1, then from k to len - 1
    <details>
 
