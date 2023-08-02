@@ -55,7 +55,6 @@
         for i in range(numsCount):
             nums[i]  = result[i]
    ```
-   </details>
 
    ```python
     def rotate(self, nums: List[int], k: int) -> None:
