@@ -106,28 +106,32 @@
    return " ".join(reversed(s.split()))
    ```
    Rewrite the functions join, reversed(easy), and split
-   ```
-    def join(self, words):
-     result = ""
-     for i, word in enumerate(words):
-         result += (" " if i > 0 else "") + word
-     return result
+   <details>
 
-        
-    def split(self, s):
-        words = []
-        currWord = ""
-        for c in s:
-            if c != " ":
-                currWord += c
-            elif currWord:
-                words.append(currWord)
-                currWord = ""
-        
-        if currWord:
-            words.append(currWord)
-
-        return words
+      ```python
+          def join(self, words):
+           result = ""
+           for i, word in enumerate(words):
+               result += (" " if i > 0 else "") + word
+           return result
+      
+              
+          def split(self, s):
+              words = []
+              currWord = ""
+              for c in s:
+                  if c != " ":
+                      currWord += c
+                  elif currWord:
+                      words.append(currWord)
+                      currWord = ""
+              
+              if currWord:
+                  words.append(currWord)
+      
+              return words
+      ```
+   </details>
    ```
 1. [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)   
    If char at left not equal right, check after removing either char, whether the remaining string is palindrome
