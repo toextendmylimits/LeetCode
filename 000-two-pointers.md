@@ -39,6 +39,40 @@
         return uniqueNumIdx
    ```
    </details>
+
+1. [189. Rotate Array](https://leetcode.com/problems/rotate-array)  
+   A very inutitive approach is to create a new array, and let its (i + k) % len element equal to ith element of the original array
+   A better approach to to reverse arrays from 1 to len - 1, then from 0 to k -1, then from k to len - 1
+   <details>
+
+   ```python
+    def rotate(self, nums, k):
+        numsCount = len(nums)
+        result = [0] * numsCount
+        for i in range(numsCount):
+            result[(i + k) % numsCount] = nums[i]
+
+        for i in range(numsCount):
+            nums[i]  = result[i]
+   ```
+   </details>
+
+   ```python
+    def rotate(self, nums: List[int], k: int) -> None:
+        def reverse(nums, start, end):
+            left = start
+            right = end
+            while left < right:
+                nums[left], nums[right] = nums[right], nums[left]
+                left += 1
+                right -= 1
+        k %= len(nums)
+        reverse(nums, 0, len(nums) - 1)
+        reverse(nums, 0, k - 1)
+        reverse(nums, k, len(nums) - 1)
+   ```
+   </details>
+   
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
    ***Importantly we are only allowed to buy and sell once, i.e. not trading multiple times.***     
    So idea is to buy low and sell high. Keep the low price and max profit. If a price is lower than current low price, update low price; otherwise, there could be profit, if that profit    is greater than current max profit, update current max profit
