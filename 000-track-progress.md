@@ -29,7 +29,7 @@
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | String |
 |[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Array |
 |[283. Move Zeroes](https://leetcode.com/problems/move-zeroes) | Array |
-|[189. Rotate Array](https://leetcode.com/problems/rotate-array) | Array | reverse three times to have O(1) space complexity
+|[189. Rotate Array](https://leetcode.com/problems/rotate-array) | Array | k %= len, then reverse three times to have O(1) space complexity
 |[66. Plus One](https://leetcode.com/problems/plus-one)  | Array | Should practice this more to code it in two minutes
 |[350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)  | Array | Learn to sort the array, and then use two pointers
 |[136. Single Number](https://leetcode.com/problems/single-number)  |Bitwise |
