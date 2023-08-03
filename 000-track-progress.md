@@ -46,6 +46,7 @@ Reviewd the following from 01/08:
 
 ## 04/08/2023
 
+Reviewed the following questions from 01/08
 |Question | Category | Comment
 |----------|---------|---------
 |[286. Walls and Gates](https://leetcode.com/problems/walls-and-gates)       |   Graph |  
