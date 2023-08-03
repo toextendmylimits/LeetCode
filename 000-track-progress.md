@@ -44,4 +44,12 @@ Reviewd the following from 01/08:
 |[695. Max Area of Island](https://leetcode.com/problems/max-area-of-island)      |   Graph |   
 |[79. Word Search](https://leetcode.com/problems/word-search)     |    Graph | Time: O(N*3^L) Space: O(L), N is number of cells, L is length of word; Remember use set to mark visited cell, and remove when backtracking |
 
+## 04/08/2023
+
+|Question | Category | Comment
+|----------|---------|---------
+|[286. Walls and Gates](https://leetcode.com/problems/walls-and-gates)       |   Graph |  
+|[752. Open the Lock](https://leetcode.com/problems/open-the-lock)     |   Graph |   
+|[127. Word Ladder](https://leetcode.com/problems/word-ladder)       |   Graph |  Remember to check whether word in wordSet, and initialize count to 0
+
 
