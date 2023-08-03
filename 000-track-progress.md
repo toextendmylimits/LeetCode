@@ -40,6 +40,6 @@ Reviewed all the questions from previous day
 Reviewd the following from 01/08:
 |[200. Number of Islands](https://leetcode.com/problems/number-of-islands)     |  Graph |
 |[695. Max Area of Island](https://leetcode.com/problems/max-area-of-island)      |   Graph |   
-|[79. Word Search](https://leetcode.com/problems/word-search)     |    Graph | Time: O(N*3^L) Space: O(L), N is number of cells, L is length of word; Remember use set to mark visited cell, and remove when backtracking
+|[79. Word Search](https://leetcode.com/problems/word-search)     |    Graph | Time: O(N*3^L) Space: O(L), N is number of cells, L is length of word; Remember use set to mark visited cell, and remove when backtracking |
 
 
