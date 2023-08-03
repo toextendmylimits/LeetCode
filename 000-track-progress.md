@@ -34,8 +34,8 @@
 |[350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii)  | Array | Learn to sort the array, and then use two pointers
 |[136. Single Number](https://leetcode.com/problems/single-number)  |Bitwise |
 
-## 02/08/2023
-Reviewed all the questions from previous day
+## 03/08/2023
+Reviewed all the questions from previous day 02/08
 
 Reviewd the following from 01/08:
 |Question | Category | Comment
