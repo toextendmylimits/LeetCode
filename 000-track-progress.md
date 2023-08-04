@@ -46,7 +46,7 @@ Reviewd the following from 01/08:
 
 ## 04/08/2023
 
-Reviewed the following questions from 01/08
+###Reviewed the following questions from 01/08
 |Question | Category | Comment
 |----------|---------|---------
 |[286. Walls and Gates](https://leetcode.com/problems/walls-and-gates)       |   Graph |  
@@ -61,5 +61,14 @@ Reviewed the following questions from 01/08
 |[114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  |  Tree DFS | Check whether node if leaf in base condition
 |[237. Delete Node in a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list) | Linked List | Update node value and then connect node with its next's next
 |[7. Reverse Integer](https://leetcode.com/problems/reverse-integer) | Strings | Beware python modulo operation with negative number for python -2 % 5 == 3 (NOT -2)
+
+###Reviewed following questions for sliding window
+|Question | Comment
+|----------|---------
+| [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)  |
+|[340. Longest Substring with At Most K Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-k-distinct-characters)  |
+|[643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i)  |
+[209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)  |Different to other questions, result is updated within while loop|
+|[713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)  | Remember to return 0 for edge case k <= 1, and right - left + 1 represent numbers of subarray starting at index greater than or equal to left, but ending at index right|
 
 
