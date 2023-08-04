@@ -66,7 +66,7 @@
     Beware the edge case that a words contains its next, then should return immediately such as "abc" "ab"
      
     ***Time Complexity***: The first step to create a graph takes O(n + alpha) time where n is number of given words and alpha is number of characters in given alphabet. The second step is also topological sorting. Note that there would be alpha vertices and at-most (n-1) edges in the graph. The time complexity of topological sorting is O(V+E) which is O(n + alpha) here. So overall time complexity is O(n + alpha) + O(n + alpha) which is O(n + alpha).  
-   ***Space Complexity***: O(V) , here V is number of Vertices, i.e. the number of characters
+   ***Space Complexity***: O(1) , given there are very limited number of characters
     <details>
 
       ```python
