@@ -1,5 +1,7 @@
 # Topological Sort
 1. [207. Course Schedule](https://leetcode.com/problems/course-schedule)  
+    Time compexlity O(V+E)  
+    Space complexity O(V+E) O(V) for queue, O(E) for building the initial graph
     <details>
 
       ```python
