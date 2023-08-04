@@ -58,5 +58,8 @@ Reviewed the following questions from 01/08
 |[210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii)  |    Graph |  Space complexity O(V+E) for queue plus initial graph build
 |[269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary)  |  Graph |Rememboer to break when letters don't equal, and beware time complexity and space complexity
 |[203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)  |  Linked List | Two pointers, previous to dummy, curr to head
+|[114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  |  Tree DFS | Check whether node if leaf in base condition
+|[237. Delete Node in a Linked List](https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list) | Linked List | Update node value and then connect node with its next's next
+|[7. Reverse Integer](https://leetcode.com/problems/reverse-integer) | Strings | Beware python modulo operation with negative number for python -2 % 5 == 3 (NOT -2)
 
 
