@@ -56,5 +56,6 @@ Reviewed the following questions from 01/08
 |[994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges)     |   Graph | Return 0 immediately if there is no fresh fruit at all in the beginning   
 |[133. Clone Graph](https://leetcode.com/problems/clone-graph)      |   Graph |Remember to put new copy to oldToNew hash map, space compelxity is O(V) for hash map and recursion stack call  
 |[210. Course Schedule II](https://leetcode.com/problems/course-schedule-ii)  |    Graph |  Space complexity O(V+E) for queue plus initial graph build
+|[269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary)  |  Graph |Rememboer to break when letters don't equal, and beware time complexity and space complexity
 
 
