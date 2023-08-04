@@ -1,3 +1,5 @@
+
+\
 # Track progress
 ## 01/08/2023
 |Question | Category | Comment
@@ -70,5 +72,5 @@ Reviewd the following from 01/08:
 |[643. Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i)  |
 [209. Minimum Size Subarray Sum](https://leetcode.com/problems/minimum-size-subarray-sum)  |Different to other questions, result is updated within while loop|
 |[713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)  | Remember to return 0 for edge case k <= 1, and right - left + 1 represent numbers of subarray starting at index greater than or equal to left, but ending at index right|
-
+|[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)|DO it a few times|
 
