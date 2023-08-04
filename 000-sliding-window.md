@@ -82,7 +82,7 @@
     </details>
 1. [713. Subarray Product Less Than K](https://leetcode.com/problems/subarray-product-less-than-k)  
    Note that the Sliding window approach is only valid because numbers are positive.
-   Once find a valid window, increase the count by right - left + 1    
+   Once find a valid window, increase the count by right - left + 1 which represent athe number of subarrays ending at index right, and starting at index greater or equal to left    
     ***Beware edge case that if k is less than or equal to 1, return 0 immediately***
     <details>
 
