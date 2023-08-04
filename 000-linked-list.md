@@ -121,24 +121,27 @@
     ```
     </details>
 1. [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)  
-    Create a dummy node to allow retrieving head later, and initialize pointer prev with dummy node  
-    If prev and prev.next is not null, repeat following steps:  
-    1. if value of prev.next equals to val, connect prev to prev.next.next  
-    1. otherwise advance prev  
+    Create a dummy node to allow retrieving head later, and initialize pointer prev with dummy node, and current pointer point to head  
+    If curr is not null, repeat following steps:  
+    1. if value of curr equals to val, connect prev to curr.next
+    1. otherwise advance prev to be curr
+    1. In the end, always advance curr to its next 
     <details>
 
     ```python
-        def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
-            dummy = ListNode()
-            dummy.next = head
-            prev = dummy
-            while prev and prev.next:
-                if prev.next.val == val:
-                    prev.next = prev.next.next
-                else:
-                    prev = prev.next
-    
-            return dummy.next
+    def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
+        dummy = ListNode()
+        dummy.next = head
+        prev = dummy
+        curr = head
+        while curr:
+            if curr.val == val:
+                prev.next = curr.next
+            else:
+                prev = curr
+            curr = curr.next
+
+        return dummy.next
     ```
     </details>
 ## Difficult and to visit later if have time
