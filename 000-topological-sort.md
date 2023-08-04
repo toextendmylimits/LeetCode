@@ -65,8 +65,12 @@
     The key is to find lexical order of two letters. This can be done by comparing letters two adjacent words, if for same postion, there is a mismatch, then the lexical order is determined for these two letters.  
     Beware the edge case that a words contains its next, then should return immediately such as "abc" "ab"
      
-    ***Time Complexity***: The first step to create a graph takes O(n + alpha) time where n is number of given words and alpha is number of characters in given alphabet. The second step is also topological sorting. Note that there would be alpha vertices and at-most (n-1) edges in the graph. The time complexity of topological sorting is O(V+E) which is O(n + alpha) here. So overall time complexity is O(n + alpha) + O(n + alpha) which is O(n + alpha).  
-   ***Space Complexity***: O(1) , given there are very limited number of characters
+    ***Time Complexity***: Let N be the total number of strings in the input list, C be the total length of all the words in the input list, added together, and U be the total number of unique letters in the alien alphabet.  
+Time is spent in identifying all the relations, putting them into an adjacency list, and then converting it into a valid alphabet ordering.
+    O(C) for identifying all the relations, putting them into an adjacency list  
+    O(V+E)=O(U+min(U^2,N)) If U^2 < N, then it < O(U+N) < O(C); else U^2 > N, =O(U+N) < O(C)  
+    Together it's O(C)  
+   ***Space Complexity***: O(V+E)=O(U+min(U^2,N))
     <details>
 
       ```python
