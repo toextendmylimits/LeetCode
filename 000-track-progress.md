@@ -52,5 +52,7 @@ Reviewed the following questions from 01/08
 |[286. Walls and Gates](https://leetcode.com/problems/walls-and-gates)       |   Graph |  
 |[752. Open the Lock](https://leetcode.com/problems/open-the-lock)     |   Graph |   
 |[127. Word Ladder](https://leetcode.com/problems/word-ladder)       |   Graph |  Remember to check whether word in wordSet, and initialize count to 0
+|[542. 01 Matrix](https://leetcode.com/problems/01-matrix/)       |   Graph |    
+|[994. Rotting Oranges](https://leetcode.com/problems/rotting-oranges)     |   Graph | Return 0 immediately if there is no fresh fruit at all in the beginning   
 
 
