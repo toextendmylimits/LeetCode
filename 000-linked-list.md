@@ -8,52 +8,52 @@
         1. Then, regardless of which list we connecte we increment prev of merged list.
     1. Findally we connect the merged list with the list that is not null
  
-   <details>
-
-       ```python
-        def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-            preHead = ListNode()
-            prev = preHead
-            while list1 and list2:
-                if list1.val < list2.val:
-                    prev.next = list1
-                    list1 = list1.next
-                else:
-                    prev.next = list2
-                    list2 = list2.next
+       <details>
     
-                prev = prev.next
-    
-            prev.next = list1 or list2
-    
-            return preHead.next
-       ```
-    </details>
+           ```python
+            def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+                preHead = ListNode()
+                prev = preHead
+                while list1 and list2:
+                    if list1.val < list2.val:
+                        prev.next = list1
+                        list1 = list1.next
+                    else:
+                        prev.next = list2
+                        list2 = list2.next
+        
+                    prev = prev.next
+        
+                prev.next = list1 or list2
+        
+                return preHead.next
+           ```
+        </details>
 1. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)  
     Without using dummy head, the two pointers should be **n step**s apart, and should check whether the **removed node is head**, also the right pointer should be **the last element**
-    <details>
-
-       ```python
-           for i in range(n):
-               fast = fast.next
-           
-           if not fast:
-              return head.next
-        
-           while fast.next:
-              fast = fast.next
-              slow = slow.next
-          
-           #When using dummy head, the two pointers are also ** n steps** apart, and the **right pointer should be last item**
-           
-           for i in range(n):
-               fast = fast.next
+        <details>
+    
+           ```python
+               for i in range(n):
+                   fast = fast.next
+               
+               if not fast:
+                  return head.next
+            
+               while fast.next:
+                  fast = fast.next
+                  slow = slow.next
               
-            while fast.next:
-                fast = fast.next
-                slow = slow.next
-       ```
-     </details>
+               #When using dummy head, the two pointers are also ** n steps** apart, and the **right pointer should be last item**
+               
+               for i in range(n):
+                   fast = fast.next
+                  
+                while fast.next:
+                    fast = fast.next
+                    slow = slow.next
+           ```
+         </details>
 1. [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)   
     When the list have even number of nodes, return the second middle node
     <details>
