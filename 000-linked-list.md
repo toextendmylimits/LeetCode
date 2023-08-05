@@ -43,9 +43,9 @@
            while fast.next:
               fast = fast.next
               slow = slow.next
-           ```
-           When using dummy head, the two pointers are also ** n steps** apart, and the **right pointer should be last item**
-           ```
+          
+           #When using dummy head, the two pointers are also ** n steps** apart, and the **right pointer should be last item**
+           
            for i in range(n):
                fast = fast.next
               
