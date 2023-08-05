@@ -103,3 +103,8 @@ Reviewd the following from 01/08:
 |[48. Rotate Image](https://leetcode.com/problems/rotate-image) | tranpose c start from r + 1, reflect c range to len // 2, need practice more |
 |[326. Power of Three](https://leetcode.com/problems/power-of-three) | memorize the code |
 |[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer/) | Made mistake of letterToValueMap[-1] should be ***letterToValueMap[s[-1]]***|
+
+### Reviewed following questions for Linked List
+|Question | Comment
+|----------|---------
+|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) |
