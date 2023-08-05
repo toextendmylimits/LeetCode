@@ -10,7 +10,7 @@
  
    <details>
 
-       ```
+       ```python
         def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
             preHead = ListNode()
             prev = preHead
