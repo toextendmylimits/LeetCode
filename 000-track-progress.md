@@ -90,4 +90,5 @@ Reviewd the following from 01/08:
 |[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) |
 |[101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | To check either child is null: if not node.left or not node.right(Don't miss one not)|
 |[108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)  |Base condition: if left > right: return None |
+|[Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)  | Learn iterative way later |
 
