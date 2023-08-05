@@ -107,4 +107,5 @@ Reviewd the following from 01/08:
 ### Reviewed following questions for Linked List
 |Question | Comment
 |----------|---------
+|[237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list) |
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) |
