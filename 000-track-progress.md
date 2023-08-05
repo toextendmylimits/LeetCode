@@ -88,4 +88,5 @@ Reviewd the following from 01/08:
 |----------|---------
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| BFS: depth is initialized to 0, and child null check is: if child(dont't make typo as if not child)|
 |[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) |
+|[101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree) | To check either child is null: if not node.left or not node.right(Don't miss one not)|
 
