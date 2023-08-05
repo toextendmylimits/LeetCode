@@ -1,6 +1,8 @@
 # Tree DFS
 ## Easy
-1. [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)  
+1. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)  
+   Should be able to traverse the tree iteratively as well  
+2. [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)  
    Choose the mid value to be root, and use left half to construct left subtree, and right half to construct right subtree  
    The base condition is ***if left is greater than right, return None*** because there there is no subtree can be built  
    ***Time complexity*** is O(N) as all nodes are visited once  
