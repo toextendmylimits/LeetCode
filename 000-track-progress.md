@@ -82,3 +82,7 @@ Reviewd the following from 01/08:
 |[992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)    | in while loop, condition is: len(counter) > k
 |[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)    | Check whether char is in origCounter first |
 |[438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)  |
+
+### Reviewed following questions for trees
+|Question | Comment
+|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/)| BFS: depth is initialized to 0, and child null check is: if child(dont't make typo as if not child)|
