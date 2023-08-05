@@ -1,4 +1,5 @@
 
+
 # Track progress
 ## 01/08/2023
 |Question | Category | Comment
@@ -94,3 +95,4 @@ Reviewd the following from 01/08:
 |[103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/) |
 |[105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)   |
 |[116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node) | Made two mistakes: 1. wrongly adding not for null check 2. Not return root |
+|[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)|Practice a few more times |
