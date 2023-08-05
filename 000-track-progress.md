@@ -111,3 +111,4 @@ Reviewd the following from 01/08:
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) |
 |[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Should do a few more times
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)|
+|[234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|Made mistake of having indefinite loop, practice more|
