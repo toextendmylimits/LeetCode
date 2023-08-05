@@ -49,4 +49,6 @@
       queue.append(node2.left)
       ```
       
-
+# Very difficult, to revisit later if have time
+1. [16. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)  
+    How to use established next pointer to avoid using a queue  
