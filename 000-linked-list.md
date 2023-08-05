@@ -31,7 +31,7 @@
     </details>
 1. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)  
     Without using dummy head, the two pointers should be **n step**s apart, and should check whether the **removed node is head**, also the right pointer should be **the last element**
-   <details>
+    <details>
 
        ```python
            for i in range(n):
@@ -53,7 +53,7 @@
                 fast = fast.next
                 slow = slow.next
        ```
-    </details>
+     </details>
 1. [876. Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list)   
     When the list have even number of nodes, return the second middle node
     <details>
