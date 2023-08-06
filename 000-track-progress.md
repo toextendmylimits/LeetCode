@@ -112,3 +112,12 @@ Reviewd the following from 01/08:
 |[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Should do a few more times
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)|
 |[234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)|Made mistake of having indefinite loop, practice more|
+
+## 06/08/2023 - mainly reviewed questions form 05/08
+
+### Reviewed following questions for sliding window
+|Question | Comment
+|----------|---------
+|[992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)    | in while loop, condition is: len(counter) > k
+|[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)    | Check whether char is in origCounter first |
+|[438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)  |
