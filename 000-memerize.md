@@ -1,4 +1,8 @@
 # Easy
+
+## Tree
+1. [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)
+
 ## Linked List
 1.[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
 1.[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
