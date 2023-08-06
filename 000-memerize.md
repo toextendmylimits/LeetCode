@@ -3,7 +3,11 @@
 1.[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
 1.[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
 
-
+# Difficult
+## Sliding Window
+1. [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers) 
+1. [76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)  
+1. [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)
 
 1. [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)
 1. [28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string)
