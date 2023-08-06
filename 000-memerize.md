@@ -8,6 +8,9 @@
 1.[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
 1.[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
 
+# Math
+1. [326. Power of Three](https://leetcode.com/problems/power-of-three)  
+
 # Difficult
 ## Sliding Window
 1. [992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers) 
