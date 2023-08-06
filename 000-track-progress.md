@@ -119,5 +119,5 @@ Reviewd the following from 01/08:
 |Question | Comment
 |----------|---------
 |[992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)    | in while loop, condition is: len(counter) > k
-|[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)    | Check whether char is in origCounter first |
+|[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)    | Made mistake of using = instead of == for comparison, and not increasing left |
 |[438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)  |
