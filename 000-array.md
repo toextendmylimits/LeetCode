@@ -63,7 +63,26 @@
       ```
     </details>
 1. [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)  
-   Start from the end, and try to fill the array with large elment of the two arrays. If the end, if array2 still has elements, fill the rest of the result array  
+   Start from the end, and try to fill the array with large elment of the two arrays. If the end, if array2 still has elements, fill the rest of the result array
+    <details>
+
+      ```python
+      def plusOne(self, digits: List[int]) -> List[int]:
+          carry = 0
+          result = digits[:]
+          for i in range(len(digits) - 1, -1, -1):
+              total = digits[i] + (1 if i == len(digits) - 1 else carry)
+              if total < 10:
+                  result[i] = total
+                  return result
+              else:
+                  result[i] = 0
+                  carry = 1
+  
+          if carry == 1:
+              return [1] + [0] * len(digits)
+      ```
+    </details>   
         <details>
     
             ```python
