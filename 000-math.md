@@ -1,6 +1,10 @@
 # Math
 1. [204. Count Primes](https://leetcode.com/problems/count-primes)  
-test
+   Use array isPrime to represent whether number at index is a prime
+   i from 2 to not exceeding sqrt(n)  
+   j from i * i to not exceeding n  
+   ***Time complexity*** O(sqrt(n) * log logN + N)  
+   ***Space complexity*** O(N)
    <details>
     
     ```python
