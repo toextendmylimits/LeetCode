@@ -72,6 +72,11 @@
       ```
     </details>
 1. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)  
+   Thinking process:
+   Imagine there is queue 1, 2, 3, Then in stack from bottoem to top, it would be 3, 2, 1 
+   Now if 4 is added, the expected stack would be 4, 3, 2, 1
+   So if revese it, it would be 1, 2, 3, 4 which is popping stack 3, 2, 1 and then pushing 4  
+
    Maintain two stacks, main stack has the earliest element on top, auxiliary stack is empty 
    When a new element is pushed to the queue,
    1. If main stack is empty, simply push that element into stack
