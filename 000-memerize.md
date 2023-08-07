@@ -21,6 +21,7 @@
 
 ## Other
 1.[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)  
+1. [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)  
 
 # Difficult
 ## Sliding Window
