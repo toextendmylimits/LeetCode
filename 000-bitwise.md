@@ -36,7 +36,7 @@
             return result        
       ```
     </details>
-1. [190. Reverse Bits](https://leetcode.com/problems/reverse-bits)
+1. [190. Reverse Bits](https://leetcode.com/problems/reverse-bits)  
    ***Approach 1*** Use multiply, divide and modulo
     <details>
 
