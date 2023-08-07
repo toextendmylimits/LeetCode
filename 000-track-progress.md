@@ -132,5 +132,6 @@ Reviewd the following from 01/08:
 |[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)  | Memorize code |
 |[232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)  | Practice more times |
 |[225. Implement Stack using Queues](https://leetcode.com/problems/implement-queue-using-stacks)  | Practice more times |
+|[204. Count Primes](https://leetcode.com/problems/count-primes)  | Memorize code |
 |[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Memorize code |
 
