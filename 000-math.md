@@ -1,6 +1,6 @@
 # Math
 1. [204. Count Primes](https://leetcode.com/problems/count-primes)  
-   test
+test
    <details>
     
     ```python
