@@ -13,7 +13,7 @@
     </details>
 1. [268. Missing Number](https://leetcode.com/problems/missing-number)  
    t***Approach 1*** check i from 0 to n(inclusive), whether it's in the distinct numbers(using set)
-    <details>
+     <details>
 
         ```python
           def missingNumber(self, nums: List[int]) -> int:
@@ -22,4 +22,4 @@
                 if i not in distinctNums:
                     return i      
         ```
-    </details>
+      </details>
