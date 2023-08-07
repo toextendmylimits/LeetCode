@@ -19,6 +19,7 @@
 1. [384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)  
     The idea is to pick a random card from all cards, and then swap this card with first card  
     Then pick a random card from remaining cards, and then swap this card with second card
+   ***User random.randint or random.randrange(end exclusive) to generate random number***  
     <details>
 
         ```python
