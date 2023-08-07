@@ -134,4 +134,5 @@ Reviewd the following from 01/08:
 |[225. Implement Stack using Queues](https://leetcode.com/problems/implement-queue-using-stacks)  | Practice more times |
 |[204. Count Primes](https://leetcode.com/problems/count-primes)  | Memorize code |
 |[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Memorize code |
+|[118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)  | Memorize code | 
 
