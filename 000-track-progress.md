@@ -129,3 +129,4 @@ Reviewd the following from 01/08:
 |----------|---------
 |[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array) | Memorize methods to get random number |
 |[155. Min Stack](https://leetcode.com/problems/min-stack) | Memorize the code |
+|[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)  | Memorize code |
