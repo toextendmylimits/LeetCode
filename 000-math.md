@@ -1,7 +1,7 @@
 # Math
 1.[204. Count Primes](https://leetcode.com/problems/count-primes)  
   test
-  <details>
+   <details>
     
     ```python
       def countPrimes(self, n: int) -> int:
@@ -16,4 +16,4 @@
           
           return sum(isPrime)
     ```
-  </details>
+   </details>
