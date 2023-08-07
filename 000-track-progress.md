@@ -137,5 +137,6 @@ Reviewd the following from 01/08:
 |[118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)  | Memorize code | 
 |[268. Missing Number](https://leetcode.com/problems/missing-number) | Memorize different ways |
 |[190. Reverse Bits](https://leetcode.com/problems/reverse-bits)| Memorize how bitwise shift correspond to divide, multiply, modulo |
+|[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) |
 
 
