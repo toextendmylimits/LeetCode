@@ -12,6 +12,7 @@
 
 ## Stack
 1.[155. Min Stack](https://leetcode.com/problems/min-stack)
+1. [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) 
 
 
 ## Math
