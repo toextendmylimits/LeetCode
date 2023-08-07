@@ -115,3 +115,5 @@
 1. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)  
 1. [155. Min Stack](https://leetcode.com/problems/min-stack)  
 
+# Queue
+1.[225. Implement Stack using Queues](https://leetcode.com/problems/implement-queue-using-stacks)  
