@@ -9,9 +9,16 @@
 1.[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)  
 1.[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
 
-# Math
+## Stack
+1.[155. Min Stack](https://leetcode.com/problems/min-stack)
+
+
+## Math
 1. [326. Power of Three](https://leetcode.com/problems/power-of-three)  
 1. [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)
+
+## Other
+1.[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)  
 
 # Difficult
 ## Sliding Window
