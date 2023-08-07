@@ -20,11 +20,11 @@
 1. [13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)
 
 ## Other
-1.[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)  
-1. [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)
+1. [384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)    
+1. [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)  
 
 ## Bitwise
-1. [268. Missing Number]https://leetcode.com/problems/missing-number
+1. [268. Missing Number](https://leetcode.com/problems/missing-number)
 
 # Difficult
 ## Sliding Window
