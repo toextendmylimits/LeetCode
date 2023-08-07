@@ -12,7 +12,7 @@
       ```
     </details>
 1. [268. Missing Number](https://leetcode.com/problems/missing-number)  
-     ***Approach 1*** check i from 0 to n(inclusive), whether it's in the distinct numbers(using set)
+   t***Approach 1*** check i from 0 to n(inclusive), whether it's in the distinct numbers(using set)
     <details>
 
         ```python
