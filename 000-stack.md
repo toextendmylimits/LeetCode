@@ -76,6 +76,7 @@
    Imagine there is queue 1, 2, 3, Then in stack from bottom to top, it would be 3, 2, 1   
    Now if 4 is added, the expected stack would be 4, 3, 2, 1  
    So if revese it, it would be 1, 2, 3, 4 which is popping stack 3, 2, 1 and then pushing 4  
+   So the idea is to pop 3, 2, 1 to a auxiliary stack to get 1, 2, 3, then add 4, to get 1, 2, 3, 4 then pop to get 4, 3, 2, 1 
 
    Maintain two stacks, main stack has the earliest element on top, auxiliary stack is empty 
    When a new element is pushed to the queue,
