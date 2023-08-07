@@ -25,6 +25,7 @@
 
 ## Bitwise
 1. [268. Missing Number](https://leetcode.com/problems/missing-number)
+2. [190. Reverse Bits](https://leetcode.com/problems/reverse-bits)
 
 # Difficult
 ## Sliding Window
