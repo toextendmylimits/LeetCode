@@ -23,3 +23,15 @@
                     return i         
       ```
     </details>
+   ***Approach 2*** bitwise exclusive OR
+    <details>
+
+      ```python
+        def missingNumber(self, nums: List[int]) -> int:
+            result = len(nums)
+            for i, n in enumerate(nums):
+                result ^= i ^ n
+            
+            return result        
+      ```
+    </details>
