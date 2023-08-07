@@ -64,3 +64,31 @@
             return result      
       ```
     </details>
+
+1. [191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)  
+   ***Approach 1*** Use multiply, divide and modulo
+    <details>
+
+      ```python
+        def hammingWeight(self, n: int) -> int:
+            result = 0
+            while n != 0:
+                result += n % 2
+                n //= 2
+            
+            return result        
+      ```
+    </details>
+    
+   ***Approach 2*** Convert above to bitwise operations: left shift equal to multiply, right shift equal to divide, & 1 equal to modulo 2, remember to have the bitwise operation in a bracket
+    <details>
+
+      ```python
+            result = 0
+            while n != 0:
+                result += (n & 1)
+                n >>= 1
+            
+            return result    
+      ```
+    </details>
