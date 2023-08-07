@@ -1,6 +1,7 @@
 # Easy
 ## Array
-1. [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku)  
+1. [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku)
+2. [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)  
 ## Tree
 1. [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)  
 1. [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)  
