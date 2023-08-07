@@ -6,7 +6,7 @@
 1. [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)  
 
 ## Linked List
-1.[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
+1.[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)  
 1.[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)
 
 # Math
