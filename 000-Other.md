@@ -16,3 +16,17 @@
       
     ```
     </details>
+1. [384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)  
+    The idea is to pick a random card from all cards, and then swap this card with first card  
+    Then pick a random card from remaining cards, and then swap this card with second card
+    <details>
+
+        ```python
+        def shuffle(self) -> List[int]:
+            for i in range(len(self.currNums)):
+                randIdx = random.randint(i, len(self.currNums) - 1)
+                self.currNums[i], self.currNums[randIdx] = self.currNums[randIdx], self.currNums[i]
+            
+            return self.currNums
+        ```
+    </details>
