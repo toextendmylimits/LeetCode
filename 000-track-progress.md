@@ -121,3 +121,11 @@ Reviewd the following from 01/08:
 |[992. Subarrays with K Different Integers](https://leetcode.com/problems/subarrays-with-k-different-integers)    | in while loop, condition is: len(counter) > k
 |[76. Minimum Window Substring](https://leetcode.com/problems/minimum-window-substring)    | Made mistake of using = instead of == for comparison, and not increasing left |
 |[438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)  | Made mistake of checking right - left + 1 == len(counter) (Should be against len(p))|
+
+## 07/08/2023
+
+### Reviewed following questions
+|Question | Comment
+|----------|---------
+|[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array) | Memorize methods to get random number |
+|[155. Min Stack](https://leetcode.com/problems/min-stack) | Memorize the code |
