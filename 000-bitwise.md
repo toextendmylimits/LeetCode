@@ -92,5 +92,19 @@
             return result    
       ```
     </details>
-1. [461. Hamming Distance](https://leetcode.com/problems/hamming-distance)
-    
+1. [461. Hamming Distance](https://leetcode.com/problems/hamming-distance)  
+    Bitwise exclusive OR outputs 1 if and only if the input bits are different. So we can first do x XOR y operation, then we simply count the number of bit 1 in the result of XOR operation.  
+    Use & 1 to get rightmost bit  
+    <details>
+
+      ```python
+        def hammingDistance(self, x: int, y: int) -> int:
+            xOry = x ^ y
+            count = 0
+            while xOry != 0:
+                if xOry & 1:
+                    count += 1
+                xOry >>= 1
+            return count  
+      ```
+    </details> 
