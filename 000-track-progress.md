@@ -143,5 +143,5 @@ Reviewd the following from 01/08:
 
 ### Reviewed following questions
 |Question | Comment
-
+|----------|---------
 |[461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | 
