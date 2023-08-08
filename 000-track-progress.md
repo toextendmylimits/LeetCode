@@ -139,4 +139,9 @@ Reviewd the following from 01/08:
 |[190. Reverse Bits](https://leetcode.com/problems/reverse-bits)| Memorize how bitwise shift correspond to divide, multiply, modulo |
 |[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) |
 
+## 09/08/2023
 
+### Reviewed following questions
+|Question | Comment
+
+|[461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | 
