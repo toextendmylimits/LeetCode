@@ -99,12 +99,12 @@
 
       ```python
         def hammingDistance(self, x: int, y: int) -> int:
-            xOry = x ^ y
+            xXORy = x ^ y
             count = 0
-            while xOry != 0:
-                if xOry & 1:
+            while xXORy != 0:
+                if xXORy & 1:
                     count += 1
-                xOry >>= 1
-            return count  
+                xXORy >>= 1
+            return count
       ```
     </details> 
