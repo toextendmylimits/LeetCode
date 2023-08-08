@@ -1,4 +1,5 @@
 # Bitwise operations
+***     The bitwise AND operator ( & ) compares each bit of the first operand to the corresponding bit of the second operand. If both bits are 1, the corresponding result bit is set to 1. Otherwise, the corresponding result bit is set to 0.  
 1. [136. Single Number](https://leetcode.com/problems/single-number)  
     Use bitwise exclusive OR(Results bit 1,if any of the operand bit is 1 but not both, otherwise results bit 0.)
     <details>
@@ -80,7 +81,7 @@
       ```
     </details>
     
-   ***Approach 2*** Convert above to bitwise operations: left shift equal to multiply, right shift equal to divide, & 1 equal to modulo 2, remember to have the bitwise operation in a bracket
+   ***Approach 2*** Convert above to bitwise operations: left shift equal to multiply, right shift equal to divide, & 1 equal to modulo 2, remember to have the bitwise operation in a bracket  
     <details>
 
       ```python
