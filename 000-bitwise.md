@@ -92,3 +92,5 @@
             return result    
       ```
     </details>
+1. [461. Hamming Distance](https://leetcode.com/problems/hamming-distance)
+    
