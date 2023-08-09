@@ -40,7 +40,18 @@
 
       ```
     </details>
-    
+1. [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)  
+   The problem can be broken down into subproblems which are reused several times. Overlapping subproblems lead us to Dynamic Programming.  
+   We decompose the problem as follows:  
+   1. State variable  
+    The start index and end index of a substring can identify a state, which influences our decision.  
+    So the state variable is state(start, end) indicates whether s[start, end] inclusive is palindromic  
+
+   1. Goal state  
+    max(end - start + 1) for all state(start, end) = true  
+
+   1. State transition  
+      if character at start is same as it at end, then if end - start == 1, or substring from start + 1 to end - 1 is palindrome, the the string from start to end is palindrome     
 # To revisit
 1.  [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)  
     Time complexity O(N^2), space complexity O(N^2)
