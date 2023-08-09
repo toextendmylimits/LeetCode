@@ -22,6 +22,24 @@
             return oneStepBefore
       ```
     </details>
+
+1.  [198. House Robber](https://leetcode.com/problems/house-robber)    
+   Use moneyOfRobbingPrev1 to represent the money it gets to rob the previous house(meaning current house cann't be robbed agin), and moneyOfRobbingPrev2 to represent the money it gets to rob the previous2 house, so the current house can be robbed again.  
+    <details>
+        
+      ```python
+        def rob(self, nums: List[int]) -> int:
+            moneyOfRobbingPrev1 = 0
+            moneyOfRobbingPrev2 = 0
+            for i in range(len(nums)):
+                temp = moneyOfRobbingPrev1
+                moneyOfRobbingPrev1 = max(moneyOfRobbingPrev1, moneyOfRobbingPrev2 + nums[i])
+                moneyOfRobbingPrev2 = temp
+            
+            return moneyOfRobbingPrev1
+
+      ```
+    </details>
     
 # To revisit
 1.  [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)  
