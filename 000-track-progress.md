@@ -149,3 +149,5 @@ Reviewd the following from 01/08:
 [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  |
 |[198. House Robber](https://leetcode.com/problems/house-robbe)| |
 |[15. 3Sum](https://leetcode.com/problems/3sum)|Coded it bug-free quickly |
+|[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)| Coded it with bug, practice more |
+|[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)| Coded it with bug, practice more |
