@@ -153,3 +153,18 @@ Reviewd the following from 01/08:
 |[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)| Coded it with bug, practice more |
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams)| |
 |[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)| Should memorize code |
+
+## 10/08/2023
+
+### Reviewed following questions from previous day 09/08/2023
+|Question | Comment
+|----------|---------
+|[461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | 
+|[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| 
+[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  |
+|[198. House Robber](https://leetcode.com/problems/house-robbe)| |
+|[15. 3Sum](https://leetcode.com/problems/3sum)|Coded it bug-free quickly |
+|[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)| Coded it with bug, practice more |
+|[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)| Coded it with bug, practice more |
+|[49. Group Anagrams](https://leetcode.com/problems/group-anagrams)| |
+|[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)| Should memorize code |
