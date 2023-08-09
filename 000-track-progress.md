@@ -145,3 +145,4 @@ Reviewd the following from 01/08:
 |Question | Comment
 |----------|---------
 |[461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | 
+|[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| 
