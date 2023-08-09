@@ -146,3 +146,4 @@ Reviewd the following from 01/08:
 |----------|---------
 |[461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | 
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| 
+[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  |
