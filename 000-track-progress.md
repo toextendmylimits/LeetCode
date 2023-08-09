@@ -167,4 +167,4 @@ Reviewd the following from 01/08:
 |[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)| Coded it with bug, practice more |
 |[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)| Coded it with bug, practice more |
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams)| Coded it right, but took a while, so needs more practice |
-|[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)| Coded it wrong again |
+|[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)| Coded it with error, use: end - start + 1(not right - left + 1)|
