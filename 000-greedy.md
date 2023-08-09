@@ -16,3 +16,20 @@
           return result
      ```
    </details>
+
+1. [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)  
+   currSum represent the maximum sum of a subarray ending at an index i  
+   bestSum represent the maximum sum of any subarray  
+   <details>
+
+     ```python
+       def maxSubArray(self, nums: List[int]) -> int:
+           currSum = nums[0]  # represent the max sum for a subarray ending at index i  
+           bestSum = currSum
+           for i in range(1, len(nums)):
+               currSum = max(currSum + nums[i], nums[i])   
+               bestSum = max(bestSum, currSum)
+           
+           return bestSum 
+     ```
+   </details>
