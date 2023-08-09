@@ -148,3 +148,4 @@ Reviewd the following from 01/08:
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| 
 [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  |
 |[198. House Robber](https://leetcode.com/problems/house-robbe)| |
+|[15. 3Sum](https://leetcode.com/problems/3sum)|Coded it bug-free quickly |
