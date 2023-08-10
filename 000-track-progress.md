@@ -170,5 +170,7 @@ Reviewd the following from 01/08:
 |[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)| Coded it with error, use: end - start + 1(not right - left + 1)|
 
 Did a few questions:
+|Question | Comment
+|----------|---------
 |[163. Missing Ranges](https://leetcode.com/problems/missing-ranges)  | Coded it very bug, practice more |
 |[38. Count and Say](https://leetcode.com/problems/count-and-say) | First time, got it wrong |
