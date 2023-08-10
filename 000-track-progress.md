@@ -159,7 +159,7 @@ Reviewd the following from 01/08:
 ### Reviewed following questions from previous day 09/08/2023
 |Question | Comment
 |----------|---------
-|[461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | 
+|[461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | Coded it quickly |
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| 
 [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  |
 |[198. House Robber](https://leetcode.com/problems/house-robbe)| |
