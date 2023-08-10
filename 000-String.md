@@ -72,3 +72,31 @@
               return result * sign           
       ```
     </details>
+1. [38. Count and Say](https://leetcode.com/problems/count-and-say)  
+    <details>
+
+      ```python
+        def countAndSay(self, n: int) -> str:
+            def count(s):
+                count = 1
+                currChar = s[0]
+                result = []
+                for i in range(1, len(s)):
+                    ch = s[i]
+                    if ch == currChar:
+                        count += 1
+                    else:
+                        result.append(str(count) + currChar)
+                        currChar = ch
+                        count = 1
+                result.append(str(count) + currChar)        
+                return "".join(result)
+                    
+            result = "1"
+            for i in range(2, n + 1):
+                result = count(result)
+            
+            return result
+         
+      ```
+    </details>
