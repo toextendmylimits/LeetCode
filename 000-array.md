@@ -86,3 +86,29 @@
                 k -= 1
       ```
     </details>   
+1. [163. Missing Ranges](https://leetcode.com/problems/missing-ranges)  
+    1. If nums is empty, return range [lower, upper]
+    1. If lower < first num, then there is missing range [lower, first num - 1]
+    1. Starting from second num, whether the num is greater than previous num by more than 1, then there is missing range [prev num + 1, num - 1]  
+    1. If upper is greater than last num, then there is missing range [last num + 1, upper]   
+    <details>
+
+      ```python
+        def findMissingRanges(self, nums: List[int], lower: int, upper: int) -> List[List[int]]:
+            if not nums:
+                return [[lower, upper]]
+    
+            result = []
+            if lower < nums[0]:
+                result.append([lower, nums[0] - 1])
+            
+            for i in range(1, len(nums)):
+                if nums[i] - nums[i - 1] > 1:
+                    result.append([nums[i - 1] + 1, nums[i] - 1])
+            
+            if upper > nums[-1]:
+                result.append([nums[-1] + 1, upper])
+            
+            return result
+      ```
+    </details>   
