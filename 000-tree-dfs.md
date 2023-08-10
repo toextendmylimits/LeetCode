@@ -132,6 +132,31 @@
         return 1 + self.countNodes(root.left) + self.countNodes(root.right)
    ```
    </details>
+1. [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)  
+   Need to do a inorder traversal as the result would be sorted in ascending order, and decrease k by 1 in each recursion    
+   ***Time complexity O(K), space complexity is O(K) for implicit stack recursion call***
+   <details>
+
+   ```python
+    def kthSmallest(self, root: Optional[TreeNode], k: int) -> int:
+        result = None
+        def inorder(root):
+            nonlocal k, result
+            if not root:
+                return 
+            
+            inorder(root.left)
+            k -= 1
+            if k == 0:
+                self.result = root.val
+                return
+                
+            inorder(root.right)
+        inorder(root)
+        return self.result
+   ```
+   </details>
+   
 ## Medium
 1. [114. Flatten Binary Tree to Linked List](https://leetcode.com/problems/flatten-binary-tree-to-linked-list)  
    dfs in postorder 
