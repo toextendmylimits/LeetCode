@@ -163,8 +163,8 @@ Reviewd the following from 01/08:
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| 
 [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  |
 |[198. House Robber](https://leetcode.com/problems/house-robbe)| |
-|[15. 3Sum](https://leetcode.com/problems/3sum)|Coded it bug-free quickly |
-|[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)| Coded it with serious bug, left should be i + 1 not 0, check whether nums[right] == nums[right + 1](not right - 1) |
+|[15. 3Sum](https://leetcode.com/problems/3sum)|Coded it with serious bug, left should be i + 1 not 0, check whether nums[right] == nums[right + 1](not right - 1) |
+|[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)| No bug |
 |[3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters)| Coded it with bug, practice more |
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams)| Coded it right, but took a while, so needs more practice |
 |[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)| Coded it with error, use: end - start + 1(not right - left + 1)|
