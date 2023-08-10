@@ -171,3 +171,4 @@ Reviewd the following from 01/08:
 
 Did a few questions:
 |[163. Missing Ranges](https://leetcode.com/problems/missing-ranges)  | Coded it very bug, practice more |
+|[38. Count and Say](https://leetcode.com/problems/count-and-say) | First time, got it wrong |
