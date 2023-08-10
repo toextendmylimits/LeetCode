@@ -161,7 +161,7 @@ Reviewd the following from 01/08:
 |----------|---------
 |[461. Hamming Distance](https://leetcode.com/problems/hamming-distance) | Coded it quickly |
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| Coded it quickly | 
-[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  |
+[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  | Coded it quickly |
 |[198. House Robber](https://leetcode.com/problems/house-robbe)| |
 |[15. 3Sum](https://leetcode.com/problems/3sum)|Coded it with serious bug, left should be i + 1 not 0, check whether nums[right] == nums[right + 1](not right - 1) |
 |[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)| No bug |
