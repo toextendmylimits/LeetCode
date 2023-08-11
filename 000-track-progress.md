@@ -190,3 +190,4 @@ Did a few questions:
 |[75. Sort Colors](https://leetcode.com/problems/sort-colors)  | Got it wrong, beware while white <= blue(not white < blue), need more practice |
 |[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)| Need more practice |
 |[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)| Coded it bug-free |
+|[56. Merge Intervals](https://leetcode.com/problems/merge-intervals)|Coded with error, more practice |
