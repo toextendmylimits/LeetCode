@@ -136,7 +136,7 @@
 1. [Sort Colors](https://leetcode.com/problems/sort-colors)  
    3 pointers, left and mid both increase by 1 if mid value is 0, right decrease by 1 if mid value is 2    
    <details>
-         ```
+         ```python
           def sortColors(self, nums: List[int]) -> None:
               red = 0
               white = 0
