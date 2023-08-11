@@ -360,7 +360,7 @@
    </details>
 
 1. [285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)  
-   ***Approap 1 Iterative***:  
+   ***Approap 1 Iterative - time complexity O(logN), space complexity O(1)***:  
    If root is not none, if p.val is greater than or equal to root.val, then left subtree can be discarded, hence go to root.right; Otherwise, find a potential candidate, save it as result, and then go to left to see whether there are better result  
    <details>
 
@@ -378,7 +378,7 @@
    ```
    </details>
 
-   ***Approap 2 Recursive***:  
+   ***Approap 2 Recursive - time complexity O(logN), space complexity O(logN) for implicit recursive stack call***:  
    If root is not none, if p.val is greater than or equal to root.val, then left subtree can be discarded, hence go to root.right; Otherwise, root is a potential candidate, and if there is no more potentail candiate from left tree, return root else go to left tree
    <details>
 
