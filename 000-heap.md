@@ -19,6 +19,7 @@
 1.  [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)  
     ***Approach 1 - min heap, time complexity O(NlogK)*** 
     <details>
+        
       ```pyton
         def topKFrequent(self, nums: List[int], k: int) -> List[int]:
             heap = []
