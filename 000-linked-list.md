@@ -183,6 +183,37 @@
         return dummy.next
     ```
     </details>
+    
+## Medium
+1. [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers)  
+    Create dummy head to allow retrieving head easily  
+    Iterate if either l1 or l2 is not null, add val1 + val2 + carry
+    In the end if carry is 1, add to end of list  
+    ***Time complexity is O(max(M, N)), space complexity is O(1)***
+    <details>
+
+    ```python
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        carry = 0
+        dummy = ListNode()
+        curr = dummy
+        while l1 or l2:
+            val1 = l1.val if l1 else 0
+            val2 = l2.val if l2 else 0
+            total = val1 + val2 + carry
+            curr.next = ListNode(total % 10)
+            carry = total // 10
+
+            curr = curr.next 
+            l1 = l1.next if l1 else None
+            l2 = l2.next if l2 else None
+
+        if carry == 1:
+            curr.next = ListNode(1)
+        
+        return dummy.next
+    ```
+    </details>
 ## Difficult and to visit later if have time
 1. [92. Reverse Linked List II](https://leetcode.com/problems/reverse-linked-list-ii)
 1. [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)  
