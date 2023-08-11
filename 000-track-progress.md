@@ -187,3 +187,4 @@ Did a few questions:
 |[285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)| First time, couldn't resolve it, practice more|
 |[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|Coded it bug-free quickly |
 |[328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)| Didn't solve it, need more practice |
+|[75. Sort Colors](https://leetcode.com/problems/sort-colors)  | Got it wrong, need more practice |
