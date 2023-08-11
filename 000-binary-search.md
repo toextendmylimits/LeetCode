@@ -86,7 +86,7 @@
 
 1. [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)  
    The input matrix m x n could be considered as a sorted array of length m x n. The element index can be transformed to row and col, row = index / number of columns, and col = index % number of columns  
-   ***Time complexity O(logMN), space complexity O(1)
+   ***Time complexity O(logMN), space complexity O(1)***
    <details>
       
     ```python
@@ -109,4 +109,23 @@
     ```
    </details>
 
-   ## Not binary search, but is similar in the sense search scope can be narrowed down quickly
+## Not binary search, but is similar in the sense search scope can be narrowed down quickly
+1. [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)   
+   We start search the matrix from top right corner, initialize the current position to top right corner, if the target is greater than the value in current position, then the target can not be in entire row of current position because the row is sorted, if the target is less than the value in current position, then the target can not in the entire column because the column is sorted too  
+   ***We can rule out one row or one column each time, so the time complexity is O(m+n).***
+   <details>
+      
+    ```python
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        row = 0
+        col = len(matrix[0]) - 1
+        while row < len(matrix) and col >= 0:
+            if matrix[row][col] == target:
+                return True
+            elif matrix[row][col] > target:
+                col -= 1
+            else:
+                row += 1
+        return False
+    ```
+   </details>
