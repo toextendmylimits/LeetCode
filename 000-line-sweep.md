@@ -1,7 +1,24 @@
 # Line Sweep
 1. [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)        
    List the number of employees working in the order of time, and if at any time, the number is 0, then it's the starting time of a free time interval, and the ending time for this free time interval is the next time that the number is not 0  
-   Time complexity O(N logN), space complexity O(N)  
+   Time complexity O(N logN), space complexity O(N)
+   <details>
+    
+    ```python
+      def countPrimes(self, n: int) -> int:
+          if n < 2:
+              return 0
+  
+          isPrime = [False, False] + [True] * (n - 2)
+          for i in range(2, int(sqrt(n)) + 1):
+              if isPrime[i]:
+                  for j in range(i * i, n, i):
+                      isPrime[j] = False
+          
+          return sum(isPrime)
+    ```
+   </details>
+   
     <details>
         
         ```python
