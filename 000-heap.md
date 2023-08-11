@@ -17,7 +17,7 @@
     </details>
 
 1.  [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)  
-    ***Approach 1 - min heap, time complexity O(NlogK)*** 
+    ***Approach 1 - min heap, time complexity O(NlogK), space complexity O(K)*** 
     <details>
         
       ```python
@@ -30,6 +30,25 @@
                    heapq.heappop(heap)
             
             return [x[1] for x in heap]
+      ```
+    </details>
+
+    ***Approach 2 - max heap, time complexity O(N + k logN), space complexity O(N)(=O(N+K)) for hash map, heap*** 
+    <details>
+        
+      ```python
+        def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+            heap = []
+            counter = Counter(nums) 
+            for n, freq in counter.items():
+               heap.append((-freq, n))
+            heapq.heapify(heap)
+    
+            result = []
+            for _ in range(k):
+                result.append(heapq.heappop(heap)[1])
+            
+            return result
       ```
     </details>
 1.  [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)
