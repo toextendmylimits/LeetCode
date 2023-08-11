@@ -83,3 +83,27 @@
         return -1
     ```
    </details>
+
+1. [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)  
+   The input matrix m x n could be considered as a sorted array of length m x n. The element index can be transformed to row and col, row = index / number of columns, and col = index % number of columns
+   <details>
+      
+    ```python
+       def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+           m = len(matrix)
+           n = len(matrix[0])
+           left = 0
+           right = m * n - 1
+           while left <= right:
+               mid = left + (right - left) // 2
+               row = mid // n
+               col = mid % n
+               if matrix[row][col] == target:
+                   return True
+               elif matrix[row][col] > target:
+                   right = mid - 1
+               else:
+                   left = mid + 1
+           return False
+    ```
+   </details>
