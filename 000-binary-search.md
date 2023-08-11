@@ -85,7 +85,8 @@
    </details>
 
 1. [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)  
-   The input matrix m x n could be considered as a sorted array of length m x n. The element index can be transformed to row and col, row = index / number of columns, and col = index % number of columns
+   The input matrix m x n could be considered as a sorted array of length m x n. The element index can be transformed to row and col, row = index / number of columns, and col = index % number of columns  
+   ***Time complexity O(logMN), space complexity O(1)
    <details>
       
     ```python
