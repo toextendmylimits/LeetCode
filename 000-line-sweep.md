@@ -31,19 +31,19 @@
     <details>
         
         ```python
-        def minMeetingRooms(self, intervals: List[List[int]]) -> int:
-            timeRoomDeltaMap = Counter()
-            for interval in intervals:
-                timeRoomDeltaMap[interval[0]] += 1
-                timeRoomDeltaMap[interval[1]] -= 1
-            
-            result = 0
-            currRooms = 0
-            for time, roomDelta in sorted(timeRoomDeltaMap.items()):
-                currRooms += roomDelta
-                result = max(result, currRooms)
-    
-            return result   
+           def minMeetingRooms(self, intervals: List[List[int]]) -> int:
+               timeRoomDeltaMap = Counter()
+               for interval in intervals:
+                   timeRoomDeltaMap[interval[0]] += 1
+                   timeRoomDeltaMap[interval[1]] -= 1
+               
+               result = 0
+               currRooms = 0
+               for time, roomDelta in sorted(timeRoomDeltaMap.items()):
+                   currRooms += roomDelta
+                   result = max(result, currRooms)
+       
+               return result   
         ```
     </details>
 1. [1094. Car Pooling](https://leetcode.com/problems/car-pooling)  
