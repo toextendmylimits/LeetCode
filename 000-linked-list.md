@@ -220,7 +220,6 @@
     1. Maintian evenHead which is head.next   
     1. Iterate when even and even.next is not null, in each itertation, connect odd with even.next, and advance odd; connect even with odd.next, and advance even
     1. Connect odd with evenHead  
-    ***Time complexity is O(max(M, N)), space complexity is O(1)***
     <details>
 
     ```python
