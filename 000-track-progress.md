@@ -174,3 +174,5 @@ Did a few questions:
 |----------|---------
 |[163. Missing Ranges](https://leetcode.com/problems/missing-ranges)  | Coded it very bug, practice more |
 |[38. Count and Say](https://leetcode.com/problems/count-and-say) | First time, got it wrong |
+|[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)| First time, couldn't resolve it, practice more|
+|[285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)| First time, couldn't resolve it, practice more|
