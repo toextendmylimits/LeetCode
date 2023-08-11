@@ -186,3 +186,4 @@ Did a few questions:
 |[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)| First time, couldn't resolve it, practice more|
 |[285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)| First time, couldn't resolve it, practice more|
 |[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|Coded it bug-free quickly |
+|[328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)| Didn't solve it, need more practice |
