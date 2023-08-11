@@ -192,3 +192,4 @@ Did a few questions:
 |[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)| Coded it bug-free |
 |[56. Merge Intervals](https://leetcode.com/problems/merge-intervals)|Coded with error, more practice |
 |[253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|Coded bug-free|
+|[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)| Didn't code it, need more practice |
