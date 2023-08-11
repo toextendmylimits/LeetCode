@@ -17,7 +17,7 @@
     </details>
 
 1.  [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)  
-    ***Approach 1 - min heap, time complexity O(NlogK), space complexity O(K)*** 
+    ***Approach 1 - min heap, time complexity O(NlogK), , space complexity O(N)(=O(N+K)) for hash map, heap*** 
     <details>
         
       ```python
