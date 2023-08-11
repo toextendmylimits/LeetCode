@@ -52,16 +52,34 @@
       ```
     </details>
 1.  [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)
+    ***Approach 1 - min heap, time complexity O(NlogK), , space complexity O(K) for heap*** 
     <details>
+        
       ```python
         def findKthLargest(self, nums: List[int], k: int) -> int:
-            minHeap = []
-            for num in nums:
-                heappush(minHeap, num)
-                if len(minHeap) > k:
-                    heappop(minHeap)
+            heap = []
+            for n in nums:
+                heapq.heappush(heap, n)
+                if len(heap) > k:
+                    heapq.heappop(heap)
+            
+            return heap[0]
+      ```
+    </details>
+
+    ***Approach 2 - max heap, time complexity O(N + k logN), space complexity O(N) heap*** 
+    <details>
+        
+      ```python
+        def findKthLargest(self, nums: List[int], k: int) -> int:
+            heap = [-n for n in nums]
+            heapq.heapify(heap)
     
-            return minHeap[0]     
+            result = None
+            for _ in range(k):
+                result = -heapq.heappop(heap)
+            
+            return result
       ```
     </details>
 1.  [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream)  
