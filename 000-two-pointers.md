@@ -134,21 +134,26 @@
         right -= 1
    ```
 1. [Sort Colors](https://leetcode.com/problems/sort-colors)  
-   3 pointers, left and mid both increase by 1 if mid value is 0, right decrease by 1 if mid value is 2
-   ```
-      if nums[white] == 0:
-       if nums[red] != 0:
-           nums[white], nums[red] = nums[red], nums[white]
-       white += 1
-       red += 1
-   elif nums[white] == 1:
-       white += 1
-   else:
-       if nums[blue] != 2:
-           nums[white], nums[blue] = nums[blue], nums[white]
+   3 pointers, left and mid both increase by 1 if mid value is 0, right decrease by 1 if mid value is 2    
+   <details>
+         ```
+          def sortColors(self, nums: List[int]) -> None:
+              red = 0
+              white = 0
+              blue = len(nums) - 1
+              while white <= blue:
+                  if nums[white] == 0:
+                      nums[red], nums[white] = nums[white], nums[red]
+                      red += 1
+                      white += 1
+                  elif nums[white] == 1:
+                      white += 1
+                  else:
+                      nums[white], nums[blue] = nums[blue], nums[white]
+                      blue -= 1
+         ```
+   </details>
 
-       blue -= 1
-   ```
 1. [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)  
    Use built-in function
    ```
