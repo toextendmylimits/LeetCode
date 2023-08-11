@@ -108,3 +108,5 @@
            return False
     ```
    </details>
+
+   ## Not binary search, but is similar in the sense search scope can be narrowed down quickly
