@@ -183,8 +183,6 @@
         return dummy.next
     ```
     </details>
-    
-## Medium
 1. [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers)  
     Create dummy head to allow retrieving head easily  
     Iterate if either l1 or l2 is not null, add val1 + val2 + carry  
@@ -212,6 +210,35 @@
             curr.next = ListNode(1)
         
         return dummy.next
+    ```
+    </details>
+    
+## Medium
+
+1. [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)  
+    1. if head is null or head.next is null, just return head  
+    1. Maintian evenHead which is head.next   
+    1. Iterate when even and even.next is not null, in each itertation, connect odd with even.next, and advance odd; connect even with odd.next, and advance even
+    1. Connect odd with evenHead  
+    ***Time complexity is O(max(M, N)), space complexity is O(1)***
+    <details>
+
+    ```python
+    def oddEvenList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next:
+            return head
+
+        odd = head
+        even = head.next
+        evenHead = even
+        while even and even.next:
+            odd.next = even.next
+            odd = odd.next
+            even.next = odd.next
+            even = even.next
+        
+        odd.next = evenHead
+        return head
     ```
     </details>
 ## Difficult and to visit later if have time
