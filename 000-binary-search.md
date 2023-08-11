@@ -17,6 +17,45 @@
         return -1
     ```
    </details>
+
+1. [34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)
+   <details>
+      
+    ```python
+    def searchRange(self, nums: List[int], target: int) -> List[int]:
+        def findFirst(nums, target):
+            left = 0
+            right = len(nums) - 1
+            result = -1
+            while left <= right:
+                mid = left + (right - left) // 2
+                if nums[mid] == target:
+                    result = mid
+                    right = mid - 1
+                elif nums[mid] < target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return result
+        
+        def findLast(nums, target):
+            left = 0
+            right = len(nums) - 1
+            result = -1
+            while left <= right:
+                mid = left + (right - left) // 2
+                if nums[mid] == target:
+                    result = mid
+                    left = mid + 1
+                elif nums[mid] < target:
+                    left = mid + 1
+                else:
+                    right = mid - 1
+            return result
+        
+        return [findFirst(nums, target), findLast(nums, target)]
+    ```
+   </details>   
 1. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)  
    If seperate the arary by mid, then at least one half is sorted, so binary search can be used if target is in the sorted half.
    <details>
