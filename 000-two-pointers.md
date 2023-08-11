@@ -136,22 +136,30 @@
 1. [Sort Colors](https://leetcode.com/problems/sort-colors)  
    3 pointers, left and mid both increase by 1 if mid value is 0, right decrease by 1 if mid value is 2    
    <details>
-         ```python
-          def sortColors(self, nums: List[int]) -> None:
-              red = 0
-              white = 0
-              blue = len(nums) - 1
-              while white <= blue:
-                  if nums[white] == 0:
-                      nums[red], nums[white] = nums[white], nums[red]
-                      red += 1
-                      white += 1
-                  elif nums[white] == 1:
-                      white += 1
-                  else:
-                      nums[white], nums[blue] = nums[blue], nums[white]
-                      blue -= 1
-         ```
+      
+      ```python
+       def addBinary(self, a: str, b: str) -> str:
+           carry = 0
+           result = deque()
+           i = len(a) - 1
+           j = len(b) - 1
+           while i >= 0 or j >= 0:
+               digit1 = int(a[i]) if i >= 0 else 0
+               digit2 = int(b[j]) if j >= 0 else 0
+   
+               currSum = digit1 + digit2 + carry
+               
+               result.appendleft(currSum % 2)
+               carry = currSum // 2
+   
+               i -= 1
+               j -= 1
+   
+           if carry == 1:
+               result.appendleft(1)
+   
+           return "".join([str(i) for i in result])
+      ```
    </details>
 
 1. [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)  
