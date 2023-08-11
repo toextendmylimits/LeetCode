@@ -180,6 +180,7 @@ Did a few questions:
 
 ## 11/08/2023
 |Question | Comment
+|----------|---------
 |[78. Subsets](https://leetcode.com/problems/subsets) | Coded it quickly |
 |[79. Word Search](https://leetcode.com/problems/word-search) | Had some issues, need more practice |
 |[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)| First time, couldn't resolve it, practice more|
