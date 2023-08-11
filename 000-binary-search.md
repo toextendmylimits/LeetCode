@@ -58,6 +58,8 @@
    </details>   
 1. [33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)  
    If seperate the arary by mid, then at least one half is sorted, so binary search can be used if target is in the sorted half.
+   1. If left half is sorted, i.e. nums[left] <= nums[mid], then if target is within the left half,, then right = mid - 1 else left = mid + 1  
+   1. Otherwise right half is sorted, i.e. nums[left] > nums[mid], then if target is within right half, then left = mid + 1 else right - mid - 1  
    <details>
       
     ```python
