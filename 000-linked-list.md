@@ -187,7 +187,7 @@
 ## Medium
 1. [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers)  
     Create dummy head to allow retrieving head easily  
-    Iterate if either l1 or l2 is not null, add val1 + val2 + carry
+    Iterate if either l1 or l2 is not null, add val1 + val2 + carry  
     In the end if carry is 1, add to end of list  
     ***Time complexity is O(max(M, N)), space complexity is O(1)***
     <details>
