@@ -5,17 +5,24 @@
    <details>
     
     ```python
-      def countPrimes(self, n: int) -> int:
-          if n < 2:
-              return 0
-  
-          isPrime = [False, False] + [True] * (n - 2)
-          for i in range(2, int(sqrt(n)) + 1):
-              if isPrime[i]:
-                  for j in range(i * i, n, i):
-                      isPrime[j] = False
-          
-          return sum(isPrime)
+        def employeeFreeTime(self, schedule: '[[Interval]]') -> '[Interval]':
+           counter = Counter()
+           for intervals in schedule:
+               for interval in intervals:
+                   counter[interval.start] += 1
+                   counter[interval.end] -= 1
+   
+           startTime = -1
+           workingCount = 0
+           result = []
+           for time, deltaCount in sorted(counter.items()):
+               workingCount += deltaCount
+               if workingCount == 0:
+                   startTime = time
+               elif startTime != -1:
+                   result.append(Interval(startTime, time))
+                   startTime = -1
+           return result  
     ```
    </details>
    
