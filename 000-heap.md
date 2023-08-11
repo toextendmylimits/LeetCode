@@ -20,7 +20,7 @@
     ***Approach 1 - min heap, time complexity O(NlogK)*** 
     <details>
         
-      ```pyton
+      ```python
         def topKFrequent(self, nums: List[int], k: int) -> List[int]:
             heap = []
             counter = Counter(nums) 
@@ -34,7 +34,7 @@
     </details>
 1.  [215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array)
     <details>
-      ```pyton
+      ```python
         def findKthLargest(self, nums: List[int], k: int) -> int:
             minHeap = []
             for num in nums:
@@ -48,7 +48,7 @@
 1.  [703. Kth Largest Element in a Stream](https://leetcode.com/problems/kth-largest-element-in-a-stream)  
    Time complexity O(N logK), space complexity O(K) where K is the size of the heap
     <details>
-      ```pyton
+      ```python
         def __init__(self, k: int, nums: List[int]):
             self.heap = []
             self.heapSize = k
@@ -68,7 +68,7 @@
 1.  [1167. Minimum Cost to Connect Sticks](https://leetcode.com/problems/minimum-cost-to-connect-sticks)  
    Time complexity is O(NlogN), space complexity O(N) as heap size is O(N), so push/pop O(N) times
     <details>
-      ```pyton
+      ```python
         heapify(sticks)
 
         totalCost = 0
