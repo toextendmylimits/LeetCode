@@ -105,6 +105,7 @@
         ```
     </details>
 1. [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists)  
+    ***Approach 1 - Two pointer***
     If A and B are of same length, just compare each node
     If A and B are of different length, A + B = A_diff + share + B_diff + share, B + A = B_diff + share + A_diff + share
     <details>
@@ -118,6 +119,44 @@
                 return currA
             currA = currA.next if currA else headB
             currB = currB.next if currB else headA
+    ```
+    </details>
+    
+    ***Approach 2 - Hash table***
+    Create a set, and put linker list 1 into set  
+    Scan list 2, if any element in set, then found intersection, otherwise continue  
+    <details>
+
+    ```python
+        def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+            seen = set()
+            while headA:
+                seen.add(headA)
+                headA = headA.next
+            
+            while headB:
+                if headB in seen:
+                    return headB
+                headB = headB.next
+            
+            return None
+    ```
+    </details>
+
+    ***Approach 3 - Brutal force***
+    Scan list 1, and for each node, check whether it exits in list2
+    <details>
+
+    ```python
+        def getIntersectionNode(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+            while headA:
+                pB = headB
+                while pB:
+                    if pB == headA:
+                        return headA
+                    pB = pB.next
+                headA = headA.next
+            return None
     ```
     </details>
 1. [203. Remove Linked List Elements](https://leetcode.com/problems/remove-linked-list-elements)  
