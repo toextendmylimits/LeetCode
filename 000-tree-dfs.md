@@ -359,6 +359,40 @@
       ```      
    </details>
 
+1. [285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)  
+   ***Approap 1 Iterative***:  
+   If root is not none, if p.val is greater than or equal to root.val, then left subtree can be discarded, hence go to root.right; Otherwise, find a potential candidate, save it as result, and then go to left to see whether there are better result  
+   <details>
+
+   ```python
+    def inorderSuccessor(self, root: TreeNode, p: TreeNode) -> Optional[TreeNode]:
+        successor = None
+        while root:
+            if p.val >= root.val:
+                root = root.right
+            else:
+                successor = root
+                root = root.left
+        
+        return successor
+   ```
+   </details>
+
+   ***Approap 2 Recursive***:  
+   If root is not none, if p.val is greater than or equal to root.val, then left subtree can be discarded, hence go to root.right; Otherwise, root is a potential candidate, and if there is no more potentail candiate from left tree, return root else go to left tree
+   <details>
+
+   ```python
+    def inorderSuccessor(self, root: TreeNode, p: TreeNode) -> Optional[TreeNode]:
+        if not root:
+            return None
+        
+        if p.val >= root.val:
+            return self.inorderSuccessor(root.right, p)
+        else:
+            return self.inorderSuccessor(root.left, p) or root
+   ```
+   </details>
 ## Hard
 1. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal)  
    ***Preorder traversal. Need to memorize the code***
@@ -392,4 +426,5 @@
         return dfs(iter(data.split(" ")))
    ```
    </details>
+
 
