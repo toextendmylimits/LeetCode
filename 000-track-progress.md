@@ -193,3 +193,5 @@ Did a few questions:
 |[56. Merge Intervals](https://leetcode.com/problems/merge-intervals)|Coded with error, more practice |
 |[253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|Coded bug-free|
 |[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)| Didn't code it, need more practice |
+|[74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Didn't solve it, need more practice |
+|[240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii) | Didn't solve it, need more practice |
