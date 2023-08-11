@@ -177,7 +177,11 @@ Did a few questions:
 |[17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)| Coded it quickly |
 |[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses) | Coded it quickly |
 |[46. Permutations](https://leetcode.com/problems/permutations)| Coded it quickly |
+
+## 11/08/2023
+|Question | Comment
 |[78. Subsets](https://leetcode.com/problems/subsets) | Coded it quickly |
 |[79. Word Search](https://leetcode.com/problems/word-search) | Had some issues, need more practice |
 |[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)| First time, couldn't resolve it, practice more|
 |[285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)| First time, couldn't resolve it, practice more|
+|[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|Coded it bug-free quickly |
