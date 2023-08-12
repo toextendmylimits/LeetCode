@@ -204,7 +204,7 @@ Did a few questions:
 |[78. Subsets](https://leetcode.com/problems/subsets) | Coded it quickly, twice |
 |[79. Word Search](https://leetcode.com/problems/word-search) | Coded it wrongly, forgot to check for each cell of board, need more practice|
 |[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)| Second time, couldn't resolve it, practice more|
-|[285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)| First time, couldn't resolve it, practice more|
+|[285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)| Second time, couldn't resolve it, practice more|
 |[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|Coded it bug-free quickly |
 |[328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)| Didn't solve it, need more practice |
 |[75. Sort Colors](https://leetcode.com/problems/sort-colors)  | Got it wrong, beware while white <= blue(not white < blue), need more practice |
