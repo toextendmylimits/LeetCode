@@ -212,7 +212,7 @@ Did a few questions:
 |[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)| Coded it bug-free for second time |
 |[56. Merge Intervals](https://leetcode.com/problems/merge-intervals)|Coded bug-free for first time |
 |[253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|Coded bug-free for second time|
-|[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)| Didn't code it, need more practice |
+|[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)| Coded it bug-free for first time|
 |[74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Didn't solve it, need more practice |
 |[240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii) | Didn't solve it, need more practice |
 
