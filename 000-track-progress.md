@@ -208,7 +208,7 @@ Did a few questions:
 |[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers)|Coded it bug-free quickly for a second time |
 |[328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)| Coded it bug-free for the first time|
 |[75. Sort Colors](https://leetcode.com/problems/sort-colors)  | Coded it bug-free for the first time |
-|[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)| Need more practice |
+|[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)| Coded it wrongly, Need more practice |
 |[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array)| Coded it bug-free |
 |[56. Merge Intervals](https://leetcode.com/problems/merge-intervals)|Coded with error, more practice |
 |[253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|Coded bug-free|
