@@ -108,7 +108,20 @@
            return False
     ```
    </details>
-
+1. [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)
+   ***Approach 1*** - Linear scan to check whether next element is greater than current element, if so, return index  
+   In the end, return last index
+   <details>
+      
+    ```python
+       def findPeakElement(self, nums: List[int]) -> int:
+           for i in range(len(nums) - 1):
+               if nums[i] > nums[i + 1]:
+                   return i
+           
+           return len(nums) - 1
+    ```
+   </details>
 ## Not binary search, but is similar in the sense search scope can be narrowed down quickly
 1. [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)   
    We start search the matrix from top right corner, initialize the current position to top right corner, if the target is greater than the value in current position, then the target can not be in entire row of current position because the row is sorted, if the target is less than the value in current position, then the target can not in the entire column because the column is sorted too
