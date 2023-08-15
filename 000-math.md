@@ -24,10 +24,10 @@
 
 1. [202. Happy Number](https://leetcode.com/problems/happy-number)   
    There are 2 parts to the algorithm we'll need to design and code.  
-   Given a number n, what is its next number?  
-   Follow a chain of numbers and detect if we've entered a cycle.  
-
-   ***Time complexity: O(logN + log logN ...) = O(logN), space complexity similarly is also O(logN)*** 
+   1. Given a number n, what is its next number?  
+   1. Follow a chain of numbers and detect if we've entered a cycle. This can be done either using hash table for fast/slow pointer   
+   ***Approach 1 - hash table***
+   Time complexity: O(logN + log logN ...) = O(logN), space complexity similarly is also O(logN)
    <details>
     
     ```python
@@ -47,5 +47,19 @@
                n = getNext(n)
            
            return n == 1
+    ```
+   </details>
+
+   ***Approach 2 - fast/slow pointer***
+   Time complexity: O(logN + log logN ...) = O(logN), space complexity similarly is also O(logN)
+   <details>
+    
+    ```python
+        slow = n
+        fast = getNext(n)
+        while fast != 1 and fast != slow:
+            slow = getNext(slow)
+            fast = getNext(getNext(fast))
+        return fast == 1
     ```
    </details>
