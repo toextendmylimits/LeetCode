@@ -214,5 +214,5 @@ Did a few questions:
 |[253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)|Coded bug-free for second time|
 |[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array)| Coded it bug-free for first time|
 |[74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix) | Coded it bug-free for the first time|
-|[240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii) | Didn't solve it, need more practice |
+|[240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii) | Coded it bug-free for the first time |
 
