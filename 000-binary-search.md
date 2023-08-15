@@ -108,7 +108,7 @@
            return False
     ```
    </details>
-1. [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)
+1. [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)  
    ***Approach 1*** - Linear scan to check whether next element is greater than current element, if so, return index  
    In the end, return last index
    <details>
