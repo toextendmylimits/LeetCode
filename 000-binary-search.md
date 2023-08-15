@@ -109,7 +109,7 @@
     ```
    </details>
 1. [162. Find Peak Element](https://leetcode.com/problems/find-peak-element/)  
-   ***Approach 1*** - Linear scan to check whether next element is greater than current element, if so, return index  
+   ***Approach 1*** - Linear search to check whether next element is smaller than current element, if so, return index  
    In the end, return last index
    <details>
       
@@ -120,6 +120,26 @@
                    return i
            
            return len(nums) - 1
+    ```
+   </details>  
+
+   ***Approach 2*** - Binary search if next element of mid is smaller than mid, or mid is last, save mid as result, and searh on left by decreasing right by 1, otherwise search on right by increasing left by 1  
+   In the end, return last index
+   <details>
+      
+    ```python
+       def findPeakElement(self, nums: List[int]) -> int:
+           left = 0
+           right = len(nums) - 1
+           result = -1
+           while left <= right:
+               mid = left + (right - left) // 2
+               if mid == len(nums) - 1 or nums[mid] > nums[mid + 1]:
+                   result = mid
+                   right = mid - 1
+               else:
+                   left = mid + 1
+           return result
     ```
    </details>
 ## Not binary search, but is similar in the sense search scope can be narrowed down quickly
