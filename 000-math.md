@@ -21,3 +21,31 @@
           return sum(isPrime)
     ```
    </details>
+
+1. [202. Happy Number](https://leetcode.com/problems/happy-number)   
+   There are 2 parts to the algorithm we'll need to design and code.  
+   Given a number n, what is its next number?  
+   Follow a chain of numbers and detect if we've entered a cycle.  
+
+   ***Time complexity: O(logN + log logN ...) = O(logN), space complexity similarly is also O(logN)*** 
+   <details>
+    
+    ```python
+       def isHappy(self, n: int) -> bool:
+           def getNext(n):
+               total = 0
+               while n != 0:
+                  digit = n % 10
+                  total += digit * digit
+                  n //= 10
+   
+               return total 
+           
+           seen = set()
+           while n != 1 and n not in seen:
+               seen.add(n)
+               n = getNext(n)
+           
+           return n == 1
+    ```
+   </details>
