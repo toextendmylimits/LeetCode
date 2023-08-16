@@ -64,8 +64,8 @@
     ```
    </details>
 
-1. [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)          
-   ***Approach 1 - Calculate factorial first and then counter trailing zeroes ***
+1. [172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)            
+   ***Approach 1 - Calculate factorial first and then counter trailing zeroes***  
    Time complexity: O(N), space complexity O(1)
    <details>
     
