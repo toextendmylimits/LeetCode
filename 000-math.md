@@ -84,7 +84,7 @@
     ```
    </details>
 
-   ***Approach 2 - Counting factor of 5***
+   ***Approach 2 - Counting factor of 5***  
    [Good solution source](https://leetcode.com/problems/factorial-trailing-zeroes/solutions/52470/4-lines-4ms-c-solution-with-explanations/) 
    Well, to compute the number of trailing zeros, we need to first think clear about what will generate a trailing 0? Obviously, a number multiplied by 10 will have a trailing 0 added to it. So we only need to find out how many 10's will appear in the expression of the factorial. Since 10 = 2 * 5 and there are a bunch more 2's (each even number will contribute at least one 2), we only need to count the number of 5's.  
 
