@@ -51,7 +51,29 @@
     max(end - start + 1) for all state(start, end) = true  
 
    1. State transition  
-      if character at start is same as it at end, then if end - start == 1, or substring from start + 1 to end - 1 is palindrome, the the string from start to end is palindrome     
+      if character at start is same as it at end, then if end - start == 1, or substring from start + 1 to end - 1 is palindrome, the the string from start to end is palindrome 
+
+1.  [62. Unique Paths](https://leetcode.com/problems/unique-paths)  
+   Since the robot can only move right and down, when it arrives at a point, it either arrives from left or above. If we use dp[i][j] for the number of unique paths to arrive at the point (i, j), then the state equation is dp[i][j] = dp[i][j - 1] + dp[i - 1][j]. Moreover, we have the base cases dp[0][j] = dp[i][0] = 1 for all valid i and j.  
+    <details>
+        
+      ```python
+        def uniquePaths(self, m: int, n: int) -> int:
+            dp = [ [0] * n for _ in range(m)]
+            for c in range(n):
+                dp[0][c] = 1
+            
+            for r in range(m):
+                dp[r][0] = 1
+            
+            for r in range(1, m):
+                for c in range(1, n):
+                    dp[r][c] = dp[r - 1][c] + dp[r][c - 1]
+            
+            return dp[m - 1][n - 1]
+      ```
+    </details>
+    
 # To revisit
 1.  [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)  
     Time complexity O(N^2), space complexity O(N^2)
