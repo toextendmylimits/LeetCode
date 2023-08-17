@@ -142,6 +142,32 @@
            return result
     ```
    </details>
+
+1. [69. Sqrt(x)](https://leetcode.com/problems/sqrtx)  
+   <details>
+      
+    ```python
+       def mySqrt(self, x: int) -> int:
+           if x == 0:
+               return 0
+   
+           if x < 4:
+               return 1
+           
+           left = 2
+           right = x
+           result = 2
+           while left <= right:
+               mid = left + (right - left) // 2
+               if mid <= x // mid:
+                   result = mid
+                   left = mid + 1
+               else:
+                   right = mid - 1
+   
+           return result
+    ```
+   </details>
 ## Not binary search, but is similar in the sense search scope can be narrowed down quickly
 1. [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)   
    We start search the matrix from top right corner, initialize the current position to top right corner, if the target is greater than the value in current position, then the target can not be in entire row of current position because the row is sorted, if the target is less than the value in current position, then the target can not in the entire column because the column is sorted too
