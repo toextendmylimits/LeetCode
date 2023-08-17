@@ -1,6 +1,7 @@
 # Design
 1. [348. Design Tic-Tac-To](https://leetcode.com/problems/design-tic-tac-toe)  
    Key is to save sum of each row, each column, diagonal, anti diagonal  
+   ***Time complexity O(1), space complexity O(N)***
    <details>
 
       ```python
