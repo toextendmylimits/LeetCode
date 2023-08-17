@@ -224,3 +224,5 @@ Did a few questions:
 [62. Unique Paths](https://leetcode.com/problems/unique-paths) | Didn't code it, need more practice |
 |[55. Jump Game](https://leetcode.com/problems/jump-game/) | Didn't code it, need more practice |
 |150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | Coded it with bug, need more practice |
+|[169. Majority Element
+](https://leetcode.com/problems/majority-element/)| Coded it with bug, need more practice |
