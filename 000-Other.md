@@ -1,5 +1,27 @@
 # These don't fall into any category
 1. [169. Majority Element](https://leetcode.com/problems/majority-element)  
+    We increment a count variable every time we see the vote from the majority party and decrement it whenever a vote from some other party is occured , we can guarantee that, count>0.  
+
+    Using the above logic ,  
+    1. Create a count=0 and a majority variable that stores the current majority element.  
+    1. Traverse the array , and if count =0 , then store the current element as the majority element and increment the count.  
+    1. Else , if the current element is equal to the current majority element , increment count , else decrement it.  
+    1. At the end return the majority element.
+    <details>
+      
+    ```python
+    def majorityElement(self, nums: List[int]) -> int:
+        count = 0
+        majority = None
+        for n in nums:
+            if count == 0:
+                majority = n
+            
+            count += 1 if majority == n else -1
+        
+        return majority  
+    ```
+    </details>
 1. [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)  
     <details>
       
