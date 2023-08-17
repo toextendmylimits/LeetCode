@@ -1,2 +1,33 @@
 # Design
 1. [348. Design Tic-Tac-To](https://leetcode.com/problems/design-tic-tac-toe)  
+   Key is to save sum of each row, each column, diagonal, anti diagonal  
+   <details>
+
+      ```python
+          class TicTacToe:
+          
+              def __init__(self, n: int):
+                  self.size = n
+                  self.rowSum = [0] * n
+                  self.colSum = [0] * n
+                  self.diagSum = 0
+                  self.antiDiagSum = 0
+          
+              def move(self, row: int, col: int, player: int) -> int:
+                  n = self.size
+                  toAdd = 1 if player == 1 else -1
+                  self.rowSum[row] += toAdd
+                  self.colSum[col] += toAdd
+                  if row == col:
+                      self.diagSum += toAdd
+          
+                  if row + col == n - 1:
+                      self.antiDiagSum += toAdd
+          
+                  
+                  if abs(self.rowSum[row]) == n or abs(self.colSum[col] ) == n or abs(self.diagSum) == n or abs(self.antiDiagSum) == n:
+                      return player
+                  else:
+                      return 0
+      ```
+   </details>
