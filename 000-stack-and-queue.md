@@ -20,8 +20,13 @@
       ```
     </details>
 1. [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)  
-   If token is operator, pop two elements froms tack, and calculate result, then push result back to stack. If it's not operator, just push to stack.   
+   If token is operator, pop two elements froms tack, and calculate result, then push result back to stack. If it's not operator, just push to stack. 
+  
    ***Beware for divide operation, use int(operand1 / operand2) instead of operand1 // operand2 as python's divide with negative number is very different, also before appending letters to stack, convert to int first***
+
+   ***Time complexity, space complexity both are O(N)***  
+   We do a linear search to put all numbers on the stack, and process all operators. Processing an operator requires removing 2 numbers off the stack and replacing them with a single number, which is an O(1) operation. Therefore, the total cost is proportional to the length of the input array.
+
     <details>
       
       ```python
