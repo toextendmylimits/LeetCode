@@ -33,3 +33,25 @@
            return bestSum 
      ```
    </details>
+
+1. [55. Jump Game](https://leetcode.com/problems/jump-game/)  
+   Have a variable maxPos to record the furthest index that can be reached    
+   Liner search the array, at each step, check whether it can be reached, if not return False, otherwise update the furthest index that can be reached, if the last index can be reached, return True  
+   In the end, just return False
+   <details>
+
+     ```python
+       def canJump(self, nums: List[int]) -> bool:
+           maxPos = 0
+           i = 0
+           for i in range(len(nums)):
+               if i > maxPos:
+                   return False
+               
+               maxPos = max(maxPos, i + nums[i])
+               if i >= len(nums) - 1:
+                   return True
+           
+           return False
+     ```
+   </details>
