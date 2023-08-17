@@ -221,3 +221,6 @@ Did a few questions:
 |----------|---------
 |[348. Design Tic-Tac-To](https://leetcode.com/problems/design-tic-tac-toe) | Coded it with difficulty, need more practice |
 |[297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Coded it with bug, need more practice |
+[62. Unique Paths](https://leetcode.com/problems/unique-paths) | Didn't code it, need more practice |
+|[55. Jump Game](https://leetcode.com/problems/jump-game/) | Didn't code it, need more practice |
+|150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | Coded it with bug, need more practice |
