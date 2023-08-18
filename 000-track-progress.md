@@ -229,3 +229,19 @@ Did a few questions:
 |[50. Pow(x, n)](https://leetcode.com/problems/powx-n/) | Didn't code, need more practice |
 |[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)| Didn't code it, need more practice |
 |[202. Happy Number](https://leetcode.com/problems/happy-number/) | Didn't code it using fast/slow pointer, need more practice |
+
+## 18/08/2023
+
+### Reviewed questions from 16 - 17/08/2023
+|Question | Comment
+|----------|---------
+|[348. Design Tic-Tac-To](https://leetcode.com/problems/design-tic-tac-toe) | Coded it with difficulty, need more practice |
+|[297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Coded it with bug, need more practice |
+[62. Unique Paths](https://leetcode.com/problems/unique-paths) | Didn't code it, need more practice |
+|[55. Jump Game](https://leetcode.com/problems/jump-game/) | Didn't code it, need more practice |
+|[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | Coded it with bug, need more practice |
+|[169. Majority Element](https://leetcode.com/problems/majority-element/)| Coded it with bug, need more practice |
+|[69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Coded it with bug, need more practice |
+|[50. Pow(x, n)](https://leetcode.com/problems/powx-n/) | Didn't code, need more practice |
+|[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)| Didn't code it, need more practice |
+|[202. Happy Number](https://leetcode.com/problems/happy-number/) | Didn't code it using fast/slow pointer, need more practice |
