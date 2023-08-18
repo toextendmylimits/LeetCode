@@ -32,3 +32,27 @@
                       return 0
       ```
    </details>
+
+1. [251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)
+   ***Approach 1 - flatten vector in constructor and maintain cursor***
+   <details>
+
+      ```python
+       def flatten(self, vec):
+           result = []
+           for lst in vec:
+               for item in lst:
+                   result.append(item)
+           return result
+       def __init__(self, vec: List[List[int]]):
+           self.flattenList = self.flatten(vec)
+           self.cursor = 0
+       def next(self) -> int:
+           currCursor = self.cursor
+           self.cursor += 1
+           return self.flattenList[currCursor]    
+   
+       def hasNext(self) -> bool:
+           return self.cursor <= len(self.flattenList) - 1    
+      ```
+   </details>
