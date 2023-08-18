@@ -33,6 +33,61 @@
       ```
    </details>
 
+1. [794. Valid Tic-Tac-Toe State](leetcode.com/problems/valid-tic-tac-toe-state)  
+   Record whether X win or O win, and count of X, and O
+   1. If both player X and O win, return False
+   1. If player X win and count of X - count of O is not 1, return False
+   1. If player O win and count of C is not equal to count of O, return False
+   1. In the end, return 0 <= count of X - count of O <= 1
+   ***Time complexity O(N*2), space complexity O(N)***
+   <details>
+
+      ```python
+        def validTicTacToe(self, board: List[str]) -> bool:
+           size = len(board)
+           rowSum = [0] * size
+           colSum = [0] * size
+           diagSum = 0
+           antiDiagSum = 0
+           xCount = 0
+           oCount = 0
+           xWin = False
+           oWin = False
+           for r in range(size):
+               for c in range(size):
+                   cell = board[r][c]
+                   toAdd = 0
+                   if cell == "X":
+                       toAdd = 1
+                       xCount += 1
+                   elif cell == "O":
+                       toAdd = -1
+                       oCount += 1
+                   rowSum[r] += toAdd
+                   colSum[c] += toAdd
+                   if r == c:
+                       diagSum += toAdd
+                   
+                   if r + c == size - 1:
+                       antiDiagSum += toAdd
+                   
+                   for theSum in [rowSum[r], colSum[c], diagSum, antiDiagSum]:
+                       if theSum == size:
+                           xWin = True
+                       if theSum == -size:
+                           oWin = True
+                   
+           if xWin and oWin:
+               return False
+           elif xWin and not xCount - oCount == 1:
+               return False
+           elif oWin and not xCount == oCount:
+               return False
+           else:
+               return 0 <= xCount - oCount <= 1
+      ```
+   </details>
+   
 1. [251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)  
    ***Approach 1 - flatten vector in constructor and maintain cursor***  
    Time complexity O(N) where N represent the number of elements in the list, space complexity O(N) for constructor  
