@@ -33,8 +33,8 @@
       ```
    </details>
 
-1. [251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)
-   ***Approach 1 - flatten vector in constructor and maintain cursor***
+1. [251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)  
+   ***Approach 1 - flatten vector in constructor and maintain cursor***  
    <details>
 
       ```python
