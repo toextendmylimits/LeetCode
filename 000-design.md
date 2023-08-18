@@ -35,6 +35,8 @@
 
 1. [251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/)  
    ***Approach 1 - flatten vector in constructor and maintain cursor***  
+   Time complexity O(N) where N represent the number of elements in the list, space complexity O(N) for constructor  
+   Time complexity O(1) for next and hasNext, space complexity is O(N)  
    <details>
 
       ```python
