@@ -38,8 +38,8 @@
    1. If both player X and O win, return False
    1. If player X win and count of X - count of O is not 1, return False
    1. If player O win and count of C is not equal to count of O, return False
-   1. In the end, return 0 <= count of X - count of O <= 1
-   ***Time complexity O(N*2), space complexity O(N)***
+   1. In the end, return 0 <= count of X - count of O <= 1  
+   ***Time complexity O(N*2), space complexity O(N)***  
    <details>
 
       ```python
