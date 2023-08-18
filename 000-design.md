@@ -94,7 +94,8 @@
 1. [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)   
    Key is to use hash map to find index of an element to delete, and then swap it with last element  
    ***Time complexity*** Getrandom O(1), insert and remove O(1) in general, and in worst case is O(N) when the operation exceeds the capacity of
-currently allocated array/hashmap and invokes space reallocation.  
+currently allocated array/hashmap and invokes space reallocation.
+   
    ***Space complexity*** O(N)  
    <details>
 
