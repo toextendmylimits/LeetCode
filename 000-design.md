@@ -90,3 +90,44 @@
               return self.outerPos < len(self.vec)
       ```
    </details>
+
+1. [380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)   
+   Key is to use hash map to find index of an element to delete, and then swap it with last element  
+   ***Time complexity*** Getrandom O(1), insert and remove O(1) in general, and in worst case is O(N) when the operation exceeds the capacity of
+currently allocated array/hashmap and invokes space reallocation.
+   ***Space complexity*** O(N)  
+   <details>
+
+      ```python
+         class RandomizedSet:
+             def __init__(self):
+                 self.valueIndexMap = {}
+                 self.list = []
+         
+             def insert(self, val: int) -> bool:
+                 if val in self.valueIndexMap:
+                     return False
+                 
+                 self.valueIndexMap[val] = len(self.list)
+                 self.list.append(val)
+                 return True
+                 
+         
+             def remove(self, val: int) -> bool:
+                 if val not in self.valueIndexMap:
+                     return False
+         
+                 idx = self.valueIndexMap[val]
+                 lastElement = self.list[-1] 
+                 self.list[idx] = lastElement
+                 self.valueIndexMap[lastElement] = idx
+         
+                 del self.valueIndexMap[val]
+                 self.list.pop()
+                 return True
+         
+             def getRandom(self) -> int:
+                 return self.list[random.randint(0, len(self.list) - 1)]
+      ```
+   </details>
+   
