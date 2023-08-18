@@ -38,21 +38,25 @@
    <details>
 
       ```python
-       def flatten(self, vec):
-           result = []
-           for lst in vec:
-               for item in lst:
-                   result.append(item)
-           return result
-       def __init__(self, vec: List[List[int]]):
-           self.flattenList = self.flatten(vec)
-           self.cursor = 0
-       def next(self) -> int:
-           currCursor = self.cursor
-           self.cursor += 1
-           return self.flattenList[currCursor]    
-   
-       def hasNext(self) -> bool:
-           return self.cursor <= len(self.flattenList) - 1    
+      class Vector2D:   
+          def flatten(self, vec):
+              result = []
+              for lst in vec:
+                  for item in lst:
+                      result.append(item)
+              return result
+          def __init__(self, vec: List[List[int]]):
+              self.flattenList = self.flatten(vec)
+              self.cursor = 0
+          def next(self) -> int:
+              if self.hasNext():
+                  currCursor = self.cursor
+                  self.cursor += 1
+                  return self.flattenList[currCursor]
+              else:
+                  return -1
+      
+          def hasNext(self) -> bool:
+              return self.cursor <= len(self.flattenList) - 1   
       ```
    </details>
