@@ -245,3 +245,9 @@ Did a few questions:
 |[50. Pow(x, n)](https://leetcode.com/problems/powx-n/) | Didn't code, need more practice |
 |[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)| Didn't code it, need more practice |
 |[202. Happy Number](https://leetcode.com/problems/happy-number/) | Didn't code it using fast/slow pointer, need more practice |
+
+### New questions:
+|Question | Comment
+|----------|---------
+|[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | Didn't code it, need more practice |
+|[794. Valid Tic-Tac-Toe State](leetcode.com/problems/valid-tic-tac-toe-state) | Didn't code it, need more practice |
