@@ -64,28 +64,29 @@
    </details>
    
    ***Approach 2 - main two pointers for outer position and inner position, advance in hasNext***  
-   Time complexity O(1) and space complexity O(1) on average  
-
+   Time complexity O(1) and space complexity O(1) on average    
+   <details>
+      
       ```python
-   class Vector2D:   
-       def __init__(self, vec: List[List[int]]):
-           self.innerPos = 0
-           self.outerPos = 0
-           self.vec = vec
-   
-       def next(self) -> int:
-           if self.hasNext():
-               currInnerPos = self.innerPos
-               self.innerPos += 1
-               return self.vec[self.outerPos][currInnerPos]
-           else:
-               return -1
-   
-       def hasNext(self) -> bool:
-           while self.outerPos < len(self.vec) and self.innerPos == len(self.vec[self.outerPos]):
-               self.outerPos += 1
-               self.innerPos = 0
-           
-           return self.outerPos < len(self.vec)
+      class Vector2D:   
+          def __init__(self, vec: List[List[int]]):
+              self.innerPos = 0
+              self.outerPos = 0
+              self.vec = vec
+      
+          def next(self) -> int:
+              if self.hasNext():
+                  currInnerPos = self.innerPos
+                  self.innerPos += 1
+                  return self.vec[self.outerPos][currInnerPos]
+              else:
+                  return -1
+      
+          def hasNext(self) -> bool:
+              while self.outerPos < len(self.vec) and self.innerPos == len(self.vec[self.outerPos]):
+                  self.outerPos += 1
+                  self.innerPos = 0
+              
+              return self.outerPos < len(self.vec)
       ```
    </details>
