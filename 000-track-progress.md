@@ -261,7 +261,7 @@ Did a few questions:
 |[794. Valid Tic-Tac-Toe State](https://leetcode.com/problems/valid-tic-tac-toe-state) | Coded it with bug due to wrong indent|
 |[348. Design Tic-Tac-To](https://leetcode.com/problems/design-tic-tac-toe) | Coded it with difficulty, need more practice |
 |[297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Coded it with bug, need more practice |
-[62. Unique Paths](https://leetcode.com/problems/unique-paths) | Didn't code it, need more practice |
+[62. Unique Paths](https://leetcode.com/problems/unique-paths) | Coded it with bug-free for first time |
 |[55. Jump Game](https://leetcode.com/problems/jump-game/) | Didn't code it, need more practice |
 |[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | Coded it with bug, need more practice |
 |[169. Majority Element](https://leetcode.com/problems/majority-element/)| Coded it with bug, need more practice |
