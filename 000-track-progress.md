@@ -267,6 +267,6 @@ Did a few questions:
 |[169. Majority Element](https://leetcode.com/problems/majority-element/)| Coded it bug-free for the first time |
 |[69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Coded it bug-free, but almost forgot == in the condition, should be left <= right |
 |[50. Pow(x, n)](https://leetcode.com/problems/powx-n/) | Coded it bug-free, but still need practice |
-|[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)| Didn't code it, need more practice |
+|[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)| Coded it bug-free for first time, but still need more practice |
 |[202. Happy Number](https://leetcode.com/problems/happy-number/) | Didn't code it using fast/slow pointer, need more practice |
 
