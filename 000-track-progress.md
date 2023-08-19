@@ -263,9 +263,9 @@ Did a few questions:
 |[297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree/) | Coded it with bug, need more practice |
 [62. Unique Paths](https://leetcode.com/problems/unique-paths) | Coded it with bug-free for first time |
 |[55. Jump Game](https://leetcode.com/problems/jump-game/) | Coded it bug-free for the first time|
-|[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | Coded it with bug, need more practice |
-|[169. Majority Element](https://leetcode.com/problems/majority-element/)| Coded it with bug, need more practice |
-|[69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Coded it with bug, need more practice |
+|[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | Coded it bug-free for the first time |
+|[169. Majority Element](https://leetcode.com/problems/majority-element/)| Coded it bug-free for the first time |
+|[69. Sqrt(x)](https://leetcode.com/problems/sqrtx/) | Coded it bug-free, but almost forgot == in the condition, should be left <= right |
 |[50. Pow(x, n)](https://leetcode.com/problems/powx-n/) | Didn't code, need more practice |
 |[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)| Didn't code it, need more practice |
 |[202. Happy Number](https://leetcode.com/problems/happy-number/) | Didn't code it using fast/slow pointer, need more practice |
