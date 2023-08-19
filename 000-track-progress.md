@@ -251,3 +251,11 @@ Did a few questions:
 |----------|---------
 |[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | Didn't code it, need more practice |
 |[794. Valid Tic-Tac-Toe State](leetcode.com/problems/valid-tic-tac-toe-state) | Didn't code it, need more practice |
+
+## 19/08/2023
+
+### Reviewed questions from 16 - 18/08/2023
+|Question | Comment
+|----------|---------
+|[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | Coded it bug-free for the first time |
+|[794. Valid Tic-Tac-Toe State](leetcode.com/problems/valid-tic-tac-toe-state) | Didn't code it, need more practice |
