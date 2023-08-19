@@ -424,6 +424,24 @@
             root.right = dfs(nodes)
             return root
         return dfs(iter(data.split(" ")))
+
+    def deserialize(self, data):
+        cursor = 0
+        def preorder(data):
+            nonlocal cursor
+            val = data[cursor]
+            cursor += 1
+            if val == "X":
+                return None
+            
+            root = TreeNode(int(val))               
+            
+            root.left = preorder(data)
+            root.right = preorder(data)
+
+            return root
+        
+        return preorder(data.split(","))
    ```
    </details>
 
