@@ -269,4 +269,5 @@ Did a few questions:
 |[50. Pow(x, n)](https://leetcode.com/problems/powx-n/) | Coded it bug-free, but still need practice |
 |[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes)| Coded it bug-free for first time, but still need more practice |
 |[202. Happy Number](https://leetcode.com/problems/happy-number/) | Coded it with bug, condition is n != 0 not n % 10 != 0|
+|[251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector) | Coded it bug-free for the first time |
 
