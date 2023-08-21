@@ -231,7 +231,7 @@
    1. The smaller one of first and last line doesn't support a higher water level and can thus be safely removed from further consideration.
 
    Algorithms:
-   Have two pointers, one point to first index, and the other point to last index
+   Have two pointers, one point to first index, and the other point to last index.  
    When left is less than right, have a loop:
    1. At each iteration, check whether the area between left and right is greater than result, if so, update
    1. If left height is less than right hight, then the only way to find potential larger area is to move left, as moving right will cause width to decrease but not causing height to increase
