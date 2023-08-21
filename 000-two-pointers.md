@@ -299,9 +299,9 @@
    
    ***Approach 3***  
    Intution:
-   A poisiton can store water if there are higher bars on its left and right
-   The water to be stored in a position is the smallest value of max left bar height and max right bar height then substract its height
-   The total amount of water is the summontaion of the water stored in each position
+   A poisiton can store water if there are higher bars on its left and right  
+   The water to be stored in a position is the smallest value of max left bar height and max right bar height then substract its height  
+   The total amount of water is the summontaion of the water stored in each position  
    
    Algorithm:
    1. Have two pointers, one point to left, and the other point to right, have variable maxLeft and maxRight for the max left bar height and max right bar height  
