@@ -112,3 +112,49 @@
             return result
       ```
     </details>   
+
+1. [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)   
+    ***Approach 1 - Use array pre to store products of left, suff to store products of right*** 
+    <details>
+
+      ```python
+        def productExceptSelf(self, nums: List[int]) -> List[int]:
+            size = len(nums)
+            pre = [0] * size
+            suff = [0] * size
+            pre[0] = 1
+            suff[-1] = 1
+            
+            for i in range(1, size):
+                pre[i] = pre[i - 1] * nums[i - 1]
+            
+            for i in range(size - 2, -1, -1):
+                suff[i] = suff[i + 1] * nums[i + 1]
+            
+            result = [0] * size
+            for i in range(size):
+                result[i] = pre[i] * suff[i]
+            
+            return result
+      ```
+    </details>   
+
+    ***Approach 2 - Use out put array as prefix, and construct the suff on the fly*** 
+    <details>
+
+      ```python
+        def productExceptSelf(self, nums: List[int]) -> List[int]:
+            size = len(nums)
+            result = [1] * size
+    
+            for i in range(1, len(nums)):
+                result[i] = result[i - 1] * nums[i - 1]
+            
+            rightProduct = 1
+            for i in range(len(nums) - 1, -1, -1):
+                result[i] *= rightProduct
+                rightProduct *= nums[i]
+            
+            return result
+      ```
+    </details>   
