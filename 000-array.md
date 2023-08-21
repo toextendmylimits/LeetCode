@@ -158,3 +158,52 @@
             return result
       ```
     </details>   
+
+    
+## Two-dimensional array/matrix
+1. [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix)   
+    Set up the boundaries top, right, bottom, left  
+    Loop if the result array is not fully filled, in each iteration:  
+    1. Traverse from top -> right -> bottom -> left
+    1. Then change the bondary
+    <details>
+
+      ```python
+        def spiralOrder(self, matrix: List[List[int]]) -> List[int]:
+            rowCount = len(matrix)
+            colCount = len(matrix[0])
+            result = [0] * (rowCount * colCount) 
+            topRow = 0
+            bottomRow = rowCount - 1
+            leftCol = 0
+            rightCol = colCount - 1
+            i = 0
+            while i < rowCount * colCount:
+                for c in range(leftCol, rightCol + 1):
+                    if i < rowCount * colCount:
+                        result[i] = matrix[topRow][c]
+                        i += 1
+                
+                for r in range(topRow + 1, bottomRow + 1):
+                    if i < rowCount * colCount:
+                        result[i] = matrix[r][rightCol]
+                        i += 1
+                
+                for c in range(rightCol - 1, leftCol - 1, -1):
+                    if i < rowCount * colCount:
+                        result[i] = matrix[bottomRow][c]
+                        i += 1
+    
+                for r in range(bottomRow - 1, topRow, -1):
+                    if i < rowCount * colCount:
+                        result[i] = matrix[r][leftCol]
+                        i += 1
+                
+                topRow += 1
+                bottomRow -= 1
+                leftCol += 1
+                rightCol -= 1
+    
+            return result
+      ```
+    </details>
