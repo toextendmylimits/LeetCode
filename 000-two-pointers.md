@@ -220,6 +220,44 @@
            return "".join([str(i) for i in result])
       ```
    </details>
+## Medium
+1. [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water)    
+   Intuition:
+   Area between two positions equal to width * min(left height, right height) 
+
+   Idea:
+   1. The widest container (using first and last line) is a good candidate, because of its width. Its water level is the height of the smaller one of first and last line.  
+   1. All other containers are less wide and thus would need a higher water level in order to hold more water.   
+   1. The smaller one of first and last line doesn't support a higher water level and can thus be safely removed from further consideration.
+
+   Algorithms:
+   Have two pointers, one point to first index, and the other point to last index
+   When left is less than right, have a loop:
+   1. At each iteration, check whether the area between left and right is greater than result, if so, update
+   1. If left height is less than right hight, then the only way to find potential larger area is to move left, as moving right will cause width to decrease but not causing height to increase
+   1. Similaryly if left height is greater than or equal to height, move right pointer  
+   <details>
+
+   ```python
+    def isPalindrome(self, s: str) -> bool:
+        left = 0
+        right = len(s) - 1
+        while left < right:
+            while left < right and not s[left].isalnum():
+                left += 1
+
+            while left < right and not s[right].isalnum():
+                right -= 1
+
+            if s[left].upper() == s[right].upper():
+                left += 1
+                right -= 1
+            else:
+                return False
+
+        return True
+   ```
+   </details>
    
 ## Difficult
 1. [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)  
