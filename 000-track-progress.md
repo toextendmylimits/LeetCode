@@ -271,3 +271,10 @@ Did a few questions:
 |[202. Happy Number](https://leetcode.com/problems/happy-number/) | Coded it with bug, condition is n != 0 not n % 10 != 0|
 |[251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector) | Coded it bug-free for the first time |
 
+## 21/08/2023
+
+|Question | Comment
+|----------|---------
+|[11. Container With Most Water](https://leetcode.com/problems/container-with-most-water)| More practice |
+|[42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | More practice |
+|[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | More practice |
