@@ -307,8 +307,8 @@
    1. Have two pointers, one point to left, and the other point to right, have variable maxLeft and maxRight for the max left bar height and max right bar height  
    1. Loop if left is less than right:  
       1. At each iteration, update maxLeft if the current height is greater than maxLeft, and update maxRight if current height is greater than maxRight
-      1. If maxLeft is less than maxRight, then position at left can hold water maxLeft - current height, and add it total
-      1. Else if maxLeft is greater than maxRight, then position at right can hold water maxRight - current height, and add it total
+      1. If maxLeft is less than maxRight, then position at left can hold water maxLeft - current height, and add it total, and increase left
+      1. Else if maxLeft is greater than maxRight, then position at right can hold water maxRight - current height, and add it total, and decrease right
    1. Return total amount of water
    
    <details>
