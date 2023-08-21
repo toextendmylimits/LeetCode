@@ -221,3 +221,116 @@
       ```
    </details>
    
+## Difficult
+1. [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)  
+   The basic intuition of the problem is as follows:  
+   1. An element of the array can store water if there are higher bars on the left and the right.   
+   1. The amount of water to be stored in every position can be found by finding the heights of bars on the left and right sides.   
+   1. The total amount of water stored is the summation of the water stored in each position.  
+     
+   ***Approach 1 - brutal force***
+   Time complexity O(N*2), space complexity O(1)
+   The idea:  
+   Traverse every array element and find the highest bars on the left and right sides. Take the smaller of two heights. The difference between the smaller          height and the height of the current element is the amount of water that can be stored in this array element.  
+
+   Steps:
+   1. Traverse the array from start to end:
+      For every element: 
+      1. Traverse the array from start to that index and find the maximum height on left (maxLeft) and 
+      1. Traverse the array from the current index to the end, and find the maximum height on right (maxRight).
+      1. The amount of water that will be stored in this column is min(maxLeft, maxRight) – array[i], add this value to the total amount of water stored
+   1. In the end, returnt the total amount of water stored.
+   <details>
+      
+      ```python
+       def trap(self, height: List[int]) -> int:
+           result = 0
+           for i in range(len(height)):
+               maxLeft = height[i]
+               maxRight = height[i]
+               for j in range(0, i):
+                   maxLeft = max(maxLeft, height[j])
+               
+               for j in range(i + 1, len(height)):
+                   maxRight = max(maxRight, height[j])
+               
+               result += min(maxLeft, maxRight) - height[i]
+           
+           return result
+      ```
+   </details>  
+
+   ***Approach 2 - Prepopulate max left and max right for each element***
+   Time complexity O(N*2), space complexity O(1)  
+
+   The idea:  
+   In previous approach, for every element we needed to calculate the highest element on the left and on the right. So, to reduce the time complexity:
+   1. For every element we can precalculate and store the highest bar on the left and on the right (say stored in arrays left[] and right[]). 
+   1. Then iterate the array and use the precalculated values to find the amount of water stored in this index, which is the same as ( min(left[i], right[i]) – arr[i] )
+
+   Steps:
+   Create two arrays left[] and right[] of size N. Create a variable (say max) to store the maximum found till a certain index during traversal.
+
+   1. Run one loop from left to right and in each iteration update max and also assign left[i] = max.  
+   1. Run another loop right end to left and in each iteration update max found till now and also assign right[i] = max.  
+   1. Traverse the array from start to end.  
+      1. The amount of water that will be stored in this column is min(left[i], right[i]) – array[i]  
+      1. Add this value to the total amount of water stored  
+   1. Print the total amount of water stored.  
+   <details>
+      
+      ```python
+       def trap(self, height: List[int]) -> int:
+           result = 0
+           for i in range(len(height)):
+               maxLeft = height[i]
+               maxRight = height[i]
+               for j in range(0, i):
+                   maxLeft = max(maxLeft, height[j])
+               
+               for j in range(i + 1, len(height)):
+                   maxRight = max(maxRight, height[j])
+               
+               result += min(maxLeft, maxRight) - height[i]
+           
+           return result
+      ```
+   </details>  
+   
+   ***Approach 3***  
+   Intution:
+   A poisiton can store water if there are higher bars on its left and right
+   The water to be stored in a position is the smallest value of max left bar height and max right bar height then substract its height
+   The total amount of water is the summontaion of the water stored in each position
+   
+   Algorithm:
+   1. Have two pointers, one point to left, and the other point to right, have variable maxLeft and maxRight for the max left bar height and max right bar height  
+   1. Loop if left is less than right:  
+      1. At each iteration, update maxLeft if the current height is greater than maxLeft, and update maxRight if current height is greater than maxRight
+      1. If maxLeft is less than maxRight, then position at left can hold water maxLeft - current height, and add it total
+      1. Else if maxLeft is greater than maxRight, then position at right can hold water maxRight - current height, and add it total
+   1. Return total amount of water
+   
+   <details>
+      
+      ```python
+       def trap(self, height: List[int]) -> int:
+           maxLeft = height[
+           maxRight = 0
+           left = 0
+           right = len(height) - 1
+           result = 0
+           while left < right:
+               maxLeft = max(maxLeft, height[left])
+               maxRight = max(maxRight, height[right])
+               if maxLeft < maxRight:
+                   result += maxLeft - height[left]
+                   left += 1
+               else:
+                   result += maxRight - height[right]
+                   right -= 1
+                   
+           return result
+      ```
+   </details>
+   
