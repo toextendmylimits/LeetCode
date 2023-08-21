@@ -135,7 +135,7 @@
 1. [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)  
    Need to do a inorder traversal as the result would be sorted in ascending order, and decrease k by 1 in each recursion    
    ***Time complexity: O(H + k), where H is a tree height.***   
-      This complexity is defined by the stack, which contains at least  elements, since before increasing count we have to go down to a leaf. This results in O(H)
+      Since before increasing count we have to go down to a leaf. This results in O(H)
       O(logN+k) for the balanced tree and  
       O(N + k) for completely unbalanced tree
 
