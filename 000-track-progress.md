@@ -287,3 +287,4 @@ Did a few questions:
 |[11. Container With Most Water](https://leetcode.com/problems/container-with-most-water)| Coded it bug-free for the first time |
 |[42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water) | Coded bug-free in 3 ways for the first time |
 |[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | Coded bug-free in 2 ways for the first time|
+|[54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix) |
