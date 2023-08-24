@@ -1,4 +1,37 @@
 # Array
+1. [189. Rotate Array](https://leetcode.com/problems/rotate-array)  
+    ***Approach 1 - Have an auxiliary array, aux[(i + k ) % len(nums)] = nums[i]***
+    <details>
+
+      ```python
+        def rotate(self, nums: List[int], k: int) -> None:
+            aux = [0] * len(nums)
+            for i in range(len(nums)):
+                aux[(i + k) % len(nums)] = nums[i]
+            
+            for i in range(len(nums)):
+                nums[i] = aux[i]
+      ```
+    </details>
+    ***Approach 1 - Reverse 3 times***
+    <details>
+
+      ```python
+        def rotate(self, nums: List[int], k: int) -> None:
+            def reverse(start, end):
+                left = start
+                right = end
+                while left < right:
+                    nums[left], nums[right] = nums[right], nums[left]
+                    left += 1
+                    right -= 1
+                    
+            k %= len(nums)
+            reverse(0, len(nums) - 1)
+            reverse(0, k - 1)
+            reverse(k, len(nums) - 1)
+      ```
+    </details>
 1. [66. Plus One](https://leetcode.com/problems/plus-one)  
     Copy existing array to a new one.   
     1. Starting from the last element of the array, add the digit and 1 or carry.   
