@@ -289,7 +289,7 @@ Did a few questions:
 |[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | Coded bug-free in 2 ways for the first time|
 |[54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Coded it with serious issue, as forgetting resetting boundaries|
 
-## 24/08/2023
+## 24 - 25/08/2023
 
 |Question | Comment
 |----------|---------
@@ -301,3 +301,5 @@ Did a few questions:
 |[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Coded it bug-free, but spent nearly 5 minutes |
 |[1. Two Sum](https://leetcode.com/problems/two-sum)| Coded it bug-free, took 2 minutes |
 |[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)| Coded it bug-free, spent 2 minutes |
+|[189. Rotate Array](https://leetcode.com/problems/rotate-array)| Coded it bug-free, but was hesitant a bit, should practice more |
+|[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Coded it bug-free using hash set but should practice more with sorting as well |
