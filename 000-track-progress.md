@@ -295,6 +295,9 @@ Did a few questions:
 |----------|---------
 |[146. LRU Cache](https://leetcode.com/problems/lru-cache)| Struggling|
 
-### Reviewed questions from east list
+### Reviewed questions from easy list
+|Question | Comment
+|----------|---------
 |[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Coded it bug-free, but spent nearly 5 minutes |
 |[1. Two Sum](https://leetcode.com/problems/two-sum)| Coded it bug-free, took 2 minutes |
+|[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)| Coded it bug-free, spent 2 minutes |
