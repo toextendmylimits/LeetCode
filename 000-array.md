@@ -1,6 +1,6 @@
 # Array
 1. [189. Rotate Array](https://leetcode.com/problems/rotate-array)  
-    ***Approach 1 - Have an auxiliary array, aux[(i + k ) % len(nums)] = nums[i]***
+    ***Approach 1 - Have an auxiliary array, aux[(i + k ) % len(nums)] = nums[i], and assign aux to original array***
     <details>
 
       ```python
