@@ -1,4 +1,35 @@
 # Array
+1. [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)    
+    ***Approach 1 - Use hash set***
+    <details>
+
+      ```python
+       def containsDuplicate(self, nums: List[int]) -> bool:
+           seen = set()
+           for n in nums:
+               if n in seen:
+                   return True
+               else:
+                   seen.add(n)
+           
+           return False
+      ```
+    </details>
+    
+    ***Approach 2 - Sort first, and then check whether any element equal to previous one starting from second element***
+    <details>
+
+      ```python
+       def containsDuplicate(self, nums: List[int]) -> bool:
+           nums.sort()
+           for i in range(1, len(nums)):
+               if nums[i] == nums[i - 1]:
+                   return True
+   
+           return False
+      ```
+    </details>
+    
 1. [189. Rotate Array](https://leetcode.com/problems/rotate-array)  
     ***Approach 1 - Have an auxiliary array, aux[(i + k ) % len(nums)] = nums[i], and assign aux to original array***
     <details>
@@ -14,7 +45,7 @@
       ```
     </details>
     
-    ***Approach 1 - Reverse 3 times***
+    ***Approach 2 - Reverse 3 times***
     <details>
 
       ```python
