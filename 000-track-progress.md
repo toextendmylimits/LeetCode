@@ -290,7 +290,10 @@ Did a few questions:
 |[54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Coded it with serious issue, as forgetting resetting boundaries|
 
 ## 24/08/2023
-### Reviewed questions from 21/08/2023
+
 |Question | Comment
 |----------|---------
 |[146. LRU Cache](https://leetcode.com/problems/lru-cache)| Struggling|
+
+### Reviewed questions from east list
+|[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Coded it bug-free, but spent nearly 5 minutes |
