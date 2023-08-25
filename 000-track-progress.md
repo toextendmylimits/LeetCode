@@ -311,3 +311,4 @@ Did a few questions:
 |[387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Coded it bug-free, still practice more |
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram) | Coded it bug-free, still practice more |
 |[Valid Plalindrome](https://leetcode.com/problems/valid-palindrome) | Coded bug-free, still practice more |
+|[28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | Coded bug-free, still practice more |
