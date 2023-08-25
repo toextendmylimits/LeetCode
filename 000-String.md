@@ -3,7 +3,7 @@
     Use hash map to store each charcter, and how many times it appear in the string  
     Loop through the string, and if any character appear only once, return its index  
     In the end, return -1  
-        <details>
+    <details>
             
             ```python
             def firstUniqChar(self, s: str) -> int:
@@ -14,7 +14,7 @@
                 
                 return -1
             ```
-        </details>
+    </details>
         
 1. [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)  
     The prefix must shorter than the first word.   
