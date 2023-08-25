@@ -68,7 +68,7 @@
     Copy existing array to a new one.   
     1. Starting from the last element of the array, add the digit and 1 or carry.   
     1. If total is less than 10, assign the number to result array and return immeditately
-    1. If total is equal or greater than 10, assign 0 to the result, and set carry to 1
+    1. If total is equal or greater than 10(It can't be greater than 10 in fact), assign 0 to the result, and set carry to 1
     1. In the end, if carry is 1, return 1 + [0] * len
     <details>
 
