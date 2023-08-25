@@ -1,4 +1,21 @@
 # String
+1. [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)    
+    Use hash map to store each charcter, and how many times it appear in the string  
+    Loop through the string, and if any character appear only once, return its index  
+    In the end, return -1  
+        <details>
+            
+            ```python
+        def firstUniqChar(self, s: str) -> int:
+            counter = Counter(s)
+            for i, ch in enumerate(s):
+                if counter[ch] == 1:
+                    return i
+            
+            return -1
+            ```
+        </details>
+        
 1. [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)  
     The prefix must shorter than the first word.   
     1. Scan the first word, and for each character, check whether it exists in all the remaining words
