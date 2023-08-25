@@ -272,3 +272,45 @@
             return result
       ```
     </details>
+
+1. [36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku)     
+    A valid sudoku board should satisfy three conditions: (1) each row, (2) each column, and (3) each box has no duplicate numbers.  
+    We create a set for each row, column and box.  
+    Difficult is to identify each box, r // 3 * 3 + c // 3  
+
+    Steps:
+    1. Initialize a list of hash set for each row, column and box
+    2. Iterate over each position, and check whether the number in the hash set for each row, column, or box, if so, return False, otherwise add to set  
+    3. In the end, return True  
+
+    ***Both time complexity and space complexity is O(N*2)***
+    <details>
+
+      ```python
+       def isValidSudoku(self, board: List[List[str]]) -> bool:
+           size = len(board)
+           rowSet = [set() for _ in range(size)]
+           colSet = [set() for _ in range(size)]
+           boxSet = [set() for _ in range(size)]
+           for r in range(size):
+               for c in range(size):
+                   cell = board[r][c]
+                   if cell == ".":
+                       continue
+                   
+                   if cell in rowSet[r]:
+                       return False
+                   rowSet[r].add(cell)
+   
+                   if cell in colSet[c]:
+                       return False
+                   colSet[c].add(cell)
+   
+                   boxId = r // 3 * 3 + c // 3
+                   if cell in boxSet[boxId]:
+                       return False
+                   boxSet[boxId].add(cell)
+           
+           return True
+      ```
+    </details>
