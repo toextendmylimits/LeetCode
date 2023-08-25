@@ -303,3 +303,4 @@ Did a few questions:
 |[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)| Coded it bug-free, spent 2 minutes |
 |[189. Rotate Array](https://leetcode.com/problems/rotate-array)| Coded it bug-free, but was hesitant a bit, should practice more |
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Coded it bug-free using hash set but should practice more with sorting as well |
+|[136. Single Number](https://leetcode.com/problems/single-number/)| Coded it bug-free easily but should still practice more |
