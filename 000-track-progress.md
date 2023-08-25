@@ -308,3 +308,4 @@ Did a few questions:
 |[283. Move Zeroes](https://leetcode.com/problems/move-zeroes)| Coded it bug-free |
 |[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku)| Coded it bug-free, but should practice more with explaining the algorithm | 
 |[48. Rotate Image](https://leetcode.com/problems/rotate-image)| Coded bug-free, but should practice more |
+|[387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Coded it bug-free, still practice more |
