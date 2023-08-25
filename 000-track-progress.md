@@ -306,3 +306,4 @@ Did a few questions:
 |[136. Single Number](https://leetcode.com/problems/single-number/)| Coded it bug-free easily but should still practice more |
 |[350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii) | Coded with bug, should practice more |
 |[283. Move Zeroes](https://leetcode.com/problems/move-zeroes)| Coded it bug-free |
+|[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku)| Coded it bug-free, but should practice more with explaining the algorithm | 
