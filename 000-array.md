@@ -283,7 +283,7 @@
     2. Iterate over each position, and check whether the number in the hash set for each row, column, or box, if so, return False, otherwise add to set  
     3. In the end, return True  
 
-    ***Both time complexity and space complexity is O(N*2)***
+    ***Both time complexity and space complexity is O(N ^ 2)***
     <details>
 
       ```python
