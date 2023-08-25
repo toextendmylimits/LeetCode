@@ -314,3 +314,28 @@
            return True
       ```
     </details>
+
+1. [48. Rotate Image](https://leetcode.com/problems/rotate-image)       
+    Transpose and reflect  
+
+    <details>
+
+      ```python
+       def rotate(self, matrix: List[List[int]]) -> None:
+           """
+           Do not return anything, modify matrix in-place instead.
+           """
+           def transpose():
+               for r in range(len(matrix)):
+                   for c in range(r + 1, len(matrix[0])):
+                       matrix[r][c], matrix[c][r] = matrix[c][r], matrix[r][c]
+   
+           def reflect():
+               for r in range(len(matrix)):
+                   for c in range(len(matrix[0]) // 2):
+                       matrix[r][c], matrix[r][len(matrix[0]) -1 - c] = matrix[r][len(matrix[0]) -1 - c], matrix[r][c]
+           
+           transpose()
+           reflect()
+      ```
+    </details>
