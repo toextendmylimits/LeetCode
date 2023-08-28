@@ -314,3 +314,4 @@ Did a few questions:
 |[28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | Coded bug-free, still practice more |
 |[7. Reverse Integer](https://leetcode.com/problems/reverse-integer)| Coded it okay, but better practice more |
 |[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)| Coded it with serious defect and spent almost 10 minutes, should practice more |
+|[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|Coded it bug-free, but wasn't 100% clear, should practice more |
