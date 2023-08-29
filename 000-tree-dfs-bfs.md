@@ -25,7 +25,9 @@
    ```
    
    </details>
-1. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)    
+1. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)  
+   TC - O(num of nodes) as we are traversing all the nodes of the tree  
+   SC - O(height of the tree) for the recursive stack    
    ***Can also be done in BFS***
    ```python
    if not root:
