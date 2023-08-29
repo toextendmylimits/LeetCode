@@ -320,3 +320,4 @@ Did a few questions:
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Coded it bug-free, but not 100% clear, practice more |
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Coded it bug-free, but should still practice more |
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)| Coded it wrongly with BFS, use popleft instead of pop for queue |
+|[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Coded it bug-free, but should practice more |
