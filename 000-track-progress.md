@@ -317,3 +317,4 @@ Did a few questions:
 |[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|Coded it bug-free, but wasn't 100% clear, should practice more |
 |[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|Coded it bug-free, but wasn't 100% clear, practice more |
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Coded it bug-free, but could improve, practice more |
+|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Coded it bug-free, but not 100% clear, practice more |
