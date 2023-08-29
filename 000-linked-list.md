@@ -8,22 +8,24 @@
         1. Then, regardless of which list we connecte we increment prev of merged list.
     1. Findally we connect the merged list with the list that is not null
     <details>
-    ```python
-    def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
-        dummy = ListNode()
-        dummy.next = head
-        prev = dummy
-        curr = head
-        while curr:
-            if curr.val == val:
-                prev.next = curr.next
-            else:
-                prev = curr
-            curr = curr.next
-
-        return dummy.next
-    ```
-    </details> 
+        
+        ```python
+        def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
+            dummy = ListNode()
+            dummy.next = head
+            prev = dummy
+            curr = head
+            while curr:
+                if curr.val == val:
+                    prev.next = curr.next
+                else:
+                    prev = curr
+                curr = curr.next
+    
+            return dummy.next
+        ```
+    </details>
+    
        <details>
     
            ```python
