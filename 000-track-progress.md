@@ -321,3 +321,4 @@ Did a few questions:
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Coded it bug-free, but should still practice more |
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)| Coded it wrongly with BFS, use popleft instead of pop for queue |
 |[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Coded it bug-free, but should practice more |
+|[101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)| Coded it bug-free, practice more |
