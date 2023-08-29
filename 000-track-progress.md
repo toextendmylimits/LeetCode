@@ -319,3 +319,4 @@ Did a few questions:
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Coded it bug-free, but could improve, practice more |
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Coded it bug-free, but not 100% clear, practice more |
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Coded it bug-free, but should still practice more |
+|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)| Coded it wrongly with BFS, use popleft instead of pop for queue |
