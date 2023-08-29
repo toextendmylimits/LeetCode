@@ -26,15 +26,19 @@
    
    </details>
 1. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)  
+   ***Approach 1 - DFS***
    TC - O(num of nodes) as we are traversing all the nodes of the tree  
    SC - O(height of the tree) for the recursive stack    
-   ***Can also be done in BFS***
+   
    ```python
    if not root:
       return 0
 
    return 1 + max(self.maxDepth(root.left), self.maxDepth(root.right))
    ```
+   ***Approach 2 - BFS***
+   TC - O(num of nodes) as we are traversing all the nodes of the tree    
+   SC - O(num of nodes) BFS will have to store at least an entire level of the tree in the queue (sample queue implementation). With a perfect fully balanced binary tree, this would be (n/2 + 1) nodes (the very last level). 
 1. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)    
    ***Can also be done in BFS***
    <details>
