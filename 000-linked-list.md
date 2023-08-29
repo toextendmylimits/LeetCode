@@ -10,43 +10,25 @@
     <details>
 
     ```python
-    def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
-        dummy = ListNode()
-        dummy.next = head
-        prev = dummy
-        curr = head
-        while curr:
-            if curr.val == val:
-                prev.next = curr.next
-            else:
-                prev = curr
-            curr = curr.next
-
-        return dummy.next
+        def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+            preHead = ListNode()
+            prev = preHead
+            while list1 and list2:
+                if list1.val < list2.val:
+                    prev.next = list1
+                    list1 = list1.next
+                else:
+                    prev.next = list2
+                    list2 = list2.next
+    
+                prev = prev.next
+    
+            prev.next = list1 or list2
+    
+            return preHead.next
     ```
     </details>
-    
-       <details>
-    
-           ```python
-            def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-                preHead = ListNode()
-                prev = preHead
-                while list1 and list2:
-                    if list1.val < list2.val:
-                        prev.next = list1
-                        list1 = list1.next
-                    else:
-                        prev.next = list2
-                        list2 = list2.next
-        
-                    prev = prev.next
-        
-                prev.next = list1 or list2
-        
-                return preHead.next
-           ```
-        </details>
+
 1. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)  
     Without using dummy head, the two pointers should be **n step**s apart, and should check whether the **removed node is head**, also the right pointer should be **the last element**
         <details>
