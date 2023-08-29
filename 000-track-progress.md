@@ -315,3 +315,5 @@ Did a few questions:
 |[7. Reverse Integer](https://leetcode.com/problems/reverse-integer)| Coded it okay, but better practice more |
 |[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)| Coded it with serious defect and spent almost 10 minutes, should practice more |
 |[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|Coded it bug-free, but wasn't 100% clear, should practice more |
+|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|Coded it bug-free, but wasn't 100% clear, practice more |
+|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Coded it bug-free, but could improve, practice more |
