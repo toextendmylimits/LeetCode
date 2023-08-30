@@ -192,7 +192,7 @@
     ```
    </details>
 
-   ***Approach 2. Binary Search*** 
+   ***Approach 2. Binary Search***  
    Key observation is that The number of positive integers which are missing before the arr[idx] is equal to arr[idx] - idx - 1.   
    <details>
       
