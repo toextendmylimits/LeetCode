@@ -1,5 +1,7 @@
 # Design
-1. [384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)
+1. [384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)  
+   Idea:
+   Pick a random num and put it as first num, then pick a random num from the rest of nums and put it as second num, and so on  
    <details>
 
       ```python
