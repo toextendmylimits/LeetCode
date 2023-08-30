@@ -81,26 +81,3 @@
       
     ```
     </details>   
-    <details>
-
-        ```python
-        def generate(self, numRows: int) -> List[List[int]]:
-            result = []
-            result.append([1])
-            if numRows == 1:
-                return result
-            
-            for row in range(1, numRows):
-                level = []
-                level.append(1) # First
-    
-                for col in range(1, row):
-                    prevLevel = result[-1]
-                    level.append(prevLevel[col - 1] + prevLevel[col])
-                
-                level.append(1) # Last
-                result.append(level)
-            
-            return result
-        ```
-    </details>
