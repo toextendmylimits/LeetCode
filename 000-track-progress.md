@@ -338,3 +338,7 @@ Did a few questions:
 |[461. Hamming Distance](https://leetcode.com/problems/hamming-distance)| Coded with difficulty, need more practice |
 |[190. Reverse Bits](https://leetcode.com/problems/reverse-bits)| Coded with difficulty, need more practice, beware loop 32 times |
 |[118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)  | Coded with bug, need more practice, beware boundary col in range(1, row) |
+|[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| Coded bug-free, better still practice more |
+|[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Coded bug-free, better still practice more |
+|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|Coded bug-free, but should practice more and aim to explain clearly |
+|[198. House Robber](https://leetcode.com/problems/house-robber)| Coded with bug, need more practice |
