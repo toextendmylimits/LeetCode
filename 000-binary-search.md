@@ -170,7 +170,7 @@
    </details>
 
 ## Difficult
-1. [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number)
+1. [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number)  
    ***Approach 1. Iterate over the array and compute the number of missing numbers in-between the elements.***    
    <details>
       
