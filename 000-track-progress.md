@@ -334,3 +334,4 @@ Did a few questions:
 |[204. Count Primes](https://leetcode.com/problems/count-primes)| Failed, need more practice |
 |[268. Missing Number](https://leetcode.com/problems/missing-number) | Not very clear, need more practice |
 |[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Coded with defect, need more practice |
+|[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)| Coded with difficult, need more practice |
