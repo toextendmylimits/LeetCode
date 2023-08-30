@@ -289,7 +289,7 @@ Did a few questions:
 |[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self) | Coded bug-free in 2 ways for the first time|
 |[54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix) | Coded it with serious issue, as forgetting resetting boundaries|
 
-## 24 - 25/08/2023
+## 24 - 30/08/2023
 
 |Question | Comment
 |----------|---------
