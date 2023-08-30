@@ -326,4 +326,4 @@ Did a few questions:
 |[108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)| Coded it with bug |
 |[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)| Coded it bug-free |
 |[278. First Bad Version](https://leetcode.com/problems/first-bad-version)| Coded bug-free |
-|[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)| Coded with serious issue, practice more |
+|[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)| Coded with serious issue, fogot randint, should practice more |
