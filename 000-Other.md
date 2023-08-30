@@ -56,7 +56,31 @@
 1. [118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)  
     row in range 1 and numRows(exclusive)  
     col in range 1 and row(exclusive)  
-    ***Time complexity is O(N^2) while space complexity is O(1)***    
+    ***Time complexity is O(N^2) while space complexity is O(1)***
+    <details>
+      
+    ```python
+        def generate(self, numRows: int) -> List[List[int]]:
+            result = []
+            result.append([1])
+            if numRows == 1:
+                return result
+            
+            for row in range(1, numRows):
+                level = []
+                level.append(1) # First
+    
+                for col in range(1, row):
+                    prevLevel = result[-1]
+                    level.append(prevLevel[col - 1] + prevLevel[col])
+                
+                level.append(1) # Last
+                result.append(level)
+            
+            return result
+      
+    ```
+    </details>   
     <details>
 
         ```python
