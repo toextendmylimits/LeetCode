@@ -333,3 +333,4 @@ Did a few questions:
 |[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)| Coded bug-free easily, may practice one last time |
 |[204. Count Primes](https://leetcode.com/problems/count-primes)| Failed, need more practice |
 |[268. Missing Number](https://leetcode.com/problems/missing-number) | Not very clear, need more practice |
+|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Coded with defect, need more practice |
