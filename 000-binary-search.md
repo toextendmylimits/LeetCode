@@ -168,6 +168,29 @@
            return result
     ```
    </details>
+
+## Difficult
+1. [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number)
+   ***Approach 1. Iterate over the array and compute the number of missing numbers in-between the elements.***    
+   <details>
+      
+    ```python
+       def findKthPositive(self, arr: List[int], k: int) -> int:
+           if k <= arr[0] - 1:
+               return k
+           
+           k -= arr[0] - 1
+   
+           for i in range(len(arr) - 1):
+               currMissing = arr[i + 1] - arr[i] - 1
+               if k <= currMissing:
+                   return arr[i] + k
+               else:
+                   k -= currMissing
+           
+           return arr[-1] + k
+    ```
+   </details>
 ## Not binary search, but is similar in the sense search scope can be narrowed down quickly
 1. [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)   
    We start search the matrix from top right corner, initialize the current position to top right corner, if the target is greater than the value in current position, then the target can not be in entire row of current position because the row is sorted, if the target is less than the value in current position, then the target can not in the entire column because the column is sorted too
