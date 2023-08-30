@@ -1,4 +1,25 @@
 # Design
+1. [384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)
+   <details>
+
+      ```python
+       def __init__(self, nums: List[int]):
+           self.original = nums
+           self.current = nums[:]
+   
+       def reset(self) -> List[int]:
+           self.current = self.original[:]
+           return self.current
+   
+   
+       def shuffle(self) -> List[int]:
+           for i in range(len(self.current)):
+               randIdx = random.randint(i, len(self.current) - 1)
+               self.current[i], self.current[randIdx] = self.current[randIdx], self.current[i]
+   
+           return self.current
+      ```
+   </details>   
 1. [348. Design Tic-Tac-To](https://leetcode.com/problems/design-tic-tac-toe)  
    Key is to save sum of each row, each column, diagonal, anti diagonal  
    ***Time complexity O(1), space complexity O(N)***
