@@ -1,6 +1,7 @@
 # Cyclic Sort
 1. [268. Missing Number](https://leetcode.com/problems/missing-number)  
    The idea is to place an element at the right position
+   
    Use for loop
    <details>
 
