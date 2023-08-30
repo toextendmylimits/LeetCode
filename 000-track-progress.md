@@ -344,5 +344,6 @@ Did a few questions:
 |[198. House Robber](https://leetcode.com/problems/house-robber)| Coded with bug, need more practice |
 
 ## 31/08/2023
-Revi
+### Reviewed questions from medium list
+|Question | Comment
 |[3 sum](https://leetcode.com/problems/3sum) | Coded wrongly, beware left = i + 1, and boundary check when changing left or right: while left < right and nums[left] == nums[left - 1] |
