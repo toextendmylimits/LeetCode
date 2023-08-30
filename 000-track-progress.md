@@ -327,3 +327,4 @@ Did a few questions:
 |[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)| Coded it bug-free |
 |[278. First Bad Version](https://leetcode.com/problems/first-bad-version)| Coded bug-free |
 |[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)| Coded with serious issue, fogot randint, should practice more |
+|[155. Min Stack](https://leetcode.com/problems/min-stack)|Coded bug-free, better practice more though |
