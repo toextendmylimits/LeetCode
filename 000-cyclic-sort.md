@@ -95,3 +95,5 @@
       ```
    </details>
 
+## To revisit
+1. Many other different ways of solving [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
