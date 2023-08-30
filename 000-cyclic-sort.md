@@ -44,6 +44,8 @@
 
 1. [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)  
    The idea is to place an element at the right position nums[i] - 1, and then if i != nums[i] - 1, i + 1 is missing, and in the end return len(nums) + 1
+
+   TC O(N), SC O(1)
    
    Use for loop
    <details>
