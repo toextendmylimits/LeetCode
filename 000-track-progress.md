@@ -323,3 +323,4 @@ Did a few questions:
 |[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Coded it bug-free, but should practice more |
 |[101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)| Coded it bug-free, practice more |
 |[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Coded it bug-free |
+|[108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)| Coded it with bug |
