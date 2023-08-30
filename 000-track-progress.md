@@ -328,3 +328,7 @@ Did a few questions:
 |[278. First Bad Version](https://leetcode.com/problems/first-bad-version)| Coded bug-free |
 |[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)| Coded with serious issue, fogot randint, should practice more |
 |[155. Min Stack](https://leetcode.com/problems/min-stack)|Coded bug-free, better practice more though |
+|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Coded bug-free easily, no need to practice |
+|[326. Power of Three](https://leetcode.com/problems/power-of-three) | Coded bug-free, but better practice more |
+|[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)| Coded bug-free easily, may practice one last time |
+|[204. Count Primes](https://leetcode.com/problems/count-primes)| Failed, need more practice |
