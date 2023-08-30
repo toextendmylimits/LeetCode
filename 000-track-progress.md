@@ -342,3 +342,7 @@ Did a few questions:
 |[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Coded bug-free, better still practice more |
 |[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|Coded bug-free, but should practice more and aim to explain clearly |
 |[198. House Robber](https://leetcode.com/problems/house-robber)| Coded with bug, need more practice |
+
+## 31/08/2023
+Revi
+|[3 sum](https://leetcode.com/problems/3sum) | Coded wrongly, beware left = i + 1, and boundary check when changing left or right: while left < right and nums[left] == nums[left - 1] |
