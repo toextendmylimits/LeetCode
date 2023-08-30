@@ -336,4 +336,5 @@ Did a few questions:
 |[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Coded with defect, need more practice |
 |[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)| Coded with difficult, need more practice |
 |[461. Hamming Distance](https://leetcode.com/problems/hamming-distance)| Coded with difficulty, need more practice |
+|[190. Reverse Bits](https://leetcode.com/problems/reverse-bits)| Coded with difficulty, need more practice, beware loop 32 times |
 |[118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)  | Coded with bug, need more practice, beware boundary col in range(1, row) |
