@@ -191,6 +191,25 @@
            return arr[-1] + k
     ```
    </details>
+
+   ***Approach 2. Binary Search*** 
+   Key observation is that The number of positive integers which are missing before the arr[idx] is equal to arr[idx] - idx - 1.   
+   <details>
+      
+    ```python
+       def findKthPositive(self, arr: List[int], k: int) -> int:
+           left = 0
+           right = len(arr) - 1
+           while left <= right:
+               mid = left + (right - left) // 2
+               if arr[mid] - mid - 1 < k:
+                   left = mid + 1
+               else:
+                   right = mid - 1
+           
+           return left + k
+    ```
+   </details>
 ## Not binary search, but is similar in the sense search scope can be narrowed down quickly
 1. [240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii)   
    We start search the matrix from top right corner, initialize the current position to top right corner, if the target is greater than the value in current position, then the target can not be in entire row of current position because the row is sorted, if the target is less than the value in current position, then the target can not in the entire column because the column is sorted too
