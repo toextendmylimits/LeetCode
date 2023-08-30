@@ -68,3 +68,30 @@
       ```
    </details>
 
+1. [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)    
+   The idea is to place an element at the right position nums[i] - 1, and then if i != nums[i] - 1, nums[i] is duplicate, and in the end return -1
+
+   TC O(N), SC O(1)
+   
+   Use for loop
+   <details>
+
+      ```python
+       def findDuplicate(self, nums: List[int]) -> int:
+           i = 0
+           while i < len(nums):
+               rightPos = nums[i] - 1
+               if nums[rightPos] != nums[i]:
+                   nums[rightPos], nums[i] = nums[i], nums[rightPos]
+               else:
+                   i += 1
+           
+           for i in range(len(nums)):
+               if i != nums[i] - 1:
+                   return nums[i]
+           
+           return -1
+
+      ```
+   </details>
+
