@@ -95,5 +95,31 @@
       ```
    </details>
 
+1. [645. Set Mismatch](https://leetcode.com/problems/set-mismatch)      
+   The idea is to place an element at the right position nums[i] - 1, and then if i != nums[i] - 1, then duplicate one is nums[i], and missing one is i + 1
+
+   TC O(N), SC O(1)
+   
+   Use for loop
+   <details>
+
+      ```python
+       def findErrorNums(self, nums: List[int]) -> List[int]:
+           i = 0
+           while i < len(nums):
+               rightPos = nums[i] - 1
+               if nums[rightPos] != nums[i]:
+                   nums[rightPos], nums[i] = nums[i], nums[rightPos]
+               else: 
+                   i += 1
+           
+           for i in range(len(nums)):
+               if i != nums[i] - 1:
+                   return [nums[i], i + 1]
+                   
+           return [-1, -1]
+      ```
+   </details>
+
 ## To revisit
 1. Many other different ways of solving [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
