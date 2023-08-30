@@ -121,5 +121,31 @@
       ```
    </details>
 
+1. [448. Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array)       
+   The idea is to place an element at the right position nums[i] - 1, and then if i != nums[i] - 1, then i + 1 must be missing
+
+   TC O(N), SC O(1)
+   
+   Use for loop
+   <details>
+
+      ```python
+    def findDisappearedNumbers(self, nums: List[int]) -> List[int]:
+        i = 0
+        while i < len(nums):
+            rightPos = nums[i] - 1
+            if nums[rightPos] != nums[i]:
+                nums[rightPos], nums[i] = nums[i], nums[rightPos]
+            else:
+                i += 1
+        result = []
+        for i in range(len(nums)):
+            if i != nums[i] - 1:
+                result.append(i + 1)
+        
+        return result
+      ```
+   </details>
+   
 ## To revisit
 1. Many other different ways of solving [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
