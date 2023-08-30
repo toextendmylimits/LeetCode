@@ -58,23 +58,23 @@
       
       ```python
        def __init__(self):
-           self.stack = []
            self.minStack = []
+           self.stack = []
    
        def push(self, val: int) -> None:
            self.stack.append(val)
-           if not self.minStack or val <= self.minStack[-1]:
+           if not self.minStack or val <= self.getMin():
                self.minStack.append(val)
            
        def pop(self) -> None:
-           if self.stack.pop() <= self.minStack[-1]:
+           if self.stack.pop() == self.getMin():
                self.minStack.pop()
    
        def top(self) -> int:
            return self.stack[-1]
    
        def getMin(self) -> int:
-           return self.minStack[-1]
+           return self.minStack[-1]     
       ```
     </details>
 1. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)  
