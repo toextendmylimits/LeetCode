@@ -341,7 +341,8 @@
     </details>
 
 1. [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)         
-    Use first row and column to indicate whether a row or column should be marked as zero
+    Use first row and column to indicate whether a row or column should be marked as zero  
+    Given first row or column is used, need two boolean flags to indicate whether first row or column should also be marked as zero  
 
     <details>
 
