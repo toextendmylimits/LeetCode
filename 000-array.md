@@ -339,3 +339,45 @@
            reflect()
       ```
     </details>
+
+1. [73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)         
+    Use first row and column to indicate whether a row or column should be marked as zero
+
+    <details>
+
+      ```python
+       def setZeroes(self, matrix: List[List[int]]) -> None:
+           rowsCount = len(matrix)
+           colsCount = len(matrix[0])
+           doesFirstRowHaveZero = False
+           doesFirstColHaveZero = False
+           for r in range(rowsCount):
+               if matrix[r][0] == 0:
+                   doesFirstColHaveZero = True
+                   break
+           
+           for c in range(colsCount):
+               if matrix[0][c] == 0:
+                   doesFirstRowHaveZero = True
+                   break
+           
+           for r in range(1, rowsCount):
+               for c in range(1, colsCount):
+                   if matrix[r][c] == 0:
+                       matrix[0][c] = 0
+                       matrix[r][0] = 0
+           
+           for r in range(1, rowsCount):
+               for c in range(1, colsCount):
+                   if matrix[0][c] == 0 or matrix[r][0] == 0:
+                       matrix[r][c] = 0
+           
+           if doesFirstRowHaveZero:
+               for c in range(colsCount):
+                   matrix[0][c] = 0
+   
+           if doesFirstColHaveZero:
+               for r in range(rowsCount):
+                   matrix[r][0] = 0    
+      ```
+    </details>
