@@ -344,6 +344,11 @@ Did a few questions:
 |[198. House Robber](https://leetcode.com/problems/house-robber)| Coded with bug, need more practice |
 
 ## 31/08/2023
+
+### Did questions about cylic sort
+|Question | Comment
+|----------|---------
+|[268. Missing Number](https://leetcode.com/problems/missing-number) | Coded wrongly, practice more |
 ### Reviewed questions from medium list
 |Question | Comment
 |----------|---------
