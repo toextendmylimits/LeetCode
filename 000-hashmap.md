@@ -61,7 +61,7 @@
     ```
    </details>
 
-1. [49. Group Anagrams](https://leetcode.com/problems/group-anagrams) 
+1. [49. Group Anagrams](https://leetcode.com/problems/group-anagrams)   
    Calculate hash of a string as letter plus frequency, such as a2b3cd. Importantly, these letters must be sorted alphabetically  
      
    <details>
