@@ -60,6 +60,35 @@
         return True
     ```
    </details>
+
+1. [49. Group Anagrams](https://leetcode.com/problems/group-anagrams) 
+   Calculate hash of a string as letter plus frequency, such as a2b3cd. Importantly, these letters must be sorted alphabetically  
+     
+   <details>
+      
+    ```python
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        def getHash(s):
+            counter = Counter(s)
+            result = []
+            for ch, freq in sorted(counter.items()):
+                result.append(ch)
+                result.append(str(freq))
+
+            return "".join(result)
+        
+        hashStringMap = {}
+        for s in strs:
+            hash = getHash(s)
+            if hash in hashStringMap:
+                hashStringMap[hash].append(s)
+            else:
+                hashStringMap[hash] = [s]
+        
+        return hashStringMap.values()
+    ```
+   </details>
+   
 1. [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)     
    <details>
       
