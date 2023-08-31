@@ -349,6 +349,7 @@ Did a few questions:
 |Question | Comment
 |----------|---------
 |[268. Missing Number](https://leetcode.com/problems/missing-number) | Coded wrongly, practice more |
+|[41. First Missing Positive](https://leetcode.com/problems/first-missing-positive)| rightPos = nums[i] - 1 |
 ### Reviewed questions from medium list
 |Question | Comment
 |----------|---------
