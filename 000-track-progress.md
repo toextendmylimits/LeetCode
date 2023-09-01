@@ -351,6 +351,7 @@ Did a few questions:
 |[268. Missing Number](https://leetcode.com/problems/missing-number) | Coded wrongly, practice more |
 |[41. First Missing Positive](https://leetcode.com/problems/first-missing-positive)| rightPos = nums[i] - 1 |
 |[287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)|
+|[645. Set Mismatch](https://leetcode.com/problems/set-mismatch)|
 ### Reviewed questions from medium list
 |Question | Comment
 |----------|---------
