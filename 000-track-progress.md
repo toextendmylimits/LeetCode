@@ -356,3 +356,14 @@ Did a few questions:
 |Question | Comment
 |----------|---------
 |[3 sum](https://leetcode.com/problems/3sum) | Coded wrongly, beware left = i + 1, and boundary check when changing left or right: while left < right and nums[left] == nums[left - 1] |
+
+## 01/09/2023
+
+### Did questions about cylic sort
+|Question | Comment
+|----------|---------
+|[26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array) | Coded it bug-free easily |
+|[1. Two Sum](https://leetcode.com/problems/two-sum)| Coded it bug-free easily  |
+|[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)| Coded it bug-free easily  |
+|[189. Rotate Array](https://leetcode.com/problems/rotate-array)| Coded it bug-free easily |
+|[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Coded it with silly bug|
