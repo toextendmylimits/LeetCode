@@ -1,6 +1,14 @@
 # Array
-1. [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)    
-    ***Approach 1 - Use hash set***
+1. [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)
+    ***Approach 1 - Use hash set check whether hash set length is same to nums length***
+    <details>
+
+      ```python
+       def containsDuplicate(self, nums: List[int]) -> bool:
+           return len(set(nums)) != len(nums)
+      ```
+    </details>
+    ***Approach 2 - Use hash set***
     <details>
 
       ```python
@@ -16,7 +24,7 @@
       ```
     </details>
     
-    ***Approach 2 - Sort first, and then check whether any element equal to previous one starting from second element***
+    ***Approach 3 - Sort first, and then check whether any element equal to previous one starting from second element***
     <details>
 
       ```python
