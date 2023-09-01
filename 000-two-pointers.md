@@ -191,7 +191,22 @@
 1. [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)   
    If char at left not equal right, check after removing either char, whether the remaining string is palindrome
 1. [Move Zeroes](https://leetcode.com/problems/move-zeroes)  
-   Two steps, first move all nonzeros to the front, then fill the rest with zeros
+   ***Approach 1 - Two steps, first move all nonzeros to the front, then fill the rest with zeros***
+
+   ***Approach 2 - Scan array, if element is not zero, swap it with element at nonZeroIdx, and then increase nonZeroIdx***
+   <details>
+
+      ```python
+          def moveZeroes(self, nums: List[int]) -> None:
+        nonZeroIdx = 0
+        for i in range(len(nums)):
+            if nums[i] != 0:
+                nums[nonZeroIdx], nums[i] = nums[i], nums[nonZeroIdx]
+                nonZeroIdx += 1
+        
+      ```
+   </details>
+   
 1. [67. Add Binary](https://leetcode.com/problems/add-binary)    
    Just add bit by bit, and in the end, if carry is 1, append 1       
    <details>
