@@ -371,3 +371,8 @@ Did a few questions:
 |[350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii) | Coded it bug-free easily |
 |[283. Move Zeroes](https://leetcode.com/problems/move-zeroes)| Coded it bug-free easily, beweare approach 2 of minimizing operations |
 |[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku)| Coded it wrongly, practice more| 
+|[48. Rotate Image](https://leetcode.com/problems/rotate-image)| Coded it bug-free easily |
+|[387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string) | Coded it bug-free easily|
+|[242. Valid Anagram](https://leetcode.com/problems/valid-anagram) | Coded it bug-free easily |
+|[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | Coded with silly bug, right should be len(nums) - 1 |
+|[28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | Coded bug-free, still practice more |
