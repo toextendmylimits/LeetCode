@@ -8,6 +8,7 @@
            return len(set(nums)) != len(nums)
       ```
     </details>
+    
     ***Approach 2 - Use hash set***
     <details>
 
