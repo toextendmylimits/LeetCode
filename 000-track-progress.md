@@ -383,11 +383,11 @@ Did a few questions:
 |[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Coded it bug-free easily |
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Coded it bug-free easily |
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Coded it bug-free easily |
-|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)| Coded it wrongly with BFS, use popleft instead of pop for queue |
-|[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Coded it bug-free, but should practice more |
-|[101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)| Coded it bug-free, practice more |
-|[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Coded it bug-free |
-|[108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)| Coded it with bug |
+|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)| Coded it bug-free easily |
+|[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Coded it bug-free easily |
+|[101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)| Coded it bug-free easily |
+|[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Coded it bug-free easily |
+|[108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)| Coded it bug-free easily |
 |[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)| Coded it bug-free |
 |[278. First Bad Version](https://leetcode.com/problems/first-bad-version)| Coded bug-free |
 |[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)| Coded with serious issue, fogot randint, should practice more |
