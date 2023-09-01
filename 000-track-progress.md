@@ -380,7 +380,7 @@ Did a few questions:
 |[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)| Read code again |
 |[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|Coded it bug-free easily |
 |[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|Coded it bug-free, but was little hesitant, practice more|
-|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Coded it bug-free, but could improve, practice more |
+|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Coded it bug-free easily |
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Coded it bug-free easily |
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Coded it bug-free easily |
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)| Coded it wrongly with BFS, use popleft instead of pop for queue |
