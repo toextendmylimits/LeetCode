@@ -376,3 +376,33 @@ Did a few questions:
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram) | Coded it bug-free easily |
 |[125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome) | Coded with silly bug, right should be len(nums) - 1 |
 |[28. Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string) | Coded it bug-free easily |
+|[7. Reverse Integer](https://leetcode.com/problems/reverse-integer)| Coded it correctly using Java |
+|[8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi)| Read code again |
+|[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)|Coded it bug-free easily |
+|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)|Coded it bug-free, but was little hesitant, practice more|
+|[206. Reverse Linked List](https://leetcode.com/problems/reverse-linked-list) | Coded it bug-free, but could improve, practice more |
+|[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)| Coded it bug-free easily |
+|[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Coded it bug-free easily |
+|[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)| Coded it wrongly with BFS, use popleft instead of pop for queue |
+|[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Coded it bug-free, but should practice more |
+|[101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)| Coded it bug-free, practice more |
+|[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Coded it bug-free |
+|[108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)| Coded it with bug |
+|[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)| Coded it bug-free |
+|[278. First Bad Version](https://leetcode.com/problems/first-bad-version)| Coded bug-free |
+|[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)| Coded with serious issue, fogot randint, should practice more |
+|[155. Min Stack](https://leetcode.com/problems/min-stack)|Coded bug-free, better practice more though |
+|[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Coded bug-free easily, no need to practice |
+|[326. Power of Three](https://leetcode.com/problems/power-of-three) | Coded bug-free, but better practice more |
+|[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)| Coded bug-free easily, may practice one last time |
+|[204. Count Primes](https://leetcode.com/problems/count-primes)| Failed, need more practice |
+|[268. Missing Number](https://leetcode.com/problems/missing-number) | Not very clear, need more practice |
+|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Coded with defect, need more practice |
+|[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)| Coded with difficult, need more practice |
+|[461. Hamming Distance](https://leetcode.com/problems/hamming-distance)| Coded with difficulty, need more practice |
+|[190. Reverse Bits](https://leetcode.com/problems/reverse-bits)| Coded with difficulty, need more practice, beware loop 32 times |
+|[118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)  | Coded with bug, need more practice, beware boundary col in range(1, row) |
+|[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| Coded bug-free, better still practice more |
+|[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Coded bug-free, better still practice more |
+|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|Coded bug-free, but should practice more and aim to explain clearly |
+|[198. House Robber](https://leetcode.com/problems/house-robber)| Coded with bug, need more practice |
