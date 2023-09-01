@@ -1,5 +1,5 @@
 # Array
-1. [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)
+1. [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)  
     ***Approach 1 - Use hash set check whether hash set length is same to nums length***
     <details>
 
