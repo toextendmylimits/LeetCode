@@ -390,7 +390,7 @@ Did a few questions:
 |[108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)| Coded it bug-free easily |
 |[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)| Coded it bug-free easily |
 |[278. First Bad Version](https://leetcode.com/problems/first-bad-version)| Coded it bug-free easily |
-|[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)| Coded with serious issue, fogot randint, should practice more |
+|[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)| Coded with bug |
 |[155. Min Stack](https://leetcode.com/problems/min-stack)|Coded bug-free, better practice more though |
 |[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Coded bug-free easily, no need to practice |
 |[326. Power of Three](https://leetcode.com/problems/power-of-three) | Coded bug-free, but better practice more |
