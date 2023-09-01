@@ -393,7 +393,7 @@ Did a few questions:
 |[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)| Coded with bug |
 |[155. Min Stack](https://leetcode.com/problems/min-stack)|Coded it bug-free easily |
 |[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Too easy, just read the code |
-|[326. Power of Three](https://leetcode.com/problems/power-of-three) | Coded bug-free, but better practice more |
+|[326. Power of Three](https://leetcode.com/problems/power-of-three) | Coded it bug-free easily |
 |[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)| Coded bug-free easily, may practice one last time |
 |[204. Count Primes](https://leetcode.com/problems/count-primes)| Failed, need more practice |
 |[268. Missing Number](https://leetcode.com/problems/missing-number) | Not very clear, need more practice |
