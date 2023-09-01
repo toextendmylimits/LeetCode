@@ -388,8 +388,8 @@ Did a few questions:
 |[101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)| Coded it bug-free easily |
 |[102. Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal) | Coded it bug-free easily |
 |[108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)| Coded it bug-free easily |
-|[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)| Coded it bug-free |
-|[278. First Bad Version](https://leetcode.com/problems/first-bad-version)| Coded bug-free |
+|[88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)| Coded it bug-free easily |
+|[278. First Bad Version](https://leetcode.com/problems/first-bad-version)| Coded it bug-free easily |
 |[384. Shuffle an Array](https://leetcode.com/problems/shuffle-an-array)| Coded with serious issue, fogot randint, should practice more |
 |[155. Min Stack](https://leetcode.com/problems/min-stack)|Coded bug-free, better practice more though |
 |[412. Fizz Buzz](https://leetcode.com/problems/fizz-buzz)|Coded bug-free easily, no need to practice |
