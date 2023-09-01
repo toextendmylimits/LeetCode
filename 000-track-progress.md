@@ -367,3 +367,7 @@ Did a few questions:
 |[122. Best Time to Buy and Sell Stock II](https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii)| Coded it bug-free easily  |
 |[189. Rotate Array](https://leetcode.com/problems/rotate-array)| Coded it bug-free easily |
 |[217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate) | Coded it with silly bug|
+|[136. Single Number](https://leetcode.com/problems/single-number/)| Coded it bug-free easily |
+|[350. Intersection of Two Arrays II](https://leetcode.com/problems/intersection-of-two-arrays-ii) | Coded it bug-free easily |
+|[283. Move Zeroes](https://leetcode.com/problems/move-zeroes)| Coded it bug-free easily, beweare approach 2 of minimizing operations |
+|[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku)| Coded it wrongly, practice more| 
