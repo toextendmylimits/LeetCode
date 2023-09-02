@@ -329,7 +329,8 @@
    ```
 1. [105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)  
    Find the root value from preorder, and then find its position in inorder, then find inorder and preorder of left and right subtree  
-   Time complexity O(N), space complexity O(H)
+   Time complexity O(N*2) as O(N) for visiting each Node, and multiply O(N) for finding delimiterIdx and slicing arrays, space complexity O(H)
+   
    <details>
       
       ```python
@@ -346,6 +347,35 @@
         root.left = self.buildTree(preorderLeft, inorderLeft)
         root.right = self.buildTree(preorderRight, inorderRight)
         return root
+      ```      
+   </details>
+
+   ***Improve TC to O(N) by storting delimiterIdx in a map, and don't slice arrays***
+   <details>
+      
+      ```python
+       def buildTree(self, preorder: List[int], inorder: List[int]) -> Optional[TreeNode]:
+           valIdxMap = {}
+           for i, val in enumerate(inorder):
+               valIdxMap[val] = i
+   
+           def buildTree(preStart, preEnd, inStart, inEnd):
+               if preStart >= preEnd:
+                   return None
+   
+               rootVal = preorder[preStart]
+               root = TreeNode(rootVal)
+   
+               delimiterIdx = valIdxMap[rootVal]
+               inLeftLen = delimiterIdx - inStart
+               preLeftStart = preStart + 1
+               preLeftEnd = preLeftStart + inLeftLen
+               root.left = buildTree(preLeftStart, preLeftEnd, inStart, delimiterIdx)
+               root.right = buildTree(preLeftEnd, preEnd, delimiterIdx + 1, inEnd)
+               return root
+   
+   
+           return buildTree(0, len(preorder), 0, len(inorder))
       ```      
    </details>
 1. [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv)  
