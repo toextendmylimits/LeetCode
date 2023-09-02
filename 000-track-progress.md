@@ -406,3 +406,4 @@ Did a few questions:
 |[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Coded it bug-free easily |
 |[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|Coded it bug-free easily |
 |[198. House Robber](https://leetcode.com/problems/house-robber)| Coded it bug-free easily |
+|[1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number) | Didn't code it, more practice |
