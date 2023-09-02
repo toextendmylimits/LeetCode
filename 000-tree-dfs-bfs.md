@@ -511,3 +511,5 @@
 # Very difficult, to revisit later if have time
 1. [16. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)  
     How to use established next pointer to avoid using a queue  
+1. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)  
+   Should be able to traverse the tree iteratively as well  
