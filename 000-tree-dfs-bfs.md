@@ -378,9 +378,9 @@
            return buildTree(0, len(preorder), 0, len(inorder))
       ```      
    </details>
-1. [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iv)  
+1. [106. Construct Binary Tree from Inorder and Postorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal)  
    Find the root value from postorder, and then find its position in inorder, then find inorder and postorder of left and right subtree  
-   Time complexity O(N), space complexity O(H)
+   Time complexity O(N*2) as O(N) for visiting each Node, and multiply O(N) for finding delimiterIdx and slicing arrays, space complexity O(H)
    <details>
       
       ```python
@@ -397,6 +397,41 @@
            root.left = self.buildTree(inorderLeft, postorderLeft)
            root.right = self.buildTree(inorderRight, postorderRight)
            return root
+      ```      
+   </details>
+
+   ***Improve TC to O(N) by storting delimiterIdx in a map, and don't slice arrays***
+   <details>
+      
+      ```python
+       def buildTree(self, inorder: List[int], postorder: List[int]) -> Optional[TreeNode]:
+           inValIdxMap = {}
+           for i, val in enumerate(inorder):
+               inValIdxMap[val] = i
+   
+           def buildTree(inStart, inEnd, postStart, postEnd):
+               if inStart >= inEnd:
+                   return None
+               
+               rootVal = postorder[postEnd - 1]
+               root = TreeNode(rootVal)
+               delimiterIdx = inValIdxMap[rootVal]
+   
+               inLeftStart = inStart
+               inLeftEnd = delimiterIdx
+               inLeftLen = inLeftEnd - inLeftStart
+               inRightStart = delimiterIdx + 1
+               inRightEnd = inEnd
+               postLeftStart = postStart
+               postLeftEnd = postStart + inLeftLen
+               postRightStart = postLeftEnd
+               postRightEnd = postEnd - 1
+               root.left = buildTree(inLeftStart, inLeftEnd, postLeftStart, postLeftEnd)
+               root.right = buildTree(inRightStart, inRightEnd, postRightStart, postRightEnd)
+   
+               return root
+           
+           return buildTree(0, len(inorder), 0, len(postorder))
       ```      
    </details>
 
