@@ -578,3 +578,6 @@
     How to use established next pointer to avoid using a queue  
 1. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)  
    Should be able to traverse the tree iteratively as well  
+1. [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)  
+   Learn iterative ways of solving the problem and try to solve follow up  
+   May reference https://evelynn.gitbooks.io/google-interview/content/kth_smallest_element_in_a_bst.html
