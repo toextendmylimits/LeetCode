@@ -396,13 +396,13 @@ Did a few questions:
 |[326. Power of Three](https://leetcode.com/problems/power-of-three) | Coded it bug-free easily |
 |[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)| Coded bug-free easily, no need to practice again |
 |[204. Count Primes](https://leetcode.com/problems/count-primes)| Coded it bug-free easily, but need more practice |
-|[268. Missing Number](https://leetcode.com/problems/missing-number) | Not very clear, need more practice |
-|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Coded with defect, need more practice |
-|[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)| Coded with difficult, need more practice |
-|[461. Hamming Distance](https://leetcode.com/problems/hamming-distance)| Coded with difficulty, need more practice |
-|[190. Reverse Bits](https://leetcode.com/problems/reverse-bits)| Coded with difficulty, need more practice, beware loop 32 times |
-|[118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)  | Coded with bug, need more practice, beware boundary col in range(1, row) |
-|[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| Coded bug-free, better still practice more |
-|[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Coded bug-free, better still practice more |
-|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|Coded bug-free, but should practice more and aim to explain clearly |
-|[198. House Robber](https://leetcode.com/problems/house-robber)| Coded with bug, need more practice |
+|[268. Missing Number](https://leetcode.com/problems/missing-number) | Coded it bug-free easily |
+|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Coded it bug-free easily |
+|[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits)| Coded it bug-free easily |
+|[461. Hamming Distance](https://leetcode.com/problems/hamming-distance)|Coded it bug-free easily|
+|[190. Reverse Bits](https://leetcode.com/problems/reverse-bits)| Coded it bug-free easily |
+|[118. Pascal's Triangle](https://leetcode.com/problems/pascals-triangle)  | Coded it bug-free easily |
+|[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)| Coded it bug-free easily |
+|[121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock) | Coded it bug-free easily |
+|[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|Coded it bug-free easily |
+|[198. House Robber](https://leetcode.com/problems/house-robber)| Coded it bug-free easily |
