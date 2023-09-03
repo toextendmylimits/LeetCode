@@ -420,3 +420,8 @@ Did a few questions:
 |[116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)| Should learn how to use next pointer | 
 |[285. Inorder Successor in BST](https://leetcode.com/problems/inorder-successor-in-bst)| Failed, more practice |
 |[733. Flood Fill](https://leetcode.com/problems/flood-fill)| More practice |
+|[Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)| Coded with bug, beware edge case when there is digit |
+|[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses)| Coded with issue, more practice |
+|[46. Permutations](https://leetcode.com/problems/permutations)| Coded bug-free, more practice |
+|[78. Subsets](https://leetcode.com/problems/subsets) | Coded bug-free, more practice |
+|[79. Word Search](https://leetcode.com/problems/word-search) | Coded with bug, more practice |
