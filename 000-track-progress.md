@@ -427,3 +427,4 @@ Did a few questions:
 |[79. Word Search](https://leetcode.com/problems/word-search) | Coded with bug, more practice |
 |[75. Sort Colors](https://leetcode.com/problems/sort-colors) | Coded wrongly, more practice |
 |[347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)| Coded bug-free |
+|[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Failed, more practice |
