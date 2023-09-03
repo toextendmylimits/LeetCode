@@ -431,3 +431,4 @@ Did a few questions:
 |[240. Search a 2D Matrix II](https://leetcode.com/problems/search-a-2d-matrix-ii) | Coded bug-free, but not very familiar, more practice |
 |[56. Merge Intervals](https://leetcode.com/problems/merge-intervals)| Coded bug-free, but better practice more |
 |[253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | Coded bug-free, still practice more |
+|[297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)| Coded bug-free, but not familiar, practice more |
