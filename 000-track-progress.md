@@ -433,3 +433,4 @@ Did a few questions:
 |[253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii) | Coded bug-free, still practice more |
 |[297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)| Coded bug-free, but not familiar, practice more |
 |[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | Coded bug-free, practice more |
+|[348. Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe)| Failed, practice more |
