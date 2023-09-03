@@ -24,7 +24,7 @@
       ```
     </details>
 1.  [200. Number of Islands](https://leetcode.com/problems/number-of-islands)  
-    Time complexity and space complexity is O(R * C) where R is number of rows and C is number of columns
+    Time complexity and space complexity is O(R * C) because each node is visited only once where R is number of rows and C is number of columns
     <details>
 
       ```python
