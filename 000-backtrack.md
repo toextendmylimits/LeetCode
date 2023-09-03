@@ -302,7 +302,8 @@ Space complexity: O(H) for stack call while H is height of tree. In worst case, 
    1. The idea is to add ')' only after valid '('  
    1. We use two integer variables left & right to see how many '(' & ')' are in the current string   
    1. If left < n then we can add '(' to the current string  
-   1. If right < left then we can add ')' to the current string  
+   1. If right < left then we can add ')' to the current string
+      
    Need to maintain the count of left parenthesis and right parenthesis  
   Time complexity is O(2^2N * N) as O(2^2N) for all possible combinations and O(N) for copying each combination
     <details>
