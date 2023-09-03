@@ -407,3 +407,12 @@ Did a few questions:
 |[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)|Coded it bug-free easily |
 |[198. House Robber](https://leetcode.com/problems/house-robber)| Coded it bug-free easily |
 |[1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number) | Didn't code it, more practice |
+
+## 03/09/2023
+
+### Did questions about medium list
+|Question | Comment
+|----------|---------
+|[94. Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal/) | Coded bug-free easily |
+|[103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)| Coded bug-free easily |
+|[105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)| Coded with difficulty, more practice |
