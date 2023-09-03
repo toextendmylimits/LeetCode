@@ -24,6 +24,7 @@
       ```
     </details>
 1.  [200. Number of Islands](https://leetcode.com/problems/number-of-islands)  
+    ***Approach 1 - DFS***
     Time complexity and space complexity is O(R * C) because each node is visited only once where R is number of rows and C is number of columns
     <details>
 
@@ -49,6 +50,38 @@
             return count  
       ```
     </details>  
+
+    ***Approach 1 - BFS***
+    Time complexity and space complexity is O(R * C) because each node is visited only once where R is number of rows and C is number of columns
+    <details>
+
+      ```python
+        def numIslands(self, grid: List[List[str]]) -> int:
+            rowsCount = len(grid)
+            colsCount = len(grid[0])
+            count = 0
+    
+            def bfs(row, col):
+                queue = deque([(row, col)])
+                grid[row][col] = "0"
+                while queue:
+                    currRow, currCol = queue.popleft()
+                    for rowOffset, colOffset in [(-1, 0), (0, 1), (1, 0), (0, -1)]:
+                        nextRow = currRow + rowOffset
+                        nextCol = currCol + colOffset
+                        if 0 <= nextRow < len(grid) and 0 <= nextCol < len(grid[0]) and grid[nextRow][nextCol] == "1":
+                            queue.append((nextRow, nextCol))
+                            grid[nextRow][nextCol] = "0"
+    
+            for r in range(rowsCount):
+                for c in range(colsCount):
+                    if grid[r][c] == "1":
+                        count += 1
+                        bfs(r, c)
+            
+            return count
+      ```
+    </details>      
 1.  [695. Max Area of Island](https://leetcode.com/problems/max-area-of-island)    
     The dfs method should return the area  
     Time complexiy and space complexity is O(R * C) where R is number of rows, and C is number of columns
