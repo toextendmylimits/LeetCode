@@ -447,3 +447,4 @@ Did a few questions:
 |[50. Pow(x, n)](https://leetcode.com/problems/powx-n) | Failed, more practice |
 |[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes) | Coded bug-free, more practice |
 |[169. Majority Element](https://leetcode.com/problems/majority-element)| Failed, more practice |
+|[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)| Coded with defect, more practice |
