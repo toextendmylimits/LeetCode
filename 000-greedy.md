@@ -42,16 +42,15 @@
 
      ```python
        def canJump(self, nums: List[int]) -> bool:
-           maxPos = 0
-           i = 0
-           for i in range(len(nums)):
-               if i > maxPos:
+           maxReach = 0
+           for i, n in enumerate(nums):
+               if maxReach < i:
                    return False
-               
-               maxPos = max(maxPos, i + nums[i])
-               if i >= len(nums) - 1:
+               elif maxReach >= len(nums) - 1:
                    return True
-           
+   
+               maxReach = max(maxReach, i + n)
+              
            return False
      ```
    </details>
