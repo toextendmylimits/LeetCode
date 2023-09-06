@@ -434,3 +434,10 @@ Did a few questions:
 |[297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)| Coded bug-free, but not familiar, practice more |
 |[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | Coded bug-free, practice more |
 |[348. Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe)| Failed, practice more |
+
+## 06/09/2023
+
+### Did remaining questions about medium list
+|Question | Comment
+|----------|---------
+|[251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/) | Failed, advance inner in next, and advance outer and set inner to 0 in hasNext if inner is out of boundary |
