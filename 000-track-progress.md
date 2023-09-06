@@ -445,3 +445,4 @@ Did a few questions:
 |[171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)| Coded bug-free, no need to practice |
 |[69. Sqrt(x)](https://leetcode.com/problems/sqrtx) | Coded bug-free, no need to practice |
 |[50. Pow(x, n)](https://leetcode.com/problems/powx-n) | Failed, more practice |
+|[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes) | Coded bug-free, more practice |
