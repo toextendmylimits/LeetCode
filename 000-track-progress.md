@@ -449,3 +449,4 @@ Did a few questions:
 |[169. Majority Element](https://leetcode.com/problems/majority-element)| Failed, more practice |
 |[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)| Coded with defect, more practice |
 |[55. Jump Game](https://leetcode.com/problems/jump-game) | Coded bug-free, but should practice more |
+|[62. Unique Paths](https://leetcode.com/problems/unique-paths)| Coded with defect, should practice more |
