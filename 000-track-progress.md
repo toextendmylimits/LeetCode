@@ -448,3 +448,4 @@ Did a few questions:
 |[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes) | Coded bug-free, more practice |
 |[169. Majority Element](https://leetcode.com/problems/majority-element)| Failed, more practice |
 |[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)| Coded with defect, more practice |
+|[55. Jump Game](https://leetcode.com/problems/jump-game) | Coded bug-free, but should practice more |
