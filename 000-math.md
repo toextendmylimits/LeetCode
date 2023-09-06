@@ -51,7 +51,7 @@
    </details>
 
    ***Approach 2 - fast/slow pointer***
-   Time complexity: O(logN + log logN ...) = O(logN), space complexity similarly is also O(logN)
+   Time complexity: O(logN + log logN ...) = O(logN), space complexity similarly is also O(1)
    <details>
     
     ```python
