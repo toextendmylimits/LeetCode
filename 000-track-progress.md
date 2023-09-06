@@ -443,3 +443,4 @@ Did a few questions:
 |[251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/) | Failed, advance inner in next, and advance outer and set inner to 0 in hasNext if inner is out of boundary |
 |[202. Happy Number](https://leetcode.com/problems/happy-number)| Coded bug-free, should still practice more |
 |[171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)| Coded bug-free, no need to practice |
+|[69. Sqrt(x)](https://leetcode.com/problems/sqrtx) | Coded bug-free, no need to practice |
