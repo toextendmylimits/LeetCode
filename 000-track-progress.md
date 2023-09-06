@@ -435,7 +435,7 @@ Did a few questions:
 |[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1) | Coded bug-free, practice more |
 |[348. Design Tic-Tac-Toe](https://leetcode.com/problems/design-tic-tac-toe)| Failed, practice more |
 
-## 06/09/2023
+## 06 - 07/09/2023
 
 ### Did remaining questions about medium list
 |Question | Comment
@@ -444,3 +444,4 @@ Did a few questions:
 |[202. Happy Number](https://leetcode.com/problems/happy-number)| Coded bug-free, should still practice more |
 |[171. Excel Sheet Column Number](https://leetcode.com/problems/excel-sheet-column-number)| Coded bug-free, no need to practice |
 |[69. Sqrt(x)](https://leetcode.com/problems/sqrtx) | Coded bug-free, no need to practice |
+|[50. Pow(x, n)](https://leetcode.com/problems/powx-n) | Failed, more practice |
