@@ -446,3 +446,4 @@ Did a few questions:
 |[69. Sqrt(x)](https://leetcode.com/problems/sqrtx) | Coded bug-free, no need to practice |
 |[50. Pow(x, n)](https://leetcode.com/problems/powx-n) | Failed, more practice |
 |[172. Factorial Trailing Zeroes](https://leetcode.com/problems/factorial-trailing-zeroes) | Coded bug-free, more practice |
+|[169. Majority Element](https://leetcode.com/problems/majority-element)| Failed, more practice |
