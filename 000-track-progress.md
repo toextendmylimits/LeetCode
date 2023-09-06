@@ -441,3 +441,4 @@ Did a few questions:
 |Question | Comment
 |----------|---------
 |[251. Flatten 2D Vector](https://leetcode.com/problems/flatten-2d-vector/) | Failed, advance inner in next, and advance outer and set inner to 0 in hasNext if inner is out of boundary |
+|[202. Happy Number](https://leetcode.com/problems/happy-number)| Coded bug-free, should still practice more |
