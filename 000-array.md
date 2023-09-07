@@ -233,7 +233,25 @@
       ```
     </details>   
 
-    
+1. [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)
+   The idea is to track the smallest number and second smallest number, and then if find a number greater than both, return true  
+    <details>
+
+      ```python
+       def increasingTriplet(self, nums: List[int]) -> bool:
+           min1 = float("inf")
+           min2 = float("inf")
+           for n in nums:
+               if n <= min1:
+                   min1 = n
+               elif n <= min2:
+                   min2 = n
+               else:
+                   return True
+           
+           return False
+      ```
+    </details>      
 ## Two-dimensional array/matrix
 1. [54. Spiral Matrix](https://leetcode.com/problems/spiral-matrix)   
     Set up the boundaries top, right, bottom, left  
