@@ -451,3 +451,4 @@ Did a few questions:
 |[55. Jump Game](https://leetcode.com/problems/jump-game) | Coded bug-free, but should practice more |
 |[62. Unique Paths](https://leetcode.com/problems/unique-paths)| Coded with defect, should practice more |
 |[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Failed, practice more |
+|[334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)| Failed, practice more |
