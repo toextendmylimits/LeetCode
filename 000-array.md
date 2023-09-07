@@ -233,8 +233,8 @@
       ```
     </details>   
 
-1. [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)
-   The idea is to track the smallest number and second smallest number, and then if find a number greater than both, return true  
+1. [334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)  
+   The idea is to track the smallest number and second smallest number, and then if find a number greater than both, return true    
     <details>
 
       ```python
