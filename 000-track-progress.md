@@ -463,3 +463,4 @@ Did a few questions:
 |[15. 3Sum](https://leetcode.com/problems/3sum)|Coded with defect, append() not append[]|
 |[42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)| Coded with defect, forgot to increase left or decrease right |
 |[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)| Coded with defect, beware when currVal == nextVal, should add not substract currVal |
+|[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)| Coded with defect, beware return True/False for insert and remove, also use del instead of delete to remove key from map |
