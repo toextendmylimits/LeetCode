@@ -73,6 +73,24 @@
             return dp[m - 1][n - 1]
       ```
     </details>
+
+1.  [322. Coin Change](https://leetcode.com/problems/coin-change)   
+   dp[i] represent the minimum number of coins to make up amount i  
+    For each coin, dp[i] = min(dp[i], dp[i - coin] + 1)  
+    TC = O(amount * number of coins), SP = O(amount)  
+    <details>
+        
+      ```python
+        def coinChange(self, coins: List[int], amount: int) -> int:
+            dp = [float("inf")] * (amount + 1)
+            dp[0] = 0
+            for coin in coins:
+                for x in range(coin, amount + 1):
+                    dp[x] = min(dp[x], dp[x - coin] + 1)
+            
+            return -1 if dp[amount] == float("inf") else dp[amount]
+      ```
+    </details>
     
 # To revisit
 1.  [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)  
