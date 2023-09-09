@@ -465,3 +465,4 @@ Did a few questions:
 |[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)| Coded with defect, beware when currVal == nextVal, should add not substract currVal |
 |[380. Insert Delete GetRandom O(1)](https://leetcode.com/problems/insert-delete-getrandom-o1)| Coded with defect, beware return True/False for insert and remove, also use del instead of delete to remove key from map |
 |[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)| Coded with defect, beware for loop starting from end, in range(len(s) - 1(Not -1), -1, -1) |
+|[58. Length of Last Word](https://leetcode.com/problems/length-of-last-word)| Coded wrongly, more practice |
