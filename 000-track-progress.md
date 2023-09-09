@@ -453,3 +453,10 @@ Did a few questions:
 |[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Failed, practice more |
 |[322. Coin Change](https://leetcode.com/problems/coin-change) | Failed, practice more |
 |[334. Increasing Triplet Subsequence](https://leetcode.com/problems/increasing-triplet-subsequence)| Failed, practice more |
+
+## 10/09/2023
+
+### Did top 150 interview list
+|Question | Comment
+|----------|---------
+|[392. Is Subsequence](https://leetcode.com/problems/is-subsequence)| Coded bug-free, but not familiar, should practice more, also think about followup |
