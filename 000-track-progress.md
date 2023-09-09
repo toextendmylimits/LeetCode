@@ -467,3 +467,4 @@ Did a few questions:
 |[238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)| Coded with defect, beware for loop starting from end, in range(len(s) - 1(Not -1), -1, -1) |
 |[58. Length of Last Word](https://leetcode.com/problems/length-of-last-word)| Coded wrongly, more practice |
 |[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Coded wrongly, more practice |
+|[103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)| Coded wrongly, beware how to reverse array either level.reverse()(which returns null) or level = level[::-1] |
