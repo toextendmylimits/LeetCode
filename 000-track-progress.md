@@ -462,3 +462,4 @@ Did a few questions:
 |[392. Is Subsequence](https://leetcode.com/problems/is-subsequence)| Coded bug-free, but not familiar, should practice more, also think about followup |
 |[15. 3Sum](https://leetcode.com/problems/3sum)|Coded with defect, append() not append[]|
 |[42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water)| Coded with defect, forgot to increase left or decrease right |
+|[13. Roman to Integer](https://leetcode.com/problems/roman-to-integer)| Coded with defect, beware when currVal == nextVal, should add not substract currVal |
