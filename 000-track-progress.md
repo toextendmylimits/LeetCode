@@ -468,3 +468,4 @@ Did a few questions:
 |[58. Length of Last Word](https://leetcode.com/problems/length-of-last-word)| Coded wrongly, more practice |
 |[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Coded wrongly, more practice |
 |[103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)| Coded wrongly, beware how to reverse array either level.reverse()(which returns null) or level = level[::-1] |
+|[383. Ransom Note](https://leetcode.com/problems/ransom-note)|Coded bug-free, beware TC O(magazine length), SC O(1) as there are only 26 chracters | 
