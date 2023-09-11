@@ -469,3 +469,4 @@ Did a few questions:
 |[14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix) | Coded wrongly, more practice |
 |[103. Binary Tree Zigzag Level Order Traversal](https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal)| Coded wrongly, beware how to reverse array either level.reverse()(which returns null) or level = level[::-1] |
 |[383. Ransom Note](https://leetcode.com/problems/ransom-note)|Coded bug-free, beware TC O(magazine length), SC O(1) as there are only 26 chracters | 
+|[392. Is Subsequence](https://leetcode.com/problems/is-subsequence)| Coded correctly, but need to memorize the code |
