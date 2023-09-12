@@ -474,3 +474,4 @@ Did a few questions:
 |[100. Same Tree](https://leetcode.com/problems/same-tree)| Coded with silly mistake for BFS, return True in end, more practice |
 |[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)| Coded bug-free, but not 100% clear, practice more |
 |[105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)| Not 100% clear with having preStart, preEnd, inStart, inEnd, practice more |
+|[112. Path Sum](https://leetcode.com/problems/path-sum)| Coded wrongly, beware base condition, practice more | 
