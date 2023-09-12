@@ -472,3 +472,4 @@ Did a few questions:
 |[392. Is Subsequence](https://leetcode.com/problems/is-subsequence)| Coded correctly, but need to memorize the code |
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)| Coded with silly mistake, root.right not self.right, practice more |
 |[100. Same Tree](https://leetcode.com/problems/same-tree)| Coded with silly mistake for BFS, return True in end, more practice |
+|[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)| Coded bug-free, but not 100% clear, practice more |
