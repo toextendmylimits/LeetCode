@@ -473,3 +473,4 @@ Did a few questions:
 |[104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree)| Coded with silly mistake, root.right not self.right, practice more |
 |[100. Same Tree](https://leetcode.com/problems/same-tree)| Coded with silly mistake for BFS, return True in end, more practice |
 |[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)| Coded bug-free, but not 100% clear, practice more |
+|[105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)| Not 100% clear with having preStart, preEnd, inStart, inEnd, practice more |
