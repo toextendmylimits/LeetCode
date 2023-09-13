@@ -38,7 +38,33 @@
    ```
    ***Approach 2 - BFS***
    TC - O(num of nodes) as we are traversing all the nodes of the tree    
-   SC - O(num of nodes) BFS will have to store at least an entire level of the tree in the queue (sample queue implementation). With a perfect fully balanced binary tree, this would be (n/2 + 1) nodes (the very last level). 
+   SC - O(num of nodes) BFS will have to store at least an entire level of the tree in the queue (sample queue implementation). With a perfect fully balanced binary tree, this would be (n/2 + 1) nodes (the very last level).
+
+1. [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)      
+   Backtrack. Have global variable total, then update total if reaching leaf
+
+   <details> 
+     
+   ```python
+    def sumNumbers(self, root: Optional[TreeNode]) -> int:
+        total = 0
+        def dfs(node, pathSum):
+            nonlocal total 
+            if not node:
+                return
+
+            pathSum = pathSum * 10 + node.val
+            if not node.left and not node.right:
+                total += pathSum
+
+            for child in [node.left, node.right]:
+                dfs(child, pathSum)
+        dfs(root, 0)
+        return total
+   ```
+   
+   </details>
+   
 1. [101. Symmetric Tree](https://leetcode.com/problems/symmetric-tree)    
    ***Can also be done in BFS***
    <details>
