@@ -547,7 +547,30 @@
    ```
    </details>
 
+1. [124. Binary Tree Maximum Path Sum](https://leetcode.com/problems/binary-tree-maximum-path-sum)      
+   A path has a parent, from the parent, it can go either left or right to increase the path sum. If left or right is less than 0, then it can be discarded. So idea is to traver all node, and check the max path sum if the node is parent, and return the maximum path sum of going down left or right node.val + max(maxLeft, maxRight)  
+   <details>
 
+   ```python
+    def maxPathSum(self, root: Optional[TreeNode]) -> int:
+        maxResult = float("-inf")
+
+        def getMaxDown(root):
+            nonlocal maxResult
+            
+            if not root:
+                return 0
+
+            maxDownLeft = max(getMaxDown(root.left), 0)
+            maxDownRight = max(getMaxDown(root.right), 0)
+            currMax = root.val + maxDownLeft + maxDownRight
+            maxResult = max(maxResult, currMax)
+            return root.val + max(maxDownLeft, maxDownRight)
+        getMaxDown(root)
+        return maxResult
+   ```
+   </details>
+   
 # Tree BFS
 ## Easy
 1. [Binary Tree Level Order Traversal](https://leetcode.com/problems/binary-tree-level-order-traversal)  
