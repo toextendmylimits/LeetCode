@@ -475,3 +475,10 @@ Did a few questions:
 |[226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)| Coded bug-free, but not 100% clear, practice more |
 |[105. Construct Binary Tree from Preorder and Inorder Traversal](https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)| Not 100% clear with having preStart, preEnd, inStart, inEnd, practice more |
 |[112. Path Sum](https://leetcode.com/problems/path-sum)| Coded wrongly, beware base condition, practice more | 
+
+## 19/09/2023
+
+### Did top 150 interview list
+|Question | Comment
+|----------|---------
+|[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)https://leetcode.com/problems/valid-sudoku/) | Coded with error, set not Set, dont forget range()|
