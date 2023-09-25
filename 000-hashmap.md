@@ -145,3 +145,32 @@
         return True
     ```
    </details>
+
+1. [290. Word Pattern](https://leetcode.com/problems/word-pattern/) 
+   Convert all characters/words to index of first occurence. Use hash map to store index    
+   <details>
+      
+    ```python
+    def wordPattern(self, pattern: str, s: str) -> bool:
+        words = s.split()
+        print(len(s) == len(words))
+        if len(pattern) != len(words):
+            return False
+
+        letterFirstIdxMap = {}
+        wordFirstIdxMap = {}
+        for i in range(len(pattern)):
+            letter = pattern[i]
+            word = words[i]
+            if letter in letterFirstIdxMap and word in wordFirstIdxMap:
+                if letterFirstIdxMap[letter] != wordFirstIdxMap[word]:
+                    return False
+            elif not letter in letterFirstIdxMap and not word in wordFirstIdxMap:
+                letterFirstIdxMap[letter] = i
+                wordFirstIdxMap[word] = i
+            else:
+                return False
+        
+        return True
+    ```
+   </details>
