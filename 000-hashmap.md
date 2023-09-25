@@ -118,3 +118,29 @@
         return False
     ```
    </details>
+
+   1. [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)   
+   <details>
+      
+    ```python
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+
+        chIdxMapOfS = {}
+        chIdxMapOfT = {}
+        for i in range(len(s)):
+            chOfS = s[i]
+            chOfT = t[i]
+            if chOfS in chIdxMapOfS and chOfT in chIdxMapOfT:
+                if chIdxMapOfS[chOfS] != chIdxMapOfT[chOfT]:
+                    return False
+            elif not chOfS in chIdxMapOfS and not chOfT in chIdxMapOfT:
+                chIdxMapOfS[chOfS] = i
+                chIdxMapOfT[chOfT] = i
+            else:
+                return False
+        
+        return True
+    ```
+   </details>
