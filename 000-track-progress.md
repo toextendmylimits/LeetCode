@@ -493,3 +493,4 @@ Did a few questions:
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams)| Coded bug-free easily, but better practice more|
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams)| Coded bug-free easily, but better practice more|
 |[202. Happy Number](https://leetcode.com/problems/happy-number) | Coded bug-free, but better practice more, and beware time complexity is O(logN)|
+|[219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)| Didn't code it, practice more |
