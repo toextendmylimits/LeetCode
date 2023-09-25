@@ -492,3 +492,4 @@ Did a few questions:
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram)| Coded with defect, use bracket for accesing hash map not parenthesis|
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams)| Coded bug-free easily, but better practice more|
 |[49. Group Anagrams](https://leetcode.com/problems/group-anagrams)| Coded bug-free easily, but better practice more|
+|[202. Happy Number](https://leetcode.com/problems/happy-number) | Coded bug-free, but better practice more, and beware time complexity is O(logN)|
