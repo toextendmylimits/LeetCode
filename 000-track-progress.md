@@ -481,4 +481,11 @@ Did a few questions:
 ### Did top 150 interview list
 |Question | Comment
 |----------|---------
-|[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)https://leetcode.com/problems/valid-sudoku/) | Coded with error, set not Set, dont forget range()|
+|[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| Coded with error, set not Set, dont forget range()|
+
+## 26/09/2023
+### Did top 150 interview list
+|Question | Comment
+|----------|---------
+|[48. Rotate Image](https://leetcode.com/problems/rotate-image/)| Coded bug-free|
+|[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)| Coded with defect, set flag for first row and first column|
