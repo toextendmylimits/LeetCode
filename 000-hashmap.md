@@ -119,7 +119,7 @@
     ```
    </details>
 
-   1. [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)   
+1. [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)   
    <details>
       
     ```python
