@@ -119,7 +119,8 @@
     ```
    </details>
 
-1. [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)   
+1. [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)  
+   Convert all characters to index of first occurence. Use hash map to store index    
    <details>
       
     ```python
