@@ -97,3 +97,24 @@
         return len(nums) != len(set(nums))
     ```
    </details>
+
+1. [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)
+   <details>
+      
+    ```python
+    def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+        numMinMaxIdxMap = {}
+        for i in range(len(nums)):
+            n = nums[i]
+            if n in numMinMaxIdxMap:
+                idx = numMinMaxIdxMap[n]
+                if i - idx <= k:
+                    return True
+                else:
+                    numMinMaxIdxMap[n] = i
+            else:
+                numMinMaxIdxMap[n] = i
+        
+        return False
+    ```
+   </details>
