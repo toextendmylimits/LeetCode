@@ -496,3 +496,4 @@ Did a few questions:
 |[219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii/)| Didn't code it, practice more |
 |[205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings) | More practice |
 |[290. Word Pattern](https://leetcode.com/problems/word-pattern/) | More practice |
+|[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Coded bug-free easily |
