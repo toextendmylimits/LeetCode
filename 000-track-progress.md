@@ -497,3 +497,4 @@ Did a few questions:
 |[205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings) | More practice |
 |[290. Word Pattern](https://leetcode.com/problems/word-pattern/) | More practice |
 |[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Coded bug-free easily |
+|[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | Coded with defect, practice more and beware int/str conversion |
