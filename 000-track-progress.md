@@ -499,3 +499,4 @@ Did a few questions:
 |[20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses) | Coded bug-free easily |
 |[150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) | Coded with defect, practice more and beware int/str conversion |
 |[155. Min Stack](https://leetcode.com/problems/min-stack/) | Coded bug-free, practice more |
+|[35. Search Insert Position](https://leetcode.com/problems/search-insert-position) | Coded bug-free, practice more |
