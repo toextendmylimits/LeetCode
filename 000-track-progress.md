@@ -517,3 +517,4 @@ Did a few questions:
 |[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Coded bug-free, better practice more |
 |[136. Single Number](https://leetcode.com/problems/single-number/) | Coded bug-free easily, better practice one last time |
 |[56. Merge Intervals](https://leetcode.com/problems/merge-intervals) | Coded bug-free, better practice more | 
+|[57. Insert Interval](https://leetcode.com/problems/insert-interval/) | Didn't code it, more practice | 
