@@ -509,3 +509,4 @@ Did a few questions:
 |[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Coded bug-free, better practice more |
 |[79. Word Search](https://leetcode.com/problems/word-search) | Coded bug-free, better practice more |
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Coded, but not smooth, better practice more |
+|[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Coded easily, better practice one last time |
