@@ -84,7 +84,7 @@
     ```
    </details>
 
-1. [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)
+1. [153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)  
    If mid is smaller than last element, then save it and go left as all the right elements will be larger; Else go right
    <details>
       
