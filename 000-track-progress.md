@@ -502,3 +502,4 @@ Did a few questions:
 |[33. Search in Rotated Sorted Array](https://leetcode.com/problems/search-in-rotated-sorted-array) | Coded it bug-free, but still practice more |
 |[153. Find Minimum in Rotated Sorted Array](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array) | Didn't code it, more practice |
 |[17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | Coded it wrongly, more practice |
+|[17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)| Coded with defect, more practice |
