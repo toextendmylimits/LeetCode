@@ -515,3 +515,4 @@ Did a few questions:
 |[67. Add Binary](https://leetcode.com/problems/add-binary) | Coded with error, beware "".join can't be used for int array directly, practice more |
 |[190. Reverse Bits](https://leetcode.com/problems/reverse-bits) | Coded with error, beware loop 32 times, left shift equals to multiply, right shift equals to divide, practice more | 
 |[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Coded bug-free, better practice more |
+|[136. Single Number](https://leetcode.com/problems/single-number/) | Coded bug-free easily, better practice one last time |
