@@ -504,3 +504,4 @@ Did a few questions:
 |[17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number) | Coded it wrongly, more practice |
 |[17. Letter Combinations of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number)| Coded with defect, more practice |
 |[46. Permutations](https://leetcode.com/problems/permutations) | Coded bug-free, more practice |
+|[39. Combination Sum](https://leetcode.com/problems/combination-sum) | Coded bug-free, better practice more |
