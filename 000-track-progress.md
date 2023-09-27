@@ -512,3 +512,4 @@ Did a few questions:
 |[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Coded easily, better practice one last time |
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Coded easily, better practice one last time |
 |[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Coded easily, better practice one last time |
+|[67. Add Binary](https://leetcode.com/problems/add-binary) | Coded with error, beware "".join can't be used for int array directly, practice more |
