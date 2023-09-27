@@ -84,6 +84,27 @@
     ```
    </details>
 
+1. [153. Find Minimum in Rotated Sorted Array]((https://leetcode.com/problems/find-minimum-in-rotated-sorted-array)
+   If mid is smaller than last element, then save it and go left as all the right elements will be larger; Else go right
+   <details>
+      
+    ```python
+    def findMin(self, nums: List[int]) -> int:      
+        left = 0
+        right = len(nums) - 1
+        result = -1
+        while left <= right:
+            mid = left + (right - left) // 2
+            if nums[mid] <= nums[-1]:
+                result = nums[mid]
+                right = mid - 1
+            else:
+                left = mid + 1
+
+        return result
+    ```
+   </details>   
+
 1. [74. Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix)  
    The input matrix m x n could be considered as a sorted array of length m x n. The element index can be transformed to row and col, row = index / number of columns, and col = index % number of columns  
    ***Time complexity O(logMN), space complexity O(1)***
