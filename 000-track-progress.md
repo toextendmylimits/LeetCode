@@ -516,3 +516,4 @@ Did a few questions:
 |[190. Reverse Bits](https://leetcode.com/problems/reverse-bits) | Coded with error, beware loop 32 times, left shift equals to multiply, right shift equals to divide, practice more | 
 |[191. Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits) | Coded bug-free, better practice more |
 |[136. Single Number](https://leetcode.com/problems/single-number/) | Coded bug-free easily, better practice one last time |
+|[56. Merge Intervals](https://leetcode.com/problems/merge-intervals) | Coded bug-free, better practice more | 
