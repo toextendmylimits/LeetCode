@@ -508,3 +508,4 @@ Did a few questions:
 |[39. Combination Sum](https://leetcode.com/problems/combination-sum) | Coded bug-free, better practice more |
 |[22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/) | Coded bug-free, better practice more |
 |[79. Word Search](https://leetcode.com/problems/word-search) | Coded bug-free, better practice more |
+|[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Coded, but not smooth, better practice more |
