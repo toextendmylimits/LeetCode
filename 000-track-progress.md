@@ -511,3 +511,4 @@ Did a few questions:
 |[141. Linked List Cycle](https://leetcode.com/problems/linked-list-cycle) | Coded, but not smooth, better practice more |
 |[2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/) | Coded easily, better practice one last time |
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Coded easily, better practice one last time |
+|[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Coded easily, better practice one last time |
