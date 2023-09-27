@@ -513,3 +513,4 @@ Did a few questions:
 |[21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists) | Coded easily, better practice one last time |
 |[19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) | Coded easily, better practice one last time |
 |[67. Add Binary](https://leetcode.com/problems/add-binary) | Coded with error, beware "".join can't be used for int array directly, practice more |
+|[190. Reverse Bits](https://leetcode.com/problems/reverse-bits) | Coded with error, beware loop 32 times, left shift equals to multiply, right shift equals to divide, practice more | 
