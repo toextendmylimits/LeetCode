@@ -518,3 +518,4 @@ Did a few questions:
 |[136. Single Number](https://leetcode.com/problems/single-number/) | Coded bug-free easily, better practice one last time |
 |[56. Merge Intervals](https://leetcode.com/problems/merge-intervals) | Coded bug-free, better practice more | 
 |[57. Insert Interval](https://leetcode.com/problems/insert-interval/) | Didn't code it, more practice | 
+|[452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Didn't code it, more practice |
