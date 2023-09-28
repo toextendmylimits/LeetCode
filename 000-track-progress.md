@@ -482,8 +482,6 @@ Did a few questions:
 |Question | Comment
 |----------|---------
 |[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| Coded with error, set not Set, dont forget range()|
-
-ç
 |[48. Rotate Image](https://leetcode.com/problems/rotate-image/)| Coded bug-free|
 |[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)| Coded with defect, set flag for first row and first column|
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram)| Coded with defect, use bracket for accesing hash map not parenthesis|
