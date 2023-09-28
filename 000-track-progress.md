@@ -527,3 +527,4 @@ Did a few questions:
 |[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Coded bug-free easily, but better practice more |
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | Coded bug-free easily |
 |[198. House Robber](https://leetcode.com/problems/house-robber) | Coded bug-free easily, but better practice more with writing the code concisely |
+|[322. Coin Change](https://leetcode.com/problems/coin-change) | Coded bug-free, but need to practice more to better undertand the issue, also beware TC O(S*C), and SC O(S)|
