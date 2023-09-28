@@ -526,3 +526,4 @@ Did a few questions:
 |[108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | Coded it, but better practice more. TC O(N), SC O(logN)|
 |[53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray) | Coded bug-free easily, but better practice more |
 |[70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs) | Coded bug-free easily |
+|[198. House Robber](https://leetcode.com/problems/house-robber) | Coded bug-free easily, but better practice more with writing the code concisely |
