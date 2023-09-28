@@ -522,4 +522,5 @@ Did a few questions:
 ### Did top 150 interview list
 |Question | Comment
 |----------|---------
-|[66. Plus One](https://leetcode.com/problems/plus-one) | Coded it wrongly, more practice |
+|[66. Plus One](https://leetcode.com/problems/plus-one) | Coded it wrongly, more practice, beware // for divide |
+|[108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree) | Coded it, but better practice more. TC O(N), SC O(logN)|
