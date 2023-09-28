@@ -529,5 +529,5 @@ Did a few questions:
 |[198. House Robber](https://leetcode.com/problems/house-robber) | Coded bug-free easily, but better practice more with writing the code concisely |
 |[322. Coin Change](https://leetcode.com/problems/coin-change) | Coded bug-free, but need to practice more to better undertand the issue, also beware TC O(S*C), and SC O(S)|
 |[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Coded bug-free, but not very clear, practice more |
-|[98. Validate Binary Search Tree](98. Validate Binary Search Tree) | Coded wrongly, more practice |
+|[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Coded wrongly, more practice |
 |[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | Coded with defect, more practice. To get top of heap, use heap[0] |
