@@ -483,10 +483,7 @@ Did a few questions:
 |----------|---------
 |[36. Valid Sudoku](https://leetcode.com/problems/valid-sudoku/)| Coded with error, set not Set, dont forget range()|
 
-## 26/09/2023
-### Did top 150 interview list
-|Question | Comment
-|----------|---------
+ç
 |[48. Rotate Image](https://leetcode.com/problems/rotate-image/)| Coded bug-free|
 |[73. Set Matrix Zeroes](https://leetcode.com/problems/set-matrix-zeroes)| Coded with defect, set flag for first row and first column|
 |[242. Valid Anagram](https://leetcode.com/problems/valid-anagram)| Coded with defect, use bracket for accesing hash map not parenthesis|
@@ -519,3 +516,10 @@ Did a few questions:
 |[56. Merge Intervals](https://leetcode.com/problems/merge-intervals) | Coded bug-free, better practice more | 
 |[57. Insert Interval](https://leetcode.com/problems/insert-interval/) | Didn't code it, more practice | 
 |[452. Minimum Number of Arrows to Burst Balloons](https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/) | Didn't code it, more practice |
+
+## 28/09/2023
+
+### Did top 150 interview list
+|Question | Comment
+|----------|---------
+|[66. Plus One](https://leetcode.com/problems/plus-one) | Coded it wrongly, more practice |
