@@ -54,3 +54,30 @@
            return False
      ```
    </details>
+
+1. [45. Jump Game II](https://leetcode.com/problems/jump-game-ii)   
+   Treated it as BFS. Have currMax represents the max point reachable in current level. At each level, increase steps, then tranverse all points at current level, update nextMax, and if nextMax is equal or greater than end position, then return steps. Then update currMax to be nextMax.
+   <details>
+
+     ```python
+      def jump(self, nums: List[int]) -> int:
+           if len(nums) <= 1:
+               return 0
+           
+           currMax = 0
+           steps = 0
+           i = 0
+           while i <= currMax:
+               steps += 1
+               nextMax = currMax
+               while i <= currMax:
+                   nextMax = max(nextMax, nums[i] + i)
+                   i += 1
+                   if nextMax >= len(nums) - 1:
+                       return steps
+               
+               currMax = nextMax
+           
+           return -1
+     ```
+   </details>
