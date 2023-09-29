@@ -22,6 +22,32 @@
     ```
    </details>
 
+1. [12. Integer to Roman](https://leetcode.com/problems/integer-to-roman)   
+   Create a hash map for the 13 symbols, key is value, and value is symbol. Iterate through the map, in each iteration if value is less than num, divide num by value to get count, append the symbol of count times, and set num to remainder; If num is 0, break
+  ***Time complexity*** O(1)  
+   ***Space complexity*** O(1)
+   <details>
+    
+    ```python
+    def intToRoman(self, num: int) -> str:
+        valueSymbolMap = [(1000, "M"), (900, "CM"), (500, "D"), (400, "CD"), (100, "C"), 
+                  (90, "XC"), (50, "L"), (40, "XL"), (10, "X"), (9, "IX"), 
+                  (5, "V"), (4, "IV"), (1, "I")]
+        
+        result = []
+
+        for value, symbol in valueSymbolMap:
+            if value <= num:
+                count, num = divmod(num, value)
+                result.append(symbol * count)
+            
+            if num == 0:
+                break
+
+        return "".join(result)
+    ```
+   </details>
+
 1. [202. Happy Number](https://leetcode.com/problems/happy-number)   
    There are 2 parts to the algorithm we'll need to design and code.  
    1. Given a number n, what is its next number?  
