@@ -25,7 +25,7 @@
    </details>
 
 1. [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)  
-   One pointer point to unique number, and is initialized to 1. The other pointer point to elements of the array, starting from second element. If an element is not equal to the unique number, then advance the pointer fo unique number. In the end, return index of unique number  
+   One pointer point to unique number, and is initialized to 1. The other pointer point to elements of the array, starting from second element. If an element is not equal to its previous number, then advance the pointer fo unique number. In the end, return index of unique number  
    <details>
 
    ```python
@@ -37,6 +37,28 @@
                 uniqueNumIdx += 1
         
         return uniqueNumIdx
+   ```
+   </details>
+
+1. [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)  
+One pointer called resultIdx point to unique number, and is initialized to 1. The other pointer point to elements of the array, starting from second element. Have a variable of count. In each iteration, If an element is not equal to previous number, increase count otherwise reset count to 1. If the count is less than 2, then advance resultIdx.
+   <details>
+
+   ```python
+    def removeDuplicates(self, nums: List[int]) -> int:
+        resultIdx = 1
+        count = 1
+        for i in range(1, len(nums)):
+            if nums[i] == nums[i - 1]:
+                count += 1
+            else:
+                count = 1
+            
+            if count <= 2:
+                nums[resultIdx] = nums[i]
+                resultIdx += 1
+        
+        return resultIdx
    ```
    </details>
 
