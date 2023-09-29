@@ -530,3 +530,4 @@ Did a few questions:
 |[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Coded wrongly, more practice |
 |[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | Coded with defect, more practice. To get top of heap, use heap[0] |
 |[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Coded bug-free, but not 100% clear, more practice, beware TC and SC |
+|[200. Number of Islands](https://leetcode.com/problems/number-of-islands) | Coded bug-free, but need more practice with BFS, don't forget mark as visited when visiting neighbours |
