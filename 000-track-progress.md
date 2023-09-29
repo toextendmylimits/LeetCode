@@ -529,3 +529,4 @@ Did a few questions:
 |[5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring) | Coded bug-free, but not very clear, practice more |
 |[98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree) | Coded wrongly, more practice |
 |[215. Kth Largest Element in an Array](https://leetcode.com/problems/kth-largest-element-in-an-array) | Coded with defect, more practice. To get top of heap, use heap[0] |
+|[230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst/) | Coded bug-free, but not 100% clear, more practice, beware TC and SC |
