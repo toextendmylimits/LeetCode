@@ -151,3 +151,42 @@
       ```
     </details>
 
+1. [151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)   
+    Need to implement split, reverse and join. Memorize the code   
+    <details>
+
+      ```python
+        def join(self, words):
+            result = ""
+            for i, word in enumerate(words):
+                result += (" " if i > 0 else "") + word
+            return result
+    
+            
+        def split(self, s):
+            words = []
+            currWord = ""
+            for c in s:
+                if c != " ":
+                    currWord += c
+                elif currWord:
+                    words.append(currWord)
+                    currWord = ""
+            
+            if currWord:
+                words.append(currWord)
+    
+            return words
+        def reverse(self, words):
+            left = 0
+            right = len(words) - 1
+            while left < right:
+                words[left], words[right] = words[right], words[left]
+                left += 1
+                right -= 1
+            return words
+    
+        def reverseWords(self, s: str) -> str:
+            return self.join(self.reverse(self.split(s)))    
+      ```
+    </details>
