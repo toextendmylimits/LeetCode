@@ -543,3 +543,4 @@ Did a few questions:
 |[80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii) | Didn't code it, more practice |
 |[12. Integer to Roman](https://leetcode.com/problems/integer-to-roman)| Didn't code it, more practice |
 |[151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | Didn't code it, should memorize the code |
+|[45. Jump Game II](https://leetcode.com/problems/jump-game-ii) | Didn't code it, need to memorize the code |
