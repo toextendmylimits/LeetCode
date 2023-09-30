@@ -544,3 +544,4 @@ Did a few questions:
 |[12. Integer to Roman](https://leetcode.com/problems/integer-to-roman)| Didn't code it, more practice |
 |[151. Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string) | Didn't code it, should memorize the code |
 |[45. Jump Game II](https://leetcode.com/problems/jump-game-ii) | Didn't code it, need to memorize the code |
+|[274. H-Index](https://leetcode.com/problems/h-index/) | Didn't code it, need to memorize code |
