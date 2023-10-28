@@ -149,6 +149,21 @@
    <details>
       
     ```python
+    # Check mid == 0 or nums[mid] > nums[mid - 1]
+    def findPeakElement(self, nums: List[int]) -> int:
+        left = 0
+        right = len(nums) - 1
+        result = -1
+        while left <= right:
+            mid = left + (right - left) // 2
+            if mid == 0 or nums[mid] > nums[mid - 1]:
+                result = mid
+                left = mid + 1
+            else:
+                right = mid - 1
+                
+        return result
+    
        def findPeakElement(self, nums: List[int]) -> int:
            left = 0
            right = len(nums) - 1
