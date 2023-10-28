@@ -1,4 +1,22 @@
 # Stack
+1. [71. Simplify Path](https://leetcode.com/problems/simplify-path)  
+   When encountering .., it need to go to upper level, which would be similar to pop operatio in a stack, so the idea is to use a stack.  TC O(N) SC O(N)
+    <details>
+      
+      ```python
+       def simplifyPath(self, path: str) -> str:
+           stack = []
+           for part in path.split("/"):
+               if part == "..":
+                   if stack:
+                       stack.pop()
+               elif part and part != ".":
+                   stack.append(part)
+   
+           return "/" + "/".join(stack)
+      ```
+    </details>
+    
 1. [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses)  
    Time complexity O(N) because we simply traverse the given string one character at a time and push and pop operations on a stack take O(1) time.  
    Space complexity O(N) as we push all opening brackets onto the stack in the worst case
