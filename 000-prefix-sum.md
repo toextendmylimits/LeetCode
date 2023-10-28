@@ -48,3 +48,28 @@ Also provide a approach to deal with two scenarios differently: 1. Subarray star
         return result        
     ```
    </details>
+
+1. [523. Continuous Subarray Sum](https://leetcode.com/problems/continuous-subarray-sum)
+Save presum and its first index. If currSum % k == 0, and i + 1 >= minLen, meaning the subarray starts with first element has at least minLen elements, and the sum is multiple of k. Otherwise see if currSum exist in the hash map, if so, check its first index, and see if there are enough elements for the subarray, if so return True. 
+   <details>
+
+    ```python
+    def checkSubarraySum(self, nums: List[int], k: int) -> bool:
+        preSumFirstIdxMap = {}
+        currSum = 0
+        minLen = 2
+        for i, num in enumerate(nums):
+            currSum += num
+            currSum %= k
+            if currSum == 0 and i + 1 >= minLen:
+                return True
+            
+            if currSum in preSumFirstIdxMap:
+                if i - preSumFirstIdxMap[currSum] >= minLen:
+                    return True
+            else:
+                preSumFirstIdxMap[currSum] = i
+        
+        return False       
+    ```
+   </details>
