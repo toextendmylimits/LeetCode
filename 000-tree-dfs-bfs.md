@@ -1,5 +1,41 @@
 # Tree DFS
 ## Easy
+1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
+   Recursive traverse the tree. Iterative traversal is also provided for reference.   
+   <details> 
+     
+   ```python
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        if not root:
+            return 0
+        
+        if root.val < low:
+            return self.rangeSumBST(root.right, low, high)
+        elif root.val > high:
+            return self.rangeSumBST(root.left, low, high)
+        else:
+            return root.val + self.rangeSumBST(root.right, low, high) + self.rangeSumBST(root.left, low, high)
+
+   # Iterative 
+    def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
+        result = 0
+        stack = [root]
+        while stack:
+            node = stack.pop()
+            if low <= node.val <= high:
+                result += node.val
+            if low < node.val:
+                if node.left:
+                    stack.append(node.left)
+            if node.val < high:
+                if node.right:
+                    stack.append(node.right)
+        
+        return result
+   ```
+   
+   </details>
+   
 1. [Binary Tree Inorder Traversal](https://leetcode.com/problems/binary-tree-inorder-traversal)  
    Should be able to traverse the tree iteratively as well  
 2. [108. Convert Sorted Array to Binary Search Tree](https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree)  
