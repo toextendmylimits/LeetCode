@@ -3,6 +3,7 @@
 Key observation is a subarray of index i to j (exclusive) is the difference of subarray (0, i - 1) to (0, j). To find whether a subarray sum is k, we can find
 whether there are two subarrays starting with first element, and their difference is k. If we save the prefix sum and its frequency into hash map, then to find whether prefixSum  
 exist in hash map would be O(1). One edge case is 0 need to be added to the map as prefixSum. Brute force approach is also provided just in case. 
+Also provide a approach to deal with two scenarios differently: 1. Subarray starts from first one 2. Subarrat starts from not the first one without adding 0 to hash map. The code is bit longer buch more clear
    <details>
 
     ```python
@@ -17,6 +18,22 @@ exist in hash map would be O(1). One edge case is 0 need to be added to the map 
               sumFreqMap[currSum] += 1
   
           return result
+
+    # A longer but more clear way
+        def subarraySum(self, nums: List[int], k: int) -> int:
+           prefixSumFreq = Counter()
+           currSum = 0
+           result = 0
+           for num in nums:
+               currSum += num
+               if currSum == k:
+                   result += 1
+               
+               target = currSum - k
+               result += prefixSumFreq[target]
+               prefixSumFreq[currSum] += 1
+   
+           return result
 
       # Brute force
         def subarraySum(self, nums: List[int], k: int) -> int:
