@@ -1,6 +1,7 @@
 # Two Pointers
 1. [88. Merge Sorted Array](https://leetcode.com/problems/merge-sorted-array)
-1. [1213. Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays)
+1. [1213. Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays)  
+Two slightly different approaches and the second one is easier to understand
    <details>
 
    ```python
