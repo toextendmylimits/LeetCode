@@ -1,6 +1,6 @@
 # Linked List
 ## Easy
-1. [1650. Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii) 
+1. [1650. Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii)   
     Treat this issue as a problem to find whether two linked lists intersect. Appraoch 1: TC O(H),SC O(H), Approach 2: TC O(H), SC O(1)  
     <details>
 
