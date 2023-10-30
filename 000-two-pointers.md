@@ -73,7 +73,47 @@ Two slightly different approaches and the second one is easier to understand
         return True
    ```
    </details>
+1. [680 Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)
+   If character at i isn't equal to j, then either i or jth character can be deleted, and then check whether the substring is palindrome
+   <details>
 
+      ```python
+       def validPalindrome(self, s: str) -> bool:
+           def isPalindrome(start, end):
+               while start < end:
+                   if s[start] != s[end]:
+                       return False
+                   start += 1
+                   end -= 1
+               return True
+   
+           start = 0
+           end = len(s) - 1
+           while start < end:
+               if s[start] != s[end]:
+                   return isPalindrome(start, end - 1) or isPalindrome(start + 1, end)
+               else:
+                   start += 1
+                   end -= 1
+           
+           return True
+
+      # Follow-up delete at most n characters
+        def validPalindrome(self, s: str, n) -> bool:
+           def checkPalindrome(start, end, mismatches):
+               while start < end:
+                   if s[start] != s[end]:
+                       return mismatches > 0 and (checkPalindrome(start, end - 1, mismatches - 1) or checkPalindrome(start + 1, end, mismatches - 1))
+                   else:
+                       start += 1
+                       end -= 1
+               
+               return True
+           
+           return checkPalindrome(0, len(s) - 1, n)       
+      ```
+   </details>
+   
 1. [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)  
    One pointer point to unique number, and is initialized to 1. The other pointer point to elements of the array, starting from second element. If an element is not equal to its previous number, then advance the pointer fo unique number. In the end, return index of unique number  
    <details>
@@ -260,46 +300,6 @@ One pointer called resultIdx point to unique number, and is initialized to 1. Th
       ```
    </details>
    ```
-1. [680 Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)
-   If character at i isn't equal to j, then either i or jth character can be deleted, and then check whether the substring is palindrome
-   <details>
-
-      ```python
-       def validPalindrome(self, s: str) -> bool:
-           def isPalindrome(start, end):
-               while start < end:
-                   if s[start] != s[end]:
-                       return False
-                   start += 1
-                   end -= 1
-               return True
-   
-           start = 0
-           end = len(s) - 1
-           while start < end:
-               if s[start] != s[end]:
-                   return isPalindrome(start, end - 1) or isPalindrome(start + 1, end)
-               else:
-                   start += 1
-                   end -= 1
-           
-           return True
-
-      # Follow-up delete at most n characters
-        def validPalindrome(self, s: str, n) -> bool:
-           def checkPalindrome(start, end, mismatches):
-               while start < end:
-                   if s[start] != s[end]:
-                       return mismatches > 0 and (checkPalindrome(start, end - 1, mismatches - 1) or checkPalindrome(start + 1, end, mismatches - 1))
-                   else:
-                       start += 1
-                       end -= 1
-               
-               return True
-           
-           return checkPalindrome(0, len(s) - 1, n)       
-      ```
-   </details>
 1. [Move Zeroes](https://leetcode.com/problems/move-zeroes)  
    ***Approach 1 - Two steps, first move all nonzeros to the front, then fill the rest with zeros***
 
