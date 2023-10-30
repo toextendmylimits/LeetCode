@@ -1,4 +1,34 @@
 # String
+1. [408. Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation)  
+   Two pointers.   
+    1. If j at abbr is alphabetic character, then check whether it is the same character at i position of word; If not, return False; If so, advance both i and j  
+    1. IF j at abbr is not alphabetic character, then it must be a numeric digit. If it's zero, return False straight way. Otherwise, find the numerical value which represents the length of substring, and advance i by that length
+    1. In the end, check whether both pointers reach the end of string  
+    <details>
+
+      ```python
+    def validWordAbbreviation(self, word: str, abbr: str) -> bool:
+        i = 0
+        j = 0
+        while i < len(word) and j < len(abbr):
+            if abbr[j].isalpha():
+                if abbr[j] == word[i]:
+                    i += 1
+                    j += 1
+                else:
+                    return False
+            else:
+                if abbr[j] == "0":
+                    return False
+                strLen = 0
+                while j < len(abbr) and abbr[j].isdigit():
+                    strLen = 10 * strLen + int(abbr[j])
+                    j += 1
+                i += strLen
+        return i == len(word) and j == len(abbr)
+      ```
+    </details>   
+    
 1. [387. First Unique Character in a String](https://leetcode.com/problems/first-unique-character-in-a-string)    
     Use hash map to store each charcter, and how many times it appear in the string  
     Loop through the string, and if any character appear only once, return its index  
