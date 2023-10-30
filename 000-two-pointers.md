@@ -73,7 +73,7 @@ Two slightly different approaches and the second one is easier to understand
         return True
    ```
    </details>
-1. [680 Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)
+1. [680 Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)  
    If character at i isn't equal to j, then either i or jth character can be deleted, and then check whether the substring is palindrome
    <details>
 
