@@ -260,8 +260,46 @@ One pointer called resultIdx point to unique number, and is initialized to 1. Th
       ```
    </details>
    ```
-1. [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)   
-   If char at left not equal right, check after removing either char, whether the remaining string is palindrome
+1. [680 Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii)
+   If character at i isn't equal to j, then either i or jth character can be deleted, and then check whether the substring is palindrome
+   <details>
+
+      ```python
+       def validPalindrome(self, s: str) -> bool:
+           def isPalindrome(start, end):
+               while start < end:
+                   if s[start] != s[end]:
+                       return False
+                   start += 1
+                   end -= 1
+               return True
+   
+           start = 0
+           end = len(s) - 1
+           while start < end:
+               if s[start] != s[end]:
+                   return isPalindrome(start, end - 1) or isPalindrome(start + 1, end)
+               else:
+                   start += 1
+                   end -= 1
+           
+           return True
+
+      # Follow-up delete at most n characters
+        def validPalindrome(self, s: str, n) -> bool:
+           def checkPalindrome(start, end, mismatches):
+               while start < end:
+                   if s[start] != s[end]:
+                       return mismatches > 0 and (checkPalindrome(start, end - 1, mismatches - 1) or checkPalindrome(start + 1, end, mismatches - 1))
+                   else:
+                       start += 1
+                       end -= 1
+               
+               return True
+           
+           return checkPalindrome(0, len(s) - 1, n)       
+      ```
+   </details>
 1. [Move Zeroes](https://leetcode.com/problems/move-zeroes)  
    ***Approach 1 - Two steps, first move all nonzeros to the front, then fill the rest with zeros***
 
