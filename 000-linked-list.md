@@ -1,5 +1,35 @@
 # Linked List
 ## Easy
+1. [1650. Lowest Common Ancestor of a Binary Tree III](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-iii) 
+    Treat this issue as a problem to find whether two linked lists intersect. Appraoch 1: TC O(H),SC O(H), Approach 2: TC O(H), SC O(1)  
+    <details>
+
+        ```python
+        def lowestCommonAncestor(self, p: 'Node', q: 'Node') -> 'Node':
+            ancestorsOfP = set()
+            while p:
+                ancestorsOfP.add(p)
+                p = p.parent
+            
+            while q:
+                if q in ancestorsOfP:
+                    return q
+                q = q.parent
+            
+            return None
+
+        # Approach 2
+        def lowestCommonAncestor(self, p: 'Node', q: 'Node') -> 'Node':
+            first = p
+            second = q
+            while first != second:
+                first = first.parent if first else q
+                second = second.parent if second else p    
+
+        return first    
+        ```
+    </details>
+    
 1. [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists)  
     1. First we set up a dummy head that allows us retrieve the head of the merged list later. And We also maintain a prev pointer connect merged list with the other lists
     1. Then, we do the following until l1 or l2 is null:
