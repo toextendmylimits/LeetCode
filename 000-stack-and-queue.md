@@ -37,6 +37,40 @@
           return not stack
       ```
     </details>
+
+1. [1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)  
+   Have a hash set for indexes to be removed. Use a stack for index of valid brackets.   
+   1. If chracter is left bracket, push index into stack  
+   1. Else if character is right bracket, if stack is not empty(then it must be index for left bracket), pop otherwise push index to indexes to remove as this means more right brackets 
+   1. After the loop, check whether there is any element in stack, then it means the indexes for left brackets, and add them to seet
+   1. In the end, find a sub sequence not including the ones which index are in the set for indexes to be removed
+    <details>
+      
+      ```python
+       def minRemoveToMakeValid(self, s: str) -> str:
+           indexesToRemove = set()
+           stack = []
+           for i, c in enumerate(s):
+               if c == "(":
+                   stack.append(i)
+               elif c == ")":
+                   if stack:
+                       stack.pop()
+                   else:
+                       indexesToRemove.add(i)
+           
+           while stack:
+               indexesToRemove.add(stack.pop())
+           
+           validChars = []
+           for i, c in enumerate(s):
+               if not i in indexesToRemove:
+                   validChars.append(c)
+   
+           return "".join(validChars)       
+      ```
+    </details>
+    
 1. [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)  
    If token is operator, pop two elements froms tack, and calculate result, then push result back to stack. If it's not operator, just push to stack. 
   
