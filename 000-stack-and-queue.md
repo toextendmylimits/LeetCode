@@ -94,7 +94,7 @@ Alternative approach:
    1. Instead of using a stack, we use a variable lastNumber to track the value of the last evaluated expression.  
    1. If the operation is Addition (+) or Subtraction (-), add the lastNumber to the result instead of pushing it to the stack. The currentNumber would be updated to lastNumber for the next iteration.  
    1. If the operation is Multiplication (*) or Division (/), we must evaluate the expression lastNumber * currentNumber and update the lastNumber with the result of the expression. This would be added to the result after the entire string is scanned.  
-    <details>
+   <details>
       
       ```python
        def calculate(self, s: str) -> int:
@@ -148,7 +148,7 @@ Alternative approach:
            result += lastNum
            return result      
       ```
-    </details>
+   </details>
     
 1. [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)  
    If token is operator, pop two elements froms tack, and calculate result, then push result back to stack. If it's not operator, just push to stack. 
