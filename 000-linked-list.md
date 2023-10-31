@@ -244,7 +244,73 @@
     </details>
     
 ## Medium
+1. [146. LRU Cache](https://leetcode.com/problems/lru-cache)
+   Intuition:  
+    Need to support get and put, so naturally to use hash map. Also need to maintain order of items based on its most recent use time, so could use a double linked list, the front of the list is most recent visited item, and the end of the list the least recent useed item.  
 
+    The idea is:  
+    Use a hash map, key is key, and while is a Node, which has attributes, key, value, prev and next node. Use a double linked list to maintian order of nodes.  
+    1. In LRUCache constructor, create a map and a dummy head and tial node  
+    1. In get method, if key not exists, return -1; Otherwise, remove the node, add to head, and then return value. So need to implement method add and remove   
+    1. In put method, if key exists, remove node, add to head, and update value; Otherwise check if capacity has been reached, if so remove least recently used node(tail.prev), delete from map. Then create a new node, add to head, put to map  
+    TC O(1) for put and get, SC O(capacity)      
+    <details>
+
+    ```python
+        class Node:
+            def __init__(self, key, val):
+                self.key = key
+                self.val = val
+                self.prev = None
+                self.next = None
+
+        class LRUCache:
+            def __init__(self, capacity):
+                self.capacity = capacity
+                self.keyNodeMap = {}
+                self.head = Node(-1, -1)
+                self.tail = Node(-1, -1)
+                self.head.next = self.tail
+                self.tail.prev = self.head
+            
+            def get(self, key):
+                if not key in self.keyNodeMap:
+                    return -1
+                
+                node = self.keyNodeMap[key]
+                self._remove(node)
+                self._add(node)
+                return node.val
+            
+            def _remove(self, node):
+                node.prev.next = node.next
+                node.next.prev = node.prev
+            
+            def _add(self, node):
+                currFirst = self.head.next
+                self.head.next = node
+                node.prev = self.head
+                node.next = currFirst
+                currFirst.prev = node
+            
+            def put(self, key, val):
+                if key in self.keyNodeMap:
+                    node = self.keyNodeMap[key]
+                    self._remove(node)
+                    self._add(node)
+                    node.val = val
+                else:
+                    if self.capacity == len(self.keyNodeMap):
+                        lruNode = self.tail.prev
+                        self._remove(lruNode)
+                        del self.keyNodeMap[lruNode.key]
+        
+                    newNode = Node(key, val)
+                    self._add(newNode)
+                    self.keyNodeMap[key] = newNode
+    ```
+    </details>
+    
 1. [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)  
     1. if head is null or head.next is null, just return head  
     1. Maintian evenHead which is head.next   
