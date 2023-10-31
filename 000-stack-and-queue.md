@@ -84,8 +84,8 @@
       1. Multiplication (*) or Division (/): Pop the top values from the stack and evaluate the current expression. Push the evaluated value back to the stack.  
    1. Once the string is scanned, pop from the stack and add to the result.  
 
-   Alternative approach:
-   Intuition
+   Alternative approach:  
+   Intuition:  
    In the previous approach, we used a stack to track the values of the evaluated expressions. In the end, we pop all the values from the stack and add to the result. Instead of that, we could add the values to the result beforehand and keep track of the last calculated number, thus eliminating the need for the stack. Let's understand the algorithm in detail.
 
    Algorithm
