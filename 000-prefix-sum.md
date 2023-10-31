@@ -74,7 +74,7 @@ Save presum and its first index. If currSum % k == 0, and i + 1 >= minLen, meani
     ```
    </details>
 
-1. [528. Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight) 
+1. [528. Random Pick with Weight](https://leetcode.com/problems/random-pick-with-weight)   
    say we have the numbers 1, 5, 2 easiest solution is to construct the following array  
    arr[] = {0,1,1,1,1,1,2,2}  
    then generate a random number between 0 and 7 and return the arr[rnd]. This is solution is not really good though due to the space requirements it has (imagine a number beeing 2billion).  
