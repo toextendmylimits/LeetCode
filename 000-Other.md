@@ -81,3 +81,44 @@
       
     ```
     </details>   
+
+1. [339. Nested List Weight Sum](https://leetcode.com/problems/nested-list-weight-sum) 
+    Non-standard DFS and BFS. For BFS, use deque(nestedList) instead of deque([nestedList]) because nestedList is iterable collection already  
+    TC O(N) Let N be the total number of nested elements in the input list. For example, the list [ [[[[1]]]], 2 ] contains 4 nested lists and 2 nested integers (1 and 2), so N=6 for that particular case. The recursive function is called once for each nested list. And for items directly inside a nestedlist, each item is visited only once.  
+    SC O(D) deepest nested levels  
+    <details>
+      
+    ```python
+        def depthSum(self, nestedList: List[NestedInteger]) -> int:
+            def calDepthSum(nestedList, depth):
+                total = 0
+                for element in nestedList:
+                    if element.isInteger():
+                        total += depth * element.getInteger()
+                    else:
+                        total += calDepthSum(element.getList(), depth + 1)
+                
+                return total
+            
+            return calDepthSum(nestedList, 1)
+
+    # BFS
+        def depthSum(self, nestedList: List[NestedInteger]) -> int:
+            depth = 1
+            total = 0
+            queue = deque(nestedList)
+    
+            while queue:
+                size = len(queue)
+                for i in range(size):
+                    currList = queue.popleft()
+                    if currList.isInteger():
+                        total += depth * currList.getInteger()
+                    else:
+                        for element in currList.getList():
+                            queue.append(element)
+                depth += 1
+    
+            return total    
+    ```
+    </details>   
