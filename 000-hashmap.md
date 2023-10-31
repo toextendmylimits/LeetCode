@@ -20,6 +20,34 @@
            return "".join(result)
     ```
    </details>
+
+1. [249. Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings)  
+   The idea is to shift each string to a string starts with a. For example, for bcd, to shift b to a, we need to go back by 1, so c becomes b and d becomes c, hence it becomes abc.  TC O(N) SC O(N) where N is total number of characters  
+   <details>
+      
+    ```python
+       def groupStrings(self, strings: List[str]) -> List[List[str]]:
+           def getHash(s):
+               result = []
+               offset = ord(s[0]) - ord("a")
+               result.append("a")
+               for i in range(1, len(s)):
+                   c = s[i]
+                   targetOrd = ord(s[i]) - offset
+                   if targetOrd < ord("a"):
+                       targetOrd += 26
+   
+                   result.append(chr(targetOrd))
+           
+               return "".join(result)
+           
+           groups = defaultdict(list)
+           for s in strings:
+               groups[getHash(s)].append(s)
+           
+           return groups.values()
+    ```
+   </details>   
    
 1. [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)  
    Two strings are valid anagram if they same distinct characters, and for each distinct character, the number of times it appear in both string should also be the same    
