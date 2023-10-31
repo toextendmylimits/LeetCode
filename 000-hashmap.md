@@ -1,4 +1,26 @@
 # Hashmap
+1. [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string)  
+   The idea is to first calculate the frequence of unique characters in s, then linear scan the order, if the relevant character appears i s, and it appears n times, then add that character n times to the result array, and then change its frequency to 0. In the end, add all the remaining characters to the result array.  TC O(len1 + len2) SC O(unique number of characters) = O(26) = O(1)  
+   <details>
+      
+    ```python
+       def customSortString(self, order: str, s: str) -> str:
+           counter = Counter(s)
+           result = []
+           for c in order:
+               while counter[c] > 0:
+                   result.append(c)
+                   counter[c] -= 1
+                   
+           for c, freq in counter.items():
+               while freq > 0:
+                   result.append(c)
+                   freq -= 1
+           
+           return "".join(result)
+    ```
+   </details>
+   
 1. [242. Valid Anagram](https://leetcode.com/problems/valid-anagram/)  
    Two strings are valid anagram if they same distinct characters, and for each distinct character, the number of times it appear in both string should also be the same    
    Time compexity is O(N), space complexity is essentially O(1) as there are only 26 lowercase letters
