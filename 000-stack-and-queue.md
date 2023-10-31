@@ -70,6 +70,85 @@
            return "".join(validChars)       
       ```
     </details>
+
+1. [227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii) 
+   Key observations:
+   1. If the current operation is addition (+) or subtraction (-), then the expression is evaluated based on the precedence of the next operation.
+   1. If the current operator is multiplication (*) or division (/), then the expression is evaluated irrespective of the next operation. This is because in the given set of operations (+,-,*,/), the * and / operations have the highest precedence and therefore must be evaluated first.
+
+   Agorithm:
+   Scan the input string s from left to right and evaluate the expressions based on the following rules
+   1. If the current character is a digit 0-9 ( operand ), add it to the number currentNumber.  
+   1. Otherwise, the current character must be an operation (+,-,*, /). Evaluate the expression based on the type of operation.  
+      1. Addition (+) or Subtraction (-): We must evaluate the expression later based on the next operation. So, we must store the currentNumber to be used later. Let's push the currentNumber in the Stack.  
+      1. Multiplication (*) or Division (/): Pop the top values from the stack and evaluate the current expression. Push the evaluated value back to the stack.  
+   1. Once the string is scanned, pop from the stack and add to the result.  
+
+Alternative approach:
+   Intuition
+   In the previous approach, we used a stack to track the values of the evaluated expressions. In the end, we pop all the values from the stack and add to the result. Instead of that, we could add the values to the result beforehand and keep track of the last calculated number, thus eliminating the need for the stack. Let's understand the algorithm in detail.
+
+   Algorithm
+
+   The approach works similar to Approach 1 with the following differences :  
+   1. Instead of using a stack, we use a variable lastNumber to track the value of the last evaluated expression.  
+   1. If the operation is Addition (+) or Subtraction (-), add the lastNumber to the result instead of pushing it to the stack. The currentNumber would be updated to lastNumber for the next iteration.  
+   1. If the operation is Multiplication (*) or Division (/), we must evaluate the expression lastNumber * currentNumber and update the lastNumber with the result of the expression. This would be added to the result after the entire string is scanned.  
+    <details>
+      
+      ```python
+       def calculate(self, s: str) -> int:
+           currNum = 0
+           stack = []
+           operator = "+"
+           for i, c in enumerate(s):
+               if c.isdigit():
+                   currNum = currNum * 10 + int(c)
+   
+               if (not c.isdigit() and not c.isspace()) or i == len(s) - 1:
+                   if operator == "+":
+                       stack.append(currNum)
+                   elif operator == "-":
+                       stack.append(-currNum)
+                   elif operator == "*":
+                       stack.append(stack.pop() * currNum)
+                   elif operator == "/":
+                       stack.append(int(stack.pop() / currNum))
+   
+                   operator = c
+                   currNum = 0
+                   
+           total = 0
+           while stack:
+               total += stack.pop()
+           
+           return total
+
+      # Without using stack
+       def calculate(self, s: str) -> int:
+           result = 0
+           currNum = 0
+           lastNum = 0
+           operator = "+"
+           for i, c in enumerate(s):
+               print(result, lastNum, currNum, i)
+               if c.isdigit():
+                   currNum = currNum * 10 + int(c)
+               
+               if (not c.isdigit() and not c.isspace()) or i == len(s) - 1:
+                   if operator in "+-":
+                       result += lastNum
+                       lastNum = currNum if operator == "+" else -currNum
+                   elif operator == "*":
+                       lastNum = lastNum * currNum
+                   elif operator == "/":
+                       lastNum = int(lastNum / currNum)
+                   operator = c
+                   currNum = 0
+           result += lastNum
+           return result      
+      ```
+    </details>
     
 1. [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)  
    If token is operator, pop two elements froms tack, and calculate result, then push result back to stack. If it's not operator, just push to stack. 
