@@ -71,8 +71,8 @@
       ```
     </details>
 
-1. [227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii) 
-   Key observations:
+1. [227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)   
+   Key observations:  
    1. If the current operation is addition (+) or subtraction (-), then the expression is evaluated based on the precedence of the next operation.
    1. If the current operator is multiplication (*) or division (/), then the expression is evaluated irrespective of the next operation. This is because in the given set of operations (+,-,*,/), the * and / operations have the highest precedence and therefore must be evaluated first.
 
