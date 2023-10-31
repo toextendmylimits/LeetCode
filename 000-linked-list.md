@@ -244,8 +244,8 @@
     </details>
     
 ## Medium
-1. [146. LRU Cache](https://leetcode.com/problems/lru-cache)
-   Intuition:  
+1. [146. LRU Cache](https://leetcode.com/problems/lru-cache)  
+   Intuition:     
     Need to support get and put, so naturally to use hash map. Also need to maintain order of items based on its most recent use time, so could use a double linked list, the front of the list is most recent visited item, and the end of the list the least recent useed item.  
 
     The idea is:  
