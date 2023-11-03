@@ -1,4 +1,23 @@
 # Hashmap
+1. [1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array)
+   <details>
+      
+    ```python
+    def arrayRankTransform(self, arr: List[int]) -> List[int]:
+        sortedUniNums = sorted(set(arr))
+        numRankMap = {}
+
+        rank = 1
+        for n in sortedUniNums:
+            numRankMap[n] = rank
+            rank += 1
+
+        for i, n in enumerate(arr):
+            arr[i] = numRankMap[n]
+
+        return arr
+    ```
+   </details>   
 1. [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string)  
    The idea is to first calculate the frequence of unique characters in s, then linear scan the order, if the relevant character appears i s, and it appears n times, then add that character n times to the result array, and then change its frequency to 0. In the end, add all the remaining characters to the result array.  TC O(len1 + len2) SC O(unique number of characters) = O(26) = O(1)  
    <details>
