@@ -624,6 +624,8 @@
    Can be done using DFS as well
 1. [559. Maximum Depth of N-ary Tree](https://leetcode.com/problems/maximum-depth-of-n-ary-tree)
 ## Medium
+1.[958. Check Completeness of a Binary Tree](https://leetcode.com/problems/check-completeness-of-a-binary-tree/)    
+   If a null node has been found, then all the subsequent node should be null. If not, return false. So idea is have a varaible to record where a null node has been found, with initial value false. When doing BFS,in each iteration, if a node is null, then null node has been found; If a node is not null, while a null node has been found, then return false. In the end, return true.   
 1. [16. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)  
     1. approach 1 - Do a normal level order traversal, and create prev pointer for each level, connect next and update prev
 1. [993. Cousins in Binary Tree](https://leetcode.com/problems/cousins-in-binary-tree)  
