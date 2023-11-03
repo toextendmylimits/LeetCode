@@ -386,6 +386,9 @@
         return leftResult if leftResult else rightResult
    ```
    </details>
+
+1. [1740. Find Distance in a Binary Tree](https://leetcode.com/problems/find-distance-in-a-binary-tree)  
+   Find lower common ancestor first, and then find distance from that ancestor to each node(using BFS) and add them.
 1. [1644. Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii)  
    P and q are not guaranteed to exist, so always need to explore both left and right tree, and mark whether p or q has been found
    <details>
