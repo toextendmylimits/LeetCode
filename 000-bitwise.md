@@ -111,3 +111,18 @@ The bitwise AND operator ( & ) compares each bit of the first operand to the cor
             return count
       ```
     </details> 
+
+1. [401. Binary Watch](https://leetcode.com/problems/binary-watch)  
+    <details>
+
+      ```python
+        def readBinaryWatch(self, turnedOn: int) -> List[str]:
+            result = []
+            for h in range(12):
+                for m in range(60):
+                    if (bin(h) + bin(m)).count("1") == turnedOn:
+                        result.append(f"{h:1}:{m:02}")
+            
+            return result
+      ```
+    </details> 
