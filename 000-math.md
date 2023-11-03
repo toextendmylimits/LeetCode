@@ -1,4 +1,42 @@
 # Math
+1. [670. Maximum Swap](https://leetcode.com/problems/maximum-swap)
+   Basic idea:
+   1. Find a index i, where there is a increasing order. If there is no such i, then swap is not possible, return straight away  
+   1. On the right side of i, find the max value (max_val) and its index (max_idx)
+   1. On the left side of i, find the most left value and its index (left_idx), which is less than max_val
+   1. Swap above left_idx and max_idx if necessary
+    <details>
+    
+    ```python
+       def maximumSwap(self, num: int) -> int:
+           digits = list(str(num))
+   
+           couldSwap = False
+           for i in range(len(digits) - 1):
+               if digits[i] < digits[i + 1]:
+                   couldSwap = True
+                   break
+                   
+           if not couldSwap:
+               return num 
+           
+           rightIdx = i + 1
+           for j in range(rightIdx + 1, len(digits), 1):
+               if digits[j] >= digits[rightIdx]:
+                   rightIdx = j
+   
+           leftIdx = i
+           for k in range(leftIdx):
+               if digits[k] < digits[rightIdx]:
+                   leftIdx = k
+                   break
+   
+           digits[leftIdx], digits[rightIdx] = digits[rightIdx], digits[leftIdx]
+           return int("".join(digits))
+    ```
+   </details>
+
+
 1. [204. Count Primes](https://leetcode.com/problems/count-primes)  
    Use array isPrime to represent whether number at index is a prime   
    i from 2 to not exceeding sqrt(n)  
