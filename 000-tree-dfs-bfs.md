@@ -43,7 +43,7 @@
    The base condition is ***if left is greater than right, return None*** because there there is no subtree can be built  
    ***Time complexity*** is O(N) as all nodes are visited once  
    ***Space complexity*** is O(logN) for recursion call stack as the tree is balanced
-1. [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)
+1. [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)  
    Approach 1 Convert the linked list to a array of values, and then build recursively  
    Approach 2 Have a global variable point to head of linked list, and then do an inorder travesal recursively  
    ***This can also be done in BFS***
