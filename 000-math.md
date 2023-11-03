@@ -1,5 +1,5 @@
 # Math
-1. [670. Maximum Swap](https://leetcode.com/problems/maximum-swap)
+1. [670. Maximum Swap](https://leetcode.com/problems/maximum-swap)  
    Basic idea:
    1. Find a index i, where there is a increasing order. If there is no such i, then swap is not possible, return straight away  
    1. On the right side of i, find the max value (max_val) and its index (max_idx)
