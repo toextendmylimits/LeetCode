@@ -39,7 +39,7 @@
       ```
     </details>
 
-1. [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)
+1. [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)  
     ***Approach 1 - Two for loop*** Loop through each num, check whether there is a same number before it, with index up to max(i - k - 1, -1), if so return True. In the end return False  
    ***Approach 2 - use hash map to store a number and its latest index***
     <details>
