@@ -38,7 +38,65 @@
            return False
       ```
     </details>
+
+1. [219. Contains Duplicate II](https://leetcode.com/problems/contains-duplicate-ii)
+    ***Approach 1 - Two for loop*** Loop through each num, check whether there is a same number before it, with index up to max(i - k - 1, -1), if so return True. In the end return False  
+   ***Approach 2 - use hash map to store a number and its latest index***
+    <details>
+
+      ```python
+       def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+           for i in range(len(nums)):
+               for j in range(i - 1, max(i - k - 1, -1), -1):
+                   if nums[i] == nums[j]:
+                       return True
+           
+           return False
+
+      # Use hash map
+       def containsNearbyDuplicate(self, nums: List[int], k: int) -> bool:
+           valLastIdxMap = {}
+           for i, n in enumerate(nums):
+               if n in valLastIdxMap:
+                   lastIdx = valLastIdxMap[n]
+                   if i - lastIdx <= k: 
+                       return True
+               
+               valLastIdxMap[n] = i
+           
+           return False      
+      ```
+    </details>
     
+    ***Approach 2 - Use hash set***
+    <details>
+
+      ```python
+       def containsDuplicate(self, nums: List[int]) -> bool:
+           seen = set()
+           for n in nums:
+               if n in seen:
+                   return True
+               else:
+                   seen.add(n)
+           
+           return False
+      ```
+    </details>
+    
+    ***Approach 3 - Sort first, and then check whether any element equal to previous one starting from second element***
+    <details>
+
+      ```python
+       def containsDuplicate(self, nums: List[int]) -> bool:
+           nums.sort()
+           for i in range(1, len(nums)):
+               if nums[i] == nums[i - 1]:
+                   return True
+   
+           return False
+      ```
+    </details>   
 1. [189. Rotate Array](https://leetcode.com/problems/rotate-array)  
     ***Approach 1 - Have an auxiliary array, aux[(i + k ) % len(nums)] = nums[i], and assign aux to original array***
     <details>
