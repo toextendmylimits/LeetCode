@@ -1,4 +1,39 @@
 # Stack
+1. [636. Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions)  
+   Key observation:
+   1. The goal is to get each fucntion's total execution time, which is the sum of multiple execution of portion of the function.  
+   1. Each log entry has functionId, action whether it's start or end, and the time. 
+   1. If a function starts execution, the time interval between current time and previous time is part of the execution time for previous function  
+   1. If a function ends execution, the time interval between current time and previous time is part of the execution time for previous function
+
+   The idea is use a stack to store ids of function that to execute and depends on the action start/end, update execution time for each function. 
+   1. Liner scan the logs,
+   1. if a function starts execution, if stack is not null, update execution time of the most recent function in the call stack, by adding the time interval between previous time and current time. Then update previous time.  
+   1. Else if a function ends execution, the most recent function in the call stack should be the same function, update its execution time by adding the time interval (curr time  - prev time + 1). Then update previous time  
+    <details>
+      
+      ```python
+       def exclusiveTime(self, n: int, logs: List[str]) -> List[int]:
+           stack = []
+           prevTime = 0
+           result = [0] * n
+           for log in logs:
+               parts = log.split(":")
+               funcId = int(parts[0])
+               action = parts[1]
+               time = int(parts[2])
+               if action == "start":
+                   if stack:
+                       result[stack[-1]] += time - prevTime
+                   stack.append(funcId)
+                   prevTime = time
+               elif action == "end":
+                   result[stack.pop()] += time - prevTime + 1
+                   prevTime = time + 1
+           
+           return result
+      ```
+    </details>   
 1. [71. Simplify Path](https://leetcode.com/problems/simplify-path)  
    When encountering .., it need to go to upper level, which would be similar to pop operatio in a stack, so the idea is to use a stack.  TC O(N) SC O(N)
     <details>
