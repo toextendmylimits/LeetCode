@@ -42,7 +42,59 @@
    Choose the mid value to be root, and use left half to construct left subtree, and right half to construct right subtree  
    The base condition is ***if left is greater than right, return None*** because there there is no subtree can be built  
    ***Time complexity*** is O(N) as all nodes are visited once  
-   ***Space complexity*** is O(logN) for recursion call stack as the tree is balanced  
+   ***Space complexity*** is O(logN) for recursion call stack as the tree is balanced
+1. [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)
+   Approach 1 Convert the linked list to a array of values, and then build recursively  
+   Approach 2 Have a global variable point to head of linked list, and then do an inorder travesal recursively  
+   ***This can also be done in BFS***
+   <details> 
+     
+   ```python
+    def sortedListToBST(self, head: Optional[ListNode]) -> Optional[TreeNode]:
+        vals = []
+        while head:
+            vals.append(head.val)
+            head = head.next
+
+        def buildTree(left, right):
+            if left > right:
+                return None
+            root = TreeNode()
+            mid = left + (right - left) // 2 
+            root.val = vals[mid]
+            root.left = buildTree(left, mid - 1)
+            root.right = buildTree(mid + 1, right)
+            return root
+
+        return buildTree(0, len(vals) - 1)
+
+      # Inorder travesal
+       def _getSize(self, head):
+        size = 0
+        while head:
+            size += 1
+            head = head.next
+        return size
+
+       def sortedListToBST(self, head: Optional[ListNode]) -> Optional[TreeNode]:
+           def buildTree(left, right):
+               nonlocal head
+               if left > right:
+                   return None
+               
+               mid = left + (right - left) // 2
+               leftChild = buildTree(left, mid - 1)
+               root = TreeNode(head.val)
+               head = head.next
+               root.left = leftChild
+               root.right = buildTree(mid + 1, right)
+               return root
+           
+           return buildTree(0, self._getSize(head) - 1)
+   ```
+   
+   </details>
+   
 1. [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree)  
    When one child is null, then min depth should be from the other child  
    ***This can also be done in BFS***
