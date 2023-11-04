@@ -244,6 +244,39 @@
     </details>
     
 ## Medium
+1. [708. Insert into a Sorted Circular Linked List](https://leetcode.com/problems/insert-into-a-sorted-circular-linked-list)  
+    1. If insertVal is greater than or equal to prev.val and less than or equal to curr.val, insert between prev and curr
+    1. If insertVal is greater than max val or less than min val, insert between prev and curr
+    1. After while loop, then all the node must have same values, and can insert anywhere
+    <details>
+
+    ```python
+    def insert(self, head: 'Optional[Node]', insertVal: int) -> 'Node':
+        if not head:
+            node = Node(insertVal)
+            node.next = node
+            return node
+        
+        prev = head
+        curr = head.next
+        while True:
+            if prev.val <= insertVal <= curr.val:
+                prev.next = Node(insertVal, curr)
+                return head
+            elif prev.val > curr.val:
+                if insertVal >= prev.val or insertVal <= curr.val:
+                    prev.next = Node(insertVal, curr)
+                    return head
+            prev = curr
+            curr = curr.next
+
+            if prev == head:
+                break
+                
+        prev.next = Node(insertVal, curr)
+        return head
+    ```
+    </details>
 1. [146. LRU Cache](https://leetcode.com/problems/lru-cache)  
    Intuition:     
     Need to support get and put, so naturally to use hash map. Also need to maintain order of items based on its most recent use time, so could use a double linked list, the front of the list is most recent visited item, and the end of the list the least recent useed item.  
