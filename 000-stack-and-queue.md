@@ -72,7 +72,7 @@
           return not stack
       ```
     </details>
-
+1.[921. Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid) 
 1. [1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)  
    Have a hash set for indexes to be removed. Use a stack for index of valid brackets.   
    1. If chracter is left bracket, push index into stack  
