@@ -113,7 +113,27 @@ Two slightly different approaches and the second one is easier to understand
            return checkPalindrome(0, len(s) - 1, n)       
       ```
    </details>
-   
+
+1. [2330. Valid Palindrome IV](https://leetcode.com/problems/valid-palindrome-iv)  
+   Two pointers, check mismatches greater than 2  
+   <details>
+
+      ```python
+       def makePalindrome(self, s: str) -> bool:
+           mismatches = 0
+           left = 0
+           right = len(s) - 1
+           while left < right:
+               if s[left] != s[right]:
+                   mismatches += 1
+                   if mismatches > 2:
+                       return False
+               left += 1
+               right -= 1
+           
+           return True     
+      ```
+   </details>
 1. [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)  
    One pointer point to unique number, and is initialized to 1. The other pointer point to elements of the array, starting from second element. If an element is not equal to its previous number, then advance the pointer fo unique number. In the end, return index of unique number  
    <details>
