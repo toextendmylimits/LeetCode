@@ -467,3 +467,20 @@
                    matrix[r][0] = 0    
       ```
     </details>
+1. [766. Toeplitz Matrix](https://leetcode.com/problems/toeplitz-matrix)  
+    Start from first row, for any element except the last one, check whether it's the same with the one on diagonal on next row, i.e. element at row + 1, and col + 1   
+
+    <details>
+
+      ```python
+    def isToeplitzMatrix(self, matrix: List[List[int]]) -> bool:
+        rowCount = len(matrix)
+        colCount = len(matrix[0])
+        for row in range(rowCount - 1):
+            for col in range(colCount - 1):
+                if matrix[row][col] != matrix[row + 1][col + 1]:
+                    return False
+        
+        return True
+      ```
+    </details>
