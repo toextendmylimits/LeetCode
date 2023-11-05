@@ -53,6 +53,27 @@
    1. State transition  
       if character at start is same as it at end, then if end - start == 1, or substring from start + 1 to end - 1 is palindrome, the the string from start to end is palindrome 
 
+1. [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings)
+    <details>
+        
+      ```python
+        def countSubstrings(self, s: str) -> int:
+            size = len(s)
+            isPalindrome = [[False] * size for _ in range(size)]
+            
+            count = 0
+            for start in range(size - 1, -1, -1):
+                for end in range(start, size, 1):
+                    if s[start] == s[end]:
+                        if end - start <= 2 or isPalindrome[start + 1][end - 1]:
+                            isPalindrome[start][end] = True
+    
+                    if isPalindrome[start][end]:
+                        count += 1
+            
+            return count
+      ```
+    </details>
 1.  [62. Unique Paths](https://leetcode.com/problems/unique-paths)  
    Since the robot can only move right and down, when it arrives at a point, it either arrives from left or above. If we use dp[i][j] for the number of unique paths to arrive at the point (i, j), then the state equation is dp[i][j] = dp[i][j - 1] + dp[i - 1][j]. Moreover, we have the base cases dp[0][j] = dp[i][0] = 1 for all valid i and j.  
     <details>
