@@ -110,7 +110,24 @@
             return dp[0][len(s) - 1]     
       ```
     </details>
+1. [1216. Valid Palindrome III](https://leetcode.com/problems/valid-palindrome-iii)    
+    <details>
+        
+      ```python
+        def isValidPalindrome(self, s: str, k: int) -> bool:
+            dp = [[0] * len(s) for _ in range(len(s))] 
+            for start in range(len(s) - 1, -1, -1):
+                dp[start][start] = 1
     
+                for end in range(start + 1, len(s)):
+                    if s[start] == s[end]:
+                        dp[start][end] = dp[start + 1][end - 1] + 2
+                    else:
+                        dp[start][end] = max(dp[start][end - 1], dp[start + 1][end])
+                        
+            return dp[0][len(s) - 1] + k >= len(s)  
+      ```
+    </details>    
 1.  [62. Unique Paths](https://leetcode.com/problems/unique-paths)  
    Since the robot can only move right and down, when it arrives at a point, it either arrives from left or above. If we use dp[i][j] for the number of unique paths to arrive at the point (i, j), then the state equation is dp[i][j] = dp[i][j - 1] + dp[i - 1][j]. Moreover, we have the base cases dp[0][j] = dp[i][0] = 1 for all valid i and j.  
     <details>
