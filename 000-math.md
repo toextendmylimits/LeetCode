@@ -1,4 +1,32 @@
 # Math
+1. [233. Number of Digit One](https://leetcode.com/problems/number-of-digit-one)  
+  The idea is to calculate occurrence of 1 on every digit. There are 3 scenarios, for example, if n = xyzdabc  
+   1. xyz * 1000                     if d == 0
+   1. xyz * 1000 + abc + 1           if d == 1
+   1. xyz * 1000 + 1000              if d > 1
+    <details>
+    
+    ```python
+    def countDigitOne(self, n: int) -> int:
+        if n <= 0:
+            return 0
+        
+        count = 0
+        quotient = n
+        divisor = 1
+        while quotient > 0:
+            digit = quotient % 10
+            quotient //= 10
+            count += quotient * divisor
+            if digit == 1:
+                count += n % divisor + 1
+            elif digit > 1:
+                count += divisor
+            divisor *= 10
+        
+        return count
+    ```
+   </details>   
 1. [670. Maximum Swap](https://leetcode.com/problems/maximum-swap)  
    Basic idea:
    1. Find a index i, where there is a increasing order. If there is no such i, then swap is not possible, return straight away  
