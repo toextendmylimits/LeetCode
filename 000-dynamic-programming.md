@@ -54,6 +54,7 @@
       if character at start is same as it at end, then if end - start == 1, or substring from start + 1 to end - 1 is palindrome, the the string from start to end is palindrome 
 
 1. [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings)
+   Approach 1 DP, Approach 2 extend from center
     <details>
         
       ```python
@@ -72,6 +73,23 @@
                         count += 1
             
             return count
+
+    def countSubstrings(self, s: str) -> int:
+        def extendPalindrome(s, left, right):
+            count = 0
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                count += 1
+                left -= 1
+                right += 1
+                
+            return count
+        
+        count = 0
+        for i in range(len(s)):
+            count += extendPalindrome(s, i, i)
+            count += extendPalindrome(s, i, i + 1)
+        
+        return count      
       ```
     </details>
 1.  [62. Unique Paths](https://leetcode.com/problems/unique-paths)  
