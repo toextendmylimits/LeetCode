@@ -388,7 +388,41 @@
    </details>
 
 1. [1740. Find Distance in a Binary Tree](https://leetcode.com/problems/find-distance-in-a-binary-tree)  
-   Find lower common ancestor first, and then find distance from that ancestor to each node(using BFS) and add them.
+   Find lower common ancestor first, and then find distance from that ancestor to each node(using BFS or DFS) and add them.
+   ```python
+        def findDistanceToRoot(root, nodeVal):
+            if not root:
+                return 0
+
+            queue = deque([root])
+            depth = 0
+            while queue:
+                levelSize = len(queue)
+                for i in range(levelSize):
+                    currNode = queue.popleft()
+                    if currNode.val == nodeVal:
+                        return depth
+                    if currNode.left:
+                        queue.append(currNode.left)
+                    if currNode.right:
+                        queue.append(currNode.right)
+                depth += 1
+            return depth
+
+   # DFS 
+        def findDistanceToRoot(root, target, distance):
+            if not root:
+                return -1
+            
+            if root.val == target:
+                return distance
+            
+            left = findDistanceToRoot(root.left, target, distance + 1)
+            if left != -1:
+                return left
+            
+            return findDistanceToRoot(root.right, target, distance + 1)
+   ```   
 1. [1644. Lowest Common Ancestor of a Binary Tree II](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree-ii)  
    P and q are not guaranteed to exist, so always need to explore both left and right tree, and mark whether p or q has been found
    <details>
