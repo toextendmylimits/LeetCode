@@ -80,7 +80,7 @@ Save presum and its first index. If currSum % k == 0, and i + 1 >= minLen, meani
    then generate a random number between 0 and 7 and return the arr[rnd]. This is solution is not really good though due to the space requirements it has (imagine a number beeing 2billion).  
 
    The solution here is similar but instead we construct the following array (accumulated sum)  
-{1, 6, 8} generate a number between 1-8 and say all numbers generated up to 1 is index 0. all numbers generated greater than 1 and up to 6 are index 1 and all numbers greater than 6 and up to 8 are index 2. After we generate a random number to find which index to return we use binary search.  
+{1, 6, 8} generate a number between 1-8 and say all numbers generated up to 1 is index 0. all numbers generated greater than 1 and up to 6 are index 1 and all numbers greater than 6 and up to 8 are index 2. After we generate a random number to find which index to return we use binary search. Beware the target index is the smallest number which is greater than the random number.
    <details>
 
     ```python
