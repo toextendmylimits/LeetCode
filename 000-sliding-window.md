@@ -1,5 +1,5 @@
 # Slidng window
-1. [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) 
+1. [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/)   
     Maintian a window that has at most k zeros.  
     <details>
 
