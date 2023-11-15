@@ -22,7 +22,8 @@
 
       ```
     </details>
-    
+1. [485. Max Consecutive Ones](https://leetcode.com/problems/max-consecutive-ones)  
+1. [487. Max Consecutive Ones II](https://leetcode.com/problems/max-consecutive-ones-ii)
 1. [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)  
     <details>
 
