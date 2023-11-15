@@ -205,6 +205,32 @@
     ```
    </details>
 
+1. [540. Single Element in a Sorted Array](https://leetcode.com/problems/single-element-in-a-sorted-array)  
+   Key observation is the array with odd element's length should be odd. So if we find a pair that has same elements, then the single element is on either its left side or right side depends on which side has odd length. The pair can be either (mid, mid + 1) or (mid - 1, mid).  
+   <details>
+      
+    ```python
+    def singleNonDuplicate(self, nums: List[int]) -> int:
+        left = 0
+        right = len(nums) - 1
+        while left <= right:
+            mid = left + (right - left) // 2
+            if mid + 1 < len(nums) and nums[mid + 1] == nums[mid]:
+                if (mid - left) % 2 == 0:
+                    left = mid + 2
+                else:
+                    right = mid - 1
+            elif mid >= 1 and nums[mid - 1] == nums[mid]:
+                if (mid - 1 - left) % 2 == 0:
+                    left = mid + 1
+                else:
+                    right = mid - 2
+            else:
+                return nums[mid]
+
+    ```
+   </details>
+   
 ## Difficult
 1. [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number)  
    ***Approach 1. Iterate over the array and compute the number of missing numbers in-between the elements.***    
