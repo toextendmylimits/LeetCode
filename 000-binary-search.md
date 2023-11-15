@@ -291,7 +291,7 @@
     ```
    </details>
 
-1. [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days) 
+1. [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days)   
    The capacity must be less than the total weights but greater than the maximum weight. 
 
    1. In the is_capacity_enough method, initially have needed days as 1, and total weight as 0. Then linear scan the weights, for each weight  
