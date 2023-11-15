@@ -236,20 +236,21 @@
    <details>
       
     ```python
-   def minEatingSpeed(self, piles: List[int], h: int) -> int:
-        def get_eat_time(piles, speed):
-            total = 0
+    def minEatingSpeed(self, piles: List[int], h: int) -> int:
+        def can_eat(piles, speed, hours):
+            hours_needed = 0
             for pile in piles:
-                total += math.ceil(pile / speed)
-            return total
+                hours_needed += math.ceil(pile / speed)
+                if hours_needed > hours:
+                    return False
+            return True
             
         left = 1
         right = max(piles)
         result = -1
         while left <= right:
             mid = left + (right - left) // 2
-            eat_time = get_eat_time(piles, mid)
-            if eat_time <= h:
+            if can_eat(piles, mid, h):
                 result = mid
                 right = mid - 1
             else:
