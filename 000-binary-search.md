@@ -259,6 +259,75 @@
 
     ```
    </details>
+
+1. [441. Arranging Coins](https://leetcode.com/problems/arranging-coins)   
+   The eating speed must be somewhere between 1 and max(piles). The time needed to east one pile is math.ceil(pile / eating speed). Use binary search.   
+   <details>
+      
+    ```python
+    def arrangeCoins(self, n: int) -> int:
+        row = 1
+        n -= row
+
+        while n >= 0:
+            row += 1
+            n -= row
+        
+        return row - 1
+        
+    # Binary Search
+    def arrangeCoins(self, n: int) -> int:
+        left = 1
+        right = n
+        result = -1
+        while left <= right:
+            mid = left + (right - left) // 2
+            if mid * (mid + 1) <= 2 * n:
+                result = mid
+                left = mid + 1
+            else:
+                right = mid - 1
+        return result
+    ```
+   </details>
+
+1. [1011. Capacity To Ship Packages Within D Days](https://leetcode.com/problems/capacity-to-ship-packages-within-d-days) 
+   The capacity must be less than the total weights but greater than the maximum weight. 
+
+   1. In the is_capacity_enough method, initially have needed days as 1, and total weight as 0. Then linear scan the weights, for each weight  
+   1. add it to total weight, if the total weight is greater than capacity, then another day is needed, and reset the total weight for this day.   
+   1. If needed days are greater than the days, return False  
+   1. In the end, return True  
+   <details>
+      
+    ```python
+   def shipWithinDays(self, weights: List[int], days: int) -> int:
+        def is_capacity_enough(weights, capacity, days):
+            days_needed = 1
+            total_weight = 0
+            for weight in weights:
+                total_weight += weight
+                if total_weight > capacity: 
+                    days_needed += 1
+                    total_weight = weight
+                    if days_needed > days:
+                        return False
+            return True
+
+        left = max(weights)
+        right = sum(weights)
+        result = -1
+        while left <= right:
+            mid = left + (right - left) // 2
+            if is_capacity_enough(weights, mid, days):
+                result = mid
+                right = mid - 1
+            else:
+                left = mid + 1
+        
+        return result
+    ```
+   </details>
    
 ## Difficult
 1. [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number)  
