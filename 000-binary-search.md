@@ -230,6 +230,35 @@
 
     ```
    </details>
+
+1. [875. Koko Eating Bananas](https://leetcode.com/problems/koko-eating-bananas)    
+   The eating speed must be somewhere between 1 and max(piles). The time needed to east one pile is math.ceil(pile / eating speed). Use binary search.   
+   <details>
+      
+    ```python
+   def minEatingSpeed(self, piles: List[int], h: int) -> int:
+        def get_eat_time(piles, speed):
+            total = 0
+            for pile in piles:
+                total += math.ceil(pile / speed)
+            return total
+            
+        left = 1
+        right = max(piles)
+        result = -1
+        while left <= right:
+            mid = left + (right - left) // 2
+            eat_time = get_eat_time(piles, mid)
+            if eat_time <= h:
+                result = mid
+                right = mid - 1
+            else:
+                left = mid + 1
+
+        return result
+
+    ```
+   </details>
    
 ## Difficult
 1. [1539. Kth Missing Positive Number](https://leetcode.com/problems/kth-missing-positive-number)  
