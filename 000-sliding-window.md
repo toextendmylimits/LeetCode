@@ -1,4 +1,28 @@
 # Slidng window
+1. [1004. Max Consecutive Ones III](https://leetcode.com/problems/max-consecutive-ones-iii/) 
+    Maintian a window that has at most k zeros.  
+    <details>
+
+      ```python
+    def longestOnes(self, nums: List[int], k: int) -> int:
+        maxLen = 0
+        left = 0
+        zeroCount = 0
+        for right in range(len(nums)):
+            if nums[right] == 0:
+                zeroCount += 1
+            
+            while zeroCount > k:
+                if nums[left] == 0:
+                    zeroCount -= 1
+                left += 1
+            
+            maxLen = max(maxLen, right - left + 1)
+        return maxLen
+
+      ```
+    </details>
+    
 1. [159. Longest Substring with At Most Two Distinct Characters](https://leetcode.com/problems/longest-substring-with-at-most-two-distinct-characters)  
     <details>
 
