@@ -232,36 +232,33 @@
 
       ```python
     def minWindow(self, s: str, t: str) -> str:
-            if len(s) < len(t):
-                return ""
-    
-            origCounter = Counter(t)
-            substrStart = -1
-            minLen = len(s) + 1
-            currCounter = Counter()
-            match = 0
-            left = 0
-            for right in range(len(s)):
-                rightChar = s[right]
-                if rightChar in origCounter:
-                    currCounter[rightChar] += 1
-                    if currCounter[rightChar] == origCounter[rightChar]:
-                        match += 1
-                
-                while match == len(origCounter):
-                    leftChar = s[left]
-                    currLen = right - left + 1
-                    if currLen < minLen:
-                        minLen = currLen
-                        substrStart = left
+        if len(s) < len(t):
+            return ""
+        min_len = len(s) + 1
+        counter_t = Counter(t)
+        curr_counter = Counter()
+        matches = 0
+        left = 0
+        result_start = -1
+        for right in range(len(s)):
+            if s[right] in counter_t:
+                curr_counter[s[right]] += 1
+                if curr_counter[s[right]] == counter_t[s[right]]:
+                    matches += 1
+            
+            while matches == len(counter_t):
+                curr_len = right - left + 1
+                if curr_len < min_len:
+                    min_len = curr_len
+                    result_start = left
                     
-                    left += 1
-                    if leftChar in origCounter:
-                        currCounter[leftChar] -= 1
-                        if currCounter[leftChar] < origCounter[leftChar]:
-                            match -= 1
-    
-            return "" if substrStart == -1 else s[substrStart : substrStart + minLen]
+                if s[left] in counter_t:
+                    if curr_counter[s[left]] == counter_t[s[left]]:
+                        matches -= 1
+                    curr_counter[s[left]] -= 1
+                left += 1
+
+        return "" if result_start == -1 else s[result_start : result_start + min_len]
       ```
     </details>
 1. [438. Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string)  
