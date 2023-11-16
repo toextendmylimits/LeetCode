@@ -298,3 +298,39 @@
             return result
       ```
     </details>
+
+1. [424. Longest Repeating Character Replacement](https://leetcode.com/problems/longest-repeating-character-replacement)  
+    The intuition is we should keep a chracter that appears more often, and replace the less frequent characters. So in a window of substring (left, right), the replace cost is: right - left + 1 - max freqency.
+
+    <details>
+
+      ```python
+        def findAnagrams(self, s: str, p: str) -> List[int]:
+            if len(s) < len(p):
+                return []
+            
+            result = []
+            origCounter = Counter(p)
+            currCounter = Counter()
+            match = 0
+            left = 0
+            for right in range(len(s)):
+                rightChar = s[right]
+                if rightChar in origCounter:
+                    currCounter[rightChar] += 1
+                    if currCounter[rightChar] == origCounter[rightChar]:
+                        match += 1
+                
+                while match == len(origCounter):
+                    if right - left + 1 == len(p):
+                        result.append(left)
+    
+                    leftChar = s[left]
+                    left += 1
+                    if leftChar in origCounter:
+                        currCounter[leftChar] -= 1
+                        if currCounter[leftChar] < origCounter[leftChar]:
+                            match -= 1
+            return result](https://leetcode.com/problems/longest-repeating-character-replacement)https://leetcode.com/problems/longest-repeating-character-replacement
+      ```
+    </details>
