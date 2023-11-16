@@ -1,4 +1,32 @@
 # Stack
+1. [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)  
+   Key observation:
+   1. If a number is greater than all its previous numbers, once this number is in the sliding window, then all previous numbers can never be max number and hence can be safely ignored
+   1. When a new number is add to a sliding window's left, then the number on the left should be discarded
+
+   The idea is use a deque which maintains index of numbers, and these numbers are in decreasing order, and the max number's index is always at the front of the queue. Linear scan the numbers,
+   1. If queue is not empty then remove all elements that are less than or equal to the number
+   1. Add the number's index to the stack
+   1. If front of the queue is outside of the scope of the current sliding window, remove it
+   1. If the window has k elements, i.e. index is greater or equal to k - 1, then add front of queue to the result
+    <details>
+      
+      ```python
+       def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
+           result = []
+           queue = deque()
+           for i in range(len(nums)):
+               while queue and nums[queue[-1]] <= nums[i]:
+                   queue.pop()         
+               queue.append(i)
+   
+               if queue[0] == i - k:
+                   queue.popleft()
+               if i >= k - 1:
+                   result.append(nums[queue[0]])
+           return result
+      ```
+    </details>   
 1. [636. Exclusive Time of Functions](https://leetcode.com/problems/exclusive-time-of-functions)  
    Key observation:
    1. The goal is to get each fucntion's total execution time, which is the sum of multiple execution of portion of the function.  
