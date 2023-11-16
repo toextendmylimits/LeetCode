@@ -78,6 +78,8 @@
 1. [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)  
     Sort all intervals by start time, then check whether ther is non-overlapping time interval
     Time complexity O(N logN), space complexity O(N)
+
+    The above approach doesn't use the attribute that each employee's schedule is sorteded already, so can be improved using heap or merge sort. But that's for later!!!
     <details>
         
         ```python
