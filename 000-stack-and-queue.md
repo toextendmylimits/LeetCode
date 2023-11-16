@@ -4,7 +4,7 @@
    1. If a number is greater than all its previous numbers, once this number is in the sliding window, then all previous numbers can never be max number and hence can be safely ignored
    1. When a new number is add to a sliding window's left, then the number on the left should be discarded
 
-   The idea is use a deque which maintains index of numbers, and these numbers are in decreasing order, and the max number's index is always at the front of the queue. Linear scan the numbers,
+   The idea is use a deque which maintains index of potential max number, and these numbers are in decreasing order, and the max number's index is always at the front of the queue. Linear scan the numbers,
    1. If queue is not empty then remove all elements that are less than or equal to the number
    1. Add the number's index to the stack
    1. If front of the queue is outside of the scope of the current sliding window, remove it
