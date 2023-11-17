@@ -123,7 +123,7 @@
     ```
     </details>   
 
-1. [2437. Number of Valid Clock Times](https://leetcode.com/problems/number-of-valid-clock-times/) 
+1. [2437. Number of Valid Clock Times](https://leetcode.com/problems/number-of-valid-clock-times/)   
     Check all the possible hours and minutes and count all the choices that match the pattern.  
     <details>
       
