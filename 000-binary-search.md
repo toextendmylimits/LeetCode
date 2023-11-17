@@ -1,4 +1,5 @@
 # Binary Search
+1. [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays)
 1. [704. Binary Search](https://leetcode.com/problems/binary-search)  
    <details>
       
