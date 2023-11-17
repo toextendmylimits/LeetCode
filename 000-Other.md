@@ -122,3 +122,31 @@
             return total    
     ```
     </details>   
+
+1. [2437. Number of Valid Clock Times](https://leetcode.com/problems/number-of-valid-clock-times/) 
+    Check all the possible hours and minutes and count all the choices that match the pattern.  
+    <details>
+      
+    ```python
+    def countTime(self, time: str) -> int:
+        def is_pattern_match(s, pattern):
+            for i in range(len(pattern)):
+                if pattern[i] != "?" and pattern[i] != s[i]:
+                    return False
+            return True
+        
+        def format_two_chars(n):
+            result = str(n)
+            return "0" + result if n < 10 else result
+        
+        def get_choices(limit, pattern):
+            choices = 0
+            for i in range(limit):
+                if is_pattern_match(format_two_chars(i), pattern):
+                    choices += 1
+            return choices
+        
+        hour_pattern, minute_pattern = time.split(":")
+        return get_choices(24, hour_pattern) * get_choices(60, minute_pattern)       
+    ```
+    </details>   
