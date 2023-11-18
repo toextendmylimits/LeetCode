@@ -1,4 +1,47 @@
 # String
+1. [68. Text Justification](https://leetcode.com/problems/text-justification)  
+   The idea is to find the words that can fit into a line. If there is only one word or the line is the last one, then it should be left justified. Otherwise, check how many spaces are there. If the spaces are even, distribute them evenly between words, else add one extra space between two words starting from the left.
+    <details>
+
+      ```python
+    def fullJustify(self, words: List[str], maxWidth: int) -> List[str]:
+        def get_spaces(n):
+            return " " * n
+
+        i = 0
+        result = []
+        while i < len(words):
+            len_line_no_justify = len(words[i])
+            j = i + 1
+            while j < len(words) and len_line_no_justify + 1 + len(words[j]) <= maxWidth:
+                len_line_no_justify += 1 + len(words[j])
+                j += 1
+            
+            line = [words[i]]
+            if j == i + 1 or j == len(words):
+                for k in range(i + 1, j):
+                    line.append(get_spaces(1))
+                    line.append(words[k])
+            
+                line.append(get_spaces(maxWidth - len_line_no_justify))
+            else:
+                gaps = j - i - 1
+                total_spaces = maxWidth - (len_line_no_justify - gaps)
+                even_spaces_in_gap, extra_spaces = divmod(total_spaces, gaps)
+
+                for k in range(i + 1, j):
+                    if extra_spaces > 0:
+                        line.append(get_spaces(even_spaces_in_gap + 1))
+                        line.append(words[k]) 
+                        extra_spaces -= 1
+                    else:
+                        line.append(get_spaces(even_spaces_in_gap))
+                        line.append(words[k])
+            i = j
+            result.append("".join(line))
+        return result
+      ```
+    </details>      
 1. [408. Valid Word Abbreviation](https://leetcode.com/problems/valid-word-abbreviation)  
    Two pointers.   
     1. If j at abbr is alphabetic character, then check whether it is the same character at i position of word; If not, return False; If so, advance both i and j  
