@@ -1,5 +1,6 @@
 # Tree DFS
 ## Easy
+1. [1254. Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands)  
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
    Recursive traverse the tree. Iterative traversal is also provided for reference.   
    <details> 
