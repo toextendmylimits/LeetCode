@@ -1,4 +1,26 @@
 # String
+1. [1592. Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words)
+   The idea is to find the words and spaces.  
+    <details>
+
+      ```python
+    def reorderSpaces(self, text: str) -> str:
+        words = text.split()
+        total_spaces = text.count(" ")     
+        gaps = len(words) - 1
+        if gaps == 0:
+            return words[0] + (" " * total_spaces)
+
+        even_spaces_in_gap, exra_spaces = divmod(total_spaces, gaps)
+        line = [words[0]]
+        for i in range(1, len(words)):
+            line.append(" " * even_spaces_in_gap)
+            line.append(words[i])
+        
+        line.append(" " * exra_spaces)
+        return "".join(line)
+      ```
+    </details>   
 1. [68. Text Justification](https://leetcode.com/problems/text-justification)  
    The idea is to find the words that can fit into a line. If there is only one word or the line is the last one, then it should be left justified. Otherwise, check how many spaces are there. If the spaces are even, distribute them evenly between words, else add one extra space between two words starting from the left.
     <details>
