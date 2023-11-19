@@ -1,4 +1,28 @@
 # Stack
+1. [394. Decode String](https://leetcode.com/problems/decode-string/)  
+    <details>
+      
+      ```python
+    def decodeString(self, s: str) -> str:
+        num_stack = []
+        str_stack = []
+        num = 0
+        result = ""
+        for c in s:
+            if c.isdigit():
+                num = num * 10 + int(c)
+            elif c == "[":
+                num_stack.append(num)
+                num = 0
+                str_stack.append(result)
+                result = ""
+            elif c == "]":
+                result = str_stack.pop() + result * num_stack.pop()
+            else:
+                result += c
+        return result
+      ```
+    </details>  
 1. [239. Sliding Window Maximum](https://leetcode.com/problems/sliding-window-maximum)  
    Key observation:
    1. If a number is greater than all its previous numbers, once this number is in the sliding window, then all previous numbers can never be max number and hence can be safely ignored
