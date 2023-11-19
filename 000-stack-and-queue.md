@@ -338,6 +338,7 @@
 ## TO re-visit later
 1. [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks)  
 1. [155. Min Stack](https://leetcode.com/problems/min-stack)  
+1. [2034. Stock Price Fluctuation](https://leetcode.com/problems/stock-price-fluctuation)  
 
 # Queue
 1.[225. Implement Stack using Queues](https://leetcode.com/problems/implement-queue-using-stacks)  
