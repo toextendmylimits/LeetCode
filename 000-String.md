@@ -1,5 +1,5 @@
 # String
-1. [1592. Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words)
+1. [1592. Rearrange Spaces Between Words](https://leetcode.com/problems/rearrange-spaces-between-words)  
    The idea is to find the words and spaces.  
     <details>
 
