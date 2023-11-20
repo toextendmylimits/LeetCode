@@ -253,7 +253,7 @@ One pointer called resultIdx point to unique number, and is initialized to 1. Th
      count += right - left
      left += 1
    ```
-1. [3 Sum Closet](https://leetcode.com/problems/3sum-closes)  
+1. [3 Sum Closet](https://leetcode.com/problems/3sum-closest)  
    keep the minimum difference of two sum to target
    ```
     currDiff = total - target
