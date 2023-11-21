@@ -431,7 +431,7 @@ Space complexity: O(H) for stack call while H is height of tree. In worst case, 
    Space complexity is O(N)    
    <details>
 
-       ```python
+      ```python
           def partition(self, s: str) -> List[List[str]]:
               def isPalindrome(s):
                   return s == s[::-1]
@@ -452,5 +452,5 @@ Space complexity: O(H) for stack call while H is height of tree. In worst case, 
                             path.pop()
               backtrack(0, [])
               return result
-       ```
+      ```
    </details>
