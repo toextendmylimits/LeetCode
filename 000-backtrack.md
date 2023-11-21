@@ -427,7 +427,7 @@ Space complexity: O(H) for stack call while H is height of tree. In worst case, 
     </details>
 1. [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)  
    Each step, partition the substrings from start position to all possible end positions  
-   Time complexity is O(2^N * N) as O(2^N ) for all possible substrings(Each letter can be in the list of substrings or not), and O(N) for copying each combination
+   Time complexity is O(2^N * N) as O(2^N ) for all possible partitions(Each letter can either be in the partitions or not), and O(N) for copying each combination
    Space complexity is O(N)    
    <details>
 
