@@ -403,7 +403,7 @@ Space complexity: O(H) for stack call while H is height of tree. In worst case, 
    Space complexity is O(N)  
     <details>
 
-       ```python
+      ```python
        def findSubsequences(self, nums: List[int]) -> List[List[int]]:
            result = []
            def backtrack(startIndex, path):
@@ -423,7 +423,7 @@ Space complexity: O(H) for stack call while H is height of tree. In worst case, 
                    path.pop()
            backtrack(0, [])
            return result
-       ```
+      ```
     </details>
 1. [131. Palindrome Partitioning](https://leetcode.com/problems/palindrome-partitioning)  
    Each step, partition the substrings from start position to all possible end positions  
