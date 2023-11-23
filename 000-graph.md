@@ -1,5 +1,6 @@
 # Graph
 ## DFS
+1.  [1254. Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands)
 1.  [733. Flood Fill](https://leetcode.com/problems/flood-fill)  
     Beware the edge case when original color is same with replacement color, as it leads to infinite recursive stack call, so should return image immediately if original color is same as replacement color
     <details>
