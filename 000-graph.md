@@ -11,22 +11,35 @@
     <details>
 
       ```python
-      def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
-          origColor = image[sr][sc]
-          if origColor == color:
-              return image
-  
-          def dfs(image, row, col, origColor, newColor):
-              if row >= len(image) or row < 0 or col >= len(image[0]) or col < 0 or image[row][col] != origColor:
-                  return
-  
-              image[row][col] = newColor
-              offsets = [(-1, 0), (0, 1), (1, 0), (0, -1)]
-              for offset in offsets:
-                  dfs(image,row + offset[0], col + offset[1], origColor, newColor)
-                   
-          dfs(image, sr, sc, image[sr][sc], color)
-          return image   
+      # BFS
+        def is_closed_island(row, col):
+            queue = deque([(row, col)])
+            grid[row][col] = -1
+            result = True
+            while queue:
+                curr_row, curr_col = queue.popleft()
+                for row_offset, col_offset in [(-1, 0), (0, 1), (1, 0), (0, -1)]:
+                    next_row = curr_row + row_offset
+                    next_col = curr_col + col_offset
+                    if next_row < 0 or next_row >= len(grid) or next_col < 0 or next_col >= len(grid[0]):
+                        result = False
+                    elif grid[next_row][next_col] == 0:
+                        queue.append((next_row, next_col))
+                        grid[next_row][next_col] = -1
+            return result
+          # DFS
+          def is_closed_island(row, col):
+            if row < 0 or row >= len(grid) or col < 0 or col >= len(grid[0]):
+                return False
+            
+            if grid[row][col] != 0:
+                return True
+            grid[row][col] = 2
+            result = True
+            for row_offset, col_offset in [(-1, 0), (0, 1), (1, 0), (0,-1)]:
+                if not is_closed_island(row + row_offset, col + col_offset):
+                    result = False
+            return result
       ```
     </details>
 1.  [733. Flood Fill](https://leetcode.com/problems/flood-fill)  
