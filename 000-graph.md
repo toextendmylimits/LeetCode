@@ -44,6 +44,9 @@
             return result
       ```
     </details>
+
+1.  [130. Surrounded Regions](https://leetcode.com/problems/surrounded-regions)   
+    The idea is to linear scan all the border cells. If the cell is O, then trigger DFS, and mark this cell and all the connected cells to E. In the end, liner scan all cells, convert O to X, and E to O.  
 1.  [733. Flood Fill](https://leetcode.com/problems/flood-fill)  
     Beware the edge case when original color is same with replacement color, as it leads to infinite recursive stack call, so should return image immediately if original color is same as replacement color
     <details>
