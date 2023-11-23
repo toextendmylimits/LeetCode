@@ -1,6 +1,34 @@
 # Graph
 ## DFS
-1.  [1254. Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands)
+1.  [1254. Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands)  
+    If an island is surrounded by water, then all the island cell is surrounded by water, i.e. not on the boundary of the grid.  
+
+    The idea is for a land cell, check whether its connecting land cells are surrounded by water. In each recursion call,   
+    1. if the cell goes over the boundary, then return False.  
+    1. If the cell is not land, then return True  
+    1. Then check all the connecting 4 cells, if any cell is not surrounded by water, return False  
+    1. In the end, return True  
+    <details>
+
+      ```python
+      def floodFill(self, image: List[List[int]], sr: int, sc: int, color: int) -> List[List[int]]:
+          origColor = image[sr][sc]
+          if origColor == color:
+              return image
+  
+          def dfs(image, row, col, origColor, newColor):
+              if row >= len(image) or row < 0 or col >= len(image[0]) or col < 0 or image[row][col] != origColor:
+                  return
+  
+              image[row][col] = newColor
+              offsets = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+              for offset in offsets:
+                  dfs(image,row + offset[0], col + offset[1], origColor, newColor)
+                   
+          dfs(image, sr, sc, image[sr][sc], color)
+          return image   
+      ```
+    </details>
 1.  [733. Flood Fill](https://leetcode.com/problems/flood-fill)  
     Beware the edge case when original color is same with replacement color, as it leads to infinite recursive stack call, so should return image immediately if original color is same as replacement color
     <details>
