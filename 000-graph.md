@@ -7,7 +7,9 @@
     1. if the cell goes over the boundary, then return False.  
     1. If the cell is not land, then return True  
     1. Then check all the connecting 4 cells, if any cell is not surrounded by water, return False  
-    1. In the end, return True  
+    1. In the end, return True
+
+    Can be done both BFS and DFS.
     <details>
 
       ```python
