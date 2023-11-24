@@ -62,7 +62,8 @@
     </details>
 1. [1136. Parallel Courses](https://leetcode.com/problems/parallel-courses)  
 1. [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies)  
-    Key observation is that recipe depends on ingredients so it's a typical toplogical sort problem. First build a graph that represent the dependancy relationship of ingredients and recipes. 
+    Key observation is that recipe depends on ingredients so it's a typical toplogical sort problem.  
+ 
 1. [269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary)  
     The key is to find lexical order of two letters. This can be done by comparing letters two adjacent words, if for same postion, there is a mismatch, then the lexical order is determined for these two letters.  
     Beware the edge case that a words contains its next, then should return immediately such as "abc" "ab"
