@@ -62,7 +62,7 @@
     </details>
 1. [1136. Parallel Courses](https://leetcode.com/problems/parallel-courses)  
 1. [2115. Find All Possible Recipes from Given Supplies](https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies)  
-    Key observation is that recipe depends on ingredients so it's a typical toplogical sort problem.  The idea is to check whether existing supplies can be recipe directly, if so add the recipe to the result. Then for each supply, check the recipe that it can be part of, if that recipe has all ingredients, then add it to be new supplies, and so on.... So we need a map to store recipe and its ingredient counts, another map store ingredient and recipes it is part of.  
+    Key observation is that recipe depends on ingredients so it's a typical toplogical sort problem.  The idea is to check whether existing supplies can be recipe directly, if so add the recipe to the result. Then for each supply, check the recipe that it can be part of, if that recipe has all ingredients, then it can be created and be part of new supplies, and so on.... So we need a map to store recipe and its ingredient counts, another map store ingredient and recipes it is part of.  
  
 1. [269. Alien Dictionary](https://leetcode.com/problems/alien-dictionary)  
     The key is to find lexical order of two letters. This can be done by comparing letters two adjacent words, if for same postion, there is a mismatch, then the lexical order is determined for these two letters.  
