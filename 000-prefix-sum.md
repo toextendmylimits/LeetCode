@@ -1,4 +1,5 @@
 # Prefix Sum
+1. [238. Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self)  
 1. [560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k)  
 Key observation is a subarray of index i to j (exclusive) is the difference of subarray (0, i - 1) to (0, j). To find whether a subarray sum is k, we can find
 whether there are two subarrays starting with first element, and their difference is k. If we save the prefix sum and its frequency into hash map, then to find whether prefixSum  
