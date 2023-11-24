@@ -1,4 +1,37 @@
 # Dynamic programming
+1.  [2713. Maximum Strictly Increasing Cells in a Matrix](https://leetcode.com/problems/maximum-strictly-increasing-cells-in-a-matrix)  
+    A brute force way is probably find all the increasing sequence and return the longest one's length.  
+
+    Very difficult. One key observation is probably it's good idea to start from the smallest numbers, given we are more likely to find a increasing sequence. For a given cell, the longest sequence reaching it depends on the longest sequence that can reach to elements which are smaller than it in the row, and the longest sequence that can reach to elements which are smaller than it in the column because we can expand the sequence by one.  
+
+    So the idea is to use dynamic programming. Define dp[i][j] represent longest sequence that can reach position i, j, and have a hash map for num value and list of positions. Define an array for longest sequence in each row and column. Sort the hash map by number in ascending orders. From the smallest number, update dp[i][j] = max(max_seq_rows[i], max_seq_cols[j], then update the longest sequence in relevant row and column
+    <details>
+        
+      ```python
+        def maxIncreasingCells(self, mat: List[List[int]]) -> int:
+            rows = len(mat)
+            cols = len(mat[0])
+            dp = [[0 for c in range(cols)] for r in range(rows)]
+            num_positions_map = defaultdict(list)
+            for r in range(rows):
+                for c in range(cols):
+                    num_positions_map[mat[r][c]].append((r, c))
+            
+            max_seq_rows = [0] * rows
+            max_seq_cols = [0] * cols
+            result = 0
+            for num in sorted(num_positions_map.keys()):
+                positions = num_positions_map[num]
+                for r, c in positions:
+                    dp[r][c] = max(max_seq_rows[r], max_seq_cols[c]) + 1
+                
+                for r, c in positions:
+                    max_seq_rows[r] = max(max_seq_rows[r], dp[r][c])
+                    max_seq_cols[c] = max(max_seq_cols[c], dp[r][c])
+                    result = max(result, max_seq_rows[r], max_seq_cols[c])
+            return result
+      ```
+    </details>  
 1.  [70. Climbing Stairs](https://leetcode.com/problems/climbing-stairs)  
     Let curr represent distinct ways to reach current step, prev1 represent distinct ways to reach to previous step, and prev2 represent distinct ways to reach to previous 2 steps, then
     curr = prev1 + prev2 as from previous step, user can jump one step and reach current step, and from previous 2 step, user can jump two steps and reach current step
