@@ -1,5 +1,6 @@
 # Graph
-## DFS
+## DFS1. 
+1. [302. Smallest Rectangle Enclosing Black Pixels](https://leetcode.com/problems/longest-increasing-path-in-a-matrix/)
 1.  [1254. Number of Closed Islands](https://leetcode.com/problems/number-of-closed-islands)  
     If an island is surrounded by water, then all the island cell is surrounded by water, i.e. not on the boundary of the grid.  
 
