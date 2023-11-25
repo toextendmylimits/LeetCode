@@ -320,7 +320,7 @@ One pointer called resultIdx point to unique number, and is initialized to 1. Th
       ```
    </details>
    ```
-1. [Move Zeroes](https://leetcode.com/problems/move-zeroes)  
+1. [285. Move Zeroes](https://leetcode.com/problems/move-zeroes)  
    ***My own approach - Find first zero idx, and then liner scan the array starting from the element after zero. If zero, do othing. Otherwise swap zero with non-zero, and update idx for zero***  
    ***Approach 1 - Two steps, first move all nonzeros to the front, then fill the rest with zeros***
 
