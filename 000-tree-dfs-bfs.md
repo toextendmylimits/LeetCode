@@ -45,6 +45,8 @@
    ***Time complexity*** is O(N) as all nodes are visited once  
    ***Space complexity*** is O(logN) for recursion call stack as the tree is balanced
 1. [109. Convert Sorted List to Binary Search Tree](https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree)  
+   Key observation is: We know that the leftmost element in the inorder traversal has to be the head of our given linked list. Similarly, the next element in the inorder traversal will be the second element in the linked list and so on. This is made possible because the initial list given to us is sorted in ascending order.
+   
    Approach 1 Convert the linked list to a array of values, and then build recursively  
    Approach 2 Have a global variable point to head of linked list, and then do an inorder travesal recursively  
    <details> 
