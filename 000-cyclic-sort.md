@@ -42,7 +42,8 @@
       ```
    </details>
 
-1. [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)  
+1. [41. First Missing Positive](https://leetcode.com/problems/first-missing-positive/)
+   Key observation is that the first missing number must be from 1 to len(nums) + 1. If from 1 to len, any number is missing, then it is less than len + 1. Or no number is missing from 1 to len, then len + 1 is the missing one.  
    The idea is to place an element at the right position nums[i] - 1, and then if i != nums[i] - 1, i + 1 is missing, and in the end return len(nums) + 1
 
    TC O(N), SC O(1)
