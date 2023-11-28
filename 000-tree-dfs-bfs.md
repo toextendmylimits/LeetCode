@@ -623,7 +623,7 @@
    ```
    </details>
 ## Hard
-1. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal)  
+1. [297. Serialize and Deserialize Binary Tree](https://leetcode.com/problems/serialize-and-deserialize-binary-tree)  
    ***Preorder traversal. Need to memorize the code***
    <details>
 
