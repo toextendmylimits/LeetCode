@@ -1,5 +1,6 @@
 # Greedy
 1. [939. Minimum Area Rectangle](https://leetcode.com/problems/minimum-area-rectangle)
+1. [2013. Detect Squares](https://leetcode.com/problems/detect-squares)
 1. [954. Array of Doubled Pairs](https://leetcode.com/problems/array-of-doubled-pairs/)
 1. [2007. Find Original Array From Doubled Array](https://leetcode.com/problems/find-original-array-from-doubled-array) 
 1. [1029. Two City Scheduling](https://leetcode.com/problems/two-city-scheduling)  
