@@ -172,9 +172,11 @@
    ```
    </details>
 1. [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)  
+   Can be done both DFS and BFS. Pay extra attention to BFS
    <details>
       
    ```python
+   # DFS
    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
         if not root:
             return None
@@ -185,6 +187,21 @@
         root.right = invertLeft
 
         return root
+
+   # BFS
+    def invertTree(self, root: Optional[TreeNode]) -> Optional[TreeNode]:
+        if not root:
+            return None
+        
+        queue = deque([root])
+        while queue:
+            currNode = queue.popleft()
+            currNode.left, currNode.right = currNode.right, currNode.left
+            for child in [currNode.left, currNode.right]:
+                if child:
+                    queue.append(child)
+        
+        return root   
    ```
    </details>
 1. [112. Path Sum](https://leetcode.com/problems/path-sum)  
