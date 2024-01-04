@@ -131,7 +131,8 @@
    SC - O(num of nodes) BFS will have to store at least an entire level of the tree in the queue (sample queue implementation). With a perfect fully balanced binary tree, this would be (n/2 + 1) nodes (the very last level).
 
 1. [129. Sum Root to Leaf Numbers](https://leetcode.com/problems/sum-root-to-leaf-numbers)      
-   Backtrack. Have global variable total, then update total if reaching leaf
+   Backtrack. Have global variable total, then update total if reaching leaf.  
+   Actually no need for global variable as the sum can be returned in recursive call  
 
    <details> 
      
