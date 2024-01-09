@@ -265,6 +265,9 @@ One pointer called resultIdx point to unique number, and is initialized to 1. Th
     else:
         right -= 1
    ```
+1. [18. 4Sum](https://leetcode.com/problems/4sum)  
+   Beware check: j > i + 1 and nums[j] == nums[j - 1] to avoid duplicates
+   
 1. [Sort Colors](https://leetcode.com/problems/sort-colors)  
    3 pointers, left and mid both increase by 1 if mid value is 0, right decrease by 1 if mid value is 2    
    <details>
