@@ -73,6 +73,8 @@
 
       ```
     </details>
+1. [213. House Robber II](https://leetcode.com/problems/house-robber-ii)
+1. [337. House Robber III](https://leetcode.com/problems/house-robber-iii/)|
 1. [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring)  
    The problem can be broken down into subproblems which are reused several times. Overlapping subproblems lead us to Dynamic Programming.  
    We decompose the problem as follows:  
