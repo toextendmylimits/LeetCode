@@ -19,6 +19,8 @@
    Don't forget while loop. Practice a few more times.
 7. [3 Sum Closet](https://leetcode.com/problems/3sum-closest)
 8. [285. Move Zeroes](https://leetcode.com/problems/move-zeroes)  
-   Don't forget to return immediately when there is non zero.    
+   Don't forget to return immediately when there is non zero.
+## DFS/BFS
+
 ## Dynamic programming
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
