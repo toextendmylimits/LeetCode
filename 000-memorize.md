@@ -7,4 +7,5 @@
 3. [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)
 
 ## Two pointers
-1. [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome)
+1. [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome)  
+2. [1213. Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays)     Still not clear.  Practice a few more times.
