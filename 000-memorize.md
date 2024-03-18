@@ -23,6 +23,7 @@
 ## DFS/BFS
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
    Don't include equal when go to left or right brach.
-   
+1. [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
+2.   
 ## Dynamic programming
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
