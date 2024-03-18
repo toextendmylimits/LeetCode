@@ -1,5 +1,6 @@
 # Array
-1. [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)  
+1. [724. Find Pivot Index](https://leetcode.com/problems/find-pivot-index)
+2. [217. Contains Duplicate](https://leetcode.com/problems/contains-duplicate)  
     ***Approach 1 - Use hash set check whether hash set length is same to nums length***
     <details>
 
