@@ -24,6 +24,8 @@
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
    Don't include equal when go to left or right brach.
 1. [226. Invert Binary Tree](https://leetcode.com/problems/invert-binary-tree)
-2. [112. Path Sum](https://leetcode.com/problems/path-sum)  
+2. [112. Path Sum](https://leetcode.com/problems/path-sum)
+3. [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)
+   Inorder with global variable.
 ## Dynamic programming
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
