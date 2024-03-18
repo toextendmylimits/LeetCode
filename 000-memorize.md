@@ -15,6 +15,7 @@
    Two ways
 6. [3 Sum Smaller](https://leetcode.com/problems/3sum-smaller)  
    Don't forget while loop. Practice a few more times.
-   
+7. [3 Sum Closet](https://leetcode.com/problems/3sum-closest)
+8.    
 ## Dynamic programming
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
