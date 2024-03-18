@@ -21,6 +21,8 @@
 8. [285. Move Zeroes](https://leetcode.com/problems/move-zeroes)  
    Don't forget to return immediately when there is non zero.
 ## DFS/BFS
-
+1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
+   Don't include equal when go to left or right brach.
+   
 ## Dynamic programming
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
