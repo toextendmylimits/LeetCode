@@ -29,7 +29,9 @@
 4. [49. Group Anagrams](https://leetcode.com/problems/group-anagrams)
 
 ## Priority Queue
-[973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
+1. [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
+1. [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)  
+   Push key of hash map to priority queue  
 
 ## DFS/BFS
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
