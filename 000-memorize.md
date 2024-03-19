@@ -20,6 +20,10 @@
 7. [3 Sum Closet](https://leetcode.com/problems/3sum-closest)
 8. [285. Move Zeroes](https://leetcode.com/problems/move-zeroes)  
    Don't forget to return immediately when there is non zero.
+
+## HashMap
+1. [1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array)
+2. 
 ## DFS/BFS
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
    Don't include equal when go to left or right brach.
