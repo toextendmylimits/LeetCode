@@ -25,6 +25,7 @@
 1. [1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array)
 2. [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string)
 3. [249. Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings)
+4. [49. Group Anagrams](https://leetcode.com/problems/group-anagrams)
 
 
 ## DFS/BFS
