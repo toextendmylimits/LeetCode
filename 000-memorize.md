@@ -43,6 +43,7 @@
 
 ## Merge Intervals
 1. [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)
-   Use treemap. 
+   Use treemap.
+1. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 ## Dynamic programming
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
