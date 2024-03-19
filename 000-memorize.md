@@ -28,6 +28,8 @@
 3. [249. Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings)
 4. [49. Group Anagrams](https://leetcode.com/problems/group-anagrams)
 
+## Priority Queue
+[973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
 
 ## DFS/BFS
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
