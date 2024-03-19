@@ -23,7 +23,7 @@
 
 ## HashMap
 1. [1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array)
-2. 
+2. [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string) 
 ## DFS/BFS
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
    Don't include equal when go to left or right brach.
