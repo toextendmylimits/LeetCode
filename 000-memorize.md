@@ -33,6 +33,8 @@
 1. [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)  
    Push key of hash map to priority queue  
 
+## Stack and Queue
+1. [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses)
 ## DFS/BFS
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
    Don't include equal when go to left or right brach.
