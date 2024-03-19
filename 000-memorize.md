@@ -39,7 +39,8 @@
 3. [1249. Minimum Remove to Make Valid Parentheses](https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/)  
    Don't forget to check whether character is close bracket first before adding invalid index
 4. [150. Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation)
-5.    
+5. [227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)  
+   Double check the and condition in while loop, not whitespace and not digit, or last index. To get digit value, use char - '0'.
 ## DFS/BFS
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
    Don't include equal when go to left or right brach.
