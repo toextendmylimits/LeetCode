@@ -46,6 +46,8 @@
    Use treemap.
 1. [Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 2. [57. Insert Interval](https://leetcode.com/problems/insert-interval/)  
-   Not familiar with this.  
+   Not familiar with this.
+1. [435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals)  
+   Sort by ending time. Compare each start with previous ending time.  
 ## Dynamic programming
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
