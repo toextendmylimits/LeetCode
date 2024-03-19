@@ -7,7 +7,8 @@
 3. [14. Longest Common Prefix](https://leetcode.com/problems/longest-common-prefix)
 4. [Reverse Words in a String](https://leetcode.com/problems/reverse-words-in-a-string)  
    Have a quick look.
-
+5. [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)
+6. 
 ## Two pointers
 1. [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome)  
 2. [1213. Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays)     Still not clear.  Practice a few more times.
