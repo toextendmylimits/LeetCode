@@ -40,5 +40,9 @@
 2. [112. Path Sum](https://leetcode.com/problems/path-sum)
 3. [230. Kth Smallest Element in a BST](https://leetcode.com/problems/kth-smallest-element-in-a-bst)
    Inorder with global variable.
+
+## Merge Intervals
+1. [253. Meeting Rooms II](https://leetcode.com/problems/meeting-rooms-ii)
+   Use treemap. 
 ## Dynamic programming
 1. [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock)  
