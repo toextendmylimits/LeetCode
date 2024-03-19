@@ -42,7 +42,9 @@
 5. [227. Basic Calculator II](https://leetcode.com/problems/basic-calculator-ii)  
    Double check the and condition in while loop, not whitespace and not digit, or last index. To get digit value, use char - '0'.
 6. [155. Min Stack](https://leetcode.com/problems/min-stack)  
-   Don't forget to check whether min stack is empty before comparing value to the top element.   
+   Don't forget to check whether min stack is empty before comparing value to the top element.
+7. [394. Decode String](https://leetcode.com/problems/decode-string/)
+   Should practice more times. When reaching ], only update current result  
 ## DFS/BFS
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
    Don't include equal when go to left or right brach.
