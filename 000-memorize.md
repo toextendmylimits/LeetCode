@@ -23,7 +23,9 @@
    Don't forget to return immediately when there is non zero.
 
 ## Linked List
-1. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) 
+1. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
+2. [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)  
+   Check whether even is not null and even.next is not null in while loop
 ## HashMap
 1. [1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array)
 2. [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string)
