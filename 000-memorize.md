@@ -26,6 +26,8 @@
 1. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list)
 2. [328. Odd Even Linked List](https://leetcode.com/problems/odd-even-linked-list)  
    Check whether even is not null and even.next is not null in while loop
+3. [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs)  
+   Maintain prev.  
 ## HashMap
 1. [1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array)
 2. [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string)
