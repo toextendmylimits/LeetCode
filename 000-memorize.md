@@ -22,6 +22,8 @@
 8. [285. Move Zeroes](https://leetcode.com/problems/move-zeroes)  
    Don't forget to return immediately when there is non zero.
 
+## Linked List
+1. [Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list) 
 ## HashMap
 1. [1331. Rank Transform of an Array](https://leetcode.com/problems/rank-transform-of-an-array)
 2. [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string)
