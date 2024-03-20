@@ -44,7 +44,12 @@
 6. [155. Min Stack](https://leetcode.com/problems/min-stack)  
    Don't forget to check whether min stack is empty before comparing value to the top element.
 7. [394. Decode String](https://leetcode.com/problems/decode-string/)
-   Should practice more times. When reaching ], only update current result  
+   Should practice more times. When reaching ], only update current result
+
+## Greedy
+1. [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)
+2. [55. Jump Game](https://leetcode.com/problems/jump-game/)
+3. 
 ## DFS/BFS
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
    Don't include equal when go to left or right brach.
