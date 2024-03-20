@@ -49,7 +49,8 @@
 ## Greedy
 1. [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray)
 2. [55. Jump Game](https://leetcode.com/problems/jump-game/)
-3. 
+3. [45. Jump Game II](https://leetcode.com/problems/jump-game-ii)  
+   Very difficult. Just memorize the code.  
 ## DFS/BFS
 1. [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst)  
    Don't include equal when go to left or right brach.
