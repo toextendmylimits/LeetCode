@@ -11,3 +11,6 @@
 ## Linked List
 1. [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)  
    Don't memorize the code. Try to practice a few times.  
+
+## Merge Intervals
+1. [57. Insert Interval](https://leetcode.com/problems/insert-interval/)
