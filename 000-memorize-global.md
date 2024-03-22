@@ -3,8 +3,8 @@
 1. [75. Sort Colors](https://leetcode.com/problems/sort-colors) 
 
 ## Binary Serach
-1. [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
-
+1. [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)  
+   Difficult. Should try to understand the code.  
 ## Cyclic Sort
 1. [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
 
