@@ -21,4 +21,5 @@
    Use priority queue
 
 ## Greedy
-1. [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)
+1. [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)  
+   Practice a few times.  
