@@ -19,3 +19,6 @@
    
 4. [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)  
    Use priority queue
+
+## Greedy
+1. [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)
