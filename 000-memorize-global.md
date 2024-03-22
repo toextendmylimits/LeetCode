@@ -20,6 +20,9 @@
 4. [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)  
    Use priority queue
 
+## BFS
+1. [116. Populating Next Right Pointers in Each Node](https://leetcode.com/problems/populating-next-right-pointers-in-each-node)  
+   Check while leftMost.left != null in the outer while loop.  
 ## Greedy
 1. [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)  
    Practice a few times.  
