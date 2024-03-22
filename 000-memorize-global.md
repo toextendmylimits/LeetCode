@@ -14,3 +14,5 @@
 
 ## Merge Intervals
 1. [57. Insert Interval](https://leetcode.com/problems/insert-interval/)
+2. [759. Employee Free Time](https://leetcode.com/problems/employee-free-time)  
+   Use priority queue
