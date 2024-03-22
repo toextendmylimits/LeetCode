@@ -9,4 +9,5 @@
 1. [287. Find the Duplicate Number](https://leetcode.com/problems/find-the-duplicate-number)
 
 ## Linked List
-1. [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)
+1. [234. Palindrome Linked List](https://leetcode.com/problems/palindrome-linked-list)  
+   Don't memorize the code. Try to practice a few times.  
