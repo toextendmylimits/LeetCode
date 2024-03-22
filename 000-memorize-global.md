@@ -23,3 +23,6 @@
 ## Greedy
 1. [621. Task Scheduler](https://leetcode.com/problems/task-scheduler)  
    Practice a few times.  
+## Heap
+1. [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)  
+   Remember to sort string in priority queue. Beware the end result should be in right order.
