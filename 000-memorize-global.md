@@ -26,3 +26,4 @@
 ## Heap
 1. [692. Top K Frequent Words](https://leetcode.com/problems/top-k-frequent-words)  
    Remember to sort string in priority queue. Beware the end result should be in right order.
+1. [767. Reorganize String](https://leetcode.com/problems/reorganize-string)
