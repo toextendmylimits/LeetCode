@@ -34,6 +34,7 @@
 2. [791. Custom Sort String](https://leetcode.com/problems/custom-sort-string)
 3. [249. Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings)
 4. [49. Group Anagrams](https://leetcode.com/problems/group-anagrams)
+5. [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)
 
 ## Priority Queue
 1. [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
