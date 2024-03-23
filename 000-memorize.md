@@ -35,7 +35,8 @@
 3. [249. Group Shifted Strings](https://leetcode.com/problems/group-shifted-strings)
 4. [49. Group Anagrams](https://leetcode.com/problems/group-anagrams)
 5. [205. Isomorphic Strings](https://leetcode.com/problems/isomorphic-strings)
-
+6. [359. Logger Rate Limiter](https://leetcode.com/problems/logger-rate-limiter)  
+   Use hash set + queue
 ## Priority Queue
 1. [973. K Closest Points to Origin](https://leetcode.com/problems/k-closest-points-to-origin)
 1. [347. Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements)  
