@@ -14,13 +14,14 @@
 1. [125. Valid Palindrome](https://leetcode.com/problems/valid-palindrome)  
 2. [1213. Intersection of Three Sorted Arrays](https://leetcode.com/problems/intersection-of-three-sorted-arrays)     Still not clear.  Practice a few more times.
 3. [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/)
-4. [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)
-5. [189. Rotate Array](https://leetcode.com/problems/rotate-array)  
+4. [80. Remove Duplicates from Sorted Array II](https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii)  
+   Still difficult.  
+6. [189. Rotate Array](https://leetcode.com/problems/rotate-array)  
    Two ways
-6. [3 Sum Smaller](https://leetcode.com/problems/3sum-smaller)  
+7. [3 Sum Smaller](https://leetcode.com/problems/3sum-smaller)  
    Don't forget while loop. Practice a few more times.
-7. [3 Sum Closet](https://leetcode.com/problems/3sum-closest)
-8. [285. Move Zeroes](https://leetcode.com/problems/move-zeroes)  
+8. [3 Sum Closet](https://leetcode.com/problems/3sum-closest)
+9. [285. Move Zeroes](https://leetcode.com/problems/move-zeroes)  
    Don't forget to return immediately when there is non zero.
 
 ## Linked List
