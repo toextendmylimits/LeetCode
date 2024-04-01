@@ -2,7 +2,7 @@
    1. Simple backtrack
    2. Backtrack with memorization
    3. DP
-   4. DP with constant space
+   4. DP with constant space  
    Importantly to initialize dp array of length s.length() + 1, and dp[0] = 1
 1. [96. Unique Binary Search Trees](https://leetcode.com/problems/unique-binary-search-trees)  
    The key observation is dp[i] += dp[j-1]* dp[i-j];
