@@ -8,3 +8,6 @@
 1. 189 Rotate Array  
    Beware to use k %= len in case k is too big, also master two ways of solving the problem
 1. 55 Jump Game
+
+## To look later
+1. 45 Jump Game II
