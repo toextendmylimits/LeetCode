@@ -8,7 +8,8 @@
 1. 189 Rotate Array  
    Beware to use k %= len in case k is too big, also master two ways of solving the problem
 1. 55 Jump Game
-2. 135 Candy
+1. 135 Candy
+1. 380 Insert Delete GetRandom O(1)
 
 ## To look later
 1. 45 Jump Game II
