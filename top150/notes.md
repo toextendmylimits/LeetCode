@@ -19,7 +19,9 @@
    Start from the end
 1. 14 Longest Common Prefix
 1. 151 Reverse Words in a String  
-   Starts from the end   
+   Starts from the end
+1. 28 Find the Index of the First Occurrence in a String
+1. 
 ## To look later
 1. 45 Jump Game II
 2. 274 H-Index
