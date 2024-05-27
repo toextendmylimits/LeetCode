@@ -15,7 +15,8 @@
    Beware it doesn't matter whether left <= right or left < right. Just use left <= right then
 1. 238 Product of Array Except Self
 1. 12 Integer to Roman
-2. 
+2. 58 Length of Last Word  
+   Start from the end  
 ## To look later
 1. 45 Jump Game II
 2. 274 H-Index
