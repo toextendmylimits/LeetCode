@@ -9,7 +9,10 @@
    Beware to use k %= len in case k is too big, also master two ways of solving the problem
 1. 55 Jump Game
 1. 135 Candy
-1. 380 Insert Delete GetRandom O(1)
+1. 380 Insert Delete GetRandom O(1)  
+   use random.randrange(start, end inclusive) to get random index
+1. 42 Trapping Rain Water
+   Beware it doesn't matter whether left <= right or left < right. Just use left <= right then
 
 ## To look later
 1. 45 Jump Game II
