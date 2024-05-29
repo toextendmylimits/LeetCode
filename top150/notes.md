@@ -22,6 +22,9 @@
    Starts from the end
 1. 28 Find the Index of the First Occurrence in a String
 1. 68 Text Justification
+
+## Two Pointers
+1. 392 Is Subsequence
 ## To look later
 1. 45 Jump Game II
 2. 274 H-Index
