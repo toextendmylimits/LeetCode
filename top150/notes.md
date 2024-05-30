@@ -26,7 +26,8 @@
 ## Two Pointers
 1. 392 Is Subsequence
 ## To look later
-1. 128 Longest Consecutive Sequence
+1. 128 Longest Consecutive Sequence  
+   Should practice both brute force and optimal approach  
 1. 45 Jump Game II
 2. 274 H-Index
 3. 6 Zigzag Conversion
