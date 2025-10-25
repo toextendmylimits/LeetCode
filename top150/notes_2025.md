@@ -5,3 +5,4 @@ Use defaultdict(list) to create a dictionary with each value being a list. Impor
 Use set for getting a hash set, such as set(nums)
 
 202 happy number  
+228 summary range
