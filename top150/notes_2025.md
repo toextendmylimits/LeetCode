@@ -4,5 +4,8 @@ Use join to join a array of strings by a separator string such as: "".join(resul
 Use defaultdict(list) to create a dictionary with each value being a list. Import from collections  
 Use set for getting a hash set, such as set(nums)
 
-202 happy number  
-228 summary range
+202 happy number
+
+## Intervals
+228 summary range  
+56 merge intervals
