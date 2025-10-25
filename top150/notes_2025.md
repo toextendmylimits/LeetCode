@@ -1,6 +1,7 @@
 ## Array/String
 
 27 remove element - Just memorize it  
+169 majority element  
 
 ## Hash map
 Use split method to split a string separated by white space into words  
