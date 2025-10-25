@@ -1,3 +1,7 @@
+## Array/String
+
+27 remove element - Just memorize it  
+
 ## Hash map
 Use split method to split a string separated by white space into words  
 Use join to join a array of strings by a separator string such as: "".join(result)  
