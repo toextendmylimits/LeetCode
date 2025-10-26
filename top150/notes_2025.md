@@ -1,7 +1,7 @@
 ## Array/String
 
 27 remove element - Just memorize it  
-169 majority element 
+169 majority element   
 125 valid palindrome - memorize method alnum  
 
 ## Hash map
