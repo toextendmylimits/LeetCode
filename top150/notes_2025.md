@@ -1,7 +1,8 @@
 ## Array/String
 
 27 remove element - Just memorize it  
-169 majority element  
+169 majority element 
+125 valid palindrome - memorize method alnum  
 
 ## Hash map
 Use split method to split a string separated by white space into words  
