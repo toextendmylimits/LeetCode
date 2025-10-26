@@ -14,5 +14,5 @@ Use set for getting a hash set, such as set(nums)
 
 ## Intervals
 228 summary range  
-56 merge intervals
+56 merge intervals  
 57 Insert Interval  
