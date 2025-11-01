@@ -25,3 +25,6 @@ Use set for getting a hash set, such as set(nums)
 
 ## Heap
 215. Kth Largest Element in an Array - import heapq
+
+## Binary Tree General
+226. Invert Binary Tree - Master DFS, Memorize BFS
