@@ -19,6 +19,9 @@ Use set for getting a hash set, such as set(nums)
 
 ## Stack 
 20. Valid Parentheses  
-21. 71. Simplify Path  
+71. Simplify Path  
 155. Min Stack  
 156. 150. Evaluate Reverse Polish Notation  - Use int(num1 / num2)
+
+## Heap
+215. Kth Largest Element in an Array - import heapq
