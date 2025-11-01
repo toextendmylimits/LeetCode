@@ -16,3 +16,8 @@ Use set for getting a hash set, such as set(nums)
 228 summary range  
 56 merge intervals  
 57 Insert Interval  
+
+## Stack 
+20. Valid Parentheses  
+21. 71. Simplify Path  
+155. Min Stack  
