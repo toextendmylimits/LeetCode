@@ -21,3 +21,4 @@ Use set for getting a hash set, such as set(nums)
 20. Valid Parentheses  
 21. 71. Simplify Path  
 155. Min Stack  
+156. 150. Evaluate Reverse Polish Notation  - Use int(num1 / num2)
