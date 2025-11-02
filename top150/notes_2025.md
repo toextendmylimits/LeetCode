@@ -32,3 +32,4 @@ Use set for getting a hash set, such as set(nums)
 236. Lowest Common Ancestor of a Binary Tree  
 1644. Lowest Common Ancestor of a Binary Tree II -- Meorize it. nonlocal foundP, foundQ  
 112. Path Sum
+105. Construct Binary Tree from Preorder and Inorder Traversal -- Memorize. Index for inorder easy, focus on preorerStart, leftLen, leftEnd
