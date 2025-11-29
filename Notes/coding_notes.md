@@ -30,3 +30,6 @@ Meomorize code
 
 ## 1644. Lowest Common Ancestor of a Binary Tree II
 Just memorize the code
+
+## 235. Lowest Common Ancestor of a Binary Search Tree
+Practice again
