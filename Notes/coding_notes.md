@@ -48,3 +48,6 @@ Not very familar. Practice again.
 
 ## 300. Longest Increasing Subsequence
 Memorize.
+
+## 153. Find Minimum in Rotated Sorted Array
+Just memorize.
