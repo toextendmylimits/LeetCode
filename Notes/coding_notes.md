@@ -22,3 +22,6 @@ Need to be more familiar
 Use heap approach. May check bucket sort later.
 
 ## 206. Reverse Linked List
+
+## 98. Validate Binary Search Tree
+Meomorize code
