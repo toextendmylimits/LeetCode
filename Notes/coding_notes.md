@@ -20,3 +20,5 @@ Need to be more familiar
 
 ## 347. Top K Frequent Elements
 Use heap approach. May check bucket sort later.
+
+## 206. Reverse Linked List
