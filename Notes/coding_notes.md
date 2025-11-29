@@ -33,3 +33,5 @@ Just memorize the code
 
 ## 235. Lowest Common Ancestor of a Binary Search Tree
 Practice again
+
+## 230. Kth Smallest Element in a BST
