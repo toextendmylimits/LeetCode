@@ -14,3 +14,6 @@ Memorize most optimal solution. Check: left = max(left, last_seen[ch] + 1)
 
 ## 253. Meeting Rooms II
 Practice sweeping line version. Memorize heap verison which I have a hard time to understand
+
+## 76. Minimum Window Substring
+Need to be more familiar
