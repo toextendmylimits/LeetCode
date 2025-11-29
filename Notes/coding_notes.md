@@ -11,3 +11,6 @@ Use meanfingful names like start, end. Use array[1:]
 
 ## 3. Longest Substring Without Repeating Characters
 Memorize most optimal solution. Check: left = max(left, last_seen[ch] + 1)
+
+## 253. Meeting Rooms II
+Practice sweeping line version. Memorize heap verison which I have a hard time to understand
