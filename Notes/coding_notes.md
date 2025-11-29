@@ -45,3 +45,6 @@ Not very familar. Practice again.
 ## 210. Course Schedule II
 
 ## 198. House Robber
+
+## 300. Longest Increasing Subsequence
+Memorize.
