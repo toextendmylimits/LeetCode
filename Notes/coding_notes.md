@@ -64,3 +64,6 @@ Not very familiar. Practice more.
 ## 994. Rotting Oranges
 Have quick look
 
+# TODO
+143. Reorder List
+
