@@ -68,5 +68,9 @@ Have quick look
 Familiar.
 
 # TODO
-143. Reorder List
+143. Reorder List  
+
+322 Coin Change  
+
+139 Word Break  
 
