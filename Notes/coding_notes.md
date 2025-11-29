@@ -51,3 +51,6 @@ Memorize.
 
 ## 153. Find Minimum in Rotated Sorted Array
 Just memorize.
+
+## 23. Merge k Sorted Lists
+Memorize. Divide and conquer.
