@@ -74,3 +74,5 @@ Familiar.
 
 139 Word Break  
 
+# 2025-11-29
+33. Search in Rotated Sorted Array
