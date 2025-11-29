@@ -1,4 +1,4 @@
-
+# Recursive inorder DFS
 I perform an inorder traversal, which visits BST nodes in sorted order.
 Each time I visit a node, I decrement k.
 Once k reaches zero, that node is the k-th smallest.
@@ -24,3 +24,27 @@ class Solution:
 
         inorder(root)
         return result
+
+# Iterative
+I simulate inorder traversal using a stack.
+The loop continues as long as there's a node to explore or nodes in the stack.
+I push all left nodes, pop one (that’s the next smallest), decrement k, and if k hits zero I return it.
+Then I move to the right subtree.
+This correctly visits BST nodes in sorted order without recursion.
+    
+class Solution:
+    def kthSmallest(self, root, k):
+        stack = []
+        curr = root
+
+        while stack or curr:
+            while curr:
+                stack.append(curr)
+                curr = curr.left
+
+            curr = stack.pop()
+            k -= 1
+            if k == 0:
+                return curr.val
+
+            curr = curr.right
