@@ -17,3 +17,6 @@ Practice sweeping line version. Memorize heap verison which I have a hard time t
 
 ## 76. Minimum Window Substring
 Need to be more familiar
+
+## 347. Top K Frequent Elements
+Use heap approach. May check bucket sort later.
