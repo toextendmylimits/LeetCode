@@ -60,3 +60,7 @@ Memorize.
 
 ## 238. Product of Array Except Self
 Not very familiar. Practice more.
+
+## 994. Rotting Oranges
+Have quick look
+
