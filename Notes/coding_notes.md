@@ -35,3 +35,4 @@ Just memorize the code
 Practice again
 
 ## 230. Kth Smallest Element in a BST
+Memorize recursive DFS. Try to learn iterative approach later
