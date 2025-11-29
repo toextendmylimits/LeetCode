@@ -36,3 +36,6 @@ Practice again
 
 ## 230. Kth Smallest Element in a BST
 Memorize recursive DFS. Try to learn iterative approach later
+
+## 207. Course Schedule
+Not very familar. Practice again.
