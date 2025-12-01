@@ -80,3 +80,6 @@ Familiar.
 # 2025-12-01
 ## 49. Group Anagrams
 Memorize tuple to convert list
+
+## 238. Product of Array Except Self
+Didn't code but the logic is clear. May code after a few days as well
