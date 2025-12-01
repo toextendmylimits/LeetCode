@@ -81,5 +81,7 @@ Familiar.
 ## 49. Group Anagrams
 Memorize tuple to convert list
 
+# TODO
+128. Longest Consecutive Sequence
 ## 238. Product of Array Except Self
 Didn't code but the logic is clear. May code after a few days as well
