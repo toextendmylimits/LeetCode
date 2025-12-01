@@ -76,3 +76,7 @@ Familiar.
 
 # 2025-11-29
 33. Search in Rotated Sorted Array
+
+# 2025-12-01
+## 49. Group Anagrams
+Memorize tuple to convert list
