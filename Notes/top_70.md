@@ -10,3 +10,6 @@ This runs in O(n) time and uses O(1) extra space.
 
 ## 70. Climbing Stairs
 Understand and also memorize.
+
+## 121. Best Time to Buy and Sell Stock
+Understand and also memorize.
