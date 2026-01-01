@@ -15,14 +15,14 @@ If both are found, I return the split point as the LCA; otherwise, I return null
 Memorize the code.
 
 ## 235. Lowest Common Ancestor of a Binary Search Tree
-DFS:
+**Recursive**:
 This is a recursive DFS on a binary search tree.  
 At each node, I compare its value with both target values.  
 If both targets are smaller, I recurse into the left subtree.  
 If both are larger, I recurse into the right subtree.  
 Otherwise, the current node is where the paths split, so it’s the lowest common ancestor.  
 
-BFS:
+**Iterative**:
 Because this is a binary search tree, I can use its ordering.  
 I start from the root and iterate downward.  
 If both target nodes are smaller than the current node, I move left.  
