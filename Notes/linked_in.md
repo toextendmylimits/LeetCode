@@ -58,10 +58,12 @@ I keep a running sum of all integers seen so far.
 After each level, I add that sum into the result.  
 Shallow numbers stay in the running sum longer, so they’re added more times and get higher inverse weights  
 
-# Slidng Window
-## 1004. Max Consecutive Ones III
-
 **DFS one pass**
 There is also a one-pass version using algebra:  
 during DFS I track total sum, depth-weighted sum, and max depth,  
 then apply a formula to compute the inverse-weighted result  
+
+# Slidng Window
+## 1004. Max Consecutive Ones III
+
+# Skip List
