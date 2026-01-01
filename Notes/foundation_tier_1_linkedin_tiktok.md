@@ -9,3 +9,9 @@ I use breadth-first search.
 I start from the root and process the tree level by level using a queue.   
 For each level, I record all node values, then push their children into the queue.   
 Each iteration produces one level of the result.  
+
+## 236. Lowest Common Ancestor of a Binary Tree 
+I traverse the tree bottom-up. If a node is one of the targets, I return it.  
+I check both subtrees.  
+If both sides find a target, the current node is the lowest common ancestor.  
+Otherwise, I propagate the found node upward.
