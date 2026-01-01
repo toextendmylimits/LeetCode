@@ -21,3 +21,8 @@ Otherwise, I propagate the found node upward.
 To reach step n, the last move is either from n-1 or n-2.  
 So the number of ways is the sum of those two.  
 This forms a Fibonacci sequence, which I compute iteratively using two variables.  
+
+## 198. House Robber  
+Scan left to right. At each house, I choose between skipping it and keeping the previous maximum, 
+or robbing it and adding its value to the maximum from two houses earlier. 
+I take the larger option at each step.
