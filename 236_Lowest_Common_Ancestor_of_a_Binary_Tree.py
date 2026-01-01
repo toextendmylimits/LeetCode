@@ -1,10 +1,8 @@
 # 
-I solve LCA using a bottom-up DFS.
-If the current node is null or matches p or q, I return it immediately.
-Then I recursively search left and right.
-If both sides return non-null, that means p and q were found in different subtrees, so the current node is the LCA.
-If only one side is non-null, I return that value upward — essentially bubbling up the found node so ancestors can use it to determine the LCA.
-The time complexity is O(n) and space is O(h) due to recursion depth.
+I traverse the tree bottom-up. If a node is one of the targets, I return it.  
+I check both subtrees.  
+If both sides find a target, the current node is the lowest common ancestor.  
+Otherwise, I propagate the found node upward.  
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
