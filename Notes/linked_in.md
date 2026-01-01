@@ -43,7 +43,7 @@ I process all items at that level: add depth × value for integers, and enqueue 
 Then I increment depth and continue.  
 
 ## 364. Nested List Weight Sum II
-Need to memeorize the code!
+Need to memeorize the code! How to calculat max depth is tricky  
 **Two DFS passes**:
 I use two DFS passes.  
 First, I compute the maximum nesting depth of the list.  
