@@ -41,3 +41,13 @@ I do BFS level by level using a queue.
 Each level corresponds to one depth.  
 I process all items at that level: add depth × value for integers, and enqueue child lists.  
 Then I increment depth and continue.  
+
+## 364. Nested List Weight Sum II
+Need to memeorize the code!
+**Two DFS passes**:
+I use two DFS passes.  
+First, I compute the maximum nesting depth of the list.  
+Then I do another DFS, passing the current depth.  
+When I see an integer, I apply the inverse weight maxDepth − depth + 1 and add it to the sum.  
+Lists recurse deeper with depth + 1.  
+This guarantees deeper numbers get smaller weights  
