@@ -66,4 +66,6 @@ then apply a formula to compute the inverse-weighted result
 # Slidng Window
 ## 1004. Max Consecutive Ones III
 
+## 76. Minimum Window Substring
+
 # Skip List
