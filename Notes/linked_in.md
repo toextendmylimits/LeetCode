@@ -35,3 +35,9 @@ I use DFS with a depth parameter. Starting at depth 1, I traverse the nested lis
 If an element is an integer, I add depth × value to the sum.  
 If it’s a list, I recursively process it with depth + 1.  
 The recursion naturally handles all nesting levels and accumulates the total weighted sum.  
+
+**BFS**:
+I do BFS level by level using a queue.  
+Each level corresponds to one depth.  
+I process all items at that level: add depth × value for integers, and enqueue child lists.  
+Then I increment depth and continue.  
