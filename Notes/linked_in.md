@@ -57,3 +57,5 @@ I use BFS level by level.
 I keep a running sum of all integers seen so far.  
 After each level, I add that sum into the result.  
 Shallow numbers stay in the running sum longer, so they’re added more times and get higher inverse weights  
+
+** Learn DFS one pass only when have time  
