@@ -1,8 +1,6 @@
-I modified the normal LCA recursion so that I also track whether p and q actually exist in the tree.
-During DFS, whenever I hit p or q, I set a flag and return that node upward.
-If both left and right recursions return non-null, the current node is their LCA.
-After the DFS completes, if both flags are true, I return the found LCA; otherwise I return null.
-This ensures we correctly handle the case where one or both nodes don’t exist.
+I do a bottom-up traversal like the normal LCA problem, returning a node when I find either target.
+At the same time, I track whether each target node is actually found in the tree.
+If both are found, I return the split point as the LCA; otherwise, I return null.
 
 class Solution:
     def lowestCommonAncestor(self, root, p, q):
