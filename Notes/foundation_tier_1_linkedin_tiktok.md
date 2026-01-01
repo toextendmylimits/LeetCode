@@ -3,3 +3,9 @@
 
 To minimize removals, I maximize the number of non-overlapping intervals.  
 A greedy strategy works: sort by end time and always keep the interval that ends earliest  
+
+## 102. Binary Tree Level Order Traversal
+I use breadth-first search.   
+I start from the root and process the tree level by level using a queue.   
+For each level, I record all node values, then push their children into the queue.   
+Each iteration produces one level of the result.  
