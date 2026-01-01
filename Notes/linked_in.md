@@ -6,8 +6,8 @@ and when I reach the end, I add the built string to the result.
 If the input is empty, I return an empty list.
 
 ## 1644. Lowest Common Ancestor of a Binary Tree II
-I do a bottom-up traversal like the normal LCA problem, returning a node when I find either target.
-At the same time, I track whether each target node is actually found in the tree.
-If both are found, I return the split point as the LCA; otherwise, I return null.
+I do a bottom-up traversal like the normal LCA problem, returning a node when I find either target.  
+At the same time, I track whether each target node is actually found in the tree.  
+If both are found, I return the split point as the LCA; otherwise, I return null.  
 
 Memorize the code.
