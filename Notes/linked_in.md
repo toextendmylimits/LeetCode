@@ -28,3 +28,10 @@ I start from the root and iterate downward.
 If both target nodes are smaller than the current node, I move left.  
 If both are larger, I move right.  
 The first node where they split—or match the current node—is the lowest common ancestor.  
+
+## 339. Nested List Weight Sum
+**Recursive DFS**:
+I use DFS with a depth parameter. Starting at depth 1, I traverse the nested list.  
+If an element is an integer, I add depth × value to the sum.  
+If it’s a list, I recursively process it with depth + 1.  
+The recursion naturally handles all nesting levels and accumulates the total weighted sum.  
