@@ -11,6 +11,9 @@ More practice. Got it wrong by self.key = None in constructor of Node
 ## 1004. Max Consecutive Ones III
 
 ## 200. Number of Islands
+Also more practice. Made mistake when checking boundary of cols 
+
+## 34. Find First and Last Position of Element in Sorted Array
 
 # Check later today
 ## 716. Max Stack
