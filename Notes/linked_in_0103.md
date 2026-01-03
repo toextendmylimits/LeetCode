@@ -5,6 +5,8 @@ Master one pass/two pass DFS and BFS. Memorize high-level ideas and writ it down
 
 ## 339. Nested List Weight Sum
 
+## 1004. Max Consecutive Ones III
+
 # Check later today
 ## 716. Max Stack
 ## 432. All O`one Data Structure
