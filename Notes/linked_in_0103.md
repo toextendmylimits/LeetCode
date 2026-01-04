@@ -30,6 +30,9 @@ Practice again. Made crucial mistake of not upadting char to first index map
 ## 236. Lowest Common Ancestor of a Binary Tree
 ## 1644. Lowest Common Ancestor of a Binary Tree II
 
+## 380. Insert Delete GetRandom O(1)
+Practice again
+
 # Check later today
 ## 716. Max Stack
 ## 432. All O`one Data Structure
