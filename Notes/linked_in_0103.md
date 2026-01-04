@@ -58,3 +58,4 @@ Just memorize it
 ## 721. Accounts Merge
 ## 1882. Process Tasks Using Servers
 ## 698. Partition to K Equal Sum Subsets
+## 319. Bulb Switcher
