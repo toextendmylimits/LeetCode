@@ -19,3 +19,6 @@ Also more practice. Made mistake when checking boundary of cols
 ## 716. Max Stack
 ## 432. All O`one Data Structure
 ## 244. Shortest Word Distance II
+
+# To work on
+## 366. Find Leaves of Binary Tree
