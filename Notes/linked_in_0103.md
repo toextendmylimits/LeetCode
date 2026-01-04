@@ -19,6 +19,7 @@ Also more practice. Made mistake when checking boundary of cols
 Should have a quick look again
 
 ## 17. Letter Combinations of a Phone Number
+## 20. Valid Parentheses
 
 # Check later today
 ## 716. Max Stack
