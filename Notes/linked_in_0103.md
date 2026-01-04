@@ -51,3 +51,4 @@ Just memorize it
 ## 366. Find Leaves of Binary Tree
 ## 636. Exclusive Time of Functions
 ## 296. Best Meeting Point
+## 721. Accounts Merge
