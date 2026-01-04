@@ -26,6 +26,8 @@ Should have a quick look again
 ## 205. Isomorphic Strings
 Practice again. Made crucial mistake of not upadting char to first index map
 
+## 104. Maximum Depth of Binary Tree
+
 # Check later today
 ## 716. Max Stack
 ## 432. All O`one Data Structure
