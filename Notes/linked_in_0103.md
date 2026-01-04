@@ -43,6 +43,7 @@ Just memorize it
 ## 432. All O`one Data Structure
 ## 244. Shortest Word Distance II
 ## 277. Find the Celebrity
+## 671. Second Minimum Node In a Binary Tree
 
 # To work on
 ## 366. Find Leaves of Binary Tree
