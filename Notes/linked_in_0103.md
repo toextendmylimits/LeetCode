@@ -10,6 +10,7 @@ More practice. Got it wrong by self.key = None in constructor of Node
 实现LRU，follow-up是多线程版本的LRU，AI的作用在这里就是search那些不常用的API，最后测试的时候比较tricky
 
 ## 1004. Max Consecutive Ones III
+Follow up circular array
 
 ## 200. Number of Islands
 Also more practice. Made mistake when checking boundary of cols 
