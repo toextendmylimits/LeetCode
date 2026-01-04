@@ -48,6 +48,7 @@ Just memorize it
 ## 277. Find the Celebrity
 ## 671. Second Minimum Node In a Binary Tree
 ## 152. Maximum Product Subarray
+## 341. Flatten Nested List Iterator
 
 # To work on
 ## 366. Find Leaves of Binary Tree
