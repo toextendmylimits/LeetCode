@@ -49,6 +49,7 @@ Just memorize it
 ## 671. Second Minimum Node In a Binary Tree
 ## 152. Maximum Product Subarray
 ## 341. Flatten Nested List Iterator
+## 297. Serialize and Deserialize Binary Tree
 
 # To work on
 ## 366. Find Leaves of Binary Tree
