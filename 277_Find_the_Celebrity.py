@@ -1,3 +1,8 @@
+I eliminate candidates in one pass:
+if A knows B, A can’t be the celebrity, so I keep B.
+After one scan, only one candidate remains.
+Then I verify that this person knows nobody and everyone knows them.
+
 class Solution:
     def isCelebrity(self, n, candidate):
         for j in range(n):
