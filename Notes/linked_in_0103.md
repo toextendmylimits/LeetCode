@@ -47,6 +47,7 @@ Just memorize it
 ## 244. Shortest Word Distance II
 ## 277. Find the Celebrity
 ## 671. Second Minimum Node In a Binary Tree
+## 152. Maximum Product Subarray
 
 # To work on
 ## 366. Find Leaves of Binary Tree
