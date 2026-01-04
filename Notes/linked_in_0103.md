@@ -22,6 +22,8 @@ Should have a quick look again
 
 ## 17. Letter Combinations of a Phone Number
 变种 https://www.hack2hire.com/companies/linkedin/coding-questions/688bc39c3867670cfb89417b/practice?questionId=688bc3a43867670cfb89417c 
+https://chatgpt.com/c/695a17a6-5268-8328-ad43-06c0aff4c9ea
+
 ## 20. Valid Parentheses
 Follow-up can you not use stack?
 
