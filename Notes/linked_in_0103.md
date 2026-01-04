@@ -56,10 +56,10 @@ Because lists are sorted, this finds the minimum in one pass.
 Memorize:  
 1. bruce force approach.  
 2. One pass
-I eliminate candidates in one pass:
-if A knows B, A can’t be the celebrity, so I keep B.
-After one scan, only one candidate remains.
-Then I verify that this person knows nobody and everyone knows them.
+I eliminate candidates in one pass:  
+if A knows B, A can’t be the celebrity, so I keep B.  
+After one scan, only one candidate remains.  
+Then I verify that this person knows nobody and everyone knows them.  
 
 ## 671. Second Minimum Node In a Binary Tree
 ## 152. Maximum Product Subarray
