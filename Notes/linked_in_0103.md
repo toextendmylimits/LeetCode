@@ -45,7 +45,13 @@ Just memorize it
 ## 127. Word Ladder
 ## 716. Max Stack
 ## 432. All O`one Data Structure
+
 ## 244. Shortest Word Distance II
+Just memorize.
+Store each word’s positions in a sorted list. For a query, scan the two position lists with two pointers,   
+always moving the pointer that points to the smaller index. Track the smallest distance seen.   
+Because lists are sorted, this finds the minimum in one pass.  
+
 ## 277. Find the Celebrity
 ## 671. Second Minimum Node In a Binary Tree
 ## 152. Maximum Product Subarray
