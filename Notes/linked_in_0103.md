@@ -7,6 +7,7 @@ Master one pass/two pass DFS and BFS. Memorize high-level ideas and writ it down
 
 ## 146. LRU Cache
 More practice. Got it wrong by self.key = None in constructor of Node  
+实现LRU，follow-up是多线程版本的LRU，AI的作用在这里就是search那些不常用的API，最后测试的时候比较tricky
 
 ## 1004. Max Consecutive Ones III
 
