@@ -44,3 +44,4 @@ Just memorize it
 
 # To work on
 ## 366. Find Leaves of Binary Tree
+## 636. Exclusive Time of Functions
