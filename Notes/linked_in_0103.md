@@ -33,6 +33,9 @@ Practice again. Made crucial mistake of not upadting char to first index map
 ## 380. Insert Delete GetRandom O(1)
 Practice again
 
+## 605. Can Place Flowers
+Just memorize it
+
 # Check later today
 ## 716. Max Stack
 ## 432. All O`one Data Structure
