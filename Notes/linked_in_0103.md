@@ -46,6 +46,8 @@ Just memorize it
 # Check later today
 ## 127. Word Ladder
 ## 716. Max Stack
+I use a doubly linked list to store the stack order, so top and pop are O(1). I also keep a max-heap of (value, timestamp, node) so I can get the maximum quickly, and the timestamp breaks ties to remove the top-most max. Because a heap can’t delete arbitrary nodes, when I pop from the stack I mark the node inactive and lazily discard inactive heap entries when calling peekMax or popMax
+
 ## 432. All O`one Data Structure
 I keep a hash map from key to its frequency bucket, and a doubly linked list of buckets ordered by count.  
 Each bucket stores all keys with the same count.  
