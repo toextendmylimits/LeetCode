@@ -104,3 +104,80 @@ class AllOne:
     # --------------------------------------------------------
     def getMinKey(self) -> str:
         return "" if self.head.next == self.tail else next(iter(self.head.next.keys))
+
+# Easy to memorize version
+class Bucket:
+    def __init__(self, c):
+        self.count = c
+        self.keys = set()
+        self.prev = self.next = None
+
+class AllOne:
+    def __init__(self):
+        self.head, self.tail = Bucket(0), Bucket(0)
+        self.head.next, self.tail.prev = self.tail, self.head
+        self.pos = {}  # key -> Bucket
+
+    def _insert_after(self, node, nb):
+        nb.prev, nb.next = node, node.next
+        node.next.prev = nb
+        node.next = nb
+
+    def _remove_bucket_if_empty(self, b):
+        if b is self.head or b is self.tail or b.keys:
+            return
+        b.prev.next = b.next
+        b.next.prev = b.prev
+
+    def _next_bucket(self, b, target):
+        n = b.next
+        if n is self.tail or n.count != target:
+            nb = Bucket(target)
+            self._insert_after(b, nb)
+            return nb
+        return n
+
+    def _prev_bucket(self, b, target):
+        p = b.prev
+        if p is self.head or p.count != target:
+            nb = Bucket(target)
+            self._insert_after(p, nb)   # insert between p and b
+            return nb
+        return p
+
+    def inc(self, key: str) -> None:
+        if key not in self.pos:
+            b1 = self._next_bucket(self.head, 1)
+            b1.keys.add(key)
+            self.pos[key] = b1
+            return
+
+        cur = self.pos[key]
+        nxt = self._next_bucket(cur, cur.count + 1)
+        cur.keys.remove(key)
+        nxt.keys.add(key)
+        self.pos[key] = nxt
+        self._remove_bucket_if_empty(cur)
+
+    def dec(self, key: str) -> None:
+        if key not in self.pos:
+            return
+
+        cur = self.pos[key]
+        if cur.count == 1:
+            cur.keys.remove(key)
+            del self.pos[key]
+            self._remove_bucket_if_empty(cur)
+            return
+
+        prv = self._prev_bucket(cur, cur.count - 1)
+        cur.keys.remove(key)
+        prv.keys.add(key)
+        self.pos[key] = prv
+        self._remove_bucket_if_empty(cur)
+
+    def getMaxKey(self) -> str:
+        return "" if self.tail.prev is self.head else next(iter(self.tail.prev.keys))
+
+    def getMinKey(self) -> str:
+        return "" if self.head.next is self.tail else next(iter(self.head.next.keys))
