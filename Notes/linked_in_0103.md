@@ -47,6 +47,10 @@ Just memorize it
 ## 127. Word Ladder
 ## 716. Max Stack
 ## 432. All O`one Data Structure
+I keep a hash map from key to its frequency bucket, and a doubly linked list of buckets ordered by count.  
+Each bucket stores all keys with the same count.  
+When I increment or decrement a key, it moves only to the adjacent bucket; I create that bucket if it doesn’t exist and delete empty buckets.  
+The first bucket gives the minimum key and the last gives the maximum, all in O(1).  
 
 ## 244. Shortest Word Distance II
 Just memorize.
