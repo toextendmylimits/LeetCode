@@ -64,6 +64,9 @@ Remove swaps the element with the array’s last element, updates the moved elem
 getRandom picks uniformly from the array.  
 
 ## 339. Nested List Weight Sum
+I traverse the nested list while tracking depth.   
+When I encounter an integer, I add value × depth.   
+I can do this with DFS by passing depth recursively, or BFS by processing level by level.  
 
 # TO DO LATER
 ## 636. Exclusive Time of Functions
