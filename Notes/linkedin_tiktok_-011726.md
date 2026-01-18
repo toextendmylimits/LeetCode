@@ -57,5 +57,11 @@ If all pairs satisfy this, the tree is symmetric.
 ## 146. LRU Cache
 Had a look
 
+## 380. Insert Delete GetRandom O(1)
+I keep values in an array for O(1) random access, and a hashmap from value to its array index.   
+Insert appends.   
+Remove swaps the element with the array’s last element, updates the moved element’s index, then pops.   
+getRandom picks uniformly from the array.  
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
