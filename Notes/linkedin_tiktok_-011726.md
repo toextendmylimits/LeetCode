@@ -43,5 +43,11 @@ If both left and right return non-null, the current node is the LCA; otherwise, 
 ## 1644. Lowest Common Ancestor of a Binary Tree II
 ## 235. Lowest Common Ancestor of a Binary Search Tree
 
+## 104. Maximum Depth of Binary Tree
+This is a DFS recursion.  
+If the node is null, depth is zero.  
+Otherwise, the depth is one plus the maximum depth of its left and right subtrees.  
+We visit each node once, so time is O(n), space is proportional to tree height.  
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
