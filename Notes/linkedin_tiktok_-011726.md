@@ -49,5 +49,10 @@ If the node is null, depth is zero.
 Otherwise, the depth is one plus the maximum depth of its left and right subtrees.  
 We visit each node once, so time is O(n), space is proportional to tree height.  
 
+## 101. Symmetric Tree
+I compare the left and right subtrees as mirror pairs.   
+For each pair, values must match and left’s left mirrors right’s right, and vice versa.   
+If all pairs satisfy this, the tree is symmetric.  
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
