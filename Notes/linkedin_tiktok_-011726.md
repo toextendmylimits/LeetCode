@@ -102,5 +102,12 @@ For each meeting, if the earliest ending meeting finishes by the current start t
 Then I push the current meeting’s end time.   
 Because I pop at most one and always push one, the heap size never decreases, so the final heap size represents the maximum number of rooms needed.    
 
+## 205. Isomorphic Strings
+I scan both strings in parallel and track the first index where each character appears.    
+For isomorphic strings, corresponding characters must have the same first-occurrence index.    
+If at any position those indices differ, I return false; otherwise the patterns match.    
+
+Use first_occurence_s1 for name, and use get to reduce branches  
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
