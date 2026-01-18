@@ -31,5 +31,8 @@ Each index is pushed and popped once, so the solution runs in O(n) time.
 ## 34. Find First and Last Position of Element in Sorted Array
 Easy. Binary Search.
 
+## 215. Kth Largest Element in an Array
+Use heap.
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
