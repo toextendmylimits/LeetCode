@@ -96,5 +96,11 @@ I use a sweep-line approach: add +1 at each meeting start and −1 at each end,
 sort all timestamps, and track the running number of active meetings.   
 The maximum overlap is the number of rooms needed.  
 
+**heap**
+I sort meetings by start time and use a min-heap of end times.  
+For each meeting, if the earliest-ending meeting finishes before this one starts,   
+I reuse that room by popping from the heap; otherwise I allocate a new room.   
+The heap size tracks rooms in use, and its maximum is the answer.  
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
