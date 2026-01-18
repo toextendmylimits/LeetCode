@@ -109,5 +109,14 @@ If at any position those indices differ, I return false; otherwise the patterns 
 
 Use first_occurence_s1 for name, and use get to reduce branches  
 
+## 394. Decode String
+Just memorize the code for now.  
+I parse the string left to right. Numbers build a repeat count, letters append to the current string. 
+When I see left bracket, I push the current string and count onto a stack. 
+When I see right bracket, I pop and repeat the decoded substring, then merge it back. This naturally handles nesting
+
+# TO MEMORIZE
+## 394. Decode String
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
