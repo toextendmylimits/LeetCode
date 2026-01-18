@@ -54,5 +54,8 @@ I compare the left and right subtrees as mirror pairs.
 For each pair, values must match and left’s left mirrors right’s right, and vice versa.   
 If all pairs satisfy this, the tree is symmetric.  
 
+## 146. LRU Cache
+Had a look
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
