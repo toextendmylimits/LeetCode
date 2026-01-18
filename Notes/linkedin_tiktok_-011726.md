@@ -90,5 +90,11 @@ I sort all meetings by start time.
 Then I scan once and check whether any meeting starts before the previous one ends.   
 If it does, there’s an overlap and I return false; otherwise true.  
 
+## 253. Meeting Rooms II
+**sweep line**
+I use a sweep-line approach: add +1 at each meeting start and −1 at each end,   
+sort all timestamps, and track the running number of active meetings.   
+The maximum overlap is the number of rooms needed.  
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
