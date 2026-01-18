@@ -69,13 +69,21 @@ When I encounter an integer, I add value × depth.
 I can do this with DFS by passing depth recursively, or BFS by processing level by level.  
 
 ## 364. Nested List Weight Sum II
-Two DFS passes: I use two DFS passes.  
+**Two DFS passes: I use two DFS passes.**    
 First, I compute the maximum nesting depth of the list.  
 Then I do another DFS, passing the current depth.  
 When I see an integer, I apply the inverse weight maxDepth − depth + 1 and add it to the sum.  
 Lists recurse deeper with depth + 1.  
 This guarantees deeper numbers get smaller weights  
 
+**BFS: I use BFS level by level.**
+I keep a running sum of all integers seen so far.
+After each level, I add that sum into the result.
+Shallow numbers stay in the running sum longer, so they’re added more times and get higher inverse weights
+
+**DFS one pass There is also a one-pass version using algebra:**
+during DFS I track total sum, depth-weighted sum, and max depth,
+then apply a formula to compute the inverse-weighted result
 
 # TO DO LATER
 ## 636. Exclusive Time of Functions
