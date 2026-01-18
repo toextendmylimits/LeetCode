@@ -37,7 +37,11 @@ Use heap.
 ## 200. Number of Islands
 
 ## 236. Lowest Common Ancestor of a Binary Tree
+Post-order DFS. Each call returns p, q, or an LCA.  
+If both left and right return non-null, current node is the LCA; otherwise bubble up what was found.  
+
 ## 1644. Lowest Common Ancestor of a Binary Tree II
+## 235. Lowest Common Ancestor of a Binary Search Tree
 
 # TO DO LATER
 ## 636. Exclusive Time of Functions
