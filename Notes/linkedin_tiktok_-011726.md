@@ -36,5 +36,7 @@ Use heap.
 
 ## 200. Number of Islands
 
+## 236. Lowest Common Ancestor of a Binary Tree
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
