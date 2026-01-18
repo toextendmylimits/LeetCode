@@ -63,5 +63,7 @@ Insert appends.
 Remove swaps the element with the array’s last element, updates the moved element’s index, then pops.   
 getRandom picks uniformly from the array.  
 
+## 339. Nested List Weight Sum
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
