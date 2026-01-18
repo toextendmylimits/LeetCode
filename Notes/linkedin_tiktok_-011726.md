@@ -13,3 +13,8 @@ I use a running prefix sum and a hashmap that counts how often each prefix sum h
 For each position, if the current prefix sum is S, any earlier prefix sum S − k means the subarray between them sums to k.  
 I accumulate how many times S − k has appeared so far, then record the current prefix sum.  
 This runs in O(n) time and O(n) space.  
+
+## 1004. Max Consecutive Ones III
+Use a sliding window. Count zeros in the window as flips used.   
+Expand right; if zeros exceed k, move left until zeros ≤ k again.   
+Track the max window length. Two pointers → O(n).  
