@@ -21,3 +21,9 @@ Track the max window length. Two pointers → O(n).
 
 ## 20. Valid Parentheses
 Easy.
+
+## 739. Daily Temperatures
+I use a monotonic decreasing stack of indices.  
+Each index represents a day waiting for a warmer temperature.  
+When I see a warmer day, I pop all colder days from the stack and compute the distance.  
+Each index is pushed and popped once, so the solution runs in O(n) time.  
