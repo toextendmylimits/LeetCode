@@ -18,3 +18,6 @@ This runs in O(n) time and O(n) space.
 Use a sliding window. Count zeros in the window as flips used.   
 Expand right; if zeros exceed k, move left until zeros ≤ k again.   
 Track the max window length. Two pointers → O(n).  
+
+## 20. Valid Parentheses
+Easy.
