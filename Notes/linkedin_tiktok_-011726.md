@@ -85,5 +85,10 @@ Shallow numbers stay in the running sum longer, so they’re added more times an
 during DFS I track total sum, depth-weighted sum, and max depth,
 then apply a formula to compute the inverse-weighted result
 
+## 252. Meeting Rooms
+I sort all meetings by start time.   
+Then I scan once and check whether any meeting starts before the previous one ends.   
+If it does, there’s an overlap and I return false; otherwise true.  
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
