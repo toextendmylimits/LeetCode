@@ -34,5 +34,7 @@ Easy. Binary Search.
 ## 215. Kth Largest Element in an Array
 Use heap.
 
+## 200. Number of Islands
+
 # TO DO LATER
 ## 636. Exclusive Time of Functions
