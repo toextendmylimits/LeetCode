@@ -97,10 +97,10 @@ sort all timestamps, and track the running number of active meetings.
 The maximum overlap is the number of rooms needed.  
 
 **heap**
-I sort meetings by start time and use a min-heap of end times.  
-For each meeting, if the earliest-ending meeting finishes before this one starts,   
-I reuse that room by popping from the heap; otherwise I allocate a new room.   
-The heap size tracks rooms in use, and its maximum is the answer.  
+I sort the meetings by start time and use a min-heap to store end times of rooms in use.   
+For each meeting, if the earliest ending meeting finishes by the current start time, I reuse that room by popping it from the heap.   
+Then I push the current meeting’s end time.   
+Because I pop at most one and always push one, the heap size never decreases, so the final heap size represents the maximum number of rooms needed.    
 
 # TO DO LATER
 ## 636. Exclusive Time of Functions
