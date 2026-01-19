@@ -115,8 +115,15 @@ I parse the string left to right. Numbers build a repeat count, letters append t
 When I see left bracket, I push the current string and count onto a stack. 
 When I see right bracket, I pop and repeat the decoded substring, then merge it back. This naturally handles nesting
 
+## 22. Generate Parentheses  
+I use backtracking to build the string character by character.  
+The invariant is: I can add '(' if I haven’t used n opens yet, and I can add ')' only if it won’t exceed the number of opens used.  
+When both open and close counts reach n, I record the string.  
+This generates all and only valid parentheses combinations efficiently  
+
 # TO MEMORIZE
 ## 394. Decode String
+## 22. Generate Parentheses
 
 # TO DO LATER
 ## 636. Exclusive Time of Functions
