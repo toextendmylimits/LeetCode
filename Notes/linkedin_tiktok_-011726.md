@@ -131,6 +131,7 @@ Each word is processed once, so the solution runs in linear time.
 ## 394. Decode String
 ## 22. Generate Parentheses
 ## 68. Text Justification
+## 146. LRU Cache
 
 # TO DO LATER
 ## 636. Exclusive Time of Functions
