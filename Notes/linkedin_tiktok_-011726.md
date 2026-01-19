@@ -127,6 +127,9 @@ If it’s the last line or there’s only one word, I left-justify and pad with 
 Otherwise, I evenly distribute the remaining spaces across the gaps, giving any extra spaces to the leftmost gaps.   
 Each word is processed once, so the solution runs in linear time.  
 
+## 146. LRU Cache
+## 207. Course Schedule
+
 # TO MEMORIZE
 ## 394. Decode String
 ## 22. Generate Parentheses
