@@ -129,6 +129,11 @@ Each word is processed once, so the solution runs in linear time.
 
 ## 146. LRU Cache
 ## 207. Course Schedule
+Use variable graph
+
+I model courses as a directed graph.   
+Using topological sort, I repeatedly take courses with zero prerequisites.   
+If I can process all courses, the graph has no cycle and the schedule is possible; otherwise a cycle blocks completion.  
 
 # TO MEMORIZE
 ## 394. Decode String
