@@ -121,9 +121,16 @@ The invariant is: I can add '(' if I haven’t used n opens yet, and I can add '
 When both open and close counts reach n, I record the string.  
 This generates all and only valid parentheses combinations efficiently  
 
+## 68. Text Justification
+I greedily pack as many words as fit in each line.   
+If it’s the last line or there’s only one word, I left-justify and pad with spaces.   
+Otherwise, I evenly distribute the remaining spaces across the gaps, giving any extra spaces to the leftmost gaps.   
+Each word is processed once, so the solution runs in linear time.  
+
 # TO MEMORIZE
 ## 394. Decode String
 ## 22. Generate Parentheses
+## 68. Text Justification
 
 # TO DO LATER
 ## 636. Exclusive Time of Functions
