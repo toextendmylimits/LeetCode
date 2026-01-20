@@ -9,5 +9,8 @@ Use dp. initial value is 1
 
 ## 827. Making A Large Island
 
+## 23. Merge k Sorted Lists
+Divide and conquer
+
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
