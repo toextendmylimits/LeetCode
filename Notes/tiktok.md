@@ -21,7 +21,13 @@ I try every position as a palindrome center.
 For each center, I expand left and right while characters match, once for odd and once for even length. 
 The helper returns the exact valid boundaries, and I keep the best window.
 
+## 1462. Course Schedule IV
+This is reachability in a DAG.   
+I topologically sort the courses and propagate prerequisite relationships forward: if u → v, then all prerequisites of u are also prerequisites of v.   
+I precompute a boolean matrix so each query is O(1).  
+
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
 ## 827. Making A Large Island
 ## 5. Longest Palindromic Substring
+## 1462. Course Schedule IV
