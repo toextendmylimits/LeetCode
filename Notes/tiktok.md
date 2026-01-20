@@ -16,5 +16,12 @@ Divide and conquer
 
 ## 739. Daily Temperatures
 
+## 5. Longest Palindromic Substring
+I try every position as a palindrome center. 
+For each center, I expand left and right while characters match, once for odd and once for even length. 
+The helper returns the exact valid boundaries, and I keep the best window.
+
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
+## 827. Making A Large Island
+## 5. Longest Palindromic Substring
