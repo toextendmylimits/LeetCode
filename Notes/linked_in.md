@@ -68,6 +68,8 @@ then apply a formula to compute the inverse-weighted result
 
 ## 76. Minimum Window Substring
 
+# TO MEMORIZE
+
 # Skip List
 
 ## 617. Merge Two Binary Trees
