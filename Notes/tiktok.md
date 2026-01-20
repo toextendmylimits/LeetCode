@@ -14,5 +14,7 @@ Divide and conquer
 
 ## 198. House Robber
 
+## 739. Daily Temperatures
+
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
