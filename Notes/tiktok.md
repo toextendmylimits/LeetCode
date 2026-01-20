@@ -12,5 +12,7 @@ Use dp. initial value is 1
 ## 23. Merge k Sorted Lists
 Divide and conquer
 
+## 198. House Robber
+
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
