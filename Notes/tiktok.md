@@ -3,3 +3,6 @@ I use dynamic programming where dp[i] is the length of the longest increasing su
 For each position, I look at all earlier positions with smaller values and extend the best subsequence found so far.  
 The answer is the maximum value in dp.  
 This runs in O(n²) time and O(n) space.  
+
+# TO MEMORIZE
+## 300. Longest Increasing Subsequence
