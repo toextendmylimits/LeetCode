@@ -5,6 +5,7 @@ The answer is the maximum value in dp.
 This runs in O(n²) time and O(n) space.  
 
 ## 3. Longest Substring Without Repeating Characters
+Use dp. initial value is 1  
 
 ## 827. Making A Large Island
 
