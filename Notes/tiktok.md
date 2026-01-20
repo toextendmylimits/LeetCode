@@ -4,5 +4,7 @@ For each position, I look at all earlier positions with smaller values and exten
 The answer is the maximum value in dp.  
 This runs in O(n²) time and O(n) space.  
 
+## 3. Longest Substring Without Repeating Characters
+
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
