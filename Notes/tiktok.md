@@ -38,10 +38,16 @@ At each step, one half is guaranteed sorted.
 I detect the sorted half and check if the target lies inside it — if yes, I search there; otherwise, I discard it.  
 That keeps the time complexity at O(log n).  
 
+## 298. Binary Tree Longest Consecutive Sequence
+DFS the tree. At each node, track the length of the consecutive path ending at this node. If its value is parent + 1, extend the chain; otherwise reset to 1.   
+Update a global maximum and pass the current value and length to the children.  
+
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
 ## 827. Making A Large Island
 ## 5. Longest Palindromic Substring
 ## 1462. Course Schedule IV
+## 298. Binary Tree Longest Consecutive Sequence
+
 ## 678. Valid Parenthesis String
 ## 33. Search in Rotated Sorted Array
