@@ -33,6 +33,11 @@ If high ever drops below zero, it’s invalid.
 At the end, if low is zero, a valid interpretation exists.  
 
 ## 33. Search in Rotated Sorted Array
+This is binary search on a rotated array.  
+At each step, one half is guaranteed sorted.  
+I detect the sorted half and check if the target lies inside it — if yes, I search there; otherwise, I discard it.  
+That keeps the time complexity at O(log n).  
+
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
 ## 827. Making A Large Island
