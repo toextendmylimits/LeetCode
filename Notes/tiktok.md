@@ -32,9 +32,11 @@ I keep a range [low, high] representing the minimum and maximum possible number 
 If high ever drops below zero, it’s invalid.  
 At the end, if low is zero, a valid interpretation exists.  
 
+## 33. Search in Rotated Sorted Array
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
 ## 827. Making A Large Island
 ## 5. Longest Palindromic Substring
 ## 1462. Course Schedule IV
 ## 678. Valid Parenthesis String
+## 33. Search in Rotated Sorted Array
