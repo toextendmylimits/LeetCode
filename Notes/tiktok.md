@@ -42,12 +42,16 @@ That keeps the time complexity at O(log n).
 DFS the tree. At each node, track the length of the consecutive path ending at this node. If its value is parent + 1, extend the chain; otherwise reset to 1.   
 Update a global maximum and pass the current value and length to the children.  
 
+## 71. Simplify Path
+I simulate path navigation using a stack: push directories, pop on .., ignore . and empty segments, then rebuild the path from the stack.”
+
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
 ## 827. Making A Large Island
 ## 5. Longest Palindromic Substring
 ## 1462. Course Schedule IV
 ## 298. Binary Tree Longest Consecutive Sequence
+## 71. Simplify Path
 
 ## 678. Valid Parenthesis String
 ## 33. Search in Rotated Sorted Array
