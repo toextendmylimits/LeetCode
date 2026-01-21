@@ -26,8 +26,15 @@ This is reachability in a DAG.
 I topologically sort the courses and propagate prerequisite relationships forward: if u → v, then all prerequisites of u are also prerequisites of v.   
 I precompute a boolean matrix so each query is O(1).  
 
+## 678. Valid Parenthesis String
+I keep a range [low, high] representing the minimum and maximum possible number of unmatched left parentheses.  
+'(' increases both, ')' decreases both, and '*' expands the range.  
+If high ever drops below zero, it’s invalid.  
+At the end, if low is zero, a valid interpretation exists.  
+
 # TO MEMORIZE
 ## 300. Longest Increasing Subsequence
 ## 827. Making A Large Island
 ## 5. Longest Palindromic Substring
 ## 1462. Course Schedule IV
+## 678. Valid Parenthesis String
